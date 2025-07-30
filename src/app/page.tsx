@@ -1,47 +1,8 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Play, ArrowRight } from "lucide-react";
-
-const filterTags = [
-  "All Episodes",
-  "Parent",
-  "Student",
-  "Finnish-speaking partner",
-  "Non-Finnish-speaking partner",
-  "A1 to C1",
-  "With Kids",
-  "Immersion method",
-];
-
-const episodes = [
-  {
-    id: 1,
-    title: "FROM BEGINNER TO FLUENT IN 2 YEARS",
-    description:
-      "Maria shares her journey from not knowing a single word of Finnish to reaching C1 level in just two years. She discusses her immersion techniques, study habits, and how she overcame the challenges of Finnish grammar. Her unique approach combines traditional classroom learning with...",
-    tags: ["Student", "A1 to C1", "Immersion method"],
-    videoUrl: "#",
-    platforms: ["apple", "spotify", "youtube"],
-  },
-  {
-    id: 2,
-    title: "LEARNING FINNISH WITH CHILDREN",
-    description:
-      "In this episode, Javier explains how having children in Finnish daycare accelerated his own language learning. He shares practical tips for parents who want to learn alongside their children and how to create a bilingual home environment that benefits everyone in the family...",
-    tags: ["Parent", "With Kids", "Immersion method"],
-    videoUrl: "#",
-    platforms: ["apple", "spotify", "youtube"],
-  },
-  {
-    id: 3,
-    title: "FINNISH THROUGH RELATIONSHIPS",
-    description:
-      "Aisha discusses how her relationship with a Finnish partner helped her learn the language naturally. She shares honest insights about the challenges of language barriers in relationships and provides strategies for using everyday conversations as learning opportunities...",
-    tags: ["Finnish-speaking partner", "A1 to C1"],
-    videoUrl: "#",
-    platforms: ["apple", "spotify", "youtube"],
-  },
-];
+import { filterTags, episodes } from "@/constants/episodes";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -113,7 +74,7 @@ export default function Home() {
 
                   {/* Episode Content */}
                   <div className="md:w-3/5 p-6">
-                    <h3 className="text-xl font-bold text-gray-800 mb-3 uppercase">
+                    <h3 className="text-xl font-bold text-gray-800 mb-3">
                       {episode.title}
                     </h3>
                     <p className="text-gray-600 mb-4 line-clamp-3">
@@ -127,24 +88,56 @@ export default function Home() {
                     </p>
 
                     <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
-                      <button className="bg-purple-600 text-white px-6 py-2 rounded-lg font-medium hover:bg-purple-700 transition-colors duration-200 flex items-center gap-2">
+                      <a
+                        href={episode.videoUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="bg-purple-600 text-white px-6 py-2 rounded-lg font-medium hover:bg-purple-700 transition-colors duration-200 flex items-center gap-2 w-fit"
+                      >
                         WATCH EPISODE
                         <ArrowRight className="w-4 h-4" />
-                      </button>
+                      </a>
 
                       {/* Platform Icons */}
                       <div className="flex gap-3">
-                        <div className="w-8 h-8 bg-gray-700 rounded-full flex items-center justify-center">
-                          <span className="text-white text-xs font-bold">
-                            A
-                          </span>
-                        </div>
-                        <div className="w-8 h-8 bg-gray-700 rounded-full flex items-center justify-center">
-                          <span className="text-white text-xs">♪</span>
-                        </div>
-                        <div className="w-8 h-8 bg-gray-700 rounded-full flex items-center justify-center">
-                          <Play className="w-3 h-3 text-white" />
-                        </div>
+                        {episode.platforms.map((platform) => (
+                          <a
+                            key={platform.name}
+                            href={platform.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="w-8 h-8 rounded-full flex items-center justify-center hover:opacity-60 transition-colors duration-200"
+                            title={platform.name}
+                          >
+                            {platform.name === "Apple" && (
+                              <Image
+                                src="/Apple.svg"
+                                alt="Apple"
+                                width={24}
+                                height={24}
+                                className="w-12 h-12"
+                              />
+                            )}
+                            {platform.name === "Spotify" && (
+                              <Image
+                                src="/Spotify.svg"
+                                alt="Spotify"
+                                width={24}
+                                height={24}
+                                className="w-12 h-12"
+                              />
+                            )}
+                            {platform.name === "YouTube" && (
+                              <Image
+                                src="/youtube.svg"
+                                alt="YouTube"
+                                width={24}
+                                height={24}
+                                className="w-12 h-12"
+                              />
+                            )}
+                          </a>
+                        ))}
                       </div>
                     </div>
                   </div>
