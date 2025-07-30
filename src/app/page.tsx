@@ -64,10 +64,17 @@ export default function Home() {
               >
                 <div className="flex flex-col md:flex-row">
                   {/* Video Thumbnail */}
-                  <div className="md:w-2/5 bg-purple-100 flex items-center justify-center p-8">
-                    <div className="relative">
-                      <div className="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center">
-                        <Play className="w-6 h-6 text-white ml-1" />
+                  <div className="md:w-2/5 relative">
+                    <Image
+                      src={episode.thumbnail}
+                      alt={episode.title}
+                      width={400}
+                      height={225}
+                      className="w-full h-full object-cover"
+                    />
+                    <div className="absolute inset-0  flex items-center justify-center">
+                      <div className="w-16 h-16 bg-white bg-opacity-90 rounded-full flex items-center justify-center hover:bg-opacity-100 transition-all duration-200">
+                        <Play className="w-6 h-6 text-gray-800 ml-1" />
                       </div>
                     </div>
                   </div>
