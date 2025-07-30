@@ -19,13 +19,16 @@ export const episodes = [
     videoUrl: "https://www.youtube.com/watch?v=t3QWADJcyJI",
     platforms: [
       {
+        name: "Apple",
+        url: "https://podcasts.apple.com/us/podcast/006-stop-saying-its-too-hard-thats-why-youre-stuck-emily/id1820396129?i=1000719482259",
+      },
+      {
         name: "Spotify",
         url: "https://open.spotify.com/episode/7BDemlxKdsBU9PtPAEatnd?si=vAUc2ghJTx2yZa8M1HI_Aw",
       },
-      { name: "YouTube", url: "https://www.youtube.com/watch?v=t3QWADJcyJI" },
       {
-        name: "Apple",
-        url: "https://podcasts.apple.com/us/podcast/006-stop-saying-its-too-hard-thats-why-youre-stuck-emily/id1820396129?i=1000719482259",
+        name: "YouTube",
+        url: "https://www.youtube.com/watch?v=t3QWADJcyJI",
       },
     ],
   },
@@ -45,16 +48,16 @@ export const episodes = [
     videoUrl: "https://youtu.be/V0jzUitkKL4?si=AEY553jX9wk0qV_W",
     platforms: [
       {
+        name: "Apple",
+        url: "https://podcasts.apple.com/us/podcast/005-from-zero-to-finnish-law-school-in-3-years-deborah/id1820396129?i=1000718214596",
+      },
+      {
         name: "Spotify",
         url: "https://open.spotify.com/episode/5O6ggH0eHRKd6nfdEcBy66?si=sgP3fQrhQ2-deXnnmo_DXA",
       },
       {
         name: "YouTube",
         url: "https://youtu.be/V0jzUitkKL4?si=AEY553jX9wk0qV_W",
-      },
-      {
-        name: "Apple",
-        url: "https://podcasts.apple.com/us/podcast/005-from-zero-to-finnish-law-school-in-3-years-deborah/id1820396129?i=1000718214596",
       },
     ],
   },
@@ -67,16 +70,16 @@ export const episodes = [
     videoUrl: "https://youtu.be/qD6RTlqPmRA?si=fte-t1TsGpENFrCT",
     platforms: [
       {
+        name: "Apple",
+        url: "https://podcasts.apple.com/us/podcast/004-why-duolingo-failed-paying-for-100-lunches-and/id1820396129?i=1000717294968",
+      },
+      {
         name: "Spotify",
-        url: "https://open.spotify.com/show/266bYZrif8U0I1OJnOTTgU",
+        url: "https://open.spotify.com/episode/4lHHYmEPxsX9WCKdYCgebo",
       },
       {
         name: "YouTube",
         url: "https://youtu.be/qD6RTlqPmRA?si=fte-t1TsGpENFrCT",
-      },
-      {
-        name: "Apple",
-        url: "https://podcasts.apple.com/us/podcast/004-why-duolingo-failed-paying-for-100-lunches-and/id1820396129?i=1000717294968",
       },
     ],
   },
@@ -90,14 +93,14 @@ export const episodes = [
     videoUrl: "https://www.youtube.com/watch?v=zcW4ibdkGc4",
     platforms: [
       {
+        name: "Apple",
+        url: "https://podcasts.apple.com/us/podcast/003-i-lost-custody-of-my-kids-because-i-anita-anttila/id1820396129?i=1000715713161",
+      },
+      {
         name: "Spotify",
         url: "https://open.spotify.com/episode/4C4SWQZEJzKBRw3lbVJnhe?si=c19b1e847a804da8",
       },
       { name: "YouTube", url: "https://www.youtube.com/watch?v=zcW4ibdkGc4" },
-      {
-        name: "Apple",
-        url: "https://podcasts.apple.com/us/podcast/003-i-lost-custody-of-my-kids-because-i-anita-anttila/id1820396129?i=1000715713161",
-      },
     ],
   },
   {
@@ -109,14 +112,14 @@ export const episodes = [
     videoUrl: "https://www.youtube.com/watch?v=mEQKGH0IN_s",
     platforms: [
       {
+        name: "Apple",
+        url: "https://podcasts.apple.com/us/podcast/002-how-i-achieved-fluency-in-finnish-in-just-one-year/id1820396129?i=1000712731337",
+      },
+      {
         name: "Spotify",
         url: "https://open.spotify.com/episode/2HZRp9VclECv2UVydJer0y?si=5c4CxcRYSZ2wRm6VizMrIQ",
       },
       { name: "YouTube", url: "https://www.youtube.com/watch?v=mEQKGH0IN_s" },
-      {
-        name: "Apple",
-        url: "https://podcasts.apple.com/us/podcast/002-how-i-achieved-fluency-in-finnish-in-just-one-year/id1820396129?i=1000712731337",
-      },
     ],
   },
 ];
