@@ -11,12 +11,32 @@ export const metadata: Metadata = {
   keywords:
     "Finnish, language learning, immigrant, fluency, podcast, YouTube, adult learning",
   authors: [{ name: "Ohe" }],
+  icons: {
+    icon: "/HILF_logo.png",
+    shortcut: "/HILF_logo.png",
+    apple: "/HILF_logo.png",
+  },
   openGraph: {
     title: "How I Learned Finnish - with Ohe",
     description:
       "Learn Finnish fluently as an adult immigrant through real success stories and practical strategies.",
     type: "website",
     locale: "en_US",
+    images: [
+      {
+        url: "/HILF_logo.png",
+        width: 1200,
+        height: 630,
+        alt: "How I Learned Finnish - with Ohe",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "How I Learned Finnish - with Ohe",
+    description:
+      "Learn Finnish fluently as an adult immigrant through real success stories and practical strategies.",
+    images: ["/HILF_logo.png"],
   },
 };
 
@@ -27,6 +47,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/HILF_logo.png" type="image/png" />
+        <link rel="shortcut icon" href="/HILF_logo.png" type="image/png" />
+        <link rel="apple-touch-icon" href="/HILF_logo.png" />
+      </head>
       <body className={inter.className}>{children}</body>
     </html>
   );
