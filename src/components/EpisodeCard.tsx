@@ -1,5 +1,6 @@
 import { Play, ArrowRight } from "lucide-react";
 import Image from "next/image";
+import PillButton from "./pillButton";
 
 interface Platform {
   name: string;
@@ -111,6 +112,18 @@ export default function EpisodeCard({ episode }: EpisodeCardProps) {
                 </a>
               ))}
             </div>
+          </div>
+          <div className="flex flex-row flex-wrap gap-2 pt-4">
+            {episode.tags.map((tag) => {
+              return (
+                <PillButton
+                  text={tag}
+                  key={tag}
+                  onClick={() => {}}
+                  activated={false}
+                />
+              );
+            })}
           </div>
         </div>
       </div>
