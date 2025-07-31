@@ -1,10 +1,24 @@
+"use client";
+
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Play, ArrowRight } from "lucide-react";
 import { filterTags, episodes } from "@/constants/episodes";
 import Image from "next/image";
+import { useState, useMemo } from "react";
 
 export default function Home() {
+  const [selectedTag, setSelectedTag] = useState<string>("All");
+
+  const filteredEpisodes = useMemo(() => {
+    if (selectedTag === "All") {
+      return episodes;
+    }
+    return episodes.filter((episode) =>
+      episode.tags.some((tag) => tag === selectedTag)
+    );
+  }, [selectedTag]);
+
   return (
     <div className="min-h-screen bg-white">
       <Navigation />
@@ -34,11 +48,12 @@ export default function Home() {
             Filter Episodes By:
           </h2>
           <div className="flex flex-wrap gap-3">
-            {filterTags.map((tag, index) => (
+            {filterTags.map((tag) => (
               <button
                 key={tag}
+                onClick={() => setSelectedTag(tag)}
                 className={`px-4 py-2 rounded-full text-sm font-medium transition-colors duration-200 ${
-                  index === 0
+                  selectedTag === tag
                     ? "bg-purple-600 text-white"
                     : "bg-white text-gray-700 border border-purple-600 hover:bg-purple-50"
                 }`}
@@ -54,10 +69,10 @@ export default function Home() {
       <section className="py-12 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl font-bold text-gray-800 mb-8">
-            Latest Episodes
+            {`${selectedTag} Episodes`}
           </h2>
           <div className="space-y-8">
-            {episodes.map((episode) => (
+            {filteredEpisodes.map((episode) => (
               <div
                 key={episode.id}
                 className="bg-white rounded-lg shadow-lg overflow-hidden"
