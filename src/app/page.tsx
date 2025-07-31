@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import { filterTags, episodes } from "@/constants/episodes";
 import { useState, useMemo } from "react";
 import EpisodeCard from "@/components/EpisodeCard";
+import PillButton from "@/components/pillButton";
 
 export default function Home() {
   const [selectedTag, setSelectedTag] = useState<string>("All");
@@ -44,21 +45,16 @@ export default function Home() {
       <section className="py-8 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl font-bold text-gray-800 mb-6">
-            Filter Episodes By:
+            Life Circumstance Filter:
           </h2>
           <div className="flex flex-wrap gap-3">
             {filterTags.map((tag) => (
-              <button
+              <PillButton
                 key={tag}
+                text={tag}
                 onClick={() => setSelectedTag(tag)}
-                className={`px-4 py-2 rounded-full text-sm font-medium transition-colors duration-200 ${
-                  selectedTag === tag
-                    ? "bg-purple-600 text-white"
-                    : "bg-white text-gray-700 border border-purple-600 hover:bg-purple-50"
-                }`}
-              >
-                {tag}
-              </button>
+                activated={selectedTag === tag}
+              />
             ))}
           </div>
         </div>
