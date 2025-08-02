@@ -65,7 +65,7 @@ export default function EpisodeCard({ episode }: EpisodeCardProps) {
               href={episode.videoUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-purple-600 text-white px-6 py-2 rounded-lg font-medium hover:bg-purple-700 transition-colors duration-200 flex items-center gap-2 w-fit"
+              className="hidden md:block bg-purple-600 text-white px-6 py-2 rounded-lg font-medium hover:bg-purple-700 transition-colors duration-200 flex items-center gap-2 w-fit"
             >
               WATCH EPISODE
               <ArrowRight className="w-4 h-4" />
