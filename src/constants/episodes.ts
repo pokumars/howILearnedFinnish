@@ -8,10 +8,40 @@ export enum FilterTags {
   B1toC = "B1 to C",
   WithKids = "With Kids",
   Immersion = "Immersion method",
+  //Introvert = "Introvert",
 }
 export const filterTags = Object.values(FilterTags);
 
 export const episodes = [
+  {
+    id: 7,
+    title:
+      "007: I Didn't Wait To Be Included, I Learned The Language To Belong - Magdalene",
+    description:
+      "Join us for an inspiring conversation with Magdalene Awahnde, a nursing manager in Finland. In this episode, Magdalene shares her journey from Cameroon to Finland, her challenges and triumphs in learning the Finnish language, and her rise in the healthcare sector. Discover her key strategies for overcoming language barriers, her motivational tips for aspiring immigrants, and how her determination and positive attitude opened doors to remarkable opportunities. Magdalene's story is a testament to the power of perseverance and the importance of embracing opportunities. Don't miss this insightful and motivational episode!",
+    tags: [
+      FilterTags.Student,
+      FilterTags.A1toC,
+      FilterTags.Immersion,
+      FilterTags.NonFinnishSpeakingPartner,
+    ],
+    videoUrl: "https://www.youtube.com/watch?v=EwjMZfRKnaU&si=XAOUE8JQr90KaIxh",
+    thumbnail: "/thumbnails/7_Magdalene.jpg",
+    platforms: [
+      {
+        name: "Apple",
+        url: "https://podcasts.apple.com/us/podcast/007-i-didnt-wait-to-be-included-i-learned-the/id1820396129?i=1000720558960",
+      },
+      {
+        name: "Spotify",
+        url: "https://open.spotify.com/episode/4LfR7dkyrQWbv0qy4uZtiI?si=TbgcCBRkT6eQJHthAVS-NQ",
+      },
+      {
+        name: "YouTube",
+        url: "https://www.youtube.com/watch?v=EwjMZfRKnaU&si=XAOUE8JQr90KaIxh",
+      },
+    ],
+  },
   {
     id: 6,
     title: "006: Stop Saying It's Too Hard, That's Why You're Stuck - Emily",
