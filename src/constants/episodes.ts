@@ -8,7 +8,10 @@ export enum FilterTags {
   B1toC = "B1 to C",
   WithKids = "With Kids",
   Immersion = "Immersion method",
+  FastPaced = "Fast-paced",
   //Introvert = "Introvert",
+
+  //
 }
 export const filterTags = Object.values(FilterTags);
 
@@ -80,6 +83,7 @@ export const episodes = [
       FilterTags.WithKids,
       FilterTags.Immersion,
       FilterTags.FinnishSpeakingPartner,
+      FilterTags.FastPaced,
     ],
     videoUrl: "https://youtu.be/V0jzUitkKL4?si=AEY553jX9wk0qV_W",
     thumbnail: "/thumbnails/5_Deborah.jpg",
@@ -161,6 +165,7 @@ export const episodes = [
       FilterTags.B1toC,
       FilterTags.Immersion,
       FilterTags.FinnishSpeakingPartner,
+      FilterTags.FastPaced,
     ],
     videoUrl: "https://www.youtube.com/watch?v=mEQKGH0IN_s",
     thumbnail: "/thumbnails/2_Oheneba.jpg",
