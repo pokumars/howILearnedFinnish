@@ -15,23 +15,23 @@ export const blogPosts: BlogPost[] = [
     author: `Oheneba "Ohe" Poku-Marboah`,
     publishDate: "2025-07-05",
     excerpt:
-      "I have been having a slowly growing burning feeling in the back of my head to do something for a while now. I think it started when I heard of the concept of reparenting oneself, , i.e. , providing for yourself the physical and emotional needs you wish you had as a child but didn’t receive.",
+      "I have been having a slowly growing burning feeling in the back of my head to do something for a while now. I think it started when I heard of the concept of reparenting oneself, i.e., providing for yourself the physical and emotional needs you wish you had as a child but didn't receive.",
     featuredImage: "/blog-no-english.jpg",
-    content: `I have been having a slowly growing burning feeling in the back of my head to do something for a while now. I think it started when I heard of the concept of reparenting oneself, i.e. , providing for yourself the physical and emotional needs you wish you had as a child but didn’t receive. In noticing the need for me to do that, I realized that even though I am 27 years old, I still feel like a child who has no idea what to do with all the incoming flow of decisions I need to make. I thought adults had all the answers, but nope, here I am in adulthood, still not knowing anything. A kid in an adult’s body — I am sure a lot of you can relate.
+    content: `I have been having a slowly growing burning feeling in the back of my head to do something for a while now. I think it started when I heard of the concept of reparenting oneself, i.e., providing for yourself the physical and emotional needs you wish you had as a child but didn't receive. In noticing the need for me to do that, I realized that even though I am 27 years old, I still feel like a child who has no idea what to do with all the incoming flow of decisions I need to make. I thought adults had all the answers, but nope, here I am in adulthood, still not knowing anything. A kid in an adult's body - I am sure a lot of you can relate.
 
-Well, hold on a minute; does that mean my parents’ shortcomings were for the same reason? They were living that episode of their life for the first time. Parenting me, parenting my siblings, living in a country where they don’t understand the language, buying a house, graduating from their master’s, starting a business, attempting a PhD — all for the first time.
+Well, hold on a minute; does that mean my parents' shortcomings were for the same reason? They were living that episode of their life for the first time. Parenting me, parenting my siblings, living in a country where they don't understand the language, buying a house, graduating from their master's, starting a business, attempting a PhD - all for the first time.
 
-So I have been wanting to create things that would have helped my parents if I had been their friend when they were my age, having just moved to Finland. Something that would have enabled them not just to survive in Finland but to thrive in Finland. There were a few things I would want to do to help internationals living in Finland adjust better and succeed, such as providing language learning aids and education about real estate, among others. That is why I decided to create  this limited popdcast series: **_How I Learned Finnish — with Ohe_**.
+So I have been wanting to create things that would have helped my parents if I had been their friend when they were my age, having just moved to Finland. Something that would have enabled them not just to survive in Finland but to thrive in Finland. There were a few things I would want to do to help internationals living in Finland adjust better and succeed, such as providing language learning aids and education about real estate, among others. That is why I decided to create this limited podcast series: **How I Learned Finnish - with Ohe**.
 
+To be clear, this helps anyone learn a new language - not just Finnish. This podcast project aims to help **immigrants in Finland not only survive but also thrive** by improving their language skills. Through storytelling, it explores what it takes to achieve **adult fluency in one of the world's most difficult languages: Finnish**.
 
-To be clear, this helps anyone learn a new language — not just Finnish. This podcast project aims to help **immigrants in Finland not only survive but also thrive** by improving their language skills. Through storytelling, it explores what it takes to achieve **adult fluency in one of the world’s most difficult languages: Finnish**.🎧 **Listen/Watch** “How I Learned Finnish — with Ohe” via this link: [https://linktr.ee/how_i_learned_finnish](https://linktr.ee/how_i_learned_finnish)
+🎧 **Listen/Watch** "How I Learned Finnish - with Ohe" via this link: [https://linktr.ee/how_i_learned_finnish](https://linktr.ee/how_i_learned_finnish)
 
-
-In 2022, I did something remarkable — I **pretended not to speak English for an entire year** to immerse myself in Finnish and achieve high-level fluency as an adult.
+In 2022, I did something remarkable. I **pretended not to speak English for an entire year** to immerse myself in Finnish and achieve high-level fluency as an adult.
 
 On January 1st, I publicly announced on LinkedIn and my social media that I would only speak Finnish with Finnish speakers from that point forward. What followed was an intense and mentally demanding immersion journey.
 
-Now, through the podcast _How I Learned Finnish — with Ohe_, I share exactly what I did during that year to learn the language fluently. But more importantly, I seek out and interview others who have also successfully learned Finnish as adults — people who have reached at least a **C level on the CEFR scale**.
+Now, through the podcast *How I Learned Finnish - with Ohe*, I share exactly what I did during that year to learn the language fluently. But more importantly, I seek out and interview others who have also successfully learned Finnish as adults - people who have reached at least a **C level on the CEFR scale**.
 
 These cases are rare: according to a Finnish language educator, only about **2% of immigrants in Finland reach this level of fluency**. My podcast documents their stories, strategies, and insights.
 
@@ -40,7 +40,7 @@ These cases are rare: according to a Finnish language educator, only about **2% 
 ### 🎯 The goal is threefold:
 
 1. **To normalize fluency for adult learners**  
-   By showcasing diverse individuals who have achieved high-level Finnish fluency, the podcast aims to show that it is possible — even for those learning later in life.
+   By showcasing diverse individuals who have achieved high-level Finnish fluency, the podcast aims to show that it is possible, even for those learning later in life.
 
 2. **To provide practical, relatable guidance**  
    I interview people from a variety of backgrounds and life situations (parents, workers, students, different relationship and parenting statuses, etc.) so that listeners can find someone whose journey mirrors their own. This ensures that the advice and inspiration are not only aspirational but also applicable.
@@ -50,16 +50,13 @@ These cases are rare: according to a Finnish language educator, only about **2% 
 
 ---
 
-In addition to these interviews, I also explore the **daily habits, lifestyle changes, resources**, and **mindsets** that make successful language learning possible — especially for busy adults. Many people start learning a new language but use their limited time ineffectively, often due to a lack of guidance.
+In addition to these interviews, I also explore the **daily habits, lifestyle changes, resources**, and **mindsets** that make successful language learning possible - especially for busy adults. Many people start learning a new language but use their limited time ineffectively, often due to a lack of guidance.
 
 This podcast aims to change that.
 
 ---
 
-I aim to have a total of **10–15 episodes**. It is essential for me that this body of work exists.
-
-> Even if just five people, ten years from now, say this project helped them achieve their language goals,  
-> I will consider the mission accomplished.
+I aim to have a total of **10–15 episodes**. It is essential for me that this body of work exists. Even if just five people, ten years from now, say this project helped them achieve their language goals, I will consider the mission accomplished.
 
 ---
 
@@ -70,9 +67,7 @@ I aim to have a total of **10–15 episodes**. It is essential for me that this 
 - 🍎 **Apple Podcasts**: [https://apple.co/4kEDw4K](https://apple.co/4kEDw4K)  
 - 🎙️ **Castbox**: [https://castbox.fm/vh/6638003](https://castbox.fm/vh/6638003)  
 - 🎵 **Amazon Music**: [https://music.amazon.com/podcasts/2d25ed33-22f6-4050-a54e-26af59c99c48/how-i-learned-finnish-with-ohe](https://music.amazon.com/podcasts/2d25ed33-22f6-4050-a54e-26af59c99c48/how-i-learned-finnish-with-ohe)  
-- 🎥 **TikTok**: [https://www.tiktok.com/@how_i_learned_finnish](https://www.tiktok.com/@how_i_learned_finnish)
-- <p><a href="https://mdxjs.com" title="title">MDX</a></p>
-`,
+- 🎥 **TikTok**: [https://www.tiktok.com/@how_i_learned_finnish](https://www.tiktok.com/@how_i_learned_finnish)`,
   },
   {
     slug: "daily-habits-for-finnish-fluency",

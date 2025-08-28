@@ -30,35 +30,40 @@ export default function Home() {
             <h1 className="text-4xl md:text-6xl font-bold mb-4">
               How I Learned Finnish - with Ohe
             </h1>
-            <p className="text-xl md:text-2xl mb-4">
-              How to Learn Finnish Fluently as an Adult Immigrant
-            </p>
-            <p className="text-lg md:text-xl text-purple-100 max-w-3xl">
-              Documenting real success stories of adult Finnish learners and
-              sharing practical strategies to achieve fluency
-            </p>
-            <p className="text-lg md:text-xl text-purple-100 max-w-3xl">
-              This body of work needed to exist because
-            </p>
-            <ul className="">
-              <li>
-                If you have a goal, why not hear from how others have achieved
-                it to help you out?
-              </li>
-              <li>
-                Too many people don’t learn the Finnish language beyond what is
-                required to get the passport (quite low), preventing them from
-                reaching their potential.
-              </li>
-              <li>
-                Finland is losing or under-utilising so many brilliant people
-                due to language deficiency.
-              </li>
-              <li>
-                Too many insanely talented people are missing opportunities in
-                an amazing country like Finland.
-              </li>
-            </ul>
+            <div className="flex flex-col mb-8">
+              <h2 className="text-xl md:text-2xl">
+                How to Learn Finnish Fluently as an Adult Immigrant
+              </h2>
+              <p className=" text-purple-100 max-w-3xl">
+                Documenting real success stories of adult Finnish learners and
+                sharing practical strategies to achieve fluency
+              </p>
+            </div>
+
+            <div className="flex flex-col mt-4">
+              <h2 className="text-xl md:text-2xl mb-4">
+                This body of work needed to exist because
+              </h2>
+              <ul className="list-disc list-inside">
+                <li>
+                  If you have a goal, why not hear from how others have achieved
+                  it to help you out?
+                </li>
+                <li>
+                  Too many people don’t learn the Finnish language beyond what
+                  is required to get the passport (quite low), preventing them
+                  from reaching their potential.
+                </li>
+                <li>
+                  Finland is losing or under-utilising so many brilliant people
+                  due to language deficiency.
+                </li>
+                <li>
+                  Too many insanely talented people are missing opportunities in
+                  an amazing country like Finland.
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>

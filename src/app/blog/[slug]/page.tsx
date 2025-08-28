@@ -6,6 +6,14 @@ import Footer from "@/components/Footer";
 import { blogPosts } from "@/data/blog-posts";
 import { Calendar, User, ArrowLeft } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
+import { marked } from "marked";
+
+// Configure marked options for better HTML output
+marked.setOptions({
+  breaks: true,
+  gfm: true,
+});
 
 interface BlogPostPageProps {
   params: {
@@ -27,6 +35,9 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
       day: "numeric",
     });
   };
+
+  // Process markdown content with proper HTML output
+  const processedContent = marked(post.content);
 
   return (
     <div className="min-h-screen bg-white">
@@ -66,9 +77,11 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
 
             {post.featuredImage && (
               <div className="mb-6">
-                <img
+                <Image
                   src={post.featuredImage}
                   alt={post.title}
+                  width={800}
+                  height={256}
                   className="w-full h-64 object-cover rounded-lg"
                 />
               </div>
@@ -78,55 +91,9 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
           {/* Article Content */}
           <article className="prose prose-lg max-w-none">
             <div
-              className="text-gray-700 leading-relaxed"
+              className="markdown-content text-gray-700 leading-relaxed"
               dangerouslySetInnerHTML={{
-                __html: post.content
-                  .replace(
-                    /^# (.+)$/gm,
-                    '<h1 class="text-3xl font-bold text-gray-800 mb-6">$1</h1>'
-                  )
-                  .replace(
-                    /^## (.+)$/gm,
-                    '<h2 class="text-2xl font-bold text-gray-800 mb-4 mt-8">$1</h2>'
-                  )
-                  .replace(
-                    /^### (.+)$/gm,
-                    '<h3 class="text-xl font-bold text-gray-800 mb-3 mt-6">$1</h3>'
-                  )
-                  .replace(
-                    /^#### (.+)$/gm,
-                    '<h4 class="text-lg font-bold text-gray-800 mb-2 mt-4">$1</h4>'
-                  )
-                  .replace(
-                    /\*\*(.+?)\*\*/g,
-                    '<strong class="font-semibold">$1</strong>'
-                  )
-                  .replace(/\*(.+?)\*/g, '<em class="italic">$1</em>')
-                  .replace(/^- (.+)$/gm, '<li class="ml-4">$1</li>')
-                  .replace(/^(\d+)\. (.+)$/gm, '<li class="ml-4">$1. $2</li>')
-                  .replace(/\n\n/g, '</p><p class="mb-4">')
-                  .replace(/^(.+)$/gm, (match) => {
-                    if (
-                      match.startsWith("<h") ||
-                      match.startsWith("<li") ||
-                      match.startsWith("<p")
-                    ) {
-                      return match;
-                    }
-                    if (match.trim() === "") {
-                      return "";
-                    }
-                    return `<p class="mb-4">${match}</p>`;
-                  })
-                  .replace(/<p class="mb-4"><\/p>/g, "")
-                  .replace(/<p class="mb-4"><h/g, "<h")
-                  .replace(/<\/h><\/p>/g, "</h>")
-                  .replace(
-                    /<p class="mb-4"><li/g,
-                    '<ul class="list-disc mb-4"><li'
-                  )
-                  .replace(/<\/li><\/p>/g, "</li></ul>")
-                  .replace(/<p class="mb-4"><\/ul>/g, "</ul>"),
+                __html: processedContent,
               }}
             />
           </article>
