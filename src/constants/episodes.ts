@@ -17,6 +17,29 @@ export const filterTags = Object.values(FilterTags);
 
 export const episodes = [
   {
+    id: 8,
+    title: "008: From Hallway Listener to Fluent Finnish Speaker - Jojo Pratt",
+    description:
+      "In this episode, we dive into the life story of Jojo Pratt, a nurse originally from Ghana. Jojo shares his unique experiences and challenges of learning Finnish, from his early days in a Finnish refugee camp to becoming fluent and integrated into Finnish society. Join us as Jojo recounts the creative and relentless methods he used, the cultural and societal barriers he overcame, and the crucial mindset needed to master a new language. Discover valuable insights and tips for anyone striving to learn Finnish or any new language. This is an episode filled with inspiring anecdotes, humorous moments, and practical advice you won't want to miss!",
+    tags: [FilterTags.A1toC, FilterTags.Immersion, FilterTags.Student],
+    videoUrl: "https://www.youtube.com/watch?v=bz0lTCmgv_U",
+    thumbnail: "/thumbnails/008_Jojo_Pratt.png",
+    platforms: [
+      {
+        name: "Apple",
+        url: "https://podcasts.apple.com/fi/podcast/008-from-hallway-listener-to-fluent-finnish-speaker/id1820396129?i=1000724656633",
+      },
+      {
+        name: "Spotify",
+        url: "https://open.spotify.com/episode/0WQ9VIngZuO739W76IKTtr?si=59056a8068e3419d",
+      },
+      {
+        name: "YouTube",
+        url: "https://www.youtube.com/watch?v=bz0lTCmgv_U",
+      },
+    ],
+  },
+  {
     id: 7,
     title:
       "007: I Didn't Wait To Be Included, I Learned The Language To Belong - Magdalene",
