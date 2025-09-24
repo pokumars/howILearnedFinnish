@@ -6,6 +6,7 @@ import { Calendar, User, ArrowLeft } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { marked } from "marked";
+import { Metadata } from "next";
 
 // Configure marked options for better HTML output
 marked.setOptions({
@@ -17,6 +18,29 @@ interface BlogPostPageProps {
   params: Promise<{
     slug: string;
   }>;
+}
+
+export async function generateMetadata({
+  params,
+}: BlogPostPageProps): Promise<Metadata> {
+  const { slug } = await params;
+  const post = blogPosts.find((p) => p.slug === slug);
+
+  if (!post) {
+    return {
+      title: "Post Not Found",
+    };
+  }
+
+  return {
+    title: post.title,
+    description: post.metaDescription || post.excerpt,
+    openGraph: {
+      title: post.title,
+      description: post.metaDescription || post.excerpt,
+      images: post.featuredImage ? [post.featuredImage] : [],
+    },
+  };
 }
 
 export default async function BlogPostPage({ params }: BlogPostPageProps) {
