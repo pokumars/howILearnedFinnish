@@ -1,5 +1,6 @@
 import { Play, ArrowRight } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import PillButton from "./pillButton";
 
 interface Platform {
@@ -27,10 +28,8 @@ export default function EpisodeCard({ episode }: EpisodeCardProps) {
       <div className="flex flex-col md:flex-row">
         {/* Video Thumbnail */}
         <div className="md:w-2/5 relative">
-          <a
-            href={episode.videoUrl}
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link
+            href={`/episode/${episode.id}`}
             className="block w-full h-full cursor-pointer"
           >
             <Image
@@ -45,31 +44,34 @@ export default function EpisodeCard({ episode }: EpisodeCardProps) {
                 <Play className="w-6 h-6 text-gray-800 ml-1" />
               </div>
             </div>
-          </a>
+          </Link>
         </div>
 
         {/* Episode Content */}
         <div className="md:w-3/5 p-6">
-          <h3 className="text-xl font-bold text-gray-800 mb-3">
-            {episode.title}
-          </h3>
+          <Link href={`/episode/${episode.id}`}>
+            <h3 className="text-xl font-bold text-gray-800 mb-3 hover:text-purple-600 transition-colors duration-200">
+              {episode.title}
+            </h3>
+          </Link>
           <p className="text-gray-600 mb-4 line-clamp-3">
             {episode.description}
-            <a href="#" className="text-purple-600 hover:text-purple-700 ml-1">
+            <Link
+              href={`/episode/${episode.id}`}
+              className="text-purple-600 hover:text-purple-700 ml-1"
+            >
               Read More
-            </a>
+            </Link>
           </p>
 
           <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
-            <a
-              href={episode.videoUrl}
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              href={`/episode/${episode.id}`}
               className="hidden md:block bg-purple-600 text-white px-6 py-2 rounded-lg font-medium hover:bg-purple-700 transition-colors duration-200 flex items-center gap-2 w-fit"
             >
               WATCH EPISODE
               <ArrowRight className="w-4 h-4" />
-            </a>
+            </Link>
 
             {/* Platform Icons */}
             <div className="flex gap-3">
