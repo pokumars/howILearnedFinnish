@@ -136,11 +136,6 @@ export default async function EpisodePage({ params }: EpisodePageProps) {
                 ))}
               </div>
             </div>
-
-            {/* Episode Description */}
-            <p className="text-lg text-gray-700 leading-relaxed mb-8">
-              {episode.description}
-            </p>
           </header>
 
           {/* Video/Audio Player Section */}
@@ -165,6 +160,27 @@ export default async function EpisodePage({ params }: EpisodePageProps) {
                 </div>
               )}
             </div>
+          </div>
+
+          {/* Episode Description - Moved after video for better flow */}
+          <div className="mb-8">
+            <h2 className="text-2xl font-bold text-gray-800 mb-4">
+              About this episode
+            </h2>
+            <p className="text-lg text-gray-700 leading-relaxed">
+              {episode.description}
+            </p>
+          </div>
+
+          {/* Episode Thumbnail */}
+          <div className="text-center">
+            <Image
+              src={episode.thumbnail}
+              alt={episode.title}
+              width={400}
+              height={225}
+              className="mx-auto rounded-lg shadow-lg"
+            />
           </div>
         </div>
       </section>
