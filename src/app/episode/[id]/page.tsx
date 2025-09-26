@@ -87,6 +87,56 @@ export default async function EpisodePage({ params }: EpisodePageProps) {
               ))}
             </div>
 
+            {/* Platform Links - Moved to top for better mobile experience */}
+            <div className="mb-6">
+              <h3 className="text-lg font-semibold text-gray-800 mb-3">
+                Listen on:
+              </h3>
+              <div className="flex flex-wrap gap-3">
+                {episode.platforms.map((platform) => (
+                  <a
+                    key={platform.name}
+                    href={platform.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 bg-purple-50 px-4 py-2 rounded-lg border border-purple-200 hover:border-purple-300 hover:bg-purple-100 transition-all duration-200"
+                  >
+                    {platform.name === "Apple" && (
+                      <Image
+                        src="/Apple.svg"
+                        alt="Apple Podcasts"
+                        width={20}
+                        height={20}
+                        className="w-5 h-5"
+                      />
+                    )}
+                    {platform.name === "Spotify" && (
+                      <Image
+                        src="/Spotify.svg"
+                        alt="Spotify"
+                        width={20}
+                        height={20}
+                        className="w-5 h-5"
+                      />
+                    )}
+                    {platform.name === "YouTube" && (
+                      <Image
+                        src="/youtube.svg"
+                        alt="YouTube"
+                        width={20}
+                        height={20}
+                        className="w-5 h-5"
+                      />
+                    )}
+                    <span className="font-medium text-gray-700 text-sm">
+                      {platform.name}
+                    </span>
+                    <ExternalLink className="w-3 h-3 text-gray-400" />
+                  </a>
+                ))}
+              </div>
+            </div>
+
             {/* Episode Description */}
             <p className="text-lg text-gray-700 leading-relaxed mb-8">
               {episode.description}
@@ -114,68 +164,7 @@ export default async function EpisodePage({ params }: EpisodePageProps) {
                   </div>
                 </div>
               )}
-
-              {/* Platform Links */}
-              <div className="space-y-4">
-                <h3 className="text-lg font-semibold text-gray-800">
-                  Available on:
-                </h3>
-                <div className="flex flex-wrap gap-4">
-                  {episode.platforms.map((platform) => (
-                    <a
-                      key={platform.name}
-                      href={platform.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center gap-3 bg-white px-4 py-3 rounded-lg border border-gray-200 hover:border-purple-300 hover:shadow-md transition-all duration-200"
-                    >
-                      {platform.name === "Apple" && (
-                        <Image
-                          src="/Apple.svg"
-                          alt="Apple Podcasts"
-                          width={24}
-                          height={24}
-                          className="w-6 h-6"
-                        />
-                      )}
-                      {platform.name === "Spotify" && (
-                        <Image
-                          src="/Spotify.svg"
-                          alt="Spotify"
-                          width={24}
-                          height={24}
-                          className="w-6 h-6"
-                        />
-                      )}
-                      {platform.name === "YouTube" && (
-                        <Image
-                          src="/youtube.svg"
-                          alt="YouTube"
-                          width={24}
-                          height={24}
-                          className="w-6 h-6"
-                        />
-                      )}
-                      <span className="font-medium text-gray-700">
-                        {platform.name}
-                      </span>
-                      <ExternalLink className="w-4 h-4 text-gray-400" />
-                    </a>
-                  ))}
-                </div>
-              </div>
             </div>
-          </div>
-
-          {/* Episode Thumbnail */}
-          <div className="text-center">
-            <Image
-              src={episode.thumbnail}
-              alt={episode.title}
-              width={400}
-              height={225}
-              className="mx-auto rounded-lg shadow-lg"
-            />
           </div>
         </div>
       </section>
