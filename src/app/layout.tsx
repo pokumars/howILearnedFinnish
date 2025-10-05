@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -52,7 +53,10 @@ export default function RootLayout({
         <link rel="shortcut icon" href="/HILF_logo.png" type="image/png" />
         <link rel="apple-touch-icon" href="/HILF_logo.png" />
       </head>
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }
