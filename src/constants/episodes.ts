@@ -191,7 +191,7 @@ export const episodes = [
       FilterTags.FastPaced,
     ],
     videoUrl: "https://www.youtube.com/watch?v=mEQKGH0IN_s",
-    thumbnail: "/thumbnails/2_Oheneba.jpg",
+    thumbnail: "/thumbnails/fluency_thumbnail.png",
     platforms: [
       {
         name: "Apple",

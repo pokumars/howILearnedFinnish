@@ -96,7 +96,18 @@ export default function Blog() {
                   <div className="flex items-center gap-4 text-sm text-gray-600 mb-4">
                     <div className="flex items-center gap-1">
                       <User className="w-4 h-4" />
-                      <span>{post.author}</span>
+                      {post.authorUrl ? (
+                        <a
+                          href={post.authorUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-purple-600 hover:text-purple-700 transition-colors duration-200"
+                        >
+                          {post.author}
+                        </a>
+                      ) : (
+                        <span>{post.author}</span>
+                      )}
                     </div>
                     <div className="flex items-center gap-1">
                       <Calendar className="w-4 h-4" />
