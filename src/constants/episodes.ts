@@ -23,7 +23,7 @@ export const episodes = [
       "In this episode, we dive into the life story of Jojo Pratt, a nurse originally from Ghana. Jojo shares his unique experiences and challenges of learning Finnish, from his early days in a Finnish refugee camp to becoming fluent and integrated into Finnish society. Join us as Jojo recounts the creative and relentless methods he used, the cultural and societal barriers he overcame, and the crucial mindset needed to master a new language. Discover valuable insights and tips for anyone striving to learn Finnish or any new language. This is an episode filled with inspiring anecdotes, humorous moments, and practical advice you won't want to miss!",
     tags: [FilterTags.A1toC, FilterTags.Immersion, FilterTags.Student],
     videoUrl: "https://www.youtube.com/watch?v=bz0lTCmgv_U",
-    thumbnail: "/thumbnails/008_Jojo_Pratt.png",
+    thumbnail: "/thumbnails/008_Jojo_Pratt.jpg",
     platforms: [
       {
         name: "Apple",
