@@ -2,6 +2,7 @@ export interface BlogPost {
   slug: string;
   title: string;
   author: string;
+  authorUrl?: string;
   publishDate: string;
   metaDescription: string;
   excerpt: string;
@@ -14,6 +15,7 @@ export const blogPosts: BlogPost[] = [
     slug: "deborah-laajanen-finnish-learning-journey",
     title: "Debi's Finnish Language Learning Journey: From A1 to C1-C2",
     author: 'Deborah "Debi" Laajanen',
+    authorUrl: "https://www.linkedin.com/in/deborahlaajanen",
     publishDate: "2025-10-04",
     metaDescription:
       "Follow Deborah Laajanen's inspiring journey learning Finnish from A1 to C1-C2 level. Discover her methods, resources, and advice for each CEFR level as she navigates immigration, motherhood, and pursuing a Master of Laws degree in Finnish.",
@@ -162,6 +164,7 @@ I am convinced that at the height of this journey lies freedom, not from discipl
     slug: "best-finnish-podcasts-for-learning-the-language",
     title: "Best Finnish Podcasts for Learning the Language",
     author: `Oheneba "Ohe" Poku-Marboah`,
+    authorUrl: "https://www.linkedin.com/in/oheneba-pm",
     publishDate: "2025-09-23",
     metaDescription:
       "Discover the best Finnish podcasts to boost your language learning. From easy Finnish news to finance, culture and language learning podcasts,  here’s how I used podcasts to reach fluency in one year.",
@@ -294,6 +297,7 @@ If you’re learning Finnish, pick at least one podcast today and just start lis
     title:
       "How I Learned Finnish Fast as an Adult Immigrant (and Why I Started a Language Learning Podcast)",
     author: `Oheneba "Ohe" Poku-Marboah`,
+    authorUrl: "https://www.linkedin.com/in/oheneba-pm",
     publishDate: "2025-07-05",
     metaDescription:
       "Discover how I pretended not to speak English for a year to learn Finnish fast as an adult immigrant, and why I started a language learning podcast to share strategies and fluency stories.",
