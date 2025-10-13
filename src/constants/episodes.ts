@@ -17,6 +17,35 @@ export const filterTags = Object.values(FilterTags);
 
 export const episodes = [
   {
+    id: 9,
+    title: "009: This One Shift Made Me Fluent in Finnish",
+    description:
+      "In this episode, we explore the transformative power of embracing discomfort to achieve personal growth. Through heartfelt anecdotes and candid reflections, our guest reveals how pushing through initial unease can lead to newfound confidence and freedom. Learn why striving for perfection can actually hinder progress, and how allowing yourself to be imperfect can open doors to more meaningful interactions and self-discovery.",
+    tags: [
+      FilterTags.Student,
+      FilterTags.A1toC,
+      FilterTags.Immersion,
+      FilterTags.FastPaced,
+    ],
+    videoUrl: "https://youtu.be/D8NneGabhtw",
+    thumbnail: "/thumbnails/9_kseniia.jpg",
+    platforms: [
+      {
+        name: "Apple",
+        url: " https://podcasts.apple.com/fi/podcast/009-this-one-shift-made-me-fluent-in-finnish/id1820396129?i=1000731456332",
+      },
+
+      {
+        name: "Spotify",
+        url: "https://open.spotify.com/episode/28OenrBhyMzVPkvRSzNDsh?si=tnuWMK7SRweByQdAhwzjVw",
+      },
+      {
+        name: "YouTube",
+        url: "https://youtu.be/D8NneGabhtw",
+      },
+    ],
+  },
+  {
     id: 8,
     title: "008: From Hallway Listener to Fluent Finnish Speaker - Jojo Pratt",
     description:
