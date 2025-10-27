@@ -28,42 +28,23 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center md:text-left">
             <h1 className="text-4xl md:text-6xl font-bold mb-4">
-              Learn Finnish Efficiently
+              Learn Finnish: Less Effort and Real Results
             </h1>
             <div className="flex flex-col mb-8">
               <h2 className="text-xl md:text-2xl">
-                How to Learn Finnish Fluently as an Adult Immigrant
+                Is Finnish hard or you just don&apos;t know how to go about it?
+                I got you covered.
               </h2>
               <p className=" text-purple-100 max-w-3xl">
-                Documenting real success stories of adult Finnish learners and
-                sharing practical strategies to achieve fluency
+                These guys did it, so can you. Listen to their stories and learn
+                from their mistakes.
               </p>
             </div>
-
-            {/*             <div className="flex flex-col mt-4">
-              <h2 className="text-xl md:text-2xl mb-4">
-                This body of work needed to exist because
-              </h2>
-              <ul className="list-disc list-inside">
-                <li>
-                  If you have a goal, why not hear from how others have achieved
-                  it to help you out?
-                </li>
-                <li>
-                  Too many people don’t learn the Finnish language beyond what
-                  is required to get the passport (quite low), preventing them
-                  from reaching their potential.
-                </li>
-                <li>
-                  Finland is losing or under-utilising so many brilliant people
-                  due to language deficiency.
-                </li>
-                <li>
-                  Too many insanely talented people are missing opportunities in
-                  an amazing country like Finland.
-                </li>
-              </ul>
-            </div> */}
+            {/*   
+                Is Finnish hard or you just don&apos;t know how to go about it? I got you covered.
+                Is Finnish really hard or you just don&apos;t know anyone who managed to learn it as an adult.
+                Is Finnish actually hard or are you talking to people who have no idea what they are doing?
+             */}
           </div>
         </div>
       </section>

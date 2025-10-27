@@ -10,12 +10,38 @@ export enum FilterTags {
   Immersion = "Immersion method",
   FastPaced = "Fast-paced",
   //Introvert = "Introvert",
-
-  //
 }
 export const filterTags = Object.values(FilterTags);
 
 export const episodes = [
+  {
+    id: 10,
+    title: "010: The Moment I Stopped Resisting: Learning by Lifestyle - Hamed",
+    description:
+      "In this engaging discussion, Hamed, a 43-year-old software engineer originally from Iran, recounts his experiences adapting to life in Finland. Hamed shares his journey of learning Finnish, which was initially challenging due to his temporary mindset and resistance to the language. Eventually, his perspective shifted as he accepted Finland as his new home. Hamed highlights the role of making Finnish friends, listening to music, and immersing himself in Finnish culture as crucial to his language acquisition. He recounts specific experiences, such as working in a multicultural center, participating in language courses, and navigating daily interactions. Notably, he discusses how expressing emotions in Finnish significantly improved his fluency. Hamed emphasizes the importance of mindset, cultural immersion, and having fun in the process of learning a new language. His story provides valuable insights for anyone struggling to learn Finnish or integrate into a new culture.",
+    tags: [
+      FilterTags.A1toC,
+      FilterTags.Immersion,
+      FilterTags.FastPaced,
+      FilterTags.NonFinnishSpeakingPartner,
+    ],
+    videoUrl: "https://youtu.be/WEa0xp-74y8",
+    thumbnail: "/thumbnails/10_hamed.png",
+    platforms: [
+      {
+        name: "Apple",
+        url: "https://podcasts.apple.com/us/podcast/010-the-moment-i-stopped-resisting-learning-by/id1820396129?i=1000733651184",
+      },
+      {
+        name: "Spotify",
+        url: "https://open.spotify.com/episode/4dWL9ZGFLDFM4kb9SPUxgg?si=S2R6-lj-SIqpxaloFZNKCA",
+      },
+      {
+        name: "YouTube",
+        url: "https://youtu.be/WEa0xp-74y8",
+      },
+    ],
+  },
   {
     id: 9,
     title: "009: This One Shift Made Me Fluent in Finnish",
