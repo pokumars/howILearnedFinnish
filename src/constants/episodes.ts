@@ -164,7 +164,7 @@ export const episodes = [
       FilterTags.FastPaced,
     ],
     videoUrl: "https://youtu.be/V0jzUitkKL4?si=AEY553jX9wk0qV_W",
-    thumbnail: "/thumbnails/5_Deborah.jpg",
+    thumbnail: "/thumbnails/5_Deborah.png",
     platforms: [
       {
         name: "Apple",
