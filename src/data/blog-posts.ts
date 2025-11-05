@@ -12,6 +12,38 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "immigrants-pay-more-taxes-than-they-receive-benefits",
+    title:
+      "Immigrants Are Not a Burden: They Pay More Taxes than They Receive Benefits",
+    author: 'Oheneba "Ohe" Poku-Marboah',
+    authorUrl: "https://x.com/pokumars",
+    publishDate: "2025-11-05",
+    metaDescription:
+      "Immigrants Are Not a Burden, They Pay More Taxes than You Think",
+    excerpt:
+      "When the Helsinki Times reported that immigrants in Finland now pay more in taxes than they receive in benefits, it didn’t surprise me. A new study from Diaconia University of Applied Sciences found that foreign-language speakers contributed a net €225 million to public finances last year. It’s the first time national data has clearly shown that immigrants are, in fact, helping sustain the Finnish welfare system — not draining it.",
+    featuredImage: "/blog-immigrants-are-not-a-burden.png",
+    content: ` 
+# Immigrants Are Not a Burden — They’re Building Finland
+
+When the *[Helsinki Times](https://www.helsinkitimes.fi)* reported that immigrants in Finland now **pay more in taxes than they receive in benefits**, it didn’t surprise me. A new study from [Diakonia University of Applied Sciences](https://www.diak.fi) found that foreign-language speakers contributed a net **€225 million** to public finances last year. It’s the first time national data has clearly shown that immigrants are, in fact, helping sustain the Finnish welfare system; not draining it. (Read the full report [here](https://www.theseus.fi/handle/10024/899598)).
+
+But behind these numbers are thousands of individual stories — people who learned the language, built careers, and made Finland their permanent home. That’s exactly what I explore in this interview series *How I Learned Finnish*. In episode after episode, I meet immigrants who arrived with no Finnish, sometimes as refugees, and who now work, pay taxes, and speak the language at a high-level of fluency.
+
+One of them, **Jojo Pratt**, came from Ghana and spent his first year in a refugee camp. He learned Finnish by standing outside classrooms to listen and carrying a dictionary everywhere he went. Today he’s a nurse serving Finnish patients entirely in Finnish. His story, and many others like it, puts a human face on the numbers in this new report. [Check out his story here](https://www.howilearnedfinnish.fi/episode/8).
+
+Another example is my story In my case, I set out to get from B-level to C-level Dinnish fluency and achieved that goal in 1 year. 9 months after I started, I landed my first job that required me to work in Finnish - a consulting job in software development. [Check out how I did it here](https://www.howilearnedfinnish.fi/episode/2).
+
+The study’s authors said there’s been “a deliberate tendency to present immigrants in a negative light.” That’s why these real-life journeys matter. Language isn’t just a skill; it’s the bridge to full participation; to friendship, to work, and to belonging.
+
+Finland’s future workforce depends on immigrants, but real integration happens only when newcomers are seen — and see themselves — as contributors. The data now proves it. The stories have shown it all along.
+
+*Listen to these stories of integration and language mastery on* **How I Learned Finnish** — *available on [Spotify](https://open.spotify.com/show/266bYZrif8U0I1OJnOTTgU?si=bc6664cb5a2b4b51), [YouTube](https://www.youtube.com/@HowILearnedFinnish), and [Apple Podcasts](https://apple.co/4kEDw4K)*.
+I made this so that you can hear how they learned Finnish as adults and you can pick the methods that work best for you.
+`,
+  },
+
+  {
     slug: "deborah-laajanen-finnish-learning-journey",
     title: "Debi's Finnish Language Learning Journey: From A1 to C1-C2",
     author: 'Deborah "Debi" Laajanen',
@@ -164,7 +196,7 @@ I am convinced that at the height of this journey lies freedom, not from discipl
     slug: "best-finnish-podcasts-for-learning-the-language",
     title: "Best Finnish Podcasts for Learning the Language",
     author: `Oheneba "Ohe" Poku-Marboah`,
-    authorUrl: "https://www.linkedin.com/in/oheneba-pm",
+    authorUrl: "https://x.com/pokumars",
     publishDate: "2025-09-23",
     metaDescription:
       "Discover the best Finnish podcasts to boost your language learning. From easy Finnish news to finance, culture and language learning podcasts,  here’s how I used podcasts to reach fluency in one year.",
@@ -297,7 +329,7 @@ If you’re learning Finnish, pick at least one podcast today and just start lis
     title:
       "How I Learned Finnish Fast as an Adult Immigrant (and Why I Started a Language Learning Podcast)",
     author: `Oheneba "Ohe" Poku-Marboah`,
-    authorUrl: "https://www.linkedin.com/in/oheneba-pm",
+    authorUrl: "https://x.com/pokumars",
     publishDate: "2025-07-05",
     metaDescription:
       "Discover how I pretended not to speak English for a year to learn Finnish fast as an adult immigrant, and why I started a language learning podcast to share strategies and fluency stories.",
