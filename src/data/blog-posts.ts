@@ -26,7 +26,7 @@ export const blogPosts: BlogPost[] = [
     content: ` 
 # Immigrants Are Not a Burden — They’re Building Finland
 
-When the *[Helsinki Times](https://www.helsinkitimes.fi)* reported that immigrants in Finland now **pay more in taxes than they receive in benefits**, it didn’t surprise me. A new study from [Diakonia University of Applied Sciences](https://www.diak.fi) found that foreign-language speakers contributed a net **€225 million** to public finances last year. It’s the first time national data has clearly shown that immigrants are, in fact, helping sustain the Finnish welfare system; not draining it. (Read the full report [here](https://www.theseus.fi/handle/10024/899598)).
+When the *[Helsinki Times](https://www.helsinkitimes.fi/176-information/study/28175-study-immigrants-pay-more-in-taxes-than-they-receive-in-benefits.html)* reported that immigrants in Finland now **pay more in taxes than they receive in benefits**, it didn’t surprise me. A new study from [Diakonia University of Applied Sciences](https://www.diak.fi) found that foreign-language speakers contributed a net **€225 million** to public finances last year. It’s the first time national data has clearly shown that immigrants are, in fact, helping sustain the Finnish welfare system; not draining it. (Read the full report [here](https://www.theseus.fi/handle/10024/899598)).
 
 But behind these numbers are thousands of individual stories — people who learned the language, built careers, and made Finland their permanent home. That’s exactly what I explore in this interview series *How I Learned Finnish*. In episode after episode, I meet immigrants who arrived with no Finnish, sometimes as refugees, and who now work, pay taxes, and speak the language at a high-level of fluency.
 
