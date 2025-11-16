@@ -15,6 +15,35 @@ export const filterTags = Object.values(FilterTags);
 
 export const episodes = [
   {
+    id: 11,
+    title:
+      "011: How Immersion, Emotions, and 3,000 Words Made Matthias Fluent - Finnish Language Journey",
+    description:
+      "Starting even before he moved to Finland, Mathias discusses how he memorized 1000+ Finnish words from a vocabulary book and immersed himself in the language. He explains his methods, such as focusing on grammar, practicing speaking with native Finnish speakers, and integrating into Finnish culture through activities like joining choirs. Mathias also reveals unconventional approaches, including conducting psychotherapy in Finnish to deepen his emotional connection to the language. Despite many challenges and the onset of the COVID-19 pandemic, Mathias achieved fluency within a relatively short period by dedicating significant time and effort, employing both systematic and creative learning strategies. His story highlights the importance of persistence, immersion, and making use of emotions in the language learning process.",
+    tags: [
+      FilterTags.A1toC,
+      FilterTags.Immersion,
+      FilterTags.FastPaced,
+      FilterTags.Student,
+    ],
+    videoUrl: "https://youtu.be/k_eVInE7fHY",
+    thumbnail: "/thumbnails/matthias.png",
+    platforms: [
+      {
+        name: "Apple",
+        url: "https://podcasts.apple.com/fi/podcast/011-how-immersion-emotions-and-3-000-words-made/id1820396129?i=1000737004909",
+      },
+      {
+        name: "Spotify",
+        url: "https://open.spotify.com/episode/0IEzhNRXZNtos4taYUeNGG?si=D0fuTuiZSr25J725VgeXYA",
+      },
+      {
+        name: "YouTube",
+        url: "https://youtu.be/k_eVInE7fHY",
+      },
+    ],
+  },
+  {
     id: 10,
     title: "010: The Moment I Stopped Resisting: Learning by Lifestyle - Hamed",
     description:
