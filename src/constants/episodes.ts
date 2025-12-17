@@ -15,6 +15,34 @@ export const filterTags = Object.values(FilterTags);
 
 export const episodes = [
   {
+    id: 12,
+    title:
+      "012: Stand-Up Comedy as a Finnish Language Hack - with Jamie McDonald AKA HappeningFish",
+    description:
+      "In this episode of 'How I Learned Finnish with Ohe,' I interview Jamie McDonald, a 48-year-old standup comedian and artist, about his journey of learning Finnish. Jamie, who performs under the stage name 'Happening Fish,' discusses the challenges and motivations in learning a language spoken by only a few million people. He shares insights into his methods, from taking classes and integrating into Finnish society through family and social circles, to the unconventional approaches of performing standup and attending yoga classes. Jamie also reflects on the emotional hurdles, the importance of persistence, and the cultural immersion necessary for mastering Finnish.. He covers topics such as integrating into Finnish culture, overcoming language barriers in personal and professional settings, and the importance of stepping out of one’s comfort zone to truly master a new language. This episode is filled with humor, valuable insights, and encouragement for anyone looking to learn Finnish or navigate a new linguistic and cultural environment.",
+    tags: [
+      FilterTags.A1toC,
+      FilterTags.Immersion,
+      FilterTags.FinnishSpeakingPartner,
+    ],
+    videoUrl: "https://youtu.be/22kmIRFCfRA",
+    thumbnail: "/thumbnails/12_jamie.jpg",
+    platforms: [
+      {
+        name: "Apple",
+        url: "https://podcasts.apple.com/fi/podcast/012-stand-up-comedy-as-a-finnish-language-hack/id1820396129?i=1000740216154",
+      },
+      {
+        name: "Spotify",
+        url: "https://open.spotify.com/episode/1CYl1zf6HszJt9ZE93LNjg?si=D0fuTuiZSr25J725VgeXYA",
+      },
+      {
+        name: "YouTube",
+        url: "https://youtu.be/22kmIRFCfRA",
+      },
+    ],
+  },
+  {
     id: 11,
     title:
       "011: How Immersion, Emotions, and 3,000 Words Made Matthias Fluent - Finnish Language Journey",
