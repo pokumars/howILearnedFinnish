@@ -17,7 +17,7 @@ export const blogPosts: BlogPost[] = [
       "Finnish Language Requirements for Citizenship - What You Actually Need to Know",
     author: 'Oheneba "Ohe" Poku-Marboah',
     authorUrl: "https://x.com/pokumars",
-    publishDate: "2025-01-15",
+    publishDate: "2026-01-12",
     metaDescription:
       "Learn about Finnish language requirements for citizenship: YKI test levels, accepted combinations, alternative certificates, and practical advice for immigrants applying for Finnish citizenship.",
     excerpt:
