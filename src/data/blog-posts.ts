@@ -57,8 +57,8 @@ This approach ensures that you can both **produce and understand** Finnish at a 
 Intermediate-level Finnish (YKI 3) generally means you can:
 
 - Understand everyday Finnish speech and texts on familiar topics,
-- Participate in basic conversations,
-- Write clear, simple texts related to daily life or work. ([learnfinnished.com][4])
+- [Participate in basic conversations](/episode/4),
+- [Write clear, simple texts](/blog/deborah-laajanen-finnish-learning-journey) related to daily life or work. ([learnfinnished.com][4])
 
 It doesn't require _native-like fluency_ — you're not expected to speak perfectly. But you _do_ need enough capability to navigate common situations without translation. ([InfoFinland][2])
 
@@ -84,7 +84,7 @@ The key point is that whatever certificate you present must be officially accept
 
 ### **When Should You Take the Test?**
 
-Preparing for the YKI test takes significant time and practice, especially if your goal is _real communicative ability_ rather than simply passing an exam. Many applicants wait until they're already working, studying, or socialising regularly in Finnish environments where they can practice functional language before taking the test. ([Opetushallitus][6])
+Preparing for the YKI test takes [significant time and practice](/episode/8), especially if your goal is [_real communicative ability_](/episode/2) rather than simply passing an exam. Many applicants wait until they're already [working, studying, or socialising regularly](/episode/7) in Finnish environments where they can practice functional language before taking the test. ([Opetushallitus][6])
 
 Also bear in mind that test registrations and results schedules are set months in advance, so plan early if citizenship timing matters to you. ([Opetushallitus][6])
 
@@ -92,9 +92,9 @@ Also bear in mind that test registrations and results schedules are set months i
 
 ### **Citizenship Isn't Just About Passing a Test**
 
-It's crucial to recognise that _passing an exam_ and _being able to live comfortably in Finnish_ are not the same thing.
+It's crucial to recognise that _passing an exam_ and [_being able to live comfortably in Finnish_](/episode/10) are not the same thing.
 
-Many applicants study to pass YKI without gaining the level of fluency needed for daily life; jobs, networking, or meaningful social engagement. That's why so many learners find themselves hitting a plateau _after_ they've passed YKI: they have the certificate but still struggle with real conversation. Your language journey shouldn't stop with a piece of paper; it should prepare you for life here.
+Many applicants study to pass YKI without gaining the level of fluency needed for daily life; jobs, networking, or meaningful social engagement. That's why so many learners find themselves [hitting a plateau](/episode/9) _after_ they've passed YKI: they have the certificate but still struggle with real conversation. Your language journey shouldn't stop with a piece of paper; [it should prepare you for life here](/blog/deborah-laajanen-finnish-learning-journey).
 
 ---
 
