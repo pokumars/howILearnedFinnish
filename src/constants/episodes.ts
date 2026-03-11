@@ -15,6 +15,34 @@ export const filterTags = Object.values(FilterTags);
 
 export const episodes = [
   {
+    id: 13,
+    title:
+      "013: Living Fully in Finland (Not Just Surviving) - Learning Finnish with Chloe Järvinen",
+    description:
+      "In this episode, I sit down with Chloe Järvinen, a UK-born project manager in the social field who moved to Finland in 2015 after a music-inspired trip unexpectedly changed her life. What began as a fascination with Finnish rock led to marriage, relocation, and ultimately a deep commitment to learning the language. Chloe explains why mastering Finnish became non-negotiable for her independence and sense of belonging. She shares what genuinely helped her progress, what completely missed the mark, and why some popular learning materials can actually demotivate learners without proper guidance—while offering practical alternatives that worked better for her. We dive into mindset shifts, rejecting the “Finnish is impossible” narrative, setting small tangible goals, leveraging passive exposure in daily life, and navigating serious setbacks without giving up. This conversation isn’t just about learning a language. It’s about building a life—and how Finnish expanded Chloe’s confidence, career opportunities, and connection to the society around her.",
+    tags: [
+      FilterTags.A1toC,
+      FilterTags.Immersion,
+      FilterTags.FinnishSpeakingPartner,
+    ],
+    videoUrl: "https://youtu.be/51uR_HiQnMo?si=RYrVsj0T1Yw54Gkm",
+    thumbnail: "/thumbnails/13_chloe.png",
+    platforms: [
+      {
+        name: "Apple",
+        url: "https://podcasts.apple.com/fi/podcast/013-living-fully-in-finland-not-just-surviving-learning/id1820396129?i=1000751324121",
+      },
+      {
+        name: "Spotify",
+        url: "https://open.spotify.com/episode/4Z9KoXEkPEZgWvLWCzLeJ4?si=Ra59oQy4TzWIiB4hNbqaWw",
+      },
+      {
+        name: "YouTube",
+        url: "https://youtu.be/51uR_HiQnMo?si=RYrVsj0T1Yw54Gkm",
+      },
+    ],
+  },
+  {
     id: 12,
     title:
       "012: Stand-Up Comedy as a Finnish Language Hack - with Jamie McDonald AKA HappeningFish",
