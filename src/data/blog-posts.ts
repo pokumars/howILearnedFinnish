@@ -21,9 +21,7 @@ export const blogPosts: BlogPost[] = [
       'How I learned Finnish fast by "pretending not to speak English" for a year—using an English-only Thursdays rule, plus a simple six-part system for vocabulary, speaking, listening, grammar, reading, and writing.',
     excerpt:
       'I told my Finnish-speaking girlfriend: "We will only speak English on Thursdays." What followed was a year of deliberate discomfort—pretending not to speak English—until I landed a job that required Finnish. Here is the system I used.',
-    content: `# **HOW TO LEARN FINNISH: TOLD MY EX-GF "ENGLISH ONLY ON THURSDAYS"**
-
-I was stubborn. I had to be.
+    content: `I was stubborn. I had to be.
 
 I told my girlfriend at the time, who was fluent in Finnish, **"We will only speak English on Thursdays."**
 
@@ -67,6 +65,10 @@ Mind you, at this time I had already passed the YKI test in 2019 with 4, 4, 4 an
 
 So around January 1st, 2022, I decided to post on all my social media channels — Facebook, LinkedIn, Instagram — that if anyone speaks Finnish, for the year of 2022, we will only be speaking Finnish for the year.
 
+![My LinkedIn announcement: Finnish for 2022](/blog-finnish-for-1-year-linkedin.png)
+
+![The same announcement reposted on Instagram Stories](/blog-finnish-for-1-year-ig-story.png)
+
 What followed was a year of me essentially pretending not to speak English for a year in order to force the improvement of my Finnish.
 
 I broke the parts down into 6 and made sure to get in some reps in all of the different parts of knowing a language.
@@ -100,6 +102,161 @@ It is important to note that having a partner who speaks Finnish is not necessar
 [Magdalene](/episode/7) also did not have a Finnish-speaking partner and she found herself in a very high position in the municipal healthcare hierarchy that absolutely requires Finnish.
 
 That is why I have made the homepage of this project such that you can filter for the interviews where people have similar situations to what you have in your life.`,
+  },
+  {
+    slug: "not-fluent-after-yki",
+    title: "Not Fluent After YKI? Why It Happens (and How to Fix It)",
+    author: 'Oheneba "Ohe" Poku-Marboah',
+    authorUrl: "https://x.com/pokumars",
+    publishDate: "2026-03-11",
+    metaDescription:
+      "Passed the Finnish YKI test but still don’t feel fluent? Learn why YKI-level Finnish doesn’t automatically translate to real conversation—and how to close the gap with a practical 6-skill system.",
+    excerpt:
+      "If you passed YKI but still struggle with real conversations, you’re not alone. Here’s why the gap happens—and a practical 6-skill plan (vocab, speaking, listening, grammar, reading, writing) to finally become fluent.",
+    content: `Passing the YKI can feel like “I did it.” You proved you can function in Finnish, you can handle official requirements, and on paper everything looks good.
+
+Then real life happens.
+
+You’re in a meeting and can’t jump in fast enough. You can’t tell a story without getting lost halfway. You understand headlines but not casual speech. You can survive Finnish—but you can’t *live* in it.
+
+If that’s you, you’re not broken. You just trained for the wrong target.
+
+This article explains **why YKI success doesn’t automatically create fluency**, and gives you a practical system to close the gap.
+
+---
+
+## **YKI Finnish ≠ life Finnish**
+
+YKI is a test of language ability under controlled conditions. Real Finnish is messy:
+
+- People interrupt
+- Topics shift fast
+- *Puhekieli* compresses words
+- Humor and emotion change the vocabulary
+- You need speed more than correctness
+
+That’s why many learners plateau *after* the exam. They practiced “performance Finnish,” not “relationship Finnish.”
+
+If your goal is citizenship logistics, start here:
+
+- [Finnish Language Requirements for Citizenship](/blog/finnish-language-requirements-for-citizenship)
+- [Is YKI the Easiest Path to Finnish Citizenship?](/blog/is-yki-easiest-path-finnish-citizenship)
+
+This post is about what comes **after**.
+
+---
+
+## **The 6-skill fluency model (what you must train to become conversational)**
+
+Fluency isn’t one skill. It’s six. If even one is neglected, conversation feels fragile.
+
+### **1) Vocabulary (but from your life)**
+
+Fluency vocabulary isn’t “all Finnish.” It’s the words you repeatedly need for:
+
+- Your work
+- Your hobbies
+- Daily admin (healthcare, housing, school, banking)
+- Your personality (how you joke, complain, explain, disagree)
+
+**Fix:** build vocabulary from your real inputs (meetings, podcasts, news, your recurring situations). Keep example sentences simple enough to reuse.
+
+### **2) Speaking (the skill most YKI-passers under-train)**
+
+Many people can write a safe paragraph but can’t speak in real time.
+
+**Fix:** create unavoidable speaking reps. Even short reps count if they’re frequent.
+
+Want examples of engineered real-world reps? Erik’s episode is full of them:
+- [Why Duolingo Failed, Paying for 100 Lunches, and More (Erik)](/episode/4)
+
+### **3) Listening (the real bottleneck)**
+
+If you can’t parse Finnish quickly, you can’t respond quickly.
+
+**Fix:** daily listening that matches real life:
+
+- “Easy Finnish” + “native-speed Finnish”
+- Topics you actually care about (so you can predict context)
+
+If you want a ready-made method + list, start here:
+- [Best Finnish Podcasts for Learning the Language](/blog/best-finnish-podcasts-for-learning-the-language)
+
+### **4) Grammar (trained as a tool, not a hobby)**
+
+Grammar helps you avoid getting stuck mid-sentence. But doing only grammar creates the illusion of progress while speaking stays hard.
+
+**Fix:** do “minimum effective grammar” that immediately shows up in speech: the cases and structures you keep tripping over.
+
+### **5) Reading (cheap reps, massive payoff)**
+
+Reading builds speed, structures, and repeat exposure to words—without social pressure.
+
+**Fix:** read short, frequent, interest-based texts (sports, tech, politics, culture). Quantity beats perfection.
+
+### **6) Writing (the bridge between knowledge and speech)**
+
+Writing forces you to produce language without the time pressure of speaking—but with more precision than casual talk.
+
+**Fix:** one short weekly writing session:
+
+- A “mini-essay” about your week
+- A complaint you wish you could say smoothly
+- A story you want to be able to tell at work
+
+---
+
+## **What “real immersion” looks like (without needing a Finnish partner)**
+
+Immersion doesn’t have to mean quitting your job or marrying a Finn. In the interviews on this site, people reach high Finnish through **designed environments**:
+
+- Matthias (immersion + high word focus + integration habits): [episode 11](/episode/11)
+- Jamie / HappeningFish (performance + social integration): [episode 12](/episode/12)
+- Magdalene (belonging + persistence + professional rise): [episode 7](/episode/7)
+- Jojo (relentless creative methods + mindset): [episode 8](/episode/8)
+- Deborah (clear goal pressure + disciplined resources): [episode 5](/episode/5)
+
+Common thread: they didn’t wait to “feel ready.” They created systems that produced reps.
+
+---
+
+## **A 30-day plan for “YKI-but-not-fluent” learners**
+
+### **Daily (30–60 minutes total)**
+
+- **Listening (20–30 min):** podcasts (mix easy + native)
+- **Vocabulary (10 min):** 5–10 useful words from today’s input
+
+### **3x/week (20–40 min)**
+
+- **Speaking reps:** one intentional conversation (or hobby group / lunch / call)
+
+### **2x/week (30–45 min)**
+
+- **Grammar drills:** exercises that unblock your most common mistakes
+
+### **2x/week (15–30 min)**
+
+- **Reading:** one article about something you already follow
+
+### **1x/week (20–40 min)**
+
+- **Writing:** one story/opinion you want to be able to say out loud
+
+Do this for 30 days and you’ll feel a specific change: **faster comprehension + less “blanking out” when you speak.**
+
+---
+
+## **The goal: Finnish that changes your life (not just your paperwork)**
+
+YKI is a valid milestone. But if you want Finnish that unlocks:
+
+- Career surface area (networking, visibility, promotions)
+- Friendships that don’t default to English
+- The ability to be funny, persuasive, and relaxed
+
+…you need reps across all six skills, every week, for long enough that Finnish becomes normal.
+`,
   },
   {
     slug: "is-yki-easiest-path-finnish-citizenship",
