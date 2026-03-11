@@ -12,6 +12,96 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "how-to-learn-finnish-english-only-thursdays",
+    title: 'How to Learn Finnish: Told My Ex-GF "English Only on Thursdays"',
+    author: 'Oheneba "Ohe" Poku-Marboah',
+    authorUrl: "https://x.com/pokumars",
+    publishDate: "2026-03-11",
+    metaDescription:
+      'How I learned Finnish fast by "pretending not to speak English" for a year—using an English-only Thursdays rule, plus a simple six-part system for vocabulary, speaking, listening, grammar, reading, and writing.',
+    excerpt:
+      'I told my Finnish-speaking girlfriend: "We will only speak English on Thursdays." What followed was a year of deliberate discomfort—pretending not to speak English—until I landed a job that required Finnish. Here is the system I used.',
+    content: `# **HOW TO LEARN FINNISH: TOLD MY EX-GF "ENGLISH ONLY ON THURSDAYS"**
+
+I was stubborn. I had to be.
+
+I told my girlfriend at the time, who was fluent in Finnish, **"We will only speak English on Thursdays."**
+
+Before I get into that story, there are many ways to go about learning Finnish. If you want to reach high-level fluency, I have collected a number of interviews on how [myself](/episode/2) and some other people have managed to successfully achieve that goal.
+
+They are available as videos on [YouTube](https://www.youtube.com/@HowILearnedFinnish) and also in podcast form on [Spotify](https://open.spotify.com/show/266bYZrif8U0I1OJnOTTgU), [Apple podcasts](https://podcasts.apple.com/us/podcast/how-i-learned-finnish-with-ohe/id1820396129) and other podcast platforms.
+
+When I say high level, I don't mean just the YKI-passing level to get citizenship.
+
+I am talking about:
+
+- being able to [write your thesis in Finnish](/episode/11) like Matthias did
+- get on [stage and perform comedy in Finnish](/episode/12) like theHappeningFish
+- become the [deputy municipal director of a health care zone](/episode/7) like Magdalene
+- get into [Finnish law school within 3 years of arriving in Finland](/episode/5) like Deborah
+- studying in [Finnish to become a therapist](/episode/13) like Chloe
+
+I got the idea to do these interviews because I realised that my way of learning was quite unsuitable for many people due to how much you have to get out of your social comfort zone.
+
+Also, when people would ask me how I accomplished the goal, I would tell them and they would have some excuse of, "well you were able to do it because..." you are young, or you didn't have any kids or some other excuse.
+
+So I thought: surely, I am not the only one who has managed to achieve this level of Finnish as an adult. Let me find the others who have achieved this goal and then ask them how they did — because their styles may be more suitable for other people.
+
+That is why I have consciously made the website for this project so that you can filter based on life circumstances to see whose life matches yours more — student? with kids? without kids? with a Finnish-speaking partner? without a Finnish-speaking partner?
+
+## **MY STORY**
+
+Step 1: Be me.
+
+It's 2021. I'm 23 years old, writing my bachelor's thesis and I've landed a job in my industry as a software developer in a neo-bank.
+
+You look around you and realise that the next thing is career progression and figuring out how to thrive in this life.
+
+But... BIG BUT: you live in Finland and barely speak the local language.
+
+Notice that all the higher ups in your workplace have 1 common denominator: **fluent Finnish**. So you will need that if you want to network (+ work) your way into a promotion. Career progression often happens because someone likes you, and your surface area for luck decreases a lot if you can't engage with the relevant parties.
+
+Notice that you can't connect with strangers on the streets or make a joke to the cashier in the grocery store. You can't organically communicate and show your full self.
+
+Mind you, at this time I had already passed the YKI test in 2019 with 4, 4, 4 and 3. But I remain dissatisfied with the lack of meaningful conversational skill in Finnish. (I [made a video](https://www.youtube.com/shorts/hWEKmqgrlc4) about the difference between passing YKI and fluency.)
+
+So around January 1st, 2022, I decided to post on all my social media channels — Facebook, LinkedIn, Instagram — that if anyone speaks Finnish, for the year of 2022, we will only be speaking Finnish for the year.
+
+What followed was a year of me essentially pretending not to speak English for a year in order to force the improvement of my Finnish.
+
+I broke the parts down into 6 and made sure to get in some reps in all of the different parts of knowing a language.
+
+1. **Vocabulary:** I write down new words, their definitions and simple enough example sentences in Quizlet.
+
+2. **Speaking:** I speak Finnish if the person I'm interacting with knows Finnish.
+
+3. **Listening comprehension:** The speaking part applies here and also [listening to podcasts](/blog/best-finnish-podcasts-for-learning-the-language), preferably on subjects that already interest me.
+
+4. **Grammar:** I went through the Suomen Mestari books just doing exercises.
+
+5. **Reading comprehension:** I read a lot of articles on subjects that interested me like football and Formula 1 and a few books. I get new vocabulary from them.
+
+6. **Writing:** I didn't write nearly as much as I had hoped partially due to feeling lazy but occasionally in my library sessions I would think of a subject and write down things in my notebook. I didn't really have anyone to check for the correctness of my written texts and I didn't want to burden my ex with this so I just wrote and hoped for the best.
+
+Some of the reps were done in conversation with others, some involved me going to the library (Maunula library and Oodi) on weekends and free time to fulfill, and some — like podcasts — were done while I cooked or cleaned or did chores.
+
+My journey required being stubborn. I had known some of my friends for many years by then and our default language was English, so the switch was really hard with some.
+
+In fact, I won't say I was achieving 100% pretense of not speaking English. I was probably around 70% consistent with that.
+
+But guess what... in September of that year, I landed a job in a consulting role that required Finnish.
+
+## **NO FINNISH-SPEAKING PARTNER?**
+
+It is important to note that having a partner who speaks Finnish is not necessary to achieve this goal. That is again one of the reasons why I created this project.
+
+[Matthias](/episode/11) who wrote the medical school exams in Finnish 18 months after arrival in Finland and also wrote his bachelor's thesis in Finnish a few years later did not have a Finnish-speaking partner.
+
+[Magdalene](/episode/7) also did not have a Finnish-speaking partner and she found herself in a very high position in the municipal healthcare hierarchy that absolutely requires Finnish.
+
+That is why I have made the homepage of this project such that you can filter for the interviews where people have similar situations to what you have in your life.`,
+  },
+  {
     slug: "is-yki-easiest-path-finnish-citizenship",
     title: "Is YKI the Easiest Path to Finnish Citizenship?",
     author: 'Oheneba "Ohe" Poku-Marboah',
