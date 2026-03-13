@@ -43,5 +43,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
-  return [...staticPages, ...episodePages, ...blogPages];
+  // Guest pages
+  const guestPages = episodes
+    .filter((e) => e.guest)
+    .map((e) => ({
+      url: `${baseUrl}/guests/${e.guest!.slug}`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
+    }));
+
+  return [...staticPages, ...episodePages, ...blogPages, ...guestPages];
 }

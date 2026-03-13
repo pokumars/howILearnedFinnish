@@ -1,3 +1,15 @@
+export interface Guest {
+  name: string;
+  slug: string;
+  age: number;
+  profession: string;
+  from?: string;
+  movedToFinland?: number;
+  bio: string;
+  currentLevel?: string;
+  socialUrl?: string;
+}
+
 export enum FilterTags {
   AllEpisodes = "All",
   Parent = "Parent",
@@ -17,9 +29,19 @@ export const episodes = [
   {
     id: 13,
     title:
-      "013: Living Fully in Finland (Not Just Surviving) - Learning Finnish with Chloe Järvinen",
+      “013: Living Fully in Finland (Not Just Surviving) - Learning Finnish with Chloe Järvinen”,
     description:
-      "In this episode, I sit down with Chloe Järvinen, a UK-born project manager in the social field who moved to Finland in 2015 after a music-inspired trip unexpectedly changed her life. What began as a fascination with Finnish rock led to marriage, relocation, and ultimately a deep commitment to learning the language. Chloe explains why mastering Finnish became non-negotiable for her independence and sense of belonging. She shares what genuinely helped her progress, what completely missed the mark, and why some popular learning materials can actually demotivate learners without proper guidance—while offering practical alternatives that worked better for her. We dive into mindset shifts, rejecting the “Finnish is impossible” narrative, setting small tangible goals, leveraging passive exposure in daily life, and navigating serious setbacks without giving up. This conversation isn’t just about learning a language. It’s about building a life—and how Finnish expanded Chloe’s confidence, career opportunities, and connection to the society around her.",
+      “In this episode, I sit down with Chloe Järvinen, a UK-born project manager in the social field who moved to Finland in 2015 after a music-inspired trip unexpectedly changed her life. What began as a fascination with Finnish rock led to marriage, relocation, and ultimately a deep commitment to learning the language. Chloe explains why mastering Finnish became non-negotiable for her independence and sense of belonging. She shares what genuinely helped her progress, what completely missed the mark, and why some popular learning materials can actually demotivate learners without proper guidance—while offering practical alternatives that worked better for her. We dive into mindset shifts, rejecting the “Finnish is impossible” narrative, setting small tangible goals, leveraging passive exposure in daily life, and navigating serious setbacks without giving up. This conversation isn’t just about learning a language. It’s about building a life—and how Finnish expanded Chloe’s confidence, career opportunities, and connection to the society around her.”,
+    guest: {
+      name: “Chloe Järvinen”,
+      slug: “chloe-jarvinen”,
+      age: 39,
+      profession: “Project Manager”,
+      from: “United Kingdom”,
+      movedToFinland: 2015,
+      currentLevel: “C1”,
+      bio: “Chloe moved to Finland from the UK in October 2015 after a weekend trip to see Finnish rock music turned into something far bigger. At a Helsinki gig she met the man who would become her husband, and within two months she had relocated and married. Ten years on, she works as a project manager in the social field — in Finnish. Her learning journey is defined by rejecting the ‘Finnish is impossible’ narrative, setting small tangible goals, and weaving the language into everyday life rather than waiting for some distant moment of perfection.”,
+    },
     tags: [
       FilterTags.A1toC,
       FilterTags.Immersion,
@@ -47,7 +69,15 @@ export const episodes = [
     title:
       "012: Stand-Up Comedy as a Finnish Language Hack - with Jamie McDonald AKA HappeningFish",
     description:
-      "In this episode of 'How I Learned Finnish with Ohe,' I interview Jamie McDonald, a 48-year-old standup comedian and artist, about his journey of learning Finnish. Jamie, who performs under the stage name 'Happening Fish,' discusses the challenges and motivations in learning a language spoken by only a few million people. He shares insights into his methods, from taking classes and integrating into Finnish society through family and social circles, to the unconventional approaches of performing standup and attending yoga classes. Jamie also reflects on the emotional hurdles, the importance of persistence, and the cultural immersion necessary for mastering Finnish.. He covers topics such as integrating into Finnish culture, overcoming language barriers in personal and professional settings, and the importance of stepping out of one’s comfort zone to truly master a new language. This episode is filled with humor, valuable insights, and encouragement for anyone looking to learn Finnish or navigate a new linguistic and cultural environment.",
+      "In this episode of ‘How I Learned Finnish with Ohe,’ I interview Jamie McDonald, a 48-year-old standup comedian and artist, about his journey of learning Finnish. Jamie, who performs under the stage name ‘Happening Fish,’ discusses the challenges and motivations in learning a language spoken by only a few million people. He shares insights into his methods, from taking classes and integrating into Finnish society through family and social circles, to the unconventional approaches of performing standup and attending yoga classes. Jamie also reflects on the emotional hurdles, the importance of persistence, and the cultural immersion necessary for mastering Finnish.. He covers topics such as integrating into Finnish culture, overcoming language barriers in personal and professional settings, and the importance of stepping out of one’s comfort zone to truly master a new language. This episode is filled with humor, valuable insights, and encouragement for anyone looking to learn Finnish or navigate a new linguistic and cultural environment.",
+    guest: {
+      name: "Jamie McDonald",
+      slug: "jamie-mcdonald",
+      age: 48,
+      profession: "Standup Comedian & Artist",
+      bio: "Jamie McDonald — known online as HappeningFish — is a standup comedian and artist living in Finland. He took one of the most unconventional routes to Finnish fluency: getting on stage and performing comedy in a language he was still acquiring. Alongside his Finnish-speaking household and daily cultural immersion, Jamie used yoga classes, social circles, and the pressure of making Finnish audiences laugh as his classroom. He is one of the most honest voices on why you have to find a deeply personal reason to invest in a language that only a few million people speak.",
+      socialUrl: "https://www.youtube.com/@HappeningFish",
+    },
     tags: [
       FilterTags.A1toC,
       FilterTags.Immersion,
