@@ -2,6 +2,7 @@
   "permissions": {
     "allow": [
       "Skill(pseo-discovery)",
+      "Bash(git checkout:*)",
       "Bash(git add:*)"
     ]
   }
