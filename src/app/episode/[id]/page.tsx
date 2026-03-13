@@ -7,11 +7,72 @@ import Link from "next/link";
 import Image from "next/image";
 import { Metadata } from "next";
 import PillButton from "@/components/pillButton";
+import fs from "fs";
+import path from "path";
 
 interface EpisodePageProps {
   params: Promise<{
     id: string;
   }>;
+}
+
+interface TranscriptEntry {
+  timestamp: string;
+  seconds: number;
+  speaker: string;
+  text: string;
+}
+
+function toSeconds(ts: string): number {
+  const [h, m, s] = ts.split(":").map(Number);
+  return h * 3600 + m * 60 + s;
+}
+
+function parseTranscript(raw: string): TranscriptEntry[] {
+  const entries: TranscriptEntry[] = [];
+  const lines = raw.split("\n");
+  const speakerPattern = /^\[(\d{2}:\d{2}:\d{2})\] \*\*([^*]+)\*\*:?\s*(.*)/;
+  const inlineTimestamp = /\[\d{2}:\d{2}:\d{2}\]/g;
+  let current: TranscriptEntry | null = null;
+
+  for (const line of lines) {
+    if (line.startsWith("#")) continue;
+    const match = line.match(speakerPattern);
+    if (match) {
+      if (current && current.text) entries.push(current);
+      const [, ts, speaker, text] = match;
+      current = {
+        timestamp: ts,
+        seconds: toSeconds(ts),
+        speaker: speaker.trim(),
+        text: text.replace(inlineTimestamp, "").trim(),
+      };
+    } else if (current) {
+      const cleaned = line.replace(inlineTimestamp, "").trim();
+      if (cleaned) {
+        current.text += (current.text ? " " : "") + cleaned;
+      }
+    }
+  }
+  if (current && current.text) entries.push(current);
+  return entries;
+}
+
+function loadTranscript(episodeId: number): TranscriptEntry[] {
+  try {
+    const transcriptsDir = path.join(process.cwd(), "src/data/transcripts");
+    const paddedId = String(episodeId).padStart(3, "0");
+    const files = fs.readdirSync(transcriptsDir);
+    const transcriptFile = files.find((f) => f.startsWith(paddedId));
+    if (!transcriptFile) return [];
+    const raw = fs.readFileSync(
+      path.join(transcriptsDir, transcriptFile),
+      "utf-8"
+    );
+    return parseTranscript(raw);
+  } catch {
+    return [];
+  }
 }
 
 export async function generateMetadata({
@@ -45,7 +106,6 @@ export default async function EpisodePage({ params }: EpisodePageProps) {
     notFound();
   }
 
-  // Extract YouTube video ID from URL
   const getYouTubeVideoId = (url: string) => {
     const regex =
       /(?:youtube\.com\/watch\?v=|youtu\.be\/|youtube\.com\/embed\/)([^&\n?#]+)/;
@@ -54,6 +114,7 @@ export default async function EpisodePage({ params }: EpisodePageProps) {
   };
 
   const youtubeVideoId = getYouTubeVideoId(episode.videoUrl);
+  const transcriptEntries = loadTranscript(episode.id);
 
   return (
     <div className="min-h-screen bg-white">
@@ -87,7 +148,7 @@ export default async function EpisodePage({ params }: EpisodePageProps) {
               ))}
             </div>
 
-            {/* Platform Links - Moved to top for better mobile experience */}
+            {/* Platform Links */}
             <div className="mb-6">
               <h3 className="text-lg font-semibold text-gray-800 mb-3">
                 Listen on:
@@ -144,8 +205,6 @@ export default async function EpisodePage({ params }: EpisodePageProps) {
               <h2 className="text-2xl font-bold text-gray-800 mb-4">
                 Watch or Listen
               </h2>
-
-              {/* YouTube Embed */}
               {youtubeVideoId && (
                 <div className="mb-6">
                   <div className="relative w-full h-0 pb-[56.25%] rounded-lg overflow-hidden">
@@ -162,7 +221,7 @@ export default async function EpisodePage({ params }: EpisodePageProps) {
             </div>
           </div>
 
-          {/* Episode Description - Moved after video for better flow */}
+          {/* Episode Description */}
           <div className="mb-8">
             <h2 className="text-2xl font-bold text-gray-800 mb-4">
               About this episode
@@ -173,7 +232,7 @@ export default async function EpisodePage({ params }: EpisodePageProps) {
           </div>
 
           {/* Episode Thumbnail */}
-          <div className="text-center">
+          <div className="text-center mb-8">
             <Image
               src={episode.thumbnail}
               alt={episode.title}
@@ -182,6 +241,61 @@ export default async function EpisodePage({ params }: EpisodePageProps) {
               className="mx-auto rounded-lg shadow-lg"
             />
           </div>
+
+          {/* Transcript */}
+          {transcriptEntries.length > 0 && (
+            <div className="mb-8">
+              <details className="group border border-gray-200 rounded-lg overflow-hidden">
+                <summary className="cursor-pointer list-none flex items-center justify-between px-6 py-4 bg-gray-50 hover:bg-gray-100 transition-colors duration-200">
+                  <h2 className="text-2xl font-bold text-gray-800">
+                    Transcript
+                  </h2>
+                  <span className="text-sm font-medium text-purple-600">
+                    <span className="group-open:hidden">Show transcript</span>
+                    <span className="hidden group-open:inline">
+                      Hide transcript
+                    </span>
+                  </span>
+                </summary>
+                <div className="divide-y divide-gray-100 max-h-[70vh] overflow-y-auto">
+                  {transcriptEntries.map((entry, i) => (
+                    <div key={i} className="flex gap-4 px-6 py-3">
+                      <div className="flex-shrink-0 w-20 pt-1">
+                        {youtubeVideoId ? (
+                          <a
+                            href={`https://www.youtube.com/watch?v=${youtubeVideoId}&t=${entry.seconds}`}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-xs font-mono text-purple-500 hover:text-purple-700 hover:underline"
+                          >
+                            {entry.timestamp}
+                          </a>
+                        ) : (
+                          <span className="text-xs font-mono text-gray-400">
+                            {entry.timestamp}
+                          </span>
+                        )}
+                      </div>
+                      <div className="flex-1 min-w-0">
+                        <span
+                          className={`text-xs font-semibold uppercase tracking-wide ${
+                            entry.speaker === "Oheneba"
+                              ? "text-gray-400"
+                              : "text-purple-600"
+                          }`}
+                        >
+                          {entry.speaker}
+                        </span>
+                        <p className="text-sm text-gray-700 leading-relaxed mt-0.5">
+                          {entry.text}
+                        </p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </details>
+            </div>
+          )}
         </div>
       </section>
 
