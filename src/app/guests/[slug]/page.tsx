@@ -90,13 +90,16 @@ export default async function GuestPage({ params }: GuestPageProps) {
             </a>
           )}
 
-          {/* Their episode */}
-          <div>
-            <h2 className="text-2xl font-bold text-gray-800 mb-4">
-              Episode featuring {guest.name.split(" ")[0]}
-            </h2>
-            <EpisodeCard episode={episode} />
-          </div>
+        </div>
+      </section>
+
+      {/* Their episode */}
+      <section className="pb-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl font-bold text-gray-800 mb-4">
+            Episode featuring {guest.name.split(" ")[0]}
+          </h2>
+          <EpisodeCard episode={episode} />
         </div>
       </section>
 
