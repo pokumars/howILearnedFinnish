@@ -29,18 +29,18 @@ export const episodes = [
   {
     id: 13,
     title:
-      “013: Living Fully in Finland (Not Just Surviving) - Learning Finnish with Chloe Järvinen”,
+      "013: Living Fully in Finland (Not Just Surviving) - Learning Finnish with Chloe Järvinen",
     description:
-      “In this episode, I sit down with Chloe Järvinen, a UK-born project manager in the social field who moved to Finland in 2015 after a music-inspired trip unexpectedly changed her life. What began as a fascination with Finnish rock led to marriage, relocation, and ultimately a deep commitment to learning the language. Chloe explains why mastering Finnish became non-negotiable for her independence and sense of belonging. She shares what genuinely helped her progress, what completely missed the mark, and why some popular learning materials can actually demotivate learners without proper guidance—while offering practical alternatives that worked better for her. We dive into mindset shifts, rejecting the “Finnish is impossible” narrative, setting small tangible goals, leveraging passive exposure in daily life, and navigating serious setbacks without giving up. This conversation isn’t just about learning a language. It’s about building a life—and how Finnish expanded Chloe’s confidence, career opportunities, and connection to the society around her.”,
+      "In this episode, I sit down with Chloe Järvinen, a UK-born project manager in the social field who moved to Finland in 2015 after a music-inspired trip unexpectedly changed her life. What began as a fascination with Finnish rock led to marriage, relocation, and ultimately a deep commitment to learning the language. Chloe explains why mastering Finnish became non-negotiable for her independence and sense of belonging. She shares what genuinely helped her progress, what completely missed the mark, and why some popular learning materials can actually demotivate learners without proper guidance—while offering practical alternatives that worked better for her. We dive into mindset shifts, rejecting the 'Finnish is impossible' narrative, setting small tangible goals, leveraging passive exposure in daily life, and navigating serious setbacks without giving up. This conversation isn’t just about learning a language. It’s about building a life—and how Finnish expanded Chloe’s confidence, career opportunities, and connection to the society around her.",
     guest: {
-      name: “Chloe Järvinen”,
-      slug: “chloe-jarvinen”,
+      name: "Chloe Järvinen",
+      slug: "chloe-jarvinen",
       age: 39,
-      profession: “Project Manager”,
-      from: “United Kingdom”,
+      profession: "Project Manager",
+      from: "United Kingdom",
       movedToFinland: 2015,
-      currentLevel: “C1”,
-      bio: “Chloe moved to Finland from the UK in October 2015 after a weekend trip to see Finnish rock music turned into something far bigger. At a Helsinki gig she met the man who would become her husband, and within two months she had relocated and married. Ten years on, she works as a project manager in the social field — in Finnish. Her learning journey is defined by rejecting the ‘Finnish is impossible’ narrative, setting small tangible goals, and weaving the language into everyday life rather than waiting for some distant moment of perfection.”,
+      currentLevel: "C1",
+      bio: "Chloe moved to Finland from the UK in October 2015 after a weekend trip to see Finnish rock music turned into something far bigger. At a Helsinki gig she met the man who would become her husband, and within two months she had relocated and married. Ten years on, she works as a project manager in the social field — in Finnish. Her learning journey is defined by rejecting the ‘Finnish is impossible’ narrative, setting small tangible goals, and weaving the language into everyday life rather than waiting for some distant moment of perfection.",
     },
     tags: [
       FilterTags.A1toC,
