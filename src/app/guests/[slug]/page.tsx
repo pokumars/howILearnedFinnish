@@ -4,9 +4,8 @@ import Footer from "@/components/Footer";
 import { episodes } from "@/constants/episodes";
 import { ArrowLeft, ExternalLink } from "lucide-react";
 import Link from "next/link";
-import Image from "next/image";
 import { Metadata } from "next";
-import PillButton from "@/components/pillButton";
+import EpisodeCard from "@/components/EpisodeCard";
 
 interface GuestPageProps {
   params: Promise<{ slug: string }>;
@@ -96,54 +95,7 @@ export default async function GuestPage({ params }: GuestPageProps) {
             <h2 className="text-2xl font-bold text-gray-800 mb-4">
               Episode featuring {guest.name.split(" ")[0]}
             </h2>
-            <div className="border border-gray-200 rounded-lg overflow-hidden hover:border-purple-300 hover:shadow-md transition-all duration-200">
-              <div className="flex flex-col md:flex-row">
-                <div className="md:w-2/5">
-                  <Link href={`/episode/${episode.id}`} className="block">
-                    <Image
-                      src={episode.thumbnail}
-                      alt={episode.title}
-                      width={400}
-                      height={225}
-                      className="w-full h-full object-cover"
-                    />
-                  </Link>
-                </div>
-                <div className="md:w-3/5 p-6">
-                  <Link href={`/episode/${episode.id}`}>
-                    <h3 className="text-xl font-bold text-gray-800 hover:text-purple-600 transition-colors mb-3">
-                      {episode.title}
-                    </h3>
-                  </Link>
-                  <p className="text-gray-600 text-sm line-clamp-3 mb-4">
-                    {episode.description}
-                  </p>
-                  <div className="flex flex-wrap gap-2 mb-4">
-                    {episode.tags.map((tag) => (
-                      <PillButton
-                        key={tag}
-                        text={tag}
-                        activated={false}
-                      />
-                    ))}
-                  </div>
-                  <div className="flex flex-wrap gap-3">
-                    {episode.platforms.map((platform) => (
-                      <a
-                        key={platform.name}
-                        href={platform.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex items-center gap-1.5 bg-purple-50 px-3 py-1.5 rounded-lg border border-purple-200 hover:bg-purple-100 transition-colors text-sm font-medium text-gray-700"
-                      >
-                        {platform.name}
-                        <ExternalLink className="w-3 h-3 text-gray-400" />
-                      </a>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            </div>
+            <EpisodeCard episode={episode} />
           </div>
         </div>
       </section>
