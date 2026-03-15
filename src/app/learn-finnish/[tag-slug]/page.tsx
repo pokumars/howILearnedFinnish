@@ -64,7 +64,16 @@ export default async function TagHubPage({ params }: TagHubPageProps) {
           <p className="text-lg text-gray-600 max-w-3xl leading-relaxed">
             {tag.intro}
           </p>
-          <p className="mt-4 text-sm text-gray-400">
+          {tag.body && (
+            <div className="mt-6 max-w-3xl space-y-4">
+              {tag.body.map((paragraph, i) => (
+                <p key={i} className="text-gray-700 leading-relaxed">
+                  {paragraph}
+                </p>
+              ))}
+            </div>
+          )}
+          <p className="mt-6 text-sm text-gray-400">
             {tagEpisodes.length} episode{tagEpisodes.length !== 1 ? "s" : ""}
           </p>
         </div>

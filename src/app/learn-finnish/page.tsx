@@ -23,7 +23,7 @@ export default function LearnFinnishPage() {
           </h1>
           <p className="text-lg text-gray-600 max-w-2xl">
             Find guests whose situation matches yours — your life circumstances,
-            learning method, or language level. Real stories, not textbooks.
+            learning method, or language level. Relatable methods of learning, not a one-size-fits-all approach.
           </p>
         </div>
       </section>
