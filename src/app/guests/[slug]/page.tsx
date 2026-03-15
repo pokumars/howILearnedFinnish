@@ -65,11 +65,6 @@ export default async function GuestPage({ params }: GuestPageProps) {
                   : ""}
               </p>
             </div>
-            {guest.currentLevel && (
-              <span className="text-sm font-semibold bg-purple-100 text-purple-700 px-4 py-2 rounded-full">
-                Finnish level: {guest.currentLevel}
-              </span>
-            )}
           </div>
 
           {/* Bio */}

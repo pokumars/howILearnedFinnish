@@ -172,6 +172,29 @@ export default async function EpisodePage({ params }: EpisodePageProps) {
             </p>
           </div>
 
+          {/* Guest Links */}
+          {episode.guest && (
+            <div className="mb-8">
+              <h2 className="text-2xl font-bold text-gray-800 mb-4">
+                Meet the guest
+              </h2>
+              <div className="flex flex-wrap gap-3">
+                <Link
+                  href={`/guests/${episode.guest.slug}`}
+                  className="inline-flex items-center gap-2 bg-purple-50 px-4 py-2 rounded-lg border border-purple-200 hover:border-purple-300 hover:bg-purple-100 transition-all duration-200 font-medium text-gray-700 text-sm"
+                >
+                  {episode.guest.name}'s profile →
+                </Link>
+                <Link
+                  href="/guests"
+                  className="inline-flex items-center gap-2 bg-gray-50 px-4 py-2 rounded-lg border border-gray-200 hover:border-gray-300 hover:bg-gray-100 transition-all duration-200 font-medium text-gray-700 text-sm"
+                >
+                  All guests →
+                </Link>
+              </div>
+            </div>
+          )}
+
           {/* Episode Thumbnail */}
           <div className="text-center">
             <Image
