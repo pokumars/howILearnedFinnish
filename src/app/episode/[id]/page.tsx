@@ -254,17 +254,6 @@ export default async function EpisodePage({ params }: EpisodePageProps) {
             </div>
           )}
 
-          {/* Episode Thumbnail */}
-          <div className="text-center mb-8">
-            <Image
-              src={episode.thumbnail}
-              alt={episode.title}
-              width={400}
-              height={225}
-              className="mx-auto rounded-lg shadow-lg"
-            />
-          </div>
-
           {/* Transcript */}
           {transcriptEntries.length > 0 && (
             <div className="mb-8">
