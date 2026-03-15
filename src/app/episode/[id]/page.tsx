@@ -183,7 +183,7 @@ export default async function EpisodePage({ params }: EpisodePageProps) {
                   href={`/guests/${episode.guest.slug}`}
                   className="inline-flex items-center gap-2 bg-purple-50 px-4 py-2 rounded-lg border border-purple-200 hover:border-purple-300 hover:bg-purple-100 transition-all duration-200 font-medium text-gray-700 text-sm"
                 >
-                  {episode.guest.name}'s profile →
+                  {episode.guest.name}&apos;s profile →
                 </Link>
                 <Link
                   href="/guests"
