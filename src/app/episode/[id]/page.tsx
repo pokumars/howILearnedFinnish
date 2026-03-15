@@ -116,8 +116,35 @@ export default async function EpisodePage({ params }: EpisodePageProps) {
   const youtubeVideoId = getYouTubeVideoId(episode.videoUrl);
   const transcriptEntries = loadTranscript(episode.id);
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "PodcastEpisode",
+    name: episode.title,
+    description: episode.description,
+    url: `https://howilearnedfinnish.fi/episode/${episode.id}`,
+    partOfSeries: {
+      "@type": "PodcastSeries",
+      name: "How I Learned Finnish",
+      url: "https://howilearnedfinnish.fi",
+    },
+    ...(youtubeVideoId && {
+      associatedMedia: {
+        "@type": "VideoObject",
+        name: episode.title,
+        description: episode.description,
+        thumbnailUrl: `https://howilearnedfinnish.fi${episode.thumbnail}`,
+        embedUrl: `https://www.youtube.com/embed/${youtubeVideoId}`,
+        url: episode.videoUrl,
+      },
+    }),
+  };
+
   return (
     <div className="min-h-screen bg-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <Navigation />
 
       {/* Back to Episodes Link */}
@@ -230,6 +257,74 @@ export default async function EpisodePage({ params }: EpisodePageProps) {
               {episode.description}
             </p>
           </div>
+
+          {/* Key Takeaways */}
+          {episode.keyTakeaways && episode.keyTakeaways.length > 0 && (
+            <div className="mb-8">
+              <h2 className="text-2xl font-bold text-gray-800 mb-4">
+                Key takeaways
+              </h2>
+              <ul className="space-y-3">
+                {episode.keyTakeaways.map((takeaway, i) => (
+                  <li key={i} className="flex gap-3">
+                    <span className="flex-shrink-0 w-6 h-6 rounded-full bg-purple-100 text-purple-700 text-sm font-bold flex items-center justify-center mt-0.5">
+                      {i + 1}
+                    </span>
+                    <p className="text-gray-700 leading-relaxed">{takeaway}</p>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+
+          {/* Time to Fluency + Key Methods */}
+          {(episode.timeToFluency || episode.keyMethods) && (
+            <div className="mb-8 bg-gray-50 rounded-lg p-6">
+              <h2 className="text-2xl font-bold text-gray-800 mb-4">
+                How they did it
+              </h2>
+              {episode.timeToFluency && (
+                <p className="text-gray-700 mb-4">
+                  <span className="font-semibold">Time to fluency:</span>{" "}
+                  {episode.timeToFluency}
+                </p>
+              )}
+              {episode.keyMethods && episode.keyMethods.length > 0 && (
+                <>
+                  <h3 className="text-lg font-semibold text-gray-800 mb-3">
+                    Methods used
+                  </h3>
+                  <ul className="space-y-2">
+                    {episode.keyMethods.map((method, i) => (
+                      <li key={i} className="flex gap-2 text-gray-700">
+                        <span className="flex-shrink-0 text-purple-500 mt-1">
+                          ›
+                        </span>
+                        {method}
+                      </li>
+                    ))}
+                  </ul>
+                </>
+              )}
+            </div>
+          )}
+
+          {/* Resources Mentioned */}
+          {episode.resourcesMentioned && episode.resourcesMentioned.length > 0 && (
+            <div className="mb-8">
+              <h2 className="text-2xl font-bold text-gray-800 mb-4">
+                Resources mentioned
+              </h2>
+              <ul className="space-y-2">
+                {episode.resourcesMentioned.map((resource, i) => (
+                  <li key={i} className="flex gap-2 text-gray-700">
+                    <span className="flex-shrink-0 text-purple-500 mt-1">›</span>
+                    {resource}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
 
           {/* Guest Links */}
           {episode.guest && (

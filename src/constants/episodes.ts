@@ -9,6 +9,21 @@ export interface Guest {
   socialUrl?: string;
 }
 
+export interface Episode {
+  id: number;
+  title: string;
+  description: string;
+  guest?: Guest;
+  tags: FilterTags[];
+  videoUrl: string;
+  thumbnail: string;
+  platforms: { name: string; url: string }[];
+  timeToFluency?: string;
+  keyMethods?: string[];
+  resourcesMentioned?: string[];
+  keyTakeaways?: string[];
+}
+
 export enum FilterTags {
   AllEpisodes = "All",
   Parent = "Parent",
@@ -24,7 +39,7 @@ export enum FilterTags {
 }
 export const filterTags = Object.values(FilterTags);
 
-export const episodes = [
+export const episodes: Episode[] = [
   {
     id: 13,
     title:
@@ -61,6 +76,36 @@ export const episodes = [
         url: "https://youtu.be/51uR_HiQnMo?si=RYrVsj0T1Yw54Gkm",
       },
     ],
+    timeToFluency:
+      "About 1.5–2 years to stable day-to-day Finnish; passed YKI B2 test in 2018 (~3 years after arriving in October 2015)",
+    keyMethods: [
+      "Independent study with Finnish textbooks (Suomi Sun with CD and dictionary) before and after arriving",
+      "Listening to Finnish rock music (Negative, Hanoi Rocks, HIM) to train ear for vowel sounds and word boundaries",
+      "Watching English TV crime dramas (Criminal Minds, CSI) with Finnish subtitles",
+      "Forced real-life use: all errands — shopping, Kela forms, school meetings — done in Finnish with only a pocket dictionary",
+      "Making friends at integration course who shared no common language, forcing natural Finnish conversation with no performance pressure",
+      "Attending Finnish integration classes and preparing a Finnish question for the teacher before each session",
+      "Passive immersion: Finnish Facebook groups, metro advertisements, Lidl leaflets, Pikku Kakkonen children's TV, Muskari classes",
+      "Structured grammar study for the YKI test with daily 5–10 minute habits rather than marathon sessions",
+    ],
+    resourcesMentioned: [
+      "Suomi Sun — Finnish textbook with CD and dictionary for independent English-speaking learners",
+      "Finnish for Foreigners — 4-book series with graduated difficulty, recommended for self-study",
+      "Suomen Mestari — widely-used classroom textbook; not recommended for independent learners without a teacher",
+      "YLE — short videos of everyday Finnish interactions",
+      "Duolingo — used during pandemic, recommended to a friend",
+      "Punainen kuin veri (Red Like Blood) — Finnish murder mystery in selko kieli with Spotify audio and vocabulary support",
+      "Kielikahvilat (language cafes) — community conversation practice",
+      "Pikku Kakkonen — Finnish children's TV",
+      "Muskari — Finnish parent-and-toddler music classes with repetitive songs and nursery rhymes",
+    ],
+    keyTakeaways: [
+      "Rejecting the 'Finnish is impossible' narrative is itself a learning strategy — going in with that belief kills motivation before you start.",
+      "Set tiny, tangible goals instead of chasing perfection: 'I'll understand the difference between the milks at the supermarket' beats waiting until you're ready.",
+      "Suomen Mestari is not for self-study — it's demotivating without a teacher; Finnish for Foreigners is a better starting point for independent learners.",
+      "You're already learning Finnish every day without realising it: bus stop names, metro screens, supermarket leaflets, and children's TV add up constantly.",
+      "Speaking broken Finnish with other non-native speakers can accelerate fluency faster than class time — pressure-free, purpose-driven conversation beats drills.",
+    ],
   },
   {
     id: 12,
@@ -75,7 +120,7 @@ export const episodes = [
       profession: "Standup Comedian & Artist",
       from: "Canada",
       bio: "Jamie McDonald — known online as HappeningFish — is a standup comedian and artist living in Finland. He took one of the most unconventional routes to Finnish fluency: getting on stage and performing comedy in a language he was still acquiring. Alongside his Finnish-speaking household and daily cultural immersion, Jamie used yoga classes, social circles, and the pressure of making Finnish audiences laugh as his classroom. He is one of the most honest voices on why you have to find a deeply personal reason to invest in a language that only a few million people speak.",
-      socialUrl: "https://www.youtube.com/@HappeningFish",
+      socialUrl: "https://instagram.com/HappeningFish",
     },
     tags: [
       FilterTags.A1toC,
@@ -97,6 +142,36 @@ export const episodes = [
         name: "YouTube",
         url: "https://youtu.be/22kmIRFCfRA",
       },
+    ],
+    timeToFluency:
+      "Approximately 18 years — arrived in Finland in 2002 and reached confident conversational Finnish around 2020–2021, primarily due to working almost exclusively in English throughout",
+    keyMethods: [
+      "Attending yoga and dance/theater classes in Finnish — absorbing physical vocabulary in context",
+      "Listening to Finnish standup comedy sets at open mic nights 10–15 times to slowly decode jokes word by word",
+      "Listening to Finnish radio (Radio Helsinki) in the car, especially news broadcasts where context was already known",
+      "Watching Finnish TV with Finnish subtitles to map idioms rather than translating from English",
+      "Attending Finnish theater productions of plays already known in English to decode the Finnish through prior knowledge",
+      "Reading Fingerpori (Finnish newspaper comic strip) — short, punchy text rewarding close reading",
+      "Writing in Finnish first, then checking with translation tools to identify errors rather than using translation as a crutch",
+      "Defaulting to Finnish with every new person met and committing not to switch languages",
+    ],
+    resourcesMentioned: [
+      "YLE / YLE app — selkosuomi (simplified Finnish) news and subtitled content",
+      "Radio Helsinki — Finnish radio station",
+      "Helsingin Sanomat (Hesari) — Finnish newspaper",
+      "Fingerpori — Finnish comic strip",
+      "Neiti Romantiikka (Ms. Romantic) — Finnish dark comedy series on YLE",
+      "Sinuhe Egyptiläinen — Finnish historical novel",
+      "Aku Ankka — Donald Duck comics in Finnish",
+      "Duolingo — tried in Swedish only; dismissed as ineffective for Finnish",
+      "Google Translate — used as a post-writing checking tool, not a translation crutch",
+    ],
+    keyTakeaways: [
+      "External pressure beats internal motivation: Jamie's in-laws refusing to speak English at the dinner table pushed him further in weeks than years of self-directed effort.",
+      "Ego is the biggest obstacle for intelligent people — the humiliation of sounding incompetent in Finnish feels worse than the actual difficulty of the language.",
+      "Immersive, enjoyable activities beat formal study every time: yoga classes, theater, and standup comedy produced real gains because the context was physical, repetitive, and enjoyable.",
+      "Start every conversation in Finnish and don't switch — once you commit, the social dynamic makes it hard to flip to English.",
+      "You need a genuine personal reason to care about Finnish: without a stake in Finnish life — family, community, civic participation — the discomfort will always win.",
     ],
   },
   {
@@ -441,6 +516,7 @@ export const episodes = [
       profession: "Podcast Creator",
       from: "Ghana",
       bio: "Oheneba — known as Ohe — is the creator and host of How I Learned Finnish. This episode is his own story: in 2022, he publicly committed to speaking Finnish whenever possible for an entire year, having concluded that simulating the conditions of a non-English speaker was the only reliable path to reflex-level fluency. He built daily habits around Finnish podcasts, a vocabulary-building Excel sheet, translated phrase banks, and reading books entirely in Finnish. By summer he had already landed a new job partly because of how well he spoke the language — and came out of the year with the fluency he had set out to find.",
+      socialUrl: "https://www.instagram.com/oheneba_poku_marboah/",
     },
     tags: [
       FilterTags.B1toC,
