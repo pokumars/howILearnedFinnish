@@ -4,6 +4,7 @@ import { Play, ArrowRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import PillButton from "./pillButton";
+import Flag from "./Flag";
 
 interface Platform {
   name: string;
@@ -18,6 +19,7 @@ interface Episode {
   videoUrl: string;
   thumbnail: string;
   platforms: Platform[];
+  guest?: { from?: string };
 }
 
 interface EpisodeCardProps {
@@ -54,6 +56,9 @@ export default function EpisodeCard({ episode }: EpisodeCardProps) {
           <Link href={`/episode/${episode.id}`}>
             <h3 className="text-xl font-bold text-gray-800 mb-3 hover:text-purple-600 transition-colors duration-200">
               {episode.title}
+              {episode.guest?.from && (
+                <Flag country={episode.guest.from} className="ml-2 align-middle" />
+              )}
             </h3>
           </Link>
           <p className="text-gray-600 mb-4 line-clamp-3">

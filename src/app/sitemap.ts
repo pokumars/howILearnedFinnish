@@ -44,6 +44,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
+  // Guest pages
+  const guestPages = episodes
+    .filter((e) => e.guest)
+    .map((e) => ({
+      url: `${baseUrl}/guests/${e.guest!.slug}`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
+    }));
+
+  return [...staticPages, ...episodePages, ...blogPages, ...guestPages];
   // Tag hub pages
   const tagHubPages = tagData.map((tag) => ({
     url: `${baseUrl}/learn-finnish/${tag.slug}`,

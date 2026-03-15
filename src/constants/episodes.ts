@@ -1,3 +1,14 @@
+export interface Guest {
+  name: string;
+  slug: string;
+  age: number;
+  profession: string;
+  from?: string;
+  movedToFinland?: number;
+  bio: string;
+  socialUrl?: string;
+}
+
 export enum FilterTags {
   AllEpisodes = "All",
   Parent = "Parent",
@@ -19,7 +30,16 @@ export const episodes = [
     title:
       "013: Living Fully in Finland (Not Just Surviving) - Learning Finnish with Chloe Järvinen",
     description:
-      "In this episode, I sit down with Chloe Järvinen, a UK-born project manager in the social field who moved to Finland in 2015 after a music-inspired trip unexpectedly changed her life. What began as a fascination with Finnish rock led to marriage, relocation, and ultimately a deep commitment to learning the language. Chloe explains why mastering Finnish became non-negotiable for her independence and sense of belonging. She shares what genuinely helped her progress, what completely missed the mark, and why some popular learning materials can actually demotivate learners without proper guidance—while offering practical alternatives that worked better for her. We dive into mindset shifts, rejecting the “Finnish is impossible” narrative, setting small tangible goals, leveraging passive exposure in daily life, and navigating serious setbacks without giving up. This conversation isn’t just about learning a language. It’s about building a life—and how Finnish expanded Chloe’s confidence, career opportunities, and connection to the society around her.",
+      "In this episode, I sit down with Chloe Järvinen, a UK-born project manager in the social field who moved to Finland in 2015 after a music-inspired trip unexpectedly changed her life. What began as a fascination with Finnish rock led to marriage, relocation, and ultimately a deep commitment to learning the language. Chloe explains why mastering Finnish became non-negotiable for her independence and sense of belonging. She shares what genuinely helped her progress, what completely missed the mark, and why some popular learning materials can actually demotivate learners without proper guidance—while offering practical alternatives that worked better for her. We dive into mindset shifts, rejecting the 'Finnish is impossible' narrative, setting small tangible goals, leveraging passive exposure in daily life, and navigating serious setbacks without giving up. This conversation isn’t just about learning a language. It’s about building a life—and how Finnish expanded Chloe’s confidence, career opportunities, and connection to the society around her.",
+    guest: {
+      name: "Chloe Järvinen",
+      slug: "chloe-jarvinen",
+      age: 39,
+      profession: "Project Manager",
+      from: "United Kingdom",
+      movedToFinland: 2015,
+      bio: "Chloe moved to Finland from the UK in October 2015 after a weekend trip to see Finnish rock music turned into something far bigger. At a Helsinki gig she met the man who would become her husband, and within two months she had relocated and married. Ten years on, she works as a project manager in the social field — in Finnish. Her learning journey is defined by rejecting the ‘Finnish is impossible’ narrative, setting small tangible goals, and weaving the language into everyday life rather than waiting for some distant moment of perfection.",
+    },
     tags: [
       FilterTags.A1toC,
       FilterTags.Immersion,
@@ -47,7 +67,16 @@ export const episodes = [
     title:
       "012: Stand-Up Comedy as a Finnish Language Hack - with Jamie McDonald AKA HappeningFish",
     description:
-      "In this episode of 'How I Learned Finnish with Ohe,' I interview Jamie McDonald, a 48-year-old standup comedian and artist, about his journey of learning Finnish. Jamie, who performs under the stage name 'Happening Fish,' discusses the challenges and motivations in learning a language spoken by only a few million people. He shares insights into his methods, from taking classes and integrating into Finnish society through family and social circles, to the unconventional approaches of performing standup and attending yoga classes. Jamie also reflects on the emotional hurdles, the importance of persistence, and the cultural immersion necessary for mastering Finnish.. He covers topics such as integrating into Finnish culture, overcoming language barriers in personal and professional settings, and the importance of stepping out of one’s comfort zone to truly master a new language. This episode is filled with humor, valuable insights, and encouragement for anyone looking to learn Finnish or navigate a new linguistic and cultural environment.",
+      "In this episode of ‘How I Learned Finnish with Ohe,’ I interview Jamie McDonald, a 48-year-old standup comedian and artist, about his journey of learning Finnish. Jamie, who performs under the stage name ‘Happening Fish,’ discusses the challenges and motivations in learning a language spoken by only a few million people. He shares insights into his methods, from taking classes and integrating into Finnish society through family and social circles, to the unconventional approaches of performing standup and attending yoga classes. Jamie also reflects on the emotional hurdles, the importance of persistence, and the cultural immersion necessary for mastering Finnish.. He covers topics such as integrating into Finnish culture, overcoming language barriers in personal and professional settings, and the importance of stepping out of one’s comfort zone to truly master a new language. This episode is filled with humor, valuable insights, and encouragement for anyone looking to learn Finnish or navigate a new linguistic and cultural environment.",
+    guest: {
+      name: "Jamie McDonald",
+      slug: "jamie-mcdonald",
+      age: 48,
+      profession: "Standup Comedian & Artist",
+      from: "Canada",
+      bio: "Jamie McDonald — known online as HappeningFish — is a standup comedian and artist living in Finland. He took one of the most unconventional routes to Finnish fluency: getting on stage and performing comedy in a language he was still acquiring. Alongside his Finnish-speaking household and daily cultural immersion, Jamie used yoga classes, social circles, and the pressure of making Finnish audiences laugh as his classroom. He is one of the most honest voices on why you have to find a deeply personal reason to invest in a language that only a few million people speak.",
+      socialUrl: "https://www.youtube.com/@HappeningFish",
+    },
     tags: [
       FilterTags.A1toC,
       FilterTags.Immersion,
@@ -76,6 +105,15 @@ export const episodes = [
       "011: How Immersion, Emotions, and 3,000 Words Made Matthias Fluent - Finnish Language Journey",
     description:
       "Starting even before he moved to Finland, Mathias discusses how he memorized 1000+ Finnish words from a vocabulary book and immersed himself in the language. He explains his methods, such as focusing on grammar, practicing speaking with native Finnish speakers, and integrating into Finnish culture through activities like joining choirs. Mathias also reveals unconventional approaches, including conducting psychotherapy in Finnish to deepen his emotional connection to the language. Despite many challenges and the onset of the COVID-19 pandemic, Mathias achieved fluency within a relatively short period by dedicating significant time and effort, employing both systematic and creative learning strategies. His story highlights the importance of persistence, immersion, and making use of emotions in the language learning process.",
+    guest: {
+      name: "Matthias",
+      slug: "matthias",
+      age: 25,
+      profession: "Research Assistant",
+      from: "Germany",
+      movedToFinland: 2020,
+      bio: "Matthias moved to Finland from Germany in February 2020 — arriving just weeks before COVID-19 lockdowns began — having already memorised thousands of Finnish words from a vocabulary book before he ever set foot in the country. A research assistant working on physics at Aalto University, he reached fluency through a combination of pre-arrival obsession, choir singing, children's audiobooks on repeat, and the unconventional technique of conducting psychotherapy sessions entirely in Finnish to give the language an emotional anchor.",
+    },
     tags: [
       FilterTags.A1toC,
       FilterTags.Immersion,
@@ -104,6 +142,15 @@ export const episodes = [
     title: "010: The Moment I Stopped Resisting: Learning by Lifestyle - Hamed",
     description:
       "In this engaging discussion, Hamed, a 43-year-old software engineer originally from Iran, recounts his experiences adapting to life in Finland. Hamed shares his journey of learning Finnish, which was initially challenging due to his temporary mindset and resistance to the language. Eventually, his perspective shifted as he accepted Finland as his new home. Hamed highlights the role of making Finnish friends, listening to music, and immersing himself in Finnish culture as crucial to his language acquisition. He recounts specific experiences, such as working in a multicultural center, participating in language courses, and navigating daily interactions. Notably, he discusses how expressing emotions in Finnish significantly improved his fluency. Hamed emphasizes the importance of mindset, cultural immersion, and having fun in the process of learning a new language. His story provides valuable insights for anyone struggling to learn Finnish or integrate into a new culture.",
+    guest: {
+      name: "Hamed",
+      slug: "hamed",
+      age: 43,
+      profession: "Software Engineer",
+      from: "Iran",
+      movedToFinland: 2004,
+      bio: "Hamed arrived in Finland from Iran in March 2004, landing in Oulu having not planned to settle there — or anywhere in Finland. For years he resisted the language, treating the country as a temporary stop. The shift came when he accepted Finland as home: he moved to Espoo in 2005, built genuine Finnish friendships, and discovered that expressing emotion in Finnish unlocked a fluency that formal classes had never reached. He now works as a software engineer and looks back on that mindset change as the single most important step in his language journey.",
+    },
     tags: [
       FilterTags.A1toC,
       FilterTags.Immersion,
@@ -132,6 +179,15 @@ export const episodes = [
     title: "009: This One Shift Made Me Fluent in Finnish",
     description:
       "In this episode, we explore the transformative power of embracing discomfort to achieve personal growth. Through heartfelt anecdotes and candid reflections, our guest reveals how pushing through initial unease can lead to newfound confidence and freedom. Learn why striving for perfection can actually hinder progress, and how allowing yourself to be imperfect can open doors to more meaningful interactions and self-discovery.",
+    guest: {
+      name: "Kseniia",
+      slug: "kseniia",
+      age: 27,
+      profession: "Musician & Singer",
+      from: "Russia",
+      movedToFinland: 2016,
+      bio: "Kseniia moved from St. Petersburg to Jyväskylä at 18 to study international business at JAMK, with no plan to stay long-term and little interest in learning Finnish seriously. She spent years coasting on English, did an exchange year in the UK, and returned to Finland in 2019 in the middle of an identity search — deciding to make it home. Starting almost from scratch, she worked with Russian-speaking Finnish teachers, immersed herself in Finnish YouTube and TV, and learned to push through the discomfort of real conversations rather than waiting for perfection. A musician and singer, she is one of the more introspective voices in this series on what it means to choose a country and a language.",
+    },
     tags: [
       FilterTags.Student,
       FilterTags.A1toC,
@@ -161,6 +217,15 @@ export const episodes = [
     title: "008: From Hallway Listener to Fluent Finnish Speaker - Jojo Pratt",
     description:
       "In this episode, we dive into the life story of Jojo Pratt, a nurse originally from Ghana. Jojo shares his unique experiences and challenges of learning Finnish, from his early days in a Finnish refugee camp to becoming fluent and integrated into Finnish society. Join us as Jojo recounts the creative and relentless methods he used, the cultural and societal barriers he overcame, and the crucial mindset needed to master a new language. Discover valuable insights and tips for anyone striving to learn Finnish or any new language. This is an episode filled with inspiring anecdotes, humorous moments, and practical advice you won't want to miss!",
+    guest: {
+      name: "Jojo Pratt",
+      slug: "jojo-pratt",
+      age: 37,
+      profession: "Nurse",
+      from: "Ghana",
+      movedToFinland: 2009,
+      bio: "Jojo Pratt — born Godson, nicknamed Cyborg back in boarding school — arrived in Finland at the end of 2009 from Ghana via London, spending his first year in a Red Cross refugee camp with no Finnish and no plan. What followed was a relentless self-education: listening through classroom doors until the teacher started leaving the door open for him, absorbing every Finnish conversation within earshot, and refusing to let circumstance become an excuse. He eventually qualified as a nurse and built a life fully integrated into Finnish society — one of the most honest voices in this series on what learning a language with no safety net actually demands.",
+    },
     tags: [FilterTags.A1toC, FilterTags.Immersion, FilterTags.Student],
     videoUrl: "https://www.youtube.com/watch?v=bz0lTCmgv_U",
     thumbnail: "/thumbnails/008_Jojo_Pratt.jpg",
@@ -185,6 +250,15 @@ export const episodes = [
       "007: I Didn't Wait To Be Included, I Learned The Language To Belong - Magdalene",
     description:
       "Join us for an inspiring conversation with Magdalene Awahnde, a nursing manager in Finland. In this episode, Magdalene shares her journey from Cameroon to Finland, her challenges and triumphs in learning the Finnish language, and her rise in the healthcare sector. Discover her key strategies for overcoming language barriers, her motivational tips for aspiring immigrants, and how her determination and positive attitude opened doors to remarkable opportunities. Magdalene's story is a testament to the power of perseverance and the importance of embracing opportunities. Don't miss this insightful and motivational episode!",
+    guest: {
+      name: "Magdalene Awahnde",
+      slug: "magdalene-awahnde",
+      age: 40,
+      profession: "Nursing Manager",
+      from: "Cameroon",
+      movedToFinland: 2004,
+      bio: "Magdalene Awahnde came to Finland from Cameroon around 2004, joining her husband who had already been there for several years. She arrived as a student and pivoted into healthcare — studying nursing while raising a family and learning Finnish in parallel. Over two decades she rose to nursing manager, a role she notes she was among the first Black women to hold in her field. Her philosophy was straightforward: she was here, this was her home, and she was going to learn the language — not because it was easy, but because belonging required it.",
+    },
     tags: [
       FilterTags.Student,
       FilterTags.A1toC,
@@ -213,6 +287,15 @@ export const episodes = [
     title: "006: Stop Saying It's Too Hard, That's Why You're Stuck - Emily",
     description:
       "Meet Emily, an entrepreneur and hairdresser who shares her unique strategies, challenges, and experiences that shaped her language-learning process. In this episode, we dive deep into Emily's journey of learning Finnish. From studying abroad to integrating into Finnish society, Emily covers essential topics like vocabulary building, speaking, listening, grammar, reading, and writing. She also discusses the importance of mindset, staying motivated, and leveraging resources like podcasts, books, and online platforms to master Finnish. Learn how Emily overcame the hurdles of learning a new language and how you can apply her insights to your language-learning journey.",
+    guest: {
+      name: "Emily",
+      slug: "emily",
+      age: 0,
+      profession: "Hairdresser & Entrepreneur",
+      from: "Vietnam",
+      movedToFinland: 2012,
+      bio: "Emily came to Finland from Vietnam in 2012 to study international business on a free tuition scholarship — and spent years trying to leave. She lived in Spain and the Netherlands for a year each as part of her studies, assumed Finland was temporary, and kept Finnish firmly on the back burner. It was only after deciding to stay for good — realising that citizenship, career, and belonging all required it — that she committed to the language. She found her breakthrough with a Vietnamese-speaking Finnish tutor and pushed through the intermediate plateau that stops many learners. She now runs her own hairdressing business in Helsinki.",
+    },
     tags: [
       FilterTags.Student,
       FilterTags.A1toC,
@@ -241,6 +324,15 @@ export const episodes = [
     title: "005: From Zero to Finnish Law School in 3 years - Deborah Laajanen",
     description:
       "3 years to go from zero Finnish to law school admission. Check out this interview of how Deborah was able to learn such high level Finnish. In this episode, we delve into the inspiring journey of Deborah Laajanen, a lawyer from the Philippines who managed to get accepted into a Finnish law school despite being in Finland for just a few years. Deborah shares her struggles and strategies for learning Finnish to an advanced level, including the use of resources like Suomen mestari, podcasts, and integrating herself into Finnish society. She also discusses the motivation behind her efforts, the role of discipline, and the importance of setting concrete goals. This conversation is a must-listen for anyone facing the daunting task of learning a new language, especially in a new country.",
+    guest: {
+      name: "Deborah Laajanen",
+      slug: "deborah-laajanen",
+      age: 0,
+      profession: "Lawyer & Law Student",
+      from: "Philippines",
+      movedToFinland: 2021,
+      bio: "Deborah Laajanen is a licensed attorney from the Philippines who moved to Finland in 2021 after marrying a Finn. Back home she had spent years earning a bachelor's degree, a juris doctor, and clearing the bar exam — none of which counted for much in a Finnish job market that required advanced Finnish even for paralegal roles. She turned that frustration into fuel: studying on and off over three years through a difficult pregnancy and major life adjustments, she passed the demanding valtionhallinnon kielitutkinto exam and earned a place at the University of Helsinki Law School to study a master of laws entirely in Finnish.",
+    },
     tags: [
       FilterTags.Parent,
       FilterTags.WithKids,
@@ -270,6 +362,15 @@ export const episodes = [
     title: "004: Why Duolingo Failed, Paying for 100 Lunches, and More - Erik",
     description:
       "In this episode, we explore Erik's unique approach to learning Finnish through real-world interactions and practical experiences. Erik shares why traditional language learning apps like Duolingo weren't effective for him and how he discovered more effective methods. He discusses his strategy of paying for lunches to practice Finnish with native speakers, the importance of immersion, and how he overcame common challenges faced by adult language learners. This episode is packed with actionable insights for anyone looking to learn Finnish through authentic experiences.",
+    guest: {
+      name: "Erik Åkesson",
+      slug: "erik-akesson",
+      age: 0,
+      profession: "Banker",
+      from: "Sweden",
+      movedToFinland: 2015,
+      bio: "Erik Åkesson is a Swedish banker who moved to Finland around 2015 after a career spanning London, Copenhagen, and Stockholm — most recently as global head of foreign exchange trading at Danske Bank. With a Finnish wife and four kids each born in a different country, learning Finnish was always the intention but a high-pressure career left no space for it. A 15-month paternity leave changed everything: with a quieter mind and a baby asleep in a pram outside the restaurant window, he paid for over 100 lunches with retired Finns who would speak only Finnish with him, worked through three Suomen mestari books with a private teacher, and forced Finnish into every haircut, taxi ride, and errand he could.",
+    },
     tags: [
       FilterTags.A1toC,
       FilterTags.FinnishSpeakingPartner,
@@ -298,6 +399,15 @@ export const episodes = [
       "003: I Lost Custody of My Kids Because I Couldn't Speak Finnish - Anita Anttila",
     description:
       "Reasons why you should Learn Finnish. Anita shares her heartbreaking yet inspiring story of how language barriers affected her family life and custody situation. This powerful episode explores the real consequences of not being able to communicate in Finnish, especially when it comes to family matters. Anita discusses her journey to learn Finnish, the challenges she faced in the legal system, and how she eventually regained custody of her children. This episode highlights the importance of language learning beyond just personal development - it can literally change lives and family dynamics.",
+    guest: {
+      name: "Anita Anttila",
+      slug: "anita-anttila",
+      age: 0,
+      profession: "Restaurant Worker",
+      from: "Indonesia",
+      movedToFinland: 1996,
+      bio: "Anita Anttila arrived in Finland in 1996 — before Google Translate, Duolingo, or social media — as a young mother in a small town near Seinäjoki where almost no one spoke English and Finnish was unavoidable from day one. She learned her first words from a dictionary and got through early months by pointing at items in shops. Her journey took a harrowing turn when a language barrier during her divorce left her without custody of her sons — the moment she describes as the real turning point that made fluency non-negotiable. Thirty years on, she works in restaurant service and speaks Finnish with the ease of someone who has lived it rather than studied it.",
+    },
     tags: [
       FilterTags.Parent,
       FilterTags.WithKids,
@@ -324,6 +434,14 @@ export const episodes = [
     title: "002: How I Achieved Fluency in Finnish in Just One Year",
     description:
       "In 2022, I embarked on a radical experiment — I pretended not to speak English for an entire year in order to immerse myself in Finnish and reach fluency as an adult. My  journey of mastering the Finnish language in just one year starting from a weak level! How to learn Finnish language easily. From setting specific targets and creating a language immersion environment to utilizing podcasts, books, and articles, I provide actionable tips that can help you learn any language. Learn about the six essential components of language learning—vocabulary, speaking, listening, grammar, reading, and writing—and discover how I kept myself motivated, and adapted my strategies along the way. Whether you're starting from scratch or looking to refine your skills, this video is packed with valuable advice for achieving your language learning goals.",
+    guest: {
+      name: "Oheneba Poku-Marboah",
+      slug: "oheneba-poku-marboah",
+      age: 0,
+      profession: "Podcast Creator",
+      from: "Ghana",
+      bio: "Oheneba — known as Ohe — is the creator and host of How I Learned Finnish. This episode is his own story: in 2022, he publicly committed to speaking Finnish whenever possible for an entire year, having concluded that simulating the conditions of a non-English speaker was the only reliable path to reflex-level fluency. He built daily habits around Finnish podcasts, a vocabulary-building Excel sheet, translated phrase banks, and reading books entirely in Finnish. By summer he had already landed a new job partly because of how well he spoke the language — and came out of the year with the fluency he had set out to find.",
+    },
     tags: [
       FilterTags.B1toC,
       FilterTags.Immersion,
