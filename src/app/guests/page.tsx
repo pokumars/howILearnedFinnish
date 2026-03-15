@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import { episodes } from "@/constants/episodes";
 import Link from "next/link";
 import { Metadata } from "next";
+import Flag from "@/components/Flag";
 
 export const metadata: Metadata = {
   title: "Guests | How I Learned Finnish",
@@ -45,7 +46,9 @@ export default function GuestsPage() {
                     </h2>
                     <p className="text-sm text-gray-500 mt-0.5">
                       {guest.profession}
-                      {guest.from ? ` · ${guest.from}` : ""}
+                      {guest.from && (
+                        <> · <Flag country={guest.from} className="mx-1 align-middle" />{guest.from}</>
+                      )}
                     </p>
                   </div>
                 </div>
