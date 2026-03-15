@@ -48,11 +48,6 @@ export default function GuestsPage() {
                       {guest.from ? ` · ${guest.from}` : ""}
                     </p>
                   </div>
-                  {guest.currentLevel && (
-                    <span className="text-xs font-semibold bg-purple-100 text-purple-700 px-2 py-1 rounded-full flex-shrink-0 ml-3">
-                      {guest.currentLevel}
-                    </span>
-                  )}
                 </div>
                 <p className="text-gray-600 text-sm line-clamp-3 mb-4">
                   {guest.bio}
