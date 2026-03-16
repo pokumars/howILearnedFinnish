@@ -2,6 +2,7 @@ import { MetadataRoute } from "next";
 import { episodes } from "@/constants/episodes";
 import { blogPosts } from "@/data/blog-posts";
 import { tagData } from "@/data/tags";
+import { resourceCategoryMeta } from "@/data/resource-categories";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://www.howilearnedfinnish.fi";
@@ -18,6 +19,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${baseUrl}/blog`,
       lastModified: new Date(),
       changeFrequency: "weekly" as const,
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/resources`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/learn-finnish`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
       priority: 0.8,
     },
     {
@@ -54,7 +67,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     }));
 
-  return [...staticPages, ...episodePages, ...blogPages, ...guestPages];
   // Tag hub pages
   const tagHubPages = tagData.map((tag) => ({
     url: `${baseUrl}/learn-finnish/${tag.slug}`,
@@ -63,5 +75,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
-  return [...staticPages, ...episodePages, ...blogPages, ...tagHubPages];
+  // Resource category pages
+  const resourceCategoryPages = resourceCategoryMeta.map((cat) => ({
+    url: `${baseUrl}/resources/${cat.slug}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly" as const,
+    priority: 0.7,
+  }));
+
+  return [
+    ...staticPages,
+    ...episodePages,
+    ...blogPages,
+    ...guestPages,
+    ...tagHubPages,
+    ...resourceCategoryPages,
+  ];
 }

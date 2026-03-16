@@ -6,6 +6,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import PillButton from "@/components/pillButton";
 import { resources, resourceCategories, type ResourceCategory } from "@/data/resources";
+import { resourceCategoryMeta } from "@/data/resource-categories";
 
 export default function ResourcesPage() {
   const [selectedCategory, setSelectedCategory] = useState<ResourceCategory | "All">("All");
@@ -32,10 +33,36 @@ export default function ResourcesPage() {
         </div>
       </section>
 
+      {/* Browse by category */}
+      <section className="py-10 bg-white border-b border-gray-100">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-lg font-semibold text-gray-700 mb-4">Browse by category:</h2>
+          <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+            {resourceCategoryMeta.map((cat) => {
+              const count = resources.filter((r) => r.category === cat.category).length;
+              return (
+                <Link
+                  key={cat.slug}
+                  href={`/resources/${cat.slug}`}
+                  className="flex items-center justify-between p-4 border border-gray-200 rounded-lg hover:border-purple-300 hover:shadow-sm transition-all duration-200 group"
+                >
+                  <span className="font-medium text-gray-800 text-sm group-hover:text-purple-700 transition-colors">
+                    {cat.category}
+                  </span>
+                  <span className="text-xs text-purple-600 font-medium ml-2 shrink-0">
+                    {count} →
+                  </span>
+                </Link>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
       {/* Filter */}
       <section className="py-8 bg-white border-b border-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-lg font-semibold text-gray-700 mb-4">Filter by category:</h2>
+          <h2 className="text-lg font-semibold text-gray-700 mb-4">Filter all resources:</h2>
           <div className="flex flex-wrap gap-3">
             {allCategories.map((cat) => (
               <PillButton
