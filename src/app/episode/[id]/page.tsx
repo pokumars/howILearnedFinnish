@@ -266,7 +266,7 @@ export default async function EpisodePage({ params }: EpisodePageProps) {
               </h2>
               <ul className="space-y-3">
                 {episode.keyTakeaways.map((takeaway, i) => (
-                  <li key={i} className="flex gap-3">
+                  <li key={i} className="flex items-start gap-3">
                     <span className="flex-shrink-0 w-6 h-6 rounded-full bg-purple-100 text-purple-700 text-sm font-bold flex items-center justify-center mt-0.5">
                       {i + 1}
                     </span>
@@ -296,11 +296,11 @@ export default async function EpisodePage({ params }: EpisodePageProps) {
                   </h3>
                   <ul className="space-y-2">
                     {episode.keyMethods.map((method, i) => (
-                      <li key={i} className="flex gap-2 text-gray-700">
-                        <span className="flex-shrink-0 text-purple-500 mt-1">
+                      <li key={i} className="flex items-start gap-2 text-gray-700">
+                        <span className="flex-shrink-0 text-purple-500 mt-px leading-none">
                           ›
                         </span>
-                        {method}
+                        <span className="leading-relaxed">{method}</span>
                       </li>
                     ))}
                   </ul>
@@ -317,9 +317,9 @@ export default async function EpisodePage({ params }: EpisodePageProps) {
               </h2>
               <ul className="space-y-2">
                 {episode.resourcesMentioned.map((resource, i) => (
-                  <li key={i} className="flex gap-2 text-gray-700">
-                    <span className="flex-shrink-0 text-purple-500 mt-1">›</span>
-                    {resource}
+                  <li key={i} className="flex items-start gap-2 text-gray-700">
+                    <span className="flex-shrink-0 text-purple-500 mt-px leading-none">›</span>
+                    <span className="leading-relaxed">{resource}</span>
                   </li>
                 ))}
               </ul>

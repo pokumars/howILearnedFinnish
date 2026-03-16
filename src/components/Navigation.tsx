@@ -10,10 +10,10 @@ export default function Navigation() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const navItems = [
-    { href: "/", label: "Home" },
     { href: "/learn-finnish", label: "Learn Finnish" },
     { href: "/guests", label: "Guests" },
     { href: "/blog", label: "Blog/Articles" },
+    { href: "/resources", label: "Resources" },
     { href: "/quick-links", label: "Quick Links" },
   ];
 
@@ -37,7 +37,7 @@ export default function Navigation() {
           </Link>
 
           {/* Navigation Links */}
-          <nav className="hidden md:flex space-x-8">
+          <nav className="hidden lg:flex space-x-8">
             {navItems.map((item) => (
               <Link
                 key={item.href}
@@ -54,7 +54,7 @@ export default function Navigation() {
           </nav>
 
           {/* Mobile menu button */}
-          <div className="md:hidden">
+          <div className="lg:hidden">
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               className="text-gray-600 hover:text-purple-600 focus:outline-none focus:text-purple-600"
@@ -83,7 +83,7 @@ export default function Navigation() {
 
         {/* Mobile menu */}
         {isMobileMenuOpen && (
-          <div className="md:hidden">
+          <div className="lg:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t border-gray-200">
               {navItems.map((item) => (
                 <Link
