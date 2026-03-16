@@ -19,7 +19,7 @@ export default function Flag({
       height={15}
       alt={country ?? ""}
       title={country}
-      className={`inline-block rounded-sm ${className}`}
+      className={`inline-block ${className}`}
     />
   );
 }
