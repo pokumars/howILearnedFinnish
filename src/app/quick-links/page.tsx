@@ -113,9 +113,9 @@ const quickLinks = [
   },
   {
     icon: <BookOpen className="w-6 h-6 text-white" />,
-    title: "Resources (Coming Soon)",
+    title: "Resources",
     description: "Finnish learning materials and guides",
-    href: "#",
+    href: "/resources",
     color: "bg-orange-500",
   },
 ];

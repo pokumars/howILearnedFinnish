@@ -10,10 +10,10 @@ export default function Navigation() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const navItems = [
-    { href: "/", label: "Home" },
     { href: "/learn-finnish", label: "Learn Finnish" },
     { href: "/guests", label: "Guests" },
     { href: "/blog", label: "Blog/Articles" },
+    { href: "/resources", label: "Resources" },
     { href: "/quick-links", label: "Quick Links" },
   ];
 
