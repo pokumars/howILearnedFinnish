@@ -11,6 +11,8 @@ export default function Navigation() {
 
   const navItems = [
     { href: "/", label: "Home" },
+    { href: "/learn-finnish", label: "Learn Finnish" },
+    { href: "/guests", label: "Guests" },
     { href: "/blog", label: "Blog/Articles" },
     { href: "/quick-links", label: "Quick Links" },
   ];
