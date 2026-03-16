@@ -55,10 +55,10 @@ export default function EpisodeCard({ episode }: EpisodeCardProps) {
         <div className="md:w-3/5 p-6">
           <Link href={`/episode/${episode.id}`}>
             <h3 className="text-xl font-bold text-gray-800 mb-3 hover:text-purple-600 transition-colors duration-200">
-              {episode.title}
               {episode.guest?.from && (
-                <Flag country={episode.guest.from} className="ml-2 align-middle" />
+                <Flag country={episode.guest.from} className="mr-2 align-middle" />
               )}
+              {episode.title}
             </h3>
           </Link>
           <p className="text-gray-600 mb-4 line-clamp-3">
