@@ -1,9 +1,19 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import localFont from "next/font/local";
 import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const borna = localFont({
+  src: [
+    {
+      path: "../fonts/borna/borna-medium-webfont.woff",
+      weight: "500",
+      style: "normal",
+    },
+  ],
+  display: "swap",
+  variable: "--font-borna",
+});
 
 export const metadata: Metadata = {
   title: "How I Learned Finnish - with Ohe",
@@ -53,7 +63,7 @@ export default function RootLayout({
         <link rel="shortcut icon" href="/HILF_logo.png" type="image/png" />
         <link rel="apple-touch-icon" href="/HILF_logo.png" />
       </head>
-      <body className={inter.className}>
+      <body className={borna.className}>
         {children}
         <Analytics />
       </body>
