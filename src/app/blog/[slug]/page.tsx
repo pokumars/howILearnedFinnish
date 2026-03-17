@@ -9,6 +9,8 @@ import { marked } from "marked";
 import { Metadata } from "next";
 import { BASE_URL } from "@/lib/config";
 import { buildMetadata } from "@/lib/metadata";
+import { generateArticleSchema, generateBreadcrumbSchema } from "@/lib/schema";
+import { JsonLd } from "@/components/JsonLd";
 
 // Configure marked options for better HTML output
 marked.setOptions({
@@ -65,8 +67,26 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
   // Process markdown content with proper HTML output
   const processedContent = marked(post.content);
 
+  const articleSchema = generateArticleSchema({
+    slug: post.slug,
+    title: post.title,
+    description: post.metaDescription || post.excerpt,
+    author: post.author,
+    authorUrl: post.authorUrl,
+    publishDate: post.publishDate,
+    featuredImage: post.featuredImage,
+  });
+
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: "Home", url: BASE_URL },
+    { name: "Blog", url: `${BASE_URL}/blog` },
+    { name: post.title, url: `${BASE_URL}/blog/${post.slug}` },
+  ]);
+
   return (
     <div className="min-h-screen bg-white">
+      <JsonLd data={articleSchema} />
+      <JsonLd data={breadcrumbSchema} />
       <Navigation />
 
       {/* Back to Blog Link */}

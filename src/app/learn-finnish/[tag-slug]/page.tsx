@@ -8,6 +8,12 @@ import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 import { Metadata } from "next";
 import { buildMetadata, truncate } from "@/lib/metadata";
+import {
+  generateCollectionPageSchema,
+  generateBreadcrumbSchema,
+} from "@/lib/schema";
+import { JsonLd } from "@/components/JsonLd";
+import { BASE_URL } from "@/lib/config";
 
 interface TagHubPageProps {
   params: Promise<{ "tag-slug": string }>;
@@ -39,8 +45,23 @@ export default async function TagHubPage({ params }: TagHubPageProps) {
 
   const tagEpisodes = episodes.filter((e) => e.tags.includes(tag.filterTag));
 
+  const collectionSchema = generateCollectionPageSchema({
+    slug: tag.slug,
+    heading: tag.heading,
+    intro: tag.intro,
+    episodes: tagEpisodes.map((e) => ({ id: e.id, title: e.title })),
+  });
+
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: "Home", url: BASE_URL },
+    { name: "Learn Finnish", url: `${BASE_URL}/learn-finnish` },
+    { name: tag.label, url: `${BASE_URL}/learn-finnish/${tag.slug}` },
+  ]);
+
   return (
     <div className="min-h-screen bg-white">
+      <JsonLd data={collectionSchema} />
+      <JsonLd data={breadcrumbSchema} />
       <Navigation />
 
       {/* Back link */}

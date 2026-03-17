@@ -7,6 +7,12 @@ import { resourceCategoryMeta } from "@/data/resource-categories";
 import { ArrowLeft } from "lucide-react";
 import type { Metadata } from "next";
 import { buildMetadata } from "@/lib/metadata";
+import {
+  generateResourceItemListSchema,
+  generateBreadcrumbSchema,
+} from "@/lib/schema";
+import { JsonLd } from "@/components/JsonLd";
+import { BASE_URL } from "@/lib/config";
 
 interface CategoryPageProps {
   params: Promise<{ "category-slug": string }>;
@@ -41,8 +47,27 @@ export default async function ResourceCategoryPage({ params }: CategoryPageProps
 
   const otherCategories = resourceCategoryMeta.filter((c) => c.slug !== slug);
 
+  const itemListSchema = generateResourceItemListSchema({
+    slug: cat.slug,
+    heading: cat.heading,
+    metaDescription: cat.metaDescription,
+    resources: categoryResources.map((r) => ({
+      id: r.id,
+      name: r.name,
+      description: r.description,
+    })),
+  });
+
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: "Home", url: BASE_URL },
+    { name: "Resources", url: `${BASE_URL}/resources` },
+    { name: cat.heading, url: `${BASE_URL}/resources/${cat.slug}` },
+  ]);
+
   return (
     <div className="min-h-screen bg-white">
+      <JsonLd data={itemListSchema} />
+      <JsonLd data={breadcrumbSchema} />
       <Navigation />
 
       {/* Back link */}

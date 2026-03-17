@@ -9,6 +9,11 @@ import { Metadata } from "next";
 import PillButton from "@/components/pillButton";
 import { BASE_URL } from "@/lib/config";
 import { buildMetadata } from "@/lib/metadata";
+import {
+  generatePodcastEpisodeSchema,
+  generateBreadcrumbSchema,
+} from "@/lib/schema";
+import { JsonLd } from "@/components/JsonLd";
 import fs from "fs";
 import path from "path";
 import { transcriptFileByEpisodeId } from "@/data/transcripts/manifest";
@@ -119,35 +124,24 @@ export default async function EpisodePage({ params }: EpisodePageProps) {
   const youtubeVideoId = getYouTubeVideoId(episode.videoUrl);
   const transcriptEntries = loadTranscript(episode.id);
 
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "PodcastEpisode",
-    name: episode.title,
+  const episodeSchema = generatePodcastEpisodeSchema({
+    id: episode.id,
+    title: episode.title,
     description: episode.description,
-    url: `${BASE_URL}/episode/${episode.id}`,
-    partOfSeries: {
-      "@type": "PodcastSeries",
-      name: "How I Learned Finnish",
-      url: BASE_URL,
-    },
-    ...(youtubeVideoId && {
-      associatedMedia: {
-        "@type": "VideoObject",
-        name: episode.title,
-        description: episode.description,
-        thumbnailUrl: `${BASE_URL}${episode.thumbnail}`,
-        embedUrl: `https://www.youtube.com/embed/${youtubeVideoId}`,
-        url: episode.videoUrl,
-      },
-    }),
-  };
+    thumbnail: episode.thumbnail,
+    videoUrl: episode.videoUrl,
+    youtubeVideoId,
+  });
+
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: "Home", url: BASE_URL },
+    { name: episode.title, url: `${BASE_URL}/episode/${episode.id}` },
+  ]);
 
   return (
     <div className="min-h-screen bg-white">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
+      <JsonLd data={episodeSchema} />
+      <JsonLd data={breadcrumbSchema} />
       <Navigation />
 
       {/* Back to Episodes Link */}

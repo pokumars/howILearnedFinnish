@@ -7,6 +7,9 @@ import Link from "next/link";
 import { Metadata } from "next";
 import EpisodeCard from "@/components/EpisodeCard";
 import { buildMetadata } from "@/lib/metadata";
+import { generatePersonSchema, generateBreadcrumbSchema } from "@/lib/schema";
+import { JsonLd } from "@/components/JsonLd";
+import { BASE_URL } from "@/lib/config";
 
 interface GuestPageProps {
   params: Promise<{ slug: string }>;
@@ -34,8 +37,24 @@ export default async function GuestPage({ params }: GuestPageProps) {
 
   const { guest } = episode;
 
+  const personSchema = generatePersonSchema({
+    name: guest.name,
+    slug: guest.slug,
+    bio: guest.bio,
+    profession: guest.profession,
+    socialUrl: guest.socialUrl,
+  });
+
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: "Home", url: BASE_URL },
+    { name: "Guests", url: `${BASE_URL}/guests` },
+    { name: guest.name, url: `${BASE_URL}/guests/${guest.slug}` },
+  ]);
+
   return (
     <div className="min-h-screen bg-white">
+      <JsonLd data={personSchema} />
+      <JsonLd data={breadcrumbSchema} />
       <Navigation />
 
       {/* Back link */}
