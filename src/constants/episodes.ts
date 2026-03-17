@@ -32,7 +32,6 @@ export enum FilterTags {
   NonFinnishSpeakingPartner = "Non-Finnish-speaking partner",
   A1toC = "A1 to C",
   B1toC = "B1 to C",
-  WithKids = "With Kids",
   Immersion = "Immersion method",
   FastPaced = "Fast-paced",
   //Introvert = "Introvert",
@@ -583,7 +582,6 @@ export const episodes: Episode[] = [
     },
     tags: [
       FilterTags.Parent,
-      FilterTags.WithKids,
       FilterTags.Immersion,
       FilterTags.FinnishSpeakingPartner,
       FilterTags.FastPaced,
@@ -654,7 +652,7 @@ export const episodes: Episode[] = [
     tags: [
       FilterTags.A1toC,
       FilterTags.FinnishSpeakingPartner,
-      FilterTags.WithKids,
+      FilterTags.Parent,
     ],
     videoUrl: "https://youtu.be/qD6RTlqPmRA?si=fte-t1TsGpENFrCT",
     thumbnail: "/thumbnails/4_Erik.jpg",
@@ -714,7 +712,6 @@ export const episodes: Episode[] = [
     },
     tags: [
       FilterTags.Parent,
-      FilterTags.WithKids,
       FilterTags.A1toC,
       FilterTags.Immersion,
       FilterTags.NonFinnishSpeakingPartner,
