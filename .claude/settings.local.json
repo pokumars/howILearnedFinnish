@@ -9,7 +9,8 @@
       "Skill(pseo-templates)",
       "Skill(pseo-*)",
       "Skill(pseo-metadata)",
-      "Skill(pseo-schema)"
+      "Skill(pseo-schema)",
+      "Skill(pseo-linking)"
     ]
   }
 }
