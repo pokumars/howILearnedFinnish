@@ -2,8 +2,8 @@ import { notFound } from "next/navigation";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { blogPosts } from "@/data/blog-posts";
-import { Calendar, User, ArrowLeft } from "lucide-react";
-import Link from "next/link";
+import { Calendar, User } from "lucide-react";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import Image from "next/image";
 import { marked } from "marked";
 import { Metadata } from "next";
@@ -89,16 +89,15 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
       <JsonLd data={breadcrumbSchema} />
       <Navigation />
 
-      {/* Back to Blog Link */}
-      <section className="bg-gray-50 py-4">
+      {/* Breadcrumbs */}
+      <section className="bg-gray-50 py-4 border-b border-gray-100">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <Link
-            href="/blog"
-            className="inline-flex items-center text-purple-600 hover:text-purple-700 font-medium transition-colors duration-200"
-          >
-            <ArrowLeft className="w-4 h-4 mr-2" />
-            Back to all articles
-          </Link>
+          <Breadcrumbs
+            items={[
+              { label: "Blog", href: "/blog" },
+              { label: post.title, href: `/blog/${post.slug}` },
+            ]}
+          />
         </div>
       </section>
 

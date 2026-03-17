@@ -4,7 +4,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { resources } from "@/data/resources";
 import { resourceCategoryMeta } from "@/data/resource-categories";
-import { ArrowLeft } from "lucide-react";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import type { Metadata } from "next";
 import { buildMetadata } from "@/lib/metadata";
 import {
@@ -70,16 +70,15 @@ export default async function ResourceCategoryPage({ params }: CategoryPageProps
       <JsonLd data={breadcrumbSchema} />
       <Navigation />
 
-      {/* Back link */}
+      {/* Breadcrumbs */}
       <section className="bg-gray-50 py-4 border-b border-gray-100">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <Link
-            href="/resources"
-            className="inline-flex items-center text-purple-600 hover:text-purple-700 font-medium transition-colors duration-200"
-          >
-            <ArrowLeft className="w-4 h-4 mr-2" />
-            All resources
-          </Link>
+          <Breadcrumbs
+            items={[
+              { label: "Resources", href: "/resources" },
+              { label: cat.heading, href: `/resources/${cat.slug}` },
+            ]}
+          />
         </div>
       </section>
 

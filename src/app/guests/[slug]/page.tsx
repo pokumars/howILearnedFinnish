@@ -2,8 +2,9 @@ import { notFound } from "next/navigation";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { episodes } from "@/constants/episodes";
-import { ArrowLeft, ExternalLink } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 import Link from "next/link";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import { Metadata } from "next";
 import EpisodeCard from "@/components/EpisodeCard";
 import { buildMetadata } from "@/lib/metadata";
@@ -57,16 +58,15 @@ export default async function GuestPage({ params }: GuestPageProps) {
       <JsonLd data={breadcrumbSchema} />
       <Navigation />
 
-      {/* Back link */}
-      <section className="bg-gray-50 py-4">
+      {/* Breadcrumbs */}
+      <section className="bg-gray-50 py-4 border-b border-gray-100">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <Link
-            href="/guests"
-            className="inline-flex items-center text-purple-600 hover:text-purple-700 font-medium transition-colors duration-200"
-          >
-            <ArrowLeft className="w-4 h-4 mr-2" />
-            All guests
-          </Link>
+          <Breadcrumbs
+            items={[
+              { label: "Guests", href: "/guests" },
+              { label: guest.name, href: `/guests/${guest.slug}` },
+            ]}
+          />
         </div>
       </section>
 

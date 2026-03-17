@@ -2,7 +2,7 @@ import { notFound } from "next/navigation";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { episodes } from "@/constants/episodes";
-import { ArrowLeft, ExternalLink } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { Metadata } from "next";
@@ -17,6 +17,8 @@ import { JsonLd } from "@/components/JsonLd";
 import fs from "fs";
 import path from "path";
 import { transcriptFileByEpisodeId } from "@/data/transcripts/manifest";
+import Breadcrumbs from "@/components/Breadcrumbs";
+import RelatedEpisodes from "@/components/RelatedEpisodes";
 
 interface EpisodePageProps {
   params: Promise<{
@@ -144,16 +146,15 @@ export default async function EpisodePage({ params }: EpisodePageProps) {
       <JsonLd data={breadcrumbSchema} />
       <Navigation />
 
-      {/* Back to Episodes Link */}
-      <section className="bg-gray-50 py-4">
+      {/* Breadcrumbs */}
+      <section className="bg-gray-50 py-4 border-b border-gray-100">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <Link
-            href="/"
-            className="inline-flex items-center text-purple-600 hover:text-purple-700 font-medium transition-colors duration-200"
-          >
-            <ArrowLeft className="w-4 h-4 mr-2" />
-            Back to all episodes
-          </Link>
+          <Breadcrumbs
+            items={[
+              { label: "Episodes", href: "/" },
+              { label: episode.title, href: `/episode/${episode.id}` },
+            ]}
+          />
         </div>
       </section>
 
@@ -400,6 +401,12 @@ export default async function EpisodePage({ params }: EpisodePageProps) {
               </details>
             </div>
           )}
+          {/* Related Episodes */}
+          <RelatedEpisodes
+            currentId={episode.id}
+            currentTags={episode.tags}
+            allEpisodes={episodes}
+          />
         </div>
       </section>
 

@@ -5,7 +5,7 @@ import { tagData } from "@/data/tags";
 import { episodes } from "@/constants/episodes";
 import EpisodeCard from "@/components/EpisodeCard";
 import Link from "next/link";
-import { ArrowLeft } from "lucide-react";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import { Metadata } from "next";
 import { buildMetadata, truncate } from "@/lib/metadata";
 import {
@@ -64,16 +64,15 @@ export default async function TagHubPage({ params }: TagHubPageProps) {
       <JsonLd data={breadcrumbSchema} />
       <Navigation />
 
-      {/* Back link */}
-      <section className="bg-gray-50 py-4">
+      {/* Breadcrumbs */}
+      <section className="bg-gray-50 py-4 border-b border-gray-100">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <Link
-            href="/learn-finnish"
-            className="inline-flex items-center text-purple-600 hover:text-purple-700 font-medium transition-colors duration-200"
-          >
-            <ArrowLeft className="w-4 h-4 mr-2" />
-            All topics
-          </Link>
+          <Breadcrumbs
+            items={[
+              { label: "Learn Finnish", href: "/learn-finnish" },
+              { label: tag.label, href: `/learn-finnish/${tag.slug}` },
+            ]}
+          />
         </div>
       </section>
 
