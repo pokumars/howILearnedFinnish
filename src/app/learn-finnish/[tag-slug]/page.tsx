@@ -44,6 +44,7 @@ export default async function TagHubPage({ params }: TagHubPageProps) {
   if (!tag) notFound();
 
   const tagEpisodes = episodes.filter((e) => e.tags.includes(tag.filterTag));
+  const relatedTopics = tagData.filter((t) => t.slug !== tag.slug);
 
   const collectionSchema = generateCollectionPageSchema({
     slug: tag.slug,
@@ -112,6 +113,30 @@ export default async function TagHubPage({ params }: TagHubPageProps) {
           ) : (
             <p className="text-gray-500">No episodes yet for this topic.</p>
           )}
+        </div>
+      </section>
+
+      {/* Related topics */}
+      <section className="py-12 bg-white border-t border-gray-100">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-xl font-bold text-gray-800 mb-6">Explore other topics</h2>
+          <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+            {relatedTopics.map((other) => {
+              const count = episodes.filter((e) => e.tags.includes(other.filterTag)).length;
+              return (
+                <Link
+                  key={other.slug}
+                  href={`/learn-finnish/${other.slug}`}
+                  className="p-4 border border-gray-200 rounded-lg hover:border-purple-300 hover:shadow-sm transition-all duration-200"
+                >
+                  <p className="font-medium text-gray-800 text-sm leading-snug">{other.heading}</p>
+                  <p className="text-xs text-purple-600 mt-1">
+                    {count} episode{count !== 1 ? "s" : ""} →
+                  </p>
+                </Link>
+              );
+            })}
+          </div>
         </div>
       </section>
 
