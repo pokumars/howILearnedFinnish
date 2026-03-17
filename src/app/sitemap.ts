@@ -11,31 +11,31 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const staticPages = [
     {
       url: baseUrl,
-      lastModified: new Date(),
+      lastModified: new Date("2026-03-17"),
       changeFrequency: "weekly" as const,
       priority: 1,
     },
     {
       url: `${baseUrl}/blog`,
-      lastModified: new Date(),
+      lastModified: new Date("2026-02-10"),
       changeFrequency: "weekly" as const,
       priority: 0.8,
     },
     {
       url: `${baseUrl}/resources`,
-      lastModified: new Date(),
+      lastModified: new Date("2026-03-17"),
       changeFrequency: "monthly" as const,
       priority: 0.8,
     },
     {
       url: `${baseUrl}/learn-finnish`,
-      lastModified: new Date(),
+      lastModified: new Date("2026-03-17"),
       changeFrequency: "monthly" as const,
       priority: 0.8,
     },
     {
       url: `${baseUrl}/quick-links`,
-      lastModified: new Date(),
+      lastModified: new Date("2025-12-17"),
       changeFrequency: "monthly" as const,
       priority: 0.6,
     },
@@ -62,7 +62,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     .filter((e) => e.guest)
     .map((e) => ({
       url: `${baseUrl}/guests/${e.guest!.slug}`,
-      lastModified: new Date(),
+      lastModified: new Date("2026-03-17"),
       changeFrequency: "monthly" as const,
       priority: 0.7,
     }));
@@ -70,7 +70,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Tag hub pages
   const tagHubPages = tagData.map((tag) => ({
     url: `${baseUrl}/learn-finnish/${tag.slug}`,
-    lastModified: new Date(),
+    lastModified: new Date("2026-03-17"),
     changeFrequency: "monthly" as const,
     priority: 0.8,
   }));
@@ -78,7 +78,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Resource category pages
   const resourceCategoryPages = resourceCategoryMeta.map((cat) => ({
     url: `${baseUrl}/resources/${cat.slug}`,
-    lastModified: new Date(),
+    lastModified: new Date("2026-03-17"),
     changeFrequency: "monthly" as const,
     priority: 0.7,
   }));
