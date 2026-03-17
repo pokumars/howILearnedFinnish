@@ -7,6 +7,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Metadata } from "next";
 import PillButton from "@/components/pillButton";
+import { BASE_URL } from "@/lib/config";
 import fs from "fs";
 import path from "path";
 import { transcriptFileByEpisodeId } from "@/data/transcripts/manifest";
@@ -124,18 +125,18 @@ export default async function EpisodePage({ params }: EpisodePageProps) {
     "@type": "PodcastEpisode",
     name: episode.title,
     description: episode.description,
-    url: `https://howilearnedfinnish.fi/episode/${episode.id}`,
+    url: `${BASE_URL}/episode/${episode.id}`,
     partOfSeries: {
       "@type": "PodcastSeries",
       name: "How I Learned Finnish",
-      url: "https://howilearnedfinnish.fi",
+      url: BASE_URL,
     },
     ...(youtubeVideoId && {
       associatedMedia: {
         "@type": "VideoObject",
         name: episode.title,
         description: episode.description,
-        thumbnailUrl: `https://howilearnedfinnish.fi${episode.thumbnail}`,
+        thumbnailUrl: `${BASE_URL}${episode.thumbnail}`,
         embedUrl: `https://www.youtube.com/embed/${youtubeVideoId}`,
         url: episode.videoUrl,
       },
