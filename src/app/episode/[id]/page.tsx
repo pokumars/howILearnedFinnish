@@ -9,6 +9,7 @@ import { Metadata } from "next";
 import PillButton from "@/components/pillButton";
 import fs from "fs";
 import path from "path";
+import { transcriptFileByEpisodeId } from "@/data/transcripts/manifest";
 
 interface EpisodePageProps {
   params: Promise<{
@@ -61,9 +62,7 @@ function parseTranscript(raw: string): TranscriptEntry[] {
 function loadTranscript(episodeId: number): TranscriptEntry[] {
   try {
     const transcriptsDir = path.join(process.cwd(), "src/data/transcripts");
-    const paddedId = String(episodeId).padStart(3, "0");
-    const files = fs.readdirSync(transcriptsDir);
-    const transcriptFile = files.find((f) => f.startsWith(paddedId));
+    const transcriptFile = transcriptFileByEpisodeId[episodeId];
     if (!transcriptFile) return [];
     const raw = fs.readFileSync(
       path.join(transcriptsDir, transcriptFile),
@@ -73,6 +72,10 @@ function loadTranscript(episodeId: number): TranscriptEntry[] {
   } catch {
     return [];
   }
+}
+
+export function generateStaticParams() {
+  return episodes.map((e) => ({ id: String(e.id) }));
 }
 
 export async function generateMetadata({
