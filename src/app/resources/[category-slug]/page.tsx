@@ -6,6 +6,7 @@ import { resources } from "@/data/resources";
 import { resourceCategoryMeta } from "@/data/resource-categories";
 import { ArrowLeft } from "lucide-react";
 import type { Metadata } from "next";
+import { buildMetadata } from "@/lib/metadata";
 
 interface CategoryPageProps {
   params: Promise<{ "category-slug": string }>;
@@ -20,10 +21,11 @@ export async function generateMetadata({ params }: CategoryPageProps): Promise<M
   const cat = resourceCategoryMeta.find((c) => c.slug === slug);
   if (!cat) return { title: "Not Found" };
 
-  return {
+  return buildMetadata({
     title: `${cat.heading} | How I Learned Finnish`,
     description: cat.metaDescription,
-  };
+    path: `/resources/${cat.slug}`,
+  });
 }
 
 export default async function ResourceCategoryPage({ params }: CategoryPageProps) {

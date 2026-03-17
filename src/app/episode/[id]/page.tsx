@@ -8,6 +8,7 @@ import Image from "next/image";
 import { Metadata } from "next";
 import PillButton from "@/components/pillButton";
 import { BASE_URL } from "@/lib/config";
+import { buildMetadata } from "@/lib/metadata";
 import fs from "fs";
 import path from "path";
 import { transcriptFileByEpisodeId } from "@/data/transcripts/manifest";
@@ -91,15 +92,13 @@ export async function generateMetadata({
     };
   }
 
-  return {
+  return buildMetadata({
     title: episode.title,
     description: episode.description,
-    openGraph: {
-      title: episode.title,
-      description: episode.description,
-      images: episode.thumbnail ? [episode.thumbnail] : [],
-    },
-  };
+    path: `/episode/${episode.id}`,
+    ogImage: episode.thumbnail ? `${BASE_URL}${episode.thumbnail}` : undefined,
+    ogType: "article",
+  });
 }
 
 export default async function EpisodePage({ params }: EpisodePageProps) {

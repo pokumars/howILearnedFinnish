@@ -7,6 +7,8 @@ import Link from "next/link";
 import Image from "next/image";
 import { marked } from "marked";
 import { Metadata } from "next";
+import { BASE_URL } from "@/lib/config";
+import { buildMetadata } from "@/lib/metadata";
 
 // Configure marked options for better HTML output
 marked.setOptions({
@@ -32,15 +34,16 @@ export async function generateMetadata({
     };
   }
 
-  return {
+  const description = post.metaDescription || post.excerpt;
+  return buildMetadata({
     title: post.title,
-    description: post.metaDescription || post.excerpt,
-    openGraph: {
-      title: post.title,
-      description: post.metaDescription || post.excerpt,
-      images: post.featuredImage ? [post.featuredImage] : [],
-    },
-  };
+    description,
+    path: `/blog/${post.slug}`,
+    ogImage: post.featuredImage ? `${BASE_URL}${post.featuredImage}` : undefined,
+    ogType: "article",
+    publishedTime: post.publishDate,
+    author: post.author,
+  });
 }
 
 export default async function BlogPostPage({ params }: BlogPostPageProps) {

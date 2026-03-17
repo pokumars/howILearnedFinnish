@@ -6,6 +6,7 @@ import { ArrowLeft, ExternalLink } from "lucide-react";
 import Link from "next/link";
 import { Metadata } from "next";
 import EpisodeCard from "@/components/EpisodeCard";
+import { buildMetadata } from "@/lib/metadata";
 
 interface GuestPageProps {
   params: Promise<{ slug: string }>;
@@ -19,10 +20,11 @@ export async function generateMetadata({
   if (!episode?.guest) return { title: "Guest Not Found" };
   const { guest } = episode;
 
-  return {
+  return buildMetadata({
     title: `${guest.name} | How I Learned Finnish`,
     description: guest.bio,
-  };
+    path: `/guests/${guest.slug}`,
+  });
 }
 
 export default async function GuestPage({ params }: GuestPageProps) {

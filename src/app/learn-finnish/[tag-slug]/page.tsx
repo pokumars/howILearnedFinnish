@@ -7,6 +7,7 @@ import EpisodeCard from "@/components/EpisodeCard";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 import { Metadata } from "next";
+import { buildMetadata, truncate } from "@/lib/metadata";
 
 interface TagHubPageProps {
   params: Promise<{ "tag-slug": string }>;
@@ -23,12 +24,12 @@ export async function generateMetadata({
   const tag = tagData.find((t) => t.slug === tagSlug);
   if (!tag) return { title: "Not Found" };
 
-  const count = episodes.filter((e) => e.tags.includes(tag.filterTag)).length;
-
-  return {
+  const description = truncate(tag.intro, 155);
+  return buildMetadata({
     title: `${tag.label} | How I Learned Finnish`,
-    description: `${tag.intro} ${count} episode${count !== 1 ? "s" : ""} featuring guests who learned Finnish this way.`,
-  };
+    description,
+    path: `/learn-finnish/${tag.slug}`,
+  });
 }
 
 export default async function TagHubPage({ params }: TagHubPageProps) {
