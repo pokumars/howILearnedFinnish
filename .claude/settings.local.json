@@ -10,7 +10,9 @@
       "Skill(pseo-*)",
       "Skill(pseo-metadata)",
       "Skill(pseo-schema)",
-      "Skill(pseo-linking)"
+      "Skill(pseo-linking)",
+      "Skill(pseo-quality-guard)",
+      "Skill(pseo-quality-guard:*)"
     ]
   }
 }
