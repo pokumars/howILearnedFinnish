@@ -18,7 +18,7 @@ export const blogPosts: BlogPost[] = [
     authorUrl: "https://x.com/pokumars",
     publishDate: "2026-03-11",
     metaDescription:
-      'How I learned Finnish fast by "pretending not to speak English" for a year—using an English-only Thursdays rule, plus a simple six-part system for vocabulary, speaking, listening, grammar, reading, and writing.',
+      "I pretended not to speak English for a year and told my girlfriend 'English only on Thursdays.' Here's the six-part system that got me fluent.",
     excerpt:
       'I told my Finnish-speaking girlfriend: "We will only speak English on Thursdays." What followed was a year of deliberate discomfort—pretending not to speak English—until I landed a job that required Finnish. Here is the system I used.',
     content: `I was stubborn. I had to be.
@@ -110,7 +110,7 @@ That is why I have made the homepage of this project such that you can filter fo
     authorUrl: "https://x.com/pokumars",
     publishDate: "2026-03-11",
     metaDescription:
-      "Passed the Finnish YKI test but still don’t feel fluent? Learn why YKI-level Finnish doesn’t automatically translate to real conversation—and how to close the gap with a practical 6-skill system.",
+      "Passed YKI but still can't hold a conversation in Finnish? Here's why the test doesn't equal fluency and how to close the gap.",
     excerpt:
       "If you passed YKI but still struggle with real conversations, you’re not alone. Here’s why the gap happens—and a practical 6-skill plan (vocab, speaking, listening, grammar, reading, writing) to finally become fluent.",
     content: `Passing the YKI can feel like “I did it.” You proved you can function in Finnish, you can handle official requirements, and on paper everything looks good.
@@ -265,7 +265,7 @@ YKI is a valid milestone. But if you want Finnish that unlocks:
     authorUrl: "https://x.com/pokumars",
     publishDate: "2026-01-13",
     metaDescription:
-      "Discover if YKI is the easiest path to Finnish citizenship. Learn about alternative routes including education certificates, degrees, and vocational qualifications that can satisfy language requirements without taking the YKI test.",
+      "YKI isn't the only way to prove Finnish for citizenship. Explore alternative routes including education certificates and vocational qualifications.",
     excerpt:
       "Many people assume that the YKI test is the default ticket to citizenship. It isn't! Is it even the easiest path? Understanding your options can save you time, frustration, and misplaced effort. Explore whether YKI is truly the simplest route or if education-based paths might be easier for you.",
     content: `# **Is YKI the Easiest Path to Finnish Citizenship?**
@@ -385,7 +385,7 @@ If you _do_ need YKI, [plan well ahead](/blog/deborah-laajanen-finnish-learning-
     authorUrl: "https://x.com/pokumars",
     publishDate: "2026-01-12",
     metaDescription:
-      "Learn about Finnish language requirements for citizenship: YKI test levels, accepted combinations, alternative certificates, and practical advice for immigrants applying for Finnish citizenship.",
+      "Everything you need to know about Finnish language requirements for citizenship: YKI levels, accepted certificates, and practical advice.",
     excerpt:
       "Becoming a Finnish citizen is a significant milestone for many immigrants. In addition to time spent living in Finland, having no serious criminal record, and meeting other legal criteria, you must prove your language skills in Finnish or Swedish. Naturally, language proficiency isn't just a bureaucratic box to tick it's tied directly into how you'll live, work, and participate in Finnish society.",
     content: `## **Finnish Language Requirements for Citizenship - What You Actually Need to Know**
@@ -487,7 +487,7 @@ Many applicants study to pass YKI without gaining the level of fluency needed fo
     authorUrl: "https://x.com/pokumars",
     publishDate: "2025-11-05",
     metaDescription:
-      "Immigrants Are Not a Burden, They Pay More Taxes than You Think",
+      "A Finnish study shows immigrants contributed a net \u20AC225 million to public finances. The data proves they sustain the welfare system, not drain it.",
     excerpt:
       "When the Helsinki Times reported that immigrants in Finland now pay more in taxes than they receive in benefits, it didn’t surprise me. A new study from Diaconia University of Applied Sciences found that foreign-language speakers contributed a net €225 million to public finances last year. It’s the first time national data has clearly shown that immigrants are, in fact, helping sustain the Finnish welfare system — not draining it.",
     featuredImage: "/blog-immigrants-are-not-a-burden.png",
@@ -518,7 +518,7 @@ I made this so that you can hear how they learned Finnish as adults and you can 
     authorUrl: "https://www.linkedin.com/in/deborahlaajanen",
     publishDate: "2025-10-04",
     metaDescription:
-      "Follow Deborah Laajanen's inspiring journey learning Finnish from A1 to C1-C2 level. Discover her methods, resources, and advice for each CEFR level as she navigates immigration, motherhood, and pursuing a Master of Laws degree in Finnish.",
+      "How Deborah Laajanen learned Finnish from A1 to C1-C2 while navigating immigration and motherhood, earning a place at Helsinki Law School.",
     excerpt:
       "If I were asked how I would describe the Finnish language, I would say it is *sui generis*. Finnish is indeed distinct—its origins and structure differ significantly from its neighboring Indo-European languages. In this article, I recount my own learning experience to humanize the journey, list the references I used, and share the advice I would give myself at each stage.",
     featuredImage: "/thumbnails/5_Deborah.jpg",
@@ -667,7 +667,7 @@ I am convinced that at the height of this journey lies freedom, not from discipl
     authorUrl: "https://x.com/pokumars",
     publishDate: "2025-09-23",
     metaDescription:
-      "Discover the best Finnish podcasts to boost your language learning. From easy Finnish news to finance, culture and language learning podcasts,  here’s how I used podcasts to reach fluency in one year.",
+      "The best Finnish podcasts for language learning, from easy news to finance and culture. How I used podcasts to reach fluency in one year.",
     excerpt:
       "Discover the best Finnish podcasts to boost your language learning. From easy Finnish news to finance, culture and language learning podcasts,  here’s how I used podcasts to reach fluency in one year.",
     featuredImage: "/blog-best-finnish-podcasts.png",
@@ -800,7 +800,7 @@ If you’re learning Finnish, pick at least one podcast today and just start lis
     authorUrl: "https://x.com/pokumars",
     publishDate: "2025-07-05",
     metaDescription:
-      "Discover how I pretended not to speak English for a year to learn Finnish fast as an adult immigrant, and why I started a language learning podcast to share strategies and fluency stories.",
+      "How I pretended not to speak English for a year to learn Finnish as an adult immigrant, and why I started a podcast to share fluency strategies.",
     excerpt:
       "I have been having a slowly growing burning feeling in the back of my head to do something for a while now, especially to help other immigrants learn Finnish and thrive in Finland. I think it started when I heard of the concept of reparenting oneself, i.e., providing for yourself the physical and emotional needs you wish you had as a child but didn't receive.",
     featuredImage: "/blog-no-english.jpg",
