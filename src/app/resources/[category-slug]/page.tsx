@@ -87,6 +87,15 @@ export default async function ResourceCategoryPage({ params }: CategoryPageProps
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl font-bold text-gray-800 mb-4">{cat.heading}</h1>
           <p className="text-lg text-gray-600 max-w-3xl leading-relaxed">{cat.intro}</p>
+          {cat.introBody && cat.introBody.length > 0 && (
+            <div className="mt-8 max-w-3xl space-y-4">
+              {cat.introBody.map((paragraph, i) => (
+                <p key={i} className="text-base text-gray-600 leading-relaxed">
+                  {paragraph}
+                </p>
+              ))}
+            </div>
+          )}
           <p className="mt-6 text-sm text-gray-400">
             {categoryResources.length} resource{categoryResources.length !== 1 ? "s" : ""} ·{" "}
             {totalMentions} mention{totalMentions !== 1 ? "s" : ""} · {uniqueGuests} guest
