@@ -101,7 +101,7 @@ export async function generateMetadata({
 
   return buildMetadata({
     title: episode.title,
-    description: episode.description,
+    description: episode.metaDescription ?? episode.description,
     path: `/episode/${episode.id}`,
     ogImage: episode.thumbnail ? `${BASE_URL}${episode.thumbnail}` : undefined,
     ogType: "article",

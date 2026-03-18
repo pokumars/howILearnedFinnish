@@ -26,7 +26,7 @@ export async function generateMetadata({
 
   return buildMetadata({
     title: `${guest.name} | How I Learned Finnish`,
-    description: guest.bio,
+    description: guest.metaDescription ?? guest.bio,
     path: `/guests/${guest.slug}`,
   });
 }

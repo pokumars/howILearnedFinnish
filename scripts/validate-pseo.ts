@@ -275,10 +275,18 @@ function buildPages(): PageRecord[] {
     keywordsPrimary: "How I Learned Finnish guests",
   });
 
-  // Quick links page does not define page-level metadata in this repo.
   pages.push({
     type: "static",
     path: "/quick-links",
+    title: "Quick Links | How I Learned Finnish",
+    description:
+      "Find all How I Learned Finnish links in one place — podcast platforms, social media, blog, and Finnish learning resources.",
+    h1: "How I Learned Finnish - with Ohe",
+    canonical: getExpectedCanonical("/quick-links"),
+    ogTitle: "Quick Links | How I Learned Finnish",
+    ogDescription:
+      "Find all How I Learned Finnish links in one place — podcast platforms, social media, blog, and Finnish learning resources.",
+    ogUrl: getExpectedCanonical("/quick-links"),
     schemaTypes: ["Unknown"],
     bodyText: "How I Learned Finnish - with Ohe. All important links in one place.",
     firstParagraph: "All important links in one place",
@@ -305,15 +313,16 @@ function buildPages(): PageRecord[] {
       transcriptText,
     ].filter(Boolean);
 
+    const epMetaDesc = ep.metaDescription ?? ep.description;
     pages.push({
       type: "episode",
       path: `/episode/${ep.id}`,
       title: ep.title,
-      description: ep.description,
+      description: epMetaDesc,
       h1: ep.title,
       canonical: getExpectedCanonical(`/episode/${ep.id}`),
       ogTitle: ep.title,
-      ogDescription: ep.description,
+      ogDescription: epMetaDesc,
       ogUrl: getExpectedCanonical(`/episode/${ep.id}`),
       schemaTypes: schemaTypesForPageType("episode"),
       bodyText: normalizeWhitespace(bodyParts.join("\n\n")),
@@ -352,15 +361,16 @@ function buildPages(): PageRecord[] {
     const bodyText = normalizeWhitespace(
       stripMarkdown([guest.name, guest.profession, guest.bio, `Episode ${ep.id}`].join("\n\n"))
     );
+    const guestMetaDesc = guest.metaDescription ?? guest.bio;
     pages.push({
       type: "guest",
       path: `/guests/${guest.slug}`,
       title: `${guest.name} | How I Learned Finnish`,
-      description: guest.bio,
+      description: guestMetaDesc,
       h1: guest.name,
       canonical: getExpectedCanonical(`/guests/${guest.slug}`),
       ogTitle: `${guest.name} | How I Learned Finnish`,
-      ogDescription: guest.bio,
+      ogDescription: guestMetaDesc,
       ogUrl: getExpectedCanonical(`/guests/${guest.slug}`),
       schemaTypes: schemaTypesForPageType("guest"),
       bodyText,
