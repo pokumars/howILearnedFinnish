@@ -2,7 +2,7 @@
 
 ### Summary
 - Total pages checked: 55
-- Issues found: 5 (0 critical, 4 warnings, 1 informational)
+- Issues found: 4 (0 critical, 3 warnings, 1 informational)
 
 ### Thin Content
 - None
@@ -14,7 +14,7 @@
 - **Warning** Potential keyword/intent overlap between tag hubs (shared episode roster) (a: /learn-finnish/a1-to-c-level, b: /learn-finnish/immersion-method, sharedEpisodes: 9, overlap: 0.75, aLabel: From A1 to C Level Finnish, bLabel: Learning Finnish Through Immersion)
 
 ### Metadata Issues
-- **Warning** `/guests/emily` Title length outside 30–70 chars (length: 29)
+- None
 
 ### Linking Issues
 - **Warning** `/episode/[id]` Episode tags are not internal links to `/learn-finnish/[tag-slug]` (rendered as display-only pills)
@@ -38,7 +38,6 @@
 
 ### Action Required
 1. **Warning** Potential keyword/intent overlap between tag hubs (shared episode roster) (a: /learn-finnish/a1-to-c-level, b: /learn-finnish/immersion-method, sharedEpisodes: 9, overlap: 0.75, aLabel: From A1 to C Level Finnish, bLabel: Learning Finnish Through Immersion)
-2. **Warning** `/guests/emily` Title length outside 30–70 chars (length: 29)
-3. **Warning** `/episode/[id]` Episode tags are not internal links to `/learn-finnish/[tag-slug]` (rendered as display-only pills)
-4. **Warning** `/episode/[id]` `Resources mentioned` are rendered as plain text; consider linking to related `/resources/[category-slug]` where possible
-5. **Info** Filler intro patterns detected (possible low-value preamble) (pages: 1)
+2. **Warning** `/episode/[id]` Episode tags are not internal links to `/learn-finnish/[tag-slug]` (rendered as display-only pills)
+3. **Warning** `/episode/[id]` `Resources mentioned` are rendered as plain text; consider linking to related `/resources/[category-slug]` where possible
+4. **Info** Filler intro patterns detected (possible low-value preamble) (pages: 1)

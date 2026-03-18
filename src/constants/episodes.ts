@@ -542,7 +542,7 @@ export const episodes: Episode[] = [
     description:
       "Meet Emily, an entrepreneur and hairdresser who shares her unique strategies, challenges, and experiences that shaped her language-learning process. In this episode, we dive deep into Emily's journey of learning Finnish. From studying abroad to integrating into Finnish society, Emily covers essential topics like vocabulary building, speaking, listening, grammar, reading, and writing. She also discusses the importance of mindset, staying motivated, and leveraging resources like podcasts, books, and online platforms to master Finnish. Learn how Emily overcame the hurdles of learning a new language and how you can apply her insights to your language-learning journey.",
     guest: {
-      name: "Emily",
+      name: "Emily Nguyen",
       slug: "emily",
       age: 0,
       profession: "Hairdresser & Entrepreneur",
