@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import { Analytics } from "@vercel/analytics/react";
+import { BASE_URL } from "@/lib/config";
 import "./globals.css";
 
 const borna = localFont({
@@ -22,6 +23,7 @@ export const metadata: Metadata = {
   keywords:
     "Finnish, language learning, immigrant, fluency, podcast, YouTube, adult learning",
   authors: [{ name: "Ohe" }],
+  alternates: { canonical: BASE_URL },
   icons: {
     icon: "/HILF_logo.png",
     shortcut: "/HILF_logo.png",
@@ -31,11 +33,13 @@ export const metadata: Metadata = {
     title: "How I Learned Finnish - with Ohe",
     description:
       "Learn Finnish fluently as an adult immigrant through real success stories and practical strategies.",
+    url: BASE_URL,
     type: "website",
+    siteName: "How I Learned Finnish",
     locale: "en_US",
     images: [
       {
-        url: "/HILF_logo.png",
+        url: `${BASE_URL}/HILF_logo.png`,
         width: 1200,
         height: 630,
         alt: "How I Learned Finnish - with Ohe",
@@ -47,7 +51,7 @@ export const metadata: Metadata = {
     title: "How I Learned Finnish - with Ohe",
     description:
       "Learn Finnish fluently as an adult immigrant through real success stories and practical strategies.",
-    images: ["/HILF_logo.png"],
+    images: [`${BASE_URL}/HILF_logo.png`],
   },
 };
 

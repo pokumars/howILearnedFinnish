@@ -4,8 +4,15 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { resources } from "@/data/resources";
 import { resourceCategoryMeta } from "@/data/resource-categories";
-import { ArrowLeft } from "lucide-react";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import type { Metadata } from "next";
+import { buildMetadata } from "@/lib/metadata";
+import {
+  generateResourceItemListSchema,
+  generateBreadcrumbSchema,
+} from "@/lib/schema";
+import { JsonLd } from "@/components/JsonLd";
+import { BASE_URL } from "@/lib/config";
 
 interface CategoryPageProps {
   params: Promise<{ "category-slug": string }>;
@@ -20,10 +27,11 @@ export async function generateMetadata({ params }: CategoryPageProps): Promise<M
   const cat = resourceCategoryMeta.find((c) => c.slug === slug);
   if (!cat) return { title: "Not Found" };
 
-  return {
-    title: `${cat.heading} | How I Learned Finnish`,
+  return buildMetadata({
+    title: cat.heading,
     description: cat.metaDescription,
-  };
+    path: `/resources/${cat.slug}`,
+  });
 }
 
 export default async function ResourceCategoryPage({ params }: CategoryPageProps) {
@@ -39,20 +47,38 @@ export default async function ResourceCategoryPage({ params }: CategoryPageProps
 
   const otherCategories = resourceCategoryMeta.filter((c) => c.slug !== slug);
 
+  const itemListSchema = generateResourceItemListSchema({
+    slug: cat.slug,
+    heading: cat.heading,
+    metaDescription: cat.metaDescription,
+    resources: categoryResources.map((r) => ({
+      id: r.id,
+      name: r.name,
+      description: r.description,
+    })),
+  });
+
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: "Home", url: BASE_URL },
+    { name: "Resources", url: `${BASE_URL}/resources` },
+    { name: cat.heading, url: `${BASE_URL}/resources/${cat.slug}` },
+  ]);
+
   return (
     <div className="min-h-screen bg-white">
+      <JsonLd data={itemListSchema} />
+      <JsonLd data={breadcrumbSchema} />
       <Navigation />
 
-      {/* Back link */}
+      {/* Breadcrumbs */}
       <section className="bg-gray-50 py-4 border-b border-gray-100">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <Link
-            href="/resources"
-            className="inline-flex items-center text-purple-600 hover:text-purple-700 font-medium transition-colors duration-200"
-          >
-            <ArrowLeft className="w-4 h-4 mr-2" />
-            All resources
-          </Link>
+          <Breadcrumbs
+            items={[
+              { label: "Resources", href: "/resources" },
+              { label: cat.heading, href: `/resources/${cat.slug}` },
+            ]}
+          />
         </div>
       </section>
 
@@ -61,6 +87,15 @@ export default async function ResourceCategoryPage({ params }: CategoryPageProps
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl font-bold text-gray-800 mb-4">{cat.heading}</h1>
           <p className="text-lg text-gray-600 max-w-3xl leading-relaxed">{cat.intro}</p>
+          {cat.introBody && cat.introBody.length > 0 && (
+            <div className="mt-8 max-w-3xl space-y-4">
+              {cat.introBody.map((paragraph, i) => (
+                <p key={i} className="text-base text-gray-600 leading-relaxed">
+                  {paragraph}
+                </p>
+              ))}
+            </div>
+          )}
           <p className="mt-6 text-sm text-gray-400">
             {categoryResources.length} resource{categoryResources.length !== 1 ? "s" : ""} ·{" "}
             {totalMentions} mention{totalMentions !== 1 ? "s" : ""} · {uniqueGuests} guest

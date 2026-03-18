@@ -1,4 +1,13 @@
 import Image from "next/image";
+import Link from "next/link";
+
+const hubLinks = [
+  { href: "/", label: "Episodes" },
+  { href: "/learn-finnish", label: "Learn Finnish" },
+  { href: "/guests", label: "Guests" },
+  { href: "/blog", label: "Blog" },
+  { href: "/resources", label: "Resources" },
+];
 
 export default function Footer() {
   const socialLinks = [
@@ -27,7 +36,20 @@ export default function Footer() {
   return (
     <footer className="bg-gray-800 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <div className="flex flex-col md:flex-row justify-between items-center">
+        {/* Hub navigation */}
+        <nav aria-label="Footer navigation" className="flex flex-wrap justify-center gap-x-6 gap-y-2 mb-6">
+          {hubLinks.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className="text-sm text-gray-300 hover:text-white transition-colors duration-200"
+            >
+              {link.label}
+            </Link>
+          ))}
+        </nav>
+
+        <div className="flex flex-col md:flex-row justify-between items-center border-t border-gray-700 pt-6">
           <div className="text-sm text-gray-300 mb-4 md:mb-0">
             © 2025 How I Learned Finnish with Ohe. All rights reserved.
           </div>

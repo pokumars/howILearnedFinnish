@@ -2,11 +2,15 @@ import { notFound } from "next/navigation";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { blogPosts } from "@/data/blog-posts";
-import { Calendar, User, ArrowLeft } from "lucide-react";
-import Link from "next/link";
+import { Calendar, User } from "lucide-react";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import Image from "next/image";
 import { marked } from "marked";
 import { Metadata } from "next";
+import { BASE_URL } from "@/lib/config";
+import { buildMetadata } from "@/lib/metadata";
+import { generateArticleSchema, generateBreadcrumbSchema } from "@/lib/schema";
+import { JsonLd } from "@/components/JsonLd";
 
 // Configure marked options for better HTML output
 marked.setOptions({
@@ -18,6 +22,10 @@ interface BlogPostPageProps {
   params: Promise<{
     slug: string;
   }>;
+}
+
+export function generateStaticParams() {
+  return blogPosts.map((post) => ({ slug: post.slug }));
 }
 
 export async function generateMetadata({
@@ -32,15 +40,16 @@ export async function generateMetadata({
     };
   }
 
-  return {
+  const description = post.metaDescription || post.excerpt;
+  return buildMetadata({
     title: post.title,
-    description: post.metaDescription || post.excerpt,
-    openGraph: {
-      title: post.title,
-      description: post.metaDescription || post.excerpt,
-      images: post.featuredImage ? [post.featuredImage] : [],
-    },
-  };
+    description,
+    path: `/blog/${post.slug}`,
+    ogImage: post.featuredImage ? `${BASE_URL}${post.featuredImage}` : undefined,
+    ogType: "article",
+    publishedTime: post.publishDate,
+    author: post.author,
+  });
 }
 
 export default async function BlogPostPage({ params }: BlogPostPageProps) {
@@ -62,20 +71,37 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
   // Process markdown content with proper HTML output
   const processedContent = marked(post.content);
 
+  const articleSchema = generateArticleSchema({
+    slug: post.slug,
+    title: post.title,
+    description: post.metaDescription || post.excerpt,
+    author: post.author,
+    authorUrl: post.authorUrl,
+    publishDate: post.publishDate,
+    featuredImage: post.featuredImage,
+  });
+
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: "Home", url: BASE_URL },
+    { name: "Blog", url: `${BASE_URL}/blog` },
+    { name: post.title, url: `${BASE_URL}/blog/${post.slug}` },
+  ]);
+
   return (
     <div className="min-h-screen bg-white">
+      <JsonLd data={articleSchema} />
+      <JsonLd data={breadcrumbSchema} />
       <Navigation />
 
-      {/* Back to Blog Link */}
-      <section className="bg-gray-50 py-4">
+      {/* Breadcrumbs */}
+      <section className="bg-gray-50 py-4 border-b border-gray-100">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <Link
-            href="/blog"
-            className="inline-flex items-center text-purple-600 hover:text-purple-700 font-medium transition-colors duration-200"
-          >
-            <ArrowLeft className="w-4 h-4 mr-2" />
-            Back to all articles
-          </Link>
+          <Breadcrumbs
+            items={[
+              { label: "Blog", href: "/blog" },
+              { label: post.title, href: `/blog/${post.slug}` },
+            ]}
+          />
         </div>
       </section>
 

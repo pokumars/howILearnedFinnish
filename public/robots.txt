@@ -1,0 +1,25 @@
+# How I Learned Finnish - robots.txt
+# https://www.howilearnedfinnish.fi
+
+User-agent: *
+Allow: /
+Disallow: /api/
+
+# AI retrieval crawlers (allow for LLM citation and AI search visibility)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Sitemap
+Sitemap: https://www.howilearnedfinnish.fi/sitemap.xml

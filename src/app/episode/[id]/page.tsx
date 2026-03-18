@@ -2,14 +2,25 @@ import { notFound } from "next/navigation";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { episodes } from "@/constants/episodes";
-import { ArrowLeft, ExternalLink } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { Metadata } from "next";
-import PillButton from "@/components/pillButton";
+import { BASE_URL } from "@/lib/config";
+import { tagData } from "@/data/tags";
+import { resources } from "@/data/resources";
+import { resourceCategoryMeta } from "@/data/resource-categories";
+import { buildMetadata } from "@/lib/metadata";
+import {
+  generatePodcastEpisodeSchema,
+  generateBreadcrumbSchema,
+} from "@/lib/schema";
+import { JsonLd } from "@/components/JsonLd";
 import fs from "fs";
 import path from "path";
 import { transcriptFileByEpisodeId } from "@/data/transcripts/manifest";
+import Breadcrumbs from "@/components/Breadcrumbs";
+import RelatedEpisodes from "@/components/RelatedEpisodes";
 
 interface EpisodePageProps {
   params: Promise<{
@@ -90,15 +101,13 @@ export async function generateMetadata({
     };
   }
 
-  return {
+  return buildMetadata({
     title: episode.title,
-    description: episode.description,
-    openGraph: {
-      title: episode.title,
-      description: episode.description,
-      images: episode.thumbnail ? [episode.thumbnail] : [],
-    },
-  };
+    description: episode.metaDescription ?? episode.description,
+    path: `/episode/${episode.id}`,
+    ogImage: episode.thumbnail ? `${BASE_URL}${episode.thumbnail}` : undefined,
+    ogType: "article",
+  });
 }
 
 export default async function EpisodePage({ params }: EpisodePageProps) {
@@ -119,47 +128,35 @@ export default async function EpisodePage({ params }: EpisodePageProps) {
   const youtubeVideoId = getYouTubeVideoId(episode.videoUrl);
   const transcriptEntries = loadTranscript(episode.id);
 
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "PodcastEpisode",
-    name: episode.title,
+  const episodeSchema = generatePodcastEpisodeSchema({
+    id: episode.id,
+    title: episode.title,
     description: episode.description,
-    url: `https://howilearnedfinnish.fi/episode/${episode.id}`,
-    partOfSeries: {
-      "@type": "PodcastSeries",
-      name: "How I Learned Finnish",
-      url: "https://howilearnedfinnish.fi",
-    },
-    ...(youtubeVideoId && {
-      associatedMedia: {
-        "@type": "VideoObject",
-        name: episode.title,
-        description: episode.description,
-        thumbnailUrl: `https://howilearnedfinnish.fi${episode.thumbnail}`,
-        embedUrl: `https://www.youtube.com/embed/${youtubeVideoId}`,
-        url: episode.videoUrl,
-      },
-    }),
-  };
+    thumbnail: episode.thumbnail,
+    videoUrl: episode.videoUrl,
+    youtubeVideoId,
+  });
+
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: "Home", url: BASE_URL },
+    { name: episode.title, url: `${BASE_URL}/episode/${episode.id}` },
+  ]);
 
   return (
     <div className="min-h-screen bg-white">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
+      <JsonLd data={episodeSchema} />
+      <JsonLd data={breadcrumbSchema} />
       <Navigation />
 
-      {/* Back to Episodes Link */}
-      <section className="bg-gray-50 py-4">
+      {/* Breadcrumbs */}
+      <section className="bg-gray-50 py-4 border-b border-gray-100">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <Link
-            href="/"
-            className="inline-flex items-center text-purple-600 hover:text-purple-700 font-medium transition-colors duration-200"
-          >
-            <ArrowLeft className="w-4 h-4 mr-2" />
-            Back to all episodes
-          </Link>
+          <Breadcrumbs
+            items={[
+              { label: "Episodes", href: "/" },
+              { label: episode.title, href: `/episode/${episode.id}` },
+            ]}
+          />
         </div>
       </section>
 
@@ -173,16 +170,26 @@ export default async function EpisodePage({ params }: EpisodePageProps) {
 
             {/* Episode Tags */}
             <div className="flex flex-row flex-wrap gap-2 mb-6">
-              {episode.tags.map((tag) => (
-                <PillButton text={tag} key={tag} activated={false} />
-              ))}
+              {episode.tags.map((tag) => {
+                const td = tagData.find((t) => t.filterTag === tag);
+                if (!td) return null;
+                return (
+                  <Link
+                    key={tag}
+                    href={`/learn-finnish/${td.slug}`}
+                    className="px-4 py-2 rounded-full text-sm font-medium bg-white text-gray-700 border border-purple-600 hover:bg-purple-50 transition-colors duration-200"
+                  >
+                    {tag}
+                  </Link>
+                );
+              })}
             </div>
 
             {/* Platform Links */}
             <div className="mb-6">
-              <h3 className="text-lg font-semibold text-gray-800 mb-3">
+              <p className="text-lg font-semibold text-gray-800 mb-3">
                 Listen on:
-              </h3>
+              </p>
               <div className="flex flex-wrap gap-3">
                 {episode.platforms.map((platform) => (
                   <a
@@ -313,21 +320,61 @@ export default async function EpisodePage({ params }: EpisodePageProps) {
           )}
 
           {/* Resources Mentioned */}
-          {episode.resourcesMentioned && episode.resourcesMentioned.length > 0 && (
-            <div className="mb-8">
-              <h2 className="text-2xl font-bold text-gray-800 mb-4">
-                Resources mentioned
-              </h2>
-              <ul className="space-y-2">
-                {episode.resourcesMentioned.map((resource, i) => (
-                  <li key={i} className="flex items-start gap-2 text-gray-700">
-                    <span className="flex-shrink-0 text-purple-500 mt-px leading-none">›</span>
-                    <span className="leading-relaxed">{resource}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          )}
+          {(() => {
+            const episodeResources = resources.filter((r) =>
+              r.mentions.some((m) => m.episodeId === episode.id)
+            );
+            if (episodeResources.length === 0) return null;
+
+            const byCategory = new Map<string, typeof episodeResources>();
+            for (const r of episodeResources) {
+              const list = byCategory.get(r.category) ?? [];
+              list.push(r);
+              byCategory.set(r.category, list);
+            }
+
+            return (
+              <div className="mb-8">
+                <h2 className="text-2xl font-bold text-gray-800 mb-4">
+                  Resources mentioned
+                </h2>
+                <div className="space-y-4">
+                  {Array.from(byCategory.entries()).map(([category, items]) => {
+                    const catMeta = resourceCategoryMeta.find((c) => c.category === category);
+                    return (
+                      <div key={category}>
+                        <h3 className="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-2">
+                          {catMeta ? (
+                            <Link
+                              href={`/resources/${catMeta.slug}`}
+                              className="hover:text-purple-600 transition-colors duration-200"
+                            >
+                              {category} →
+                            </Link>
+                          ) : (
+                            category
+                          )}
+                        </h3>
+                        <ul className="space-y-2">
+                          {items.map((r) => (
+                            <li key={r.id} className="flex items-start gap-2 text-gray-700">
+                              <span className="flex-shrink-0 text-purple-500 mt-px leading-none">›</span>
+                              <span className="leading-relaxed">
+                                <span className="font-medium">{r.name}</span>
+                                {r.description && (
+                                  <span className="text-gray-500"> — {r.description}</span>
+                                )}
+                              </span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+            );
+          })()}
 
           {/* Guest Links */}
           {episode.guest && (
@@ -406,6 +453,12 @@ export default async function EpisodePage({ params }: EpisodePageProps) {
               </details>
             </div>
           )}
+          {/* Related Episodes */}
+          <RelatedEpisodes
+            currentId={episode.id}
+            currentTags={episode.tags}
+            allEpisodes={episodes}
+          />
         </div>
       </section>
 

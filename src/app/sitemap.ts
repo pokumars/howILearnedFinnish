@@ -3,9 +3,10 @@ import { episodes } from "@/constants/episodes";
 import { blogPosts } from "@/data/blog-posts";
 import { tagData } from "@/data/tags";
 import { resourceCategoryMeta } from "@/data/resource-categories";
+import { BASE_URL } from "@/lib/config";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://www.howilearnedfinnish.fi";
+  const baseUrl = BASE_URL;
 
   // Static pages
   const staticPages = [
@@ -38,6 +39,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date("2025-12-17"),
       changeFrequency: "monthly" as const,
       priority: 0.6,
+    },
+    {
+      url: `${baseUrl}/guests`,
+      lastModified: new Date("2026-03-17"),
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
     },
   ];
 
