@@ -1,7 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { BASE_URL } from "../src/lib/config";
-import { truncate } from "../src/lib/metadata";
+import { truncate, clampTitle } from "../src/lib/metadata";
 import sitemap from "../src/app/sitemap";
 import { episodes } from "../src/constants/episodes";
 import { blogPosts } from "../src/data/blog-posts";
@@ -317,11 +317,11 @@ function buildPages(): PageRecord[] {
     pages.push({
       type: "episode",
       path: `/episode/${ep.id}`,
-      title: ep.title,
+      title: clampTitle(ep.title),
       description: epMetaDesc,
       h1: ep.title,
       canonical: getExpectedCanonical(`/episode/${ep.id}`),
-      ogTitle: ep.title,
+      ogTitle: clampTitle(ep.title),
       ogDescription: epMetaDesc,
       ogUrl: getExpectedCanonical(`/episode/${ep.id}`),
       schemaTypes: schemaTypesForPageType("episode"),
@@ -340,11 +340,11 @@ function buildPages(): PageRecord[] {
     pages.push({
       type: "blog",
       path: `/blog/${post.slug}`,
-      title: post.title,
+      title: clampTitle(post.title),
       description,
       h1: post.title,
       canonical: getExpectedCanonical(`/blog/${post.slug}`),
-      ogTitle: post.title,
+      ogTitle: clampTitle(post.title),
       ogDescription: description,
       ogUrl: getExpectedCanonical(`/blog/${post.slug}`),
       schemaTypes: schemaTypesForPageType("blog"),
@@ -365,11 +365,11 @@ function buildPages(): PageRecord[] {
     pages.push({
       type: "guest",
       path: `/guests/${guest.slug}`,
-      title: `${guest.name} | How I Learned Finnish`,
+      title: clampTitle(guest.name),
       description: guestMetaDesc,
       h1: guest.name,
       canonical: getExpectedCanonical(`/guests/${guest.slug}`),
-      ogTitle: `${guest.name} | How I Learned Finnish`,
+      ogTitle: clampTitle(guest.name),
       ogDescription: guestMetaDesc,
       ogUrl: getExpectedCanonical(`/guests/${guest.slug}`),
       schemaTypes: schemaTypesForPageType("guest"),
@@ -388,11 +388,11 @@ function buildPages(): PageRecord[] {
     pages.push({
       type: "tag-hub",
       path: `/learn-finnish/${tag.slug}`,
-      title: `${tag.label} | How I Learned Finnish`,
+      title: clampTitle(tag.label),
       description,
       h1: tag.heading,
       canonical: getExpectedCanonical(`/learn-finnish/${tag.slug}`),
-      ogTitle: `${tag.label} | How I Learned Finnish`,
+      ogTitle: clampTitle(tag.label),
       ogDescription: description,
       ogUrl: getExpectedCanonical(`/learn-finnish/${tag.slug}`),
       schemaTypes: schemaTypesForPageType("tag-hub"),
@@ -419,11 +419,11 @@ function buildPages(): PageRecord[] {
     pages.push({
       type: "resource-category",
       path: `/resources/${cat.slug}`,
-      title: `${cat.heading} | How I Learned Finnish`,
+      title: clampTitle(cat.heading),
       description: cat.metaDescription,
       h1: cat.heading,
       canonical: getExpectedCanonical(`/resources/${cat.slug}`),
-      ogTitle: `${cat.heading} | How I Learned Finnish`,
+      ogTitle: clampTitle(cat.heading),
       ogDescription: cat.metaDescription,
       ogUrl: getExpectedCanonical(`/resources/${cat.slug}`),
       schemaTypes: schemaTypesForPageType("resource-category"),

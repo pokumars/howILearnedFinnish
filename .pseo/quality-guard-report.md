@@ -2,7 +2,7 @@
 
 ### Summary
 - Total pages checked: 55
-- Issues found: 27 (5 critical, 21 warnings, 1 informational)
+- Issues found: 14 (5 critical, 8 warnings, 1 informational)
 
 ### Thin Content
 - **CRITICAL** `/learn-finnish/a1-to-c-level` Thin content: < 300 words of page-owned editorial text (words: 113, uniqueWords: 84)
@@ -22,20 +22,7 @@
 - **Warning** Potential keyword/intent overlap between tag hubs (shared episode roster) (a: /learn-finnish/a1-to-c-level, b: /learn-finnish/immersion-method, sharedEpisodes: 9, overlap: 0.75, aLabel: From A1 to C Level Finnish, bLabel: Learning Finnish Through Immersion)
 
 ### Metadata Issues
-- **Warning** `/episode/13` Title length outside 30–70 chars (length: 88)
-- **Warning** `/episode/12` Title length outside 30–70 chars (length: 87)
-- **Warning** `/episode/11` Title length outside 30–70 chars (length: 93)
-- **Warning** `/episode/7` Title length outside 30–70 chars (length: 79)
-- **Warning** `/episode/3` Title length outside 30–70 chars (length: 79)
-- **Warning** `/blog/finnish-language-requirements-for-citizenship` Title length outside 30–70 chars (length: 78)
-- **Warning** `/blog/immigrants-pay-more-taxes-than-they-receive-benefits` Title length outside 30–70 chars (length: 75)
-- **Warning** `/blog/why-i-started-a-podcast-about-language-learning` Title length outside 30–70 chars (length: 96)
-- **Warning** `/guests/hamed` Title length outside 30–70 chars (length: 29)
 - **Warning** `/guests/emily` Title length outside 30–70 chars (length: 29)
-- **Warning** `/learn-finnish/without-a-finnish-speaking-partner` Title length outside 30–70 chars (length: 72)
-- **Warning** `/resources/textbooks-and-grammar` Title length outside 30–70 chars (length: 86)
-- **Warning** `/resources/tv-and-video` Title length outside 30–70 chars (length: 81)
-- **Warning** `/resources/reading` Title length outside 30–70 chars (length: 81)
 
 ### Linking Issues
 - **Warning** `/episode/[id]` Episode tags are not internal links to `/learn-finnish/[tag-slug]` (rendered as display-only pills)
@@ -77,20 +64,7 @@
 8. **Warning** `/resources/tv-and-video` Potentially thin list page: < 300 words of content (consider longer intro or more items) (words: 212, uniqueWords: 110)
 9. **Warning** `/resources/radio-and-podcasts` Potentially thin list page: < 300 words of content (consider longer intro or more items) (words: 234, uniqueWords: 115)
 10. **Warning** Potential keyword/intent overlap between tag hubs (shared episode roster) (a: /learn-finnish/a1-to-c-level, b: /learn-finnish/immersion-method, sharedEpisodes: 9, overlap: 0.75, aLabel: From A1 to C Level Finnish, bLabel: Learning Finnish Through Immersion)
-11. **Warning** `/episode/13` Title length outside 30–70 chars (length: 88)
-12. **Warning** `/episode/12` Title length outside 30–70 chars (length: 87)
-13. **Warning** `/episode/11` Title length outside 30–70 chars (length: 93)
-14. **Warning** `/episode/7` Title length outside 30–70 chars (length: 79)
-15. **Warning** `/episode/3` Title length outside 30–70 chars (length: 79)
-16. **Warning** `/blog/finnish-language-requirements-for-citizenship` Title length outside 30–70 chars (length: 78)
-17. **Warning** `/blog/immigrants-pay-more-taxes-than-they-receive-benefits` Title length outside 30–70 chars (length: 75)
-18. **Warning** `/blog/why-i-started-a-podcast-about-language-learning` Title length outside 30–70 chars (length: 96)
-19. **Warning** `/guests/hamed` Title length outside 30–70 chars (length: 29)
-20. **Warning** `/guests/emily` Title length outside 30–70 chars (length: 29)
-21. **Warning** `/learn-finnish/without-a-finnish-speaking-partner` Title length outside 30–70 chars (length: 72)
-22. **Warning** `/resources/textbooks-and-grammar` Title length outside 30–70 chars (length: 86)
-23. **Warning** `/resources/tv-and-video` Title length outside 30–70 chars (length: 81)
-24. **Warning** `/resources/reading` Title length outside 30–70 chars (length: 81)
-25. **Warning** `/episode/[id]` Episode tags are not internal links to `/learn-finnish/[tag-slug]` (rendered as display-only pills)
-26. **Warning** `/episode/[id]` `Resources mentioned` are rendered as plain text; consider linking to related `/resources/[category-slug]` where possible
-27. **Info** Filler intro patterns detected (possible low-value preamble) (pages: 1)
+11. **Warning** `/guests/emily` Title length outside 30–70 chars (length: 29)
+12. **Warning** `/episode/[id]` Episode tags are not internal links to `/learn-finnish/[tag-slug]` (rendered as display-only pills)
+13. **Warning** `/episode/[id]` `Resources mentioned` are rendered as plain text; consider linking to related `/resources/[category-slug]` where possible
+14. **Info** Filler intro patterns detected (possible low-value preamble) (pages: 1)
