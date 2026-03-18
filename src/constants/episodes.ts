@@ -224,7 +224,8 @@ export const episodes: Episode[] = [
         url: "https://youtu.be/k_eVInE7fHY",
       },
     ],
-    timeToFluency: "Approximately 15–17 months from starting (January 2019) to certified B1 (June 2020), spending only ~3–4 months physically in Finland; later reached C1 at Aalto University",
+    timeToFluency:
+      "Approximately 15–17 months from starting (January 2019) to certified B1 (June 2020), spending only ~3–4 months physically in Finland; later reached C1 at Aalto University",
     keyMethods: [
       "Brute-force vocabulary memorisation from a 3,000-word book before even arriving in Finland",
       "Copying vocabulary out by hand from a pocket dictionary — a meditative practice he found strongly reinforced memory",
@@ -261,7 +262,7 @@ export const episodes: Episode[] = [
     description:
       "In this engaging discussion, Hamed, a 43-year-old software engineer originally from Iran, recounts his experiences adapting to life in Finland. Hamed shares his journey of learning Finnish, which was initially challenging due to his temporary mindset and resistance to the language. Eventually, his perspective shifted as he accepted Finland as his new home. Hamed highlights the role of making Finnish friends, listening to music, and immersing himself in Finnish culture as crucial to his language acquisition. He recounts specific experiences, such as working in a multicultural center, participating in language courses, and navigating daily interactions. Notably, he discusses how expressing emotions in Finnish significantly improved his fluency. Hamed emphasizes the importance of mindset, cultural immersion, and having fun in the process of learning a new language. His story provides valuable insights for anyone struggling to learn Finnish or integrate into a new culture.",
     guest: {
-      name: "Hamed",
+      name: "Hamed Shahidi",
       slug: "hamed",
       age: 43,
       profession: "Software Engineer",
@@ -293,7 +294,8 @@ export const episodes: Episode[] = [
         url: "https://youtu.be/WEa0xp-74y8",
       },
     ],
-    timeToFluency: "Approximately 6–7 years — arrived March 2004, felt fluent around 2010–2011, entirely through immersive living rather than deliberate study",
+    timeToFluency:
+      "Approximately 6–7 years — arrived March 2004, felt fluent around 2010–2011, entirely through immersive living rather than deliberate study",
     keyMethods: [
       "Keeping a vocabulary notebook: writing down frequently heard words and asking Finnish friends how to say phrases he wanted to use",
       "Immersive listening without pressure: sitting with Finnish-speaking friends and letting the language wash over him, treating it like a child's natural acquisition process",
@@ -363,7 +365,8 @@ export const episodes: Episode[] = [
         url: "https://youtu.be/D8NneGabhtw",
       },
     ],
-    timeToFluency: "About 3.5 years of active study (autumn 2019 to May 2023 YKI B1 certification), having lived in Finland since 2016 but not studying seriously until 2019",
+    timeToFluency:
+      "About 3.5 years of active study (autumn 2019 to May 2023 YKI B1 certification), having lived in Finland since 2016 but not studying seriously until 2019",
     keyMethods: [
       "Private lessons with Russian-speaking Finnish teachers over Zoom/WhatsApp, using textbooks sent to her",
       "Consuming Finnish media the same way she consumed English content — Finnish YouTube vloggers, TV series, comedy sketches, and TikToks",
@@ -428,7 +431,8 @@ export const episodes: Episode[] = [
         url: "https://www.youtube.com/watch?v=bz0lTCmgv_U",
       },
     ],
-    timeToFluency: "Conversationally functional within 4–6 months of arriving; reached professional/advanced level over several years of immersion and nursing work — he describes fluency as a continuous progression rather than a fixed point",
+    timeToFluency:
+      "Conversationally functional within 4–6 months of arriving; reached professional/advanced level over several years of immersion and nursing work — he describes fluency as a continuous progression rather than a fixed point",
     keyMethods: [
       "Attending Finnish language classes at the refugee camp — stood at the door listening until the teacher let him in, admitted ahead of schedule due to his rapid progress",
       "Carrying a Finnish–English dictionary everywhere and looking up words in real time during conversations",
@@ -499,7 +503,8 @@ export const episodes: Episode[] = [
         url: "https://www.youtube.com/watch?v=EwjMZfRKnaU&si=XAOUE8JQr90KaIxh",
       },
     ],
-    timeToFluency: "Approximately 7–8 years to a high functioning level — arrived 2004, reached confident working Finnish around 2011–2012; continued formal grammar study as late as 2018 for advanced professional contexts",
+    timeToFluency:
+      "Approximately 7–8 years to a high functioning level — arrived 2004, reached confident working Finnish around 2011–2012; continued formal grammar study as late as 2018 for advanced professional contexts",
     keyMethods: [
       "Attended a 3–4 month basic Finnish course at an NGO shortly after arriving",
       "Completed mandatory Finnish language modules (basic, intermediate, advanced) embedded in her nursing degree at Laurea University of Applied Sciences",
@@ -569,7 +574,8 @@ export const episodes: Episode[] = [
         url: "https://www.youtube.com/watch?v=t3QWADJcyJI",
       },
     ],
-    timeToFluency: "Passed YKI B1 in 2018 (~6 years after arriving in 2012); reached genuine B2 around 2022–2023 (~10–11 years) — the biggest leap came from enrolling in a Finnish-language hairdressing programme",
+    timeToFluency:
+      "Passed YKI B1 in 2018 (~6 years after arriving in 2012); reached genuine B2 around 2022–2023 (~10–11 years) — the biggest leap came from enrolling in a Finnish-language hairdressing programme",
     keyMethods: [
       "Private tuition with a Vietnamese-Finnish bilingual tutor (2015–2017) who could explain Finnish by comparing it to both Vietnamese and English",
       "Self-study with workbooks (Suomen mestari, Start to Finnish, Kynä käteen, YKI-prep books) focusing on exercises with answer keys",
@@ -640,7 +646,8 @@ export const episodes: Episode[] = [
         url: "https://youtu.be/V0jzUitkKL4?si=AEY553jX9wk0qV_W",
       },
     ],
-    timeToFluency: "Approximately 3 years on-and-off (starting 2022, one year after arriving in 2021) — passed YKI B1 in year two, then the valtionhallinnon kielitutkinto (B2–C1) in year three, the level required for the University of Helsinki Law School master's programme",
+    timeToFluency:
+      "Approximately 3 years on-and-off (starting 2022, one year after arriving in 2021) — passed YKI B1 in year two, then the valtionhallinnon kielitutkinto (B2–C1) in year three, the level required for the University of Helsinki Law School master's programme",
     keyMethods: [
       "Passive listening from day one — before formally studying, listened to her husband and his friends speak Finnish and tried to process the sentence structure",
       "Integration course followed by an intensive evening course for professionals preparing for the YKI test",
@@ -712,7 +719,8 @@ export const episodes: Episode[] = [
         url: "https://youtu.be/qD6RTlqPmRA?si=fte-t1TsGpENFrCT",
       },
     ],
-    timeToFluency: "Still a work in progress at time of recording — Erik moved to Finland ~10 years before the interview but only began seriously learning during a 15-month paternity leave (~4–5 years after arriving). His Finnish is 'decent' but not yet fluent.",
+    timeToFluency:
+      "Still a work in progress at time of recording — Erik moved to Finland ~10 years before the interview but only began seriously learning during a 15-month paternity leave (~4–5 years after arriving). His Finnish is 'decent' but not yet fluent.",
     keyMethods: [
       "Over 100 paid weekly lunches with retired Finnish speakers — standing table booked, strict no-English rule agreed upfront from the first meeting",
       "One-on-one grammar lessons via Skype with a private teacher, working chapter by chapter through Suomen mestari books 1–3",
@@ -775,7 +783,8 @@ export const episodes: Episode[] = [
       },
       { name: "YouTube", url: "https://www.youtube.com/watch?v=zcW4ibdkGc4" },
     ],
-    timeToFluency: "Approximately 6–7 years to a functional communicative level, though she describes it as a gradual ongoing process rather than a fixed milestone — after about one year of full-time Finnish-language work (starting year 3) her vocabulary noticeably developed, and she was reading Finnish novels by year 6–7",
+    timeToFluency:
+      "Approximately 6–7 years to a functional communicative level, though she describes it as a gradual ongoing process rather than a fixed milestone — after about one year of full-time Finnish-language work (starting year 3) her vocabulary noticeably developed, and she was reading Finnish novels by year 6–7",
     keyMethods: [
       "Government integration programme (6-month course covering Finnish language, grammar basics, and social rights) — her only formal course",
       "Reading free Finnish newspapers to observe correct grammatical and communicative Finnish in context",
@@ -839,7 +848,8 @@ export const episodes: Episode[] = [
       },
       { name: "YouTube", url: "https://www.youtube.com/watch?v=mEQKGH0IN_s" },
     ],
-    timeToFluency: "In one sense, ~10 years: he had lived in Finland since roughly 2011, done all his education in English, and had some school Finnish but was not actively speaking the language as of 2021. In another sense, 12 months: a deliberate all-in immersion experiment throughout 2022 was the decisive lever that brought him to high fluency. He had also passed the YKI (national Finnish language certificate) in 2019, suggesting a functional baseline before the intensive year. Passive residence alone did not produce fluency — the structured 1-year experiment was what actually got him there.",
+    timeToFluency:
+      "In one sense, ~10 years: he had lived in Finland since roughly 2011, done all his education in English, and had some school Finnish but was not actively speaking the language as of 2021. In another sense, 12 months: a deliberate all-in immersion experiment throughout 2022 was the decisive lever that brought him to high fluency. He had also passed the YKI (national Finnish language certificate) in 2019, suggesting a functional baseline before the intensive year. Passive residence alone did not produce fluency — the structured 1-year experiment was what actually got him there.",
     keyMethods: [
       "Publicly declared a Finnish-only rule on LinkedIn, Instagram, and WhatsApp on 1 January 2022 — simulating the conditions of a non-English speaker with no fallback language and creating social accountability",
       "Daily podcast listening in Finnish aligned to personal interests (sports, investing, politics, entertainment) to cover listening comprehension across a wide register of spoken Finnish",

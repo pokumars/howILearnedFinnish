@@ -25,7 +25,7 @@ export async function generateMetadata({
   const { guest } = episode;
 
   return buildMetadata({
-    title: `${guest.name} | How I Learned Finnish`,
+    title: guest.name,
     description: guest.metaDescription ?? guest.bio,
     path: `/guests/${guest.slug}`,
   });

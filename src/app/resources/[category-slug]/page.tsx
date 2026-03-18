@@ -28,7 +28,7 @@ export async function generateMetadata({ params }: CategoryPageProps): Promise<M
   if (!cat) return { title: "Not Found" };
 
   return buildMetadata({
-    title: `${cat.heading} | How I Learned Finnish`,
+    title: cat.heading,
     description: cat.metaDescription,
     path: `/resources/${cat.slug}`,
   });

@@ -32,7 +32,7 @@ export async function generateMetadata({
 
   const description = truncate(tag.intro, 155);
   return buildMetadata({
-    title: `${tag.label} | How I Learned Finnish`,
+    title: tag.label,
     description,
     path: `/learn-finnish/${tag.slug}`,
   });
