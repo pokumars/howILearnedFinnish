@@ -40,6 +40,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly" as const,
       priority: 0.6,
     },
+    {
+      url: `${baseUrl}/guests`,
+      lastModified: new Date("2026-03-17"),
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
+    },
   ];
 
   // Episode pages

@@ -30,15 +30,16 @@ export const buildMetadata = ({
 }: BuildMetadataProps): Metadata => {
   const url = `${BASE_URL}${path}`;
   const image = ogImage ?? DEFAULT_OG_IMAGE;
+  const metaDescription = truncate(description, 160);
 
   return {
     title,
-    description,
+    description: metaDescription,
     ...(author && { authors: [{ name: author }] }),
     alternates: { canonical: url },
     openGraph: {
       title,
-      description,
+      description: metaDescription,
       url,
       type: ogType,
       siteName: SITE_NAME,
@@ -49,7 +50,7 @@ export const buildMetadata = ({
     twitter: {
       card: "summary_large_image",
       title,
-      description,
+      description: metaDescription,
       images: [image],
     },
   };

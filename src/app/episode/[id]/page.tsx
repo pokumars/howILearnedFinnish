@@ -175,9 +175,9 @@ export default async function EpisodePage({ params }: EpisodePageProps) {
 
             {/* Platform Links */}
             <div className="mb-6">
-              <h3 className="text-lg font-semibold text-gray-800 mb-3">
+              <p className="text-lg font-semibold text-gray-800 mb-3">
                 Listen on:
-              </h3>
+              </p>
               <div className="flex flex-wrap gap-3">
                 {episode.platforms.map((platform) => (
                   <a

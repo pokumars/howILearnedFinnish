@@ -2,6 +2,15 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { ArrowRight, FileText, BookOpen } from "lucide-react";
 import Image from "next/image";
+import { buildMetadata } from "@/lib/metadata";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = buildMetadata({
+  title: "Quick Links | How I Learned Finnish",
+  description:
+    "Find all How I Learned Finnish links in one place — podcast platforms, social media, blog, and Finnish learning resources.",
+  path: "/quick-links",
+});
 const width = 24;
 const height = 24;
 
