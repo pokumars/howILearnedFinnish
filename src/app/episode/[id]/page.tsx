@@ -6,8 +6,10 @@ import { ExternalLink } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { Metadata } from "next";
-import PillButton from "@/components/pillButton";
 import { BASE_URL } from "@/lib/config";
+import { tagData } from "@/data/tags";
+import { resources } from "@/data/resources";
+import { resourceCategoryMeta } from "@/data/resource-categories";
 import { buildMetadata } from "@/lib/metadata";
 import {
   generatePodcastEpisodeSchema,
@@ -168,9 +170,19 @@ export default async function EpisodePage({ params }: EpisodePageProps) {
 
             {/* Episode Tags */}
             <div className="flex flex-row flex-wrap gap-2 mb-6">
-              {episode.tags.map((tag) => (
-                <PillButton text={tag} key={tag} activated={false} />
-              ))}
+              {episode.tags.map((tag) => {
+                const td = tagData.find((t) => t.filterTag === tag);
+                if (!td) return null;
+                return (
+                  <Link
+                    key={tag}
+                    href={`/learn-finnish/${td.slug}`}
+                    className="px-4 py-2 rounded-full text-sm font-medium bg-white text-gray-700 border border-purple-600 hover:bg-purple-50 transition-colors duration-200"
+                  >
+                    {tag}
+                  </Link>
+                );
+              })}
             </div>
 
             {/* Platform Links */}
@@ -308,21 +320,61 @@ export default async function EpisodePage({ params }: EpisodePageProps) {
           )}
 
           {/* Resources Mentioned */}
-          {episode.resourcesMentioned && episode.resourcesMentioned.length > 0 && (
-            <div className="mb-8">
-              <h2 className="text-2xl font-bold text-gray-800 mb-4">
-                Resources mentioned
-              </h2>
-              <ul className="space-y-2">
-                {episode.resourcesMentioned.map((resource, i) => (
-                  <li key={i} className="flex items-start gap-2 text-gray-700">
-                    <span className="flex-shrink-0 text-purple-500 mt-px leading-none">›</span>
-                    <span className="leading-relaxed">{resource}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          )}
+          {(() => {
+            const episodeResources = resources.filter((r) =>
+              r.mentions.some((m) => m.episodeId === episode.id)
+            );
+            if (episodeResources.length === 0) return null;
+
+            const byCategory = new Map<string, typeof episodeResources>();
+            for (const r of episodeResources) {
+              const list = byCategory.get(r.category) ?? [];
+              list.push(r);
+              byCategory.set(r.category, list);
+            }
+
+            return (
+              <div className="mb-8">
+                <h2 className="text-2xl font-bold text-gray-800 mb-4">
+                  Resources mentioned
+                </h2>
+                <div className="space-y-4">
+                  {Array.from(byCategory.entries()).map(([category, items]) => {
+                    const catMeta = resourceCategoryMeta.find((c) => c.category === category);
+                    return (
+                      <div key={category}>
+                        <h3 className="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-2">
+                          {catMeta ? (
+                            <Link
+                              href={`/resources/${catMeta.slug}`}
+                              className="hover:text-purple-600 transition-colors duration-200"
+                            >
+                              {category} →
+                            </Link>
+                          ) : (
+                            category
+                          )}
+                        </h3>
+                        <ul className="space-y-2">
+                          {items.map((r) => (
+                            <li key={r.id} className="flex items-start gap-2 text-gray-700">
+                              <span className="flex-shrink-0 text-purple-500 mt-px leading-none">›</span>
+                              <span className="leading-relaxed">
+                                <span className="font-medium">{r.name}</span>
+                                {r.description && (
+                                  <span className="text-gray-500"> — {r.description}</span>
+                                )}
+                              </span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+            );
+          })()}
 
           {/* Guest Links */}
           {episode.guest && (
