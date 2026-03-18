@@ -2,11 +2,18 @@
 
 ### Summary
 - Total pages checked: 55
-- Issues found: 64 (8 critical, 55 warnings, 1 informational)
+- Issues found: 62 (7 critical, 54 warnings, 1 informational)
 
 ### Thin Content
 - **CRITICAL** `/learn-finnish/a1-to-c-level` Thin content: < 300 words of page-owned editorial text (words: 113, uniqueWords: 84)
-- **CRITICAL** `/learn-finnish/b1-to-c-level` Thin content: < 300 words of page-owned editorial text (words: 122, uniqueWords: 88)
+- **Warning** `/resources/textbooks-and-grammar` Potentially thin list page: < 300 words of content (consider longer intro or more items) (words: 250, uniqueWords: 121)
+- **Warning** `/resources/apps-and-digital-tools` Potentially thin list page: < 300 words of content (consider longer intro or more items) (words: 262, uniqueWords: 150)
+- **Warning** `/resources/tv-and-video` Potentially thin list page: < 300 words of content (consider longer intro or more items) (words: 212, uniqueWords: 110)
+- **Warning** `/resources/radio-and-podcasts` Potentially thin list page: < 300 words of content (consider longer intro or more items) (words: 234, uniqueWords: 115)
+- **CRITICAL** `/resources/music` Extremely thin list page: < 200 words of unique content (words: 148, uniqueWords: 82)
+- **CRITICAL** `/resources/community-and-social` Extremely thin list page: < 200 words of unique content (words: 124, uniqueWords: 70)
+- **CRITICAL** `/resources/courses-and-institutions` Extremely thin list page: < 200 words of unique content (words: 187, uniqueWords: 110)
+- **CRITICAL** `/resources/exams-and-certifications` Extremely thin list page: < 200 words of unique content (words: 109, uniqueWords: 70)
 
 ### Duplicate Content
 - None
@@ -63,9 +70,6 @@
 - **Warning** `/resources/tv-and-video` Title length outside 30–70 chars (length: 81)
 - **Warning** `/resources/reading` Title length outside 30–70 chars (length: 81)
 
-### Schema Issues
-- **Warning** `/quick-links` No structured data (JSON-LD) detected for this page
-
 ### Linking Issues
 - **Warning** `/guests` Indexable hub page missing from sitemap
 - **Warning** `/episode/[id]` Episode tags are not internal links to `/learn-finnish/[tag-slug]` (rendered as display-only pills)
@@ -85,38 +89,45 @@
 - Pages to remove: 0
 - Pages to merge: 0
 - Pages to noindex: 0
-- Pages to enrich: 2
+- Pages to enrich: 9
   - `/learn-finnish/a1-to-c-level`
-  - `/learn-finnish/b1-to-c-level`
+  - `/resources/apps-and-digital-tools`
+  - `/resources/community-and-social`
+  - `/resources/courses-and-institutions`
+  - `/resources/exams-and-certifications`
+  - `/resources/music`
+  - `/resources/radio-and-podcasts`
+  - `/resources/textbooks-and-grammar`
+  - `/resources/tv-and-video`
 
 ### Action Required
 1. **CRITICAL** `/learn-finnish/a1-to-c-level` Thin content: < 300 words of page-owned editorial text (words: 113, uniqueWords: 84)
-2. **CRITICAL** `/learn-finnish/b1-to-c-level` Thin content: < 300 words of page-owned editorial text (words: 122, uniqueWords: 88)
-3. **CRITICAL** `/resources/music` Extremely thin list page: < 200 words of unique content (words: 148, uniqueWords: 82)
-4. **CRITICAL** `/resources/community-and-social` Extremely thin list page: < 200 words of unique content (words: 124, uniqueWords: 70)
-5. **CRITICAL** `/resources/courses-and-institutions` Extremely thin list page: < 200 words of unique content (words: 187, uniqueWords: 110)
-6. **CRITICAL** `/resources/exams-and-certifications` Extremely thin list page: < 200 words of unique content (words: 109, uniqueWords: 70)
-7. **CRITICAL** `/quick-links` Missing page-level metadata (title/description/canonical)
-8. **CRITICAL** `/episode/[id]` Heading hierarchy issue: h3 appears before the first h2 on episode pages
-9. **Warning** `/resources/textbooks-and-grammar` Potentially thin list page: < 300 words of content (consider longer intro or more items) (words: 250, uniqueWords: 121)
-10. **Warning** `/resources/apps-and-digital-tools` Potentially thin list page: < 300 words of content (consider longer intro or more items) (words: 262, uniqueWords: 150)
-11. **Warning** `/resources/tv-and-video` Potentially thin list page: < 300 words of content (consider longer intro or more items) (words: 212, uniqueWords: 110)
-12. **Warning** `/resources/radio-and-podcasts` Potentially thin list page: < 300 words of content (consider longer intro or more items) (words: 234, uniqueWords: 115)
-13. **Warning** Potential keyword/intent overlap between tag hubs (shared episode roster) (a: /learn-finnish/a1-to-c-level, b: /learn-finnish/immersion-method, sharedEpisodes: 9, overlap: 0.75, aLabel: From A1 to C Level Finnish, bLabel: Learning Finnish Through Immersion)
-14. **Warning** `/episode/13` Title length outside 30–70 chars (length: 88)
-15. **Warning** `/episode/13` Meta description length outside 100–170 chars (length: 1057)
-16. **Warning** `/episode/12` Title length outside 30–70 chars (length: 87)
-17. **Warning** `/episode/12` Meta description length outside 100–170 chars (length: 1051)
-18. **Warning** `/episode/11` Title length outside 30–70 chars (length: 93)
-19. **Warning** `/episode/11` Meta description length outside 100–170 chars (length: 833)
-20. **Warning** `/episode/10` Meta description length outside 100–170 chars (length: 983)
-21. **Warning** `/episode/9` Meta description length outside 100–170 chars (length: 427)
-22. **Warning** `/episode/8` Meta description length outside 100–170 chars (length: 647)
-23. **Warning** `/episode/7` Title length outside 30–70 chars (length: 79)
-24. **Warning** `/episode/7` Meta description length outside 100–170 chars (length: 625)
-25. **Warning** `/episode/6` Meta description length outside 100–170 chars (length: 672)
-26. **Warning** `/episode/5` Meta description length outside 100–170 chars (length: 791)
-27. **Warning** `/episode/4` Meta description length outside 100–170 chars (length: 572)
-28. **Warning** `/episode/3` Title length outside 30–70 chars (length: 79)
-29. **Warning** `/episode/3` Meta description length outside 100–170 chars (length: 598)
-30. **Warning** `/episode/2` Meta description length outside 100–170 chars (length: 844)
+2. **CRITICAL** `/resources/music` Extremely thin list page: < 200 words of unique content (words: 148, uniqueWords: 82)
+3. **CRITICAL** `/resources/community-and-social` Extremely thin list page: < 200 words of unique content (words: 124, uniqueWords: 70)
+4. **CRITICAL** `/resources/courses-and-institutions` Extremely thin list page: < 200 words of unique content (words: 187, uniqueWords: 110)
+5. **CRITICAL** `/resources/exams-and-certifications` Extremely thin list page: < 200 words of unique content (words: 109, uniqueWords: 70)
+6. **CRITICAL** `/quick-links` Missing page-level metadata (title/description/canonical)
+7. **CRITICAL** `/episode/[id]` Heading hierarchy issue: h3 appears before the first h2 on episode pages
+8. **Warning** `/resources/textbooks-and-grammar` Potentially thin list page: < 300 words of content (consider longer intro or more items) (words: 250, uniqueWords: 121)
+9. **Warning** `/resources/apps-and-digital-tools` Potentially thin list page: < 300 words of content (consider longer intro or more items) (words: 262, uniqueWords: 150)
+10. **Warning** `/resources/tv-and-video` Potentially thin list page: < 300 words of content (consider longer intro or more items) (words: 212, uniqueWords: 110)
+11. **Warning** `/resources/radio-and-podcasts` Potentially thin list page: < 300 words of content (consider longer intro or more items) (words: 234, uniqueWords: 115)
+12. **Warning** Potential keyword/intent overlap between tag hubs (shared episode roster) (a: /learn-finnish/a1-to-c-level, b: /learn-finnish/immersion-method, sharedEpisodes: 9, overlap: 0.75, aLabel: From A1 to C Level Finnish, bLabel: Learning Finnish Through Immersion)
+13. **Warning** `/episode/13` Title length outside 30–70 chars (length: 88)
+14. **Warning** `/episode/13` Meta description length outside 100–170 chars (length: 1057)
+15. **Warning** `/episode/12` Title length outside 30–70 chars (length: 87)
+16. **Warning** `/episode/12` Meta description length outside 100–170 chars (length: 1051)
+17. **Warning** `/episode/11` Title length outside 30–70 chars (length: 93)
+18. **Warning** `/episode/11` Meta description length outside 100–170 chars (length: 833)
+19. **Warning** `/episode/10` Meta description length outside 100–170 chars (length: 983)
+20. **Warning** `/episode/9` Meta description length outside 100–170 chars (length: 427)
+21. **Warning** `/episode/8` Meta description length outside 100–170 chars (length: 647)
+22. **Warning** `/episode/7` Title length outside 30–70 chars (length: 79)
+23. **Warning** `/episode/7` Meta description length outside 100–170 chars (length: 625)
+24. **Warning** `/episode/6` Meta description length outside 100–170 chars (length: 672)
+25. **Warning** `/episode/5` Meta description length outside 100–170 chars (length: 791)
+26. **Warning** `/episode/4` Meta description length outside 100–170 chars (length: 572)
+27. **Warning** `/episode/3` Title length outside 30–70 chars (length: 79)
+28. **Warning** `/episode/3` Meta description length outside 100–170 chars (length: 598)
+29. **Warning** `/episode/2` Meta description length outside 100–170 chars (length: 844)
+30. **Warning** `/blog/how-to-learn-finnish-english-only-thursdays` Meta description length outside 100–170 chars (length: 210)
