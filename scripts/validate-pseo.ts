@@ -414,7 +414,7 @@ function buildPages(): PageRecord[] {
       )
       .join("\n");
     const bodyText = normalizeWhitespace(
-      stripMarkdown([cat.heading, cat.intro, cat.metaDescription, listText].join("\n\n"))
+      stripMarkdown([cat.heading, cat.intro, ...(cat.introBody ?? []), cat.metaDescription, listText].join("\n\n"))
     );
     pages.push({
       type: "resource-category",
