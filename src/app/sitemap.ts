@@ -51,7 +51,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Episode pages
   const episodePages = episodes.map((episode) => ({
     url: `${baseUrl}/episode/${episode.id}`,
-    lastModified: new Date(),
+    lastModified: new Date("2026-03-18"),
     changeFrequency: "monthly" as const,
     priority: 0.9,
   }));
