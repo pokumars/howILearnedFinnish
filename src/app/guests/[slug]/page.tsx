@@ -16,6 +16,12 @@ interface GuestPageProps {
   params: Promise<{ slug: string }>;
 }
 
+export function generateStaticParams() {
+  return episodes
+    .filter((e) => e.guest)
+    .map((e) => ({ slug: e.guest!.slug }));
+}
+
 export async function generateMetadata({
   params,
 }: GuestPageProps): Promise<Metadata> {
