@@ -85,6 +85,8 @@ function loadTranscript(episodeId: number): TranscriptEntry[] {
   }
 }
 
+export const dynamicParams = false;
+
 export function generateStaticParams() {
   return episodes.map((e) => ({ id: String(e.id) }));
 }
