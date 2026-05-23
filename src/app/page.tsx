@@ -62,6 +62,9 @@ export default function Home() {
                 text={tag}
                 onClick={() => setSelectedTag(tag)}
                 activated={selectedTag === tag}
+                data-umami-event="filter_used"
+                data-umami-event-filter-name={tag}
+                data-umami-event-filter-context="homepage_episode_filter"
               />
             ))}
           </div>

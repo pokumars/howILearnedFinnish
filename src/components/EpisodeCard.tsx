@@ -35,6 +35,10 @@ export default function EpisodeCard({ episode }: EpisodeCardProps) {
           <Link
             href={`/episode/${episode.id}`}
             className="block w-full h-full cursor-pointer"
+            data-umami-event="episode_opened"
+            data-umami-event-episode-id={episode.id}
+            data-umami-event-episode-title={episode.title}
+            data-umami-event-source="episode_card_thumbnail"
           >
             <Image
               src={episode.thumbnail}
@@ -53,7 +57,13 @@ export default function EpisodeCard({ episode }: EpisodeCardProps) {
 
         {/* Episode Content */}
         <div className="md:w-3/5 p-6">
-          <Link href={`/episode/${episode.id}`}>
+          <Link
+            href={`/episode/${episode.id}`}
+            data-umami-event="episode_opened"
+            data-umami-event-episode-id={episode.id}
+            data-umami-event-episode-title={episode.title}
+            data-umami-event-source="episode_card_title"
+          >
             <h3 className="text-xl font-bold text-gray-800 mb-3 hover:text-purple-600 transition-colors duration-200">
               {episode.guest?.from && (
                 <Flag country={episode.guest.from} className="mr-2 align-middle" />
@@ -66,6 +76,10 @@ export default function EpisodeCard({ episode }: EpisodeCardProps) {
             <Link
               href={`/episode/${episode.id}`}
               className="text-purple-600 hover:text-purple-700 ml-1"
+              data-umami-event="episode_opened"
+              data-umami-event-episode-id={episode.id}
+              data-umami-event-episode-title={episode.title}
+              data-umami-event-source="episode_card_read_more"
             >
               Read More
             </Link>
@@ -75,6 +89,10 @@ export default function EpisodeCard({ episode }: EpisodeCardProps) {
             <Link
               href={`/episode/${episode.id}`}
               className="hidden md:block bg-purple-600 text-white px-6 py-2 rounded-lg font-medium hover:bg-purple-700 transition-colors duration-200 flex items-center gap-2 w-fit"
+              data-umami-event="episode_opened"
+              data-umami-event-episode-id={episode.id}
+              data-umami-event-episode-title={episode.title}
+              data-umami-event-source="episode_card_watch_button"
             >
               WATCH EPISODE
               <ArrowRight className="w-4 h-4" />
@@ -90,6 +108,11 @@ export default function EpisodeCard({ episode }: EpisodeCardProps) {
                   rel="noopener noreferrer"
                   className="w-8 h-8 rounded-full flex items-center justify-center hover:opacity-60 transition-colors duration-200"
                   title={platform.name}
+                  data-umami-event="platform_click"
+                  data-umami-event-platform={platform.name}
+                  data-umami-event-episode-id={episode.id}
+                  data-umami-event-episode-title={episode.title}
+                  data-umami-event-location="episode_card"
                 >
                   {platform.name === "Apple" && (
                     <Image

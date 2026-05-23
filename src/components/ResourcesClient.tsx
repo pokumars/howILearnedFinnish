@@ -28,6 +28,9 @@ const ResourcesClient = () => {
                 text={cat}
                 onClick={() => setSelectedCategory(cat as ResourceCategory | "All")}
                 activated={selectedCategory === cat}
+                data-umami-event="filter_used"
+                data-umami-event-filter-name={cat}
+                data-umami-event-filter-context="resources_filter"
               />
             ))}
           </div>
@@ -65,6 +68,10 @@ const ResourcesClient = () => {
                       <Link
                         href={`/episode/${mention.episodeId}`}
                         className="text-purple-600 hover:text-purple-800 font-medium hover:underline"
+                        data-umami-event="episode_opened"
+                        data-umami-event-episode-id={mention.episodeId}
+                        data-umami-event-source="resource_mention"
+                        data-umami-event-resource-name={resource.name}
                       >
                         Episode {mention.episodeId}
                       </Link>

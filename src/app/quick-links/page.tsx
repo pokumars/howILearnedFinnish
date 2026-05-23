@@ -159,6 +159,10 @@ export default function QuickLinks() {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex flex-col items-center gap-2 hover:scale-110 transition-transform duration-200"
+                    data-umami-event="quick_link_click"
+                    data-umami-event-link-title={link.title}
+                    data-umami-event-destination={link.href}
+                    data-umami-event-link-section="social"
                   >
                     <div className=" w-12 h-12 rounded-lg flex items-center justify-center shadow-sm">
                       {link.icon}
@@ -183,6 +187,10 @@ export default function QuickLinks() {
                 key={link.title}
                 href={link.href}
                 className="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow duration-200 flex items-center justify-between group"
+                data-umami-event="quick_link_click"
+                data-umami-event-link-title={link.title}
+                data-umami-event-destination={link.href}
+                data-umami-event-link-section="primary"
               >
                 <div className="flex items-center gap-4">
                   <div

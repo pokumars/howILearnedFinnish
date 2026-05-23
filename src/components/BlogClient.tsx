@@ -60,6 +60,10 @@ const BlogClient = () => {
                     <Link
                       href={`/blog/${post.slug}`}
                       className="text-2xl font-bold text-gray-800 hover:text-purple-600 transition-colors duration-200"
+                      data-umami-event="blog_post_opened"
+                      data-umami-event-slug={post.slug}
+                      data-umami-event-title={post.title}
+                      data-umami-event-source="blog_list_title"
                     >
                       {post.title}
                     </Link>
@@ -89,6 +93,10 @@ const BlogClient = () => {
                   <Link
                     href={`/blog/${post.slug}`}
                     className="inline-flex items-center text-purple-600 hover:text-purple-700 font-medium transition-colors duration-200"
+                    data-umami-event="blog_post_opened"
+                    data-umami-event-slug={post.slug}
+                    data-umami-event-title={post.title}
+                    data-umami-event-source="blog_list_read_full"
                   >
                     Read full article
                     <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">

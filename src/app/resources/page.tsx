@@ -64,6 +64,9 @@ export default function ResourcesPage() {
                   key={cat.slug}
                   href={`/resources/${cat.slug}`}
                   className="flex items-center justify-between p-4 border border-gray-200 rounded-lg hover:border-purple-300 hover:shadow-sm transition-all duration-200 group"
+                  data-umami-event="resource_category_opened"
+                  data-umami-event-category={cat.category}
+                  data-umami-event-source="resources_hub"
                 >
                   <span className="font-medium text-gray-800 text-sm group-hover:text-purple-700 transition-colors">
                     {cat.category}

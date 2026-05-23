@@ -128,6 +128,10 @@ export default async function ResourceCategoryPage({ params }: CategoryPageProps
                       <Link
                         href={`/episode/${mention.episodeId}`}
                         className="text-purple-600 hover:text-purple-800 font-medium hover:underline"
+                        data-umami-event="episode_opened"
+                        data-umami-event-episode-id={mention.episodeId}
+                        data-umami-event-source="resource_category_mention"
+                        data-umami-event-resource-name={resource.name}
                       >
                         Episode {mention.episodeId}
                       </Link>
@@ -152,6 +156,9 @@ export default async function ResourceCategoryPage({ params }: CategoryPageProps
                   key={other.slug}
                   href={`/resources/${other.slug}`}
                   className="p-4 border border-gray-200 rounded-lg hover:border-purple-300 hover:shadow-sm transition-all duration-200"
+                  data-umami-event="resource_category_opened"
+                  data-umami-event-category={other.category}
+                  data-umami-event-source="other_resource_categories"
                 >
                   <p className="font-medium text-gray-800 text-sm leading-snug">{other.category}</p>
                   <p className="text-xs text-purple-600 mt-1">{count} resource{count !== 1 ? "s" : ""} →</p>

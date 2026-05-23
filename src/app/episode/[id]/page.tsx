@@ -180,6 +180,9 @@ export default async function EpisodePage({ params }: EpisodePageProps) {
                     key={tag}
                     href={`/learn-finnish/${td.slug}`}
                     className="px-4 py-2 rounded-full text-sm font-medium bg-white text-gray-700 border border-purple-600 hover:bg-purple-50 transition-colors duration-200"
+                    data-umami-event="filter_used"
+                    data-umami-event-filter-name={tag}
+                    data-umami-event-filter-context="episode_tag"
                   >
                     {tag}
                   </Link>
@@ -200,6 +203,11 @@ export default async function EpisodePage({ params }: EpisodePageProps) {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-2 bg-purple-50 px-4 py-2 rounded-lg border border-purple-200 hover:border-purple-300 hover:bg-purple-100 transition-all duration-200"
+                    data-umami-event="platform_click"
+                    data-umami-event-platform={platform.name}
+                    data-umami-event-episode-id={episode.id}
+                    data-umami-event-episode-title={episode.title}
+                    data-umami-event-location="episode_page_header"
                   >
                     {platform.name === "Apple" && (
                       <Image
@@ -350,6 +358,10 @@ export default async function EpisodePage({ params }: EpisodePageProps) {
                             <Link
                               href={`/resources/${catMeta.slug}`}
                               className="hover:text-purple-600 transition-colors duration-200"
+                              data-umami-event="resource_category_opened"
+                              data-umami-event-category={category}
+                              data-umami-event-source="episode_resources"
+                              data-umami-event-episode-id={episode.id}
                             >
                               {category} →
                             </Link>
@@ -426,6 +438,11 @@ export default async function EpisodePage({ params }: EpisodePageProps) {
                             target="_blank"
                             rel="noopener noreferrer"
                             className="text-xs font-mono text-purple-500 hover:text-purple-700 hover:underline"
+                            data-umami-event="platform_click"
+                            data-umami-event-platform="YouTube"
+                            data-umami-event-episode-id={episode.id}
+                            data-umami-event-episode-title={episode.title}
+                            data-umami-event-location="transcript_timestamp"
                           >
                             {entry.timestamp}
                           </a>
