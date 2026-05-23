@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import Script from "next/script";
 import { Analytics } from "@vercel/analytics/react";
 import { BASE_URL } from "@/lib/config";
 import "./globals.css";
@@ -15,6 +16,8 @@ const borna = localFont({
   display: "swap",
   variable: "--font-borna",
 });
+
+const isProduction = process.env.NODE_ENV === "production";
 
 export const metadata: Metadata = {
   title: "How I Learned Finnish - with Ohe",
@@ -69,6 +72,14 @@ export default function RootLayout({
       </head>
       <body className={borna.className}>
         {children}
+        {isProduction && (
+          <Script
+            defer
+            src="https://cloud.umami.is/script.js"
+            data-website-id="38d1ec83-411e-46ef-824f-8736488c7ae9"
+            strategy="afterInteractive"
+          />
+        )}
         <Analytics />
       </body>
     </html>
