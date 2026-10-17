@@ -19,6 +19,8 @@ export interface Episode {
   tags: FilterTags[];
   videoUrl: string;
   thumbnail: string;
+  /** ISO date-time; the video embed shows a countdown until then */
+  releaseAt?: string;
   platforms: { name: string; url: string }[];
   timeToFluency?: string;
   keyMethods?: string[];
@@ -41,6 +43,81 @@ export enum FilterTags {
 export const filterTags = Object.values(FilterTags);
 
 export const episodes: Episode[] = [
+  {
+    id: 14,
+    title:
+      "014: How Friendships and First Steps Built Ahmed's Finnish Fluency",
+    metaDescription:
+      "Ahmed Al Rufaye moved from Iraq to Finland at 19 and reached C-level Finnish through an intensive integration course, volunteering, and Finnish friends.",
+    description:
+      "In this episode of How I Learned Finnish with Ohe, Ahmed Al Rufaye, a 29-year-old Iraqi software developer/IoT engineer and game developer, shares how he moved to Finland around age 19 as a refugee for safety and free education and built a life over the past decade. He explains that early miscommunication in English and stress around interpreters pushed him to learn Finnish to function independently and belong in society. After finding early volunteer-led lessons unhelpful, he progressed through an intensive integration course (five days a week) and passed the YKI test quickly, later realizing his level was around C1–C2 during university courses. Ahmed credits immersion through volunteering, internships (including assisting in a Finnish school), hobbies, and Finnish friends, emphasizing practice, resisting switching to English, and mindset as key to success.",
+    guest: {
+      name: "Ahmed Al Rufaye",
+      slug: "ahmed-al-rufaye",
+      age: 29,
+      profession: "IoT Engineer & Game Developer",
+      from: "Iraq",
+      movedToFinland: 2015,
+      bio: "Ahmed was born in Iraq but grew up abroad, and was finishing high school in Jordan when his family went looking for a permanent home. He arrived in Finland at the end of August 2015, aged 19, seeking safety and a free education, and spent his first years in Kajaani and then the small town of Raahe. Frustrated by misunderstandings in English and by interpreters who didn't know his Iraqi dialect, he decided to learn Finnish so he could manage on his own. A full-time integration course got him through the YKI test within six months, and volunteering with the Finnish Red Cross, an internship as a classroom assistant, volleyball, and a circle of Finnish friends did the rest. He went on to study game development in Finnish and IT engineering in Kuopio, and now works as an IoT engineer in Helsinki, writing documentation in Finnish.",
+      metaDescription:
+        "Iraqi IoT engineer who moved to Finland at 19 and learned Finnish through an intensive integration course, volunteering, hobbies, and Finnish friends.",
+    },
+    tags: [
+      FilterTags.A1toC,
+      FilterTags.Immersion,
+      FilterTags.FastPaced,
+      FilterTags.Student,
+    ],
+    // TODO: replace Apple and Spotify show links with the episode links once 014 is live
+    videoUrl: "https://youtu.be/s87KwFL1qYI",
+    thumbnail: "/thumbnails/14_ahmed.jpg",
+    releaseAt: "2026-10-18T06:00:00+03:00",
+    platforms: [
+      {
+        name: "Apple",
+        url: "https://podcasts.apple.com/us/podcast/how-i-learned-finnish-with-ohe/id1820396129",
+      },
+      {
+        name: "Spotify",
+        url: "https://open.spotify.com/show/266bYZrif8U0I1OJnOTTgU",
+      },
+      {
+        name: "YouTube",
+        url: "https://youtu.be/s87KwFL1qYI",
+      },
+    ],
+    timeToFluency:
+      "Passed the YKI test (B2) in January 2017, about six months into a full-time integration course and roughly 16 months after arriving in August 2015; discovered he was at C1–C2 level when taking Finnish courses at university",
+    keyMethods: [
+      "Full-time integration course: five days a week, six hours a day, taught only in Finnish, with teachers who answered English questions in Finnish",
+      "Joining a course already three months in and being forced to keep up from day one",
+      "Unpaid integration-course internship as a classroom assistant in a Finnish school, helping pupils with homework in Finnish",
+      "Volunteering with the Finnish Red Cross, including as a first-aid duty volunteer at events",
+      "Making Finnish friends through volunteering and playing tennis, badminton and volleyball with them, all in Finnish",
+      "Asking friends to correct his mistakes and treating each correction as a lesson rather than a criticism",
+      "Refusing to switch to English mid-sentence: describing the missing word in Finnish first",
+      "Opening a dictionary on a random page every day and learning at least one new word",
+      "Writing personal notes in Finnish on his phone and thinking in Finnish",
+      "Studying game development at a Finnish-language vocational school (ammattikoulu)",
+    ],
+    resourcesMentioned: [
+      "Integration course (kotoutumiskoulutus) — full-time Finnish course for new residents",
+      "YKI test — Finnish National Certificate of Language Proficiency",
+      "Alias — word-guessing board game played in Finnish during class",
+      "Finnish Red Cross — volunteering and first-aid duty (ensiapupäivystys)",
+      "Volunteer and church-run Finnish lessons — available before getting a residence permit; too basic for him",
+      "Bilingual dictionary — one random word a day",
+      "Duolingo — vocabulary is too niche to be practical on its own and streaks give a false sense of progress",
+      "University Finnish courses (C1 and C2) — taken as electives while studying in English",
+    ],
+    keyTakeaways: [
+      "Don't study only for the exam. Learn Finnish so you can use it tomorrow; Ahmed passed the YKI test without cramming because he had been using the language every day.",
+      "Ask Finnish friends to correct you and take each correction as a lesson. That's how grammar rules like the partitive after a negative actually stick.",
+      "When you're missing a word, explain it in Finnish before falling back on English. The awkward moments are the ones you remember.",
+      "Hobbies, volunteering and internships give you Finnish conversations you'd never get in a classroom, especially everyday spoken Finnish (puhekieli).",
+      "Finnish isn't impossible. Most people who don't succeed haven't put in enough time or haven't found the learning method that works for them.",
+    ],
+  },
   {
     id: 13,
     title:

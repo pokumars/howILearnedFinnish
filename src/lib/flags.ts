@@ -10,6 +10,7 @@ const countryCode: Record<string, string> = {
   Sweden: "se",
   Canada: "ca",
   Indonesia: "id",
+  Iraq: "iq",
 };
 
 export function getCountryCode(country: string | undefined): string {

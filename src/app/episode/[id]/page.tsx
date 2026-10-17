@@ -21,6 +21,7 @@ import path from "path";
 import { transcriptFileByEpisodeId } from "@/data/transcripts/manifest";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import RelatedEpisodes from "@/components/RelatedEpisodes";
+import VideoEmbed from "@/components/VideoEmbed";
 
 interface EpisodePageProps {
   params: Promise<{
@@ -254,15 +255,12 @@ export default async function EpisodePage({ params }: EpisodePageProps) {
               </h2>
               {youtubeVideoId && (
                 <div className="mb-6">
-                  <div className="relative w-full h-0 pb-[56.25%] rounded-lg overflow-hidden">
-                    <iframe
-                      src={`https://www.youtube.com/embed/${youtubeVideoId}`}
-                      title={episode.title}
-                      className="absolute top-0 left-0 w-full h-full"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowFullScreen
-                    />
-                  </div>
+                  <VideoEmbed
+                    videoId={youtubeVideoId}
+                    title={episode.title}
+                    thumbnail={episode.thumbnail}
+                    releaseAt={episode.releaseAt}
+                  />
                 </div>
               )}
             </div>

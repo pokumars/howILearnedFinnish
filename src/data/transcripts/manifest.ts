@@ -11,5 +11,6 @@ export const transcriptFileByEpisodeId: Record<number, string> = {
   11: "011_matthias.md",
   12: "012_jamie.md",
   13: "013_chloe.md",
+  14: "014_ahmed.md",
 };
 
