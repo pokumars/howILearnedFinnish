@@ -68,18 +68,17 @@ export const episodes: Episode[] = [
       FilterTags.FastPaced,
       FilterTags.Student,
     ],
-    // TODO: replace Apple and Spotify show links with the episode links once 014 is live
     videoUrl: "https://youtu.be/s87KwFL1qYI",
     thumbnail: "/thumbnails/14_ahmed.jpg",
     releaseAt: "2026-10-18T06:00:00+03:00",
     platforms: [
       {
         name: "Apple",
-        url: "https://podcasts.apple.com/us/podcast/how-i-learned-finnish-with-ohe/id1820396129",
+        url: "https://podcasts.apple.com/us/podcast/014-how-friendships-and-first-steps-built-ahmeds/id1820396129?i=1000796867279",
       },
       {
         name: "Spotify",
-        url: "https://open.spotify.com/show/266bYZrif8U0I1OJnOTTgU",
+        url: "https://open.spotify.com/episode/6ZYrzATXiyWfC0Zp8uVcho",
       },
       {
         name: "YouTube",
