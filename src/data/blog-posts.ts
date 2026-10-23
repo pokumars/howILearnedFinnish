@@ -12,6 +12,118 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "jobs-and-internships-in-finland",
+    title: "Jobs and Internships in Finland, and How Much Finnish You Need",
+    author: 'Oheneba "Ohe" Poku-Marboah',
+    authorUrl: "https://x.com/pokumars",
+    publishDate: "2026-10-23",
+    metaDescription:
+      "An English guide to Finnish job boards, internships, public sector, research and EU jobs, plus which sectors expect Finnish and which hire in English.",
+    excerpt:
+      "Most guides to job hunting in Finland are written in Finnish. Here's an English version: the job boards, internship programmes, public sector and EU career sites worth knowing, plus an honest look at where you'll need Finnish.",
+    content: `I recently sent someone a list of Finnish job boards from the University of Helsinki's student guide. Their first reply: "It's in Finnish."
+
+Fair point. If you're new to Finland and looking for work, the most useful guides are often written in the language you're still learning. So here is an English version, reorganised, with my own notes on **where Finnish matters and where it doesn't**.
+
+## **1. General Finnish job boards**
+
+These are the main places Finnish employers post jobs. Most of the listings are in Finnish, but you can search for "English" as a keyword on most of them to filter for roles where English is the working language.
+
+- **[Työmarkkinatori](https://tyomarkkinatori.fi/)**: The official public job marketplace, run by the state and the employment services. It has an English interface and covers jobs across all sectors.
+- **[Duunitori](https://duunitori.fi/)**: One of the biggest private job boards in Finland.
+- **[Oikotie Työpaikat](https://tyopaikat.oikotie.fi/)**: A large general job board.
+- **[Jobly](https://www.jobly.fi/)**: A general job board.
+- **[Laura](https://laura.fi/)**: Another job board.
+- **[Indeed Finland](https://fi.indeed.com/)**: A search engine that collects listings from many sites.
+- **[JobCrawls](https://www.jobcrawls.com/en)**: Collects jobs from Finnish and international websites.
+- **[Barona](https://barona.fi/)** and **[Manpower](https://www.manpower.fi/)**: Recruitment and staffing agencies. These are often a realistic first step into the Finnish job market, especially for hourly and shift work.
+
+A board the university's list doesn't mention, but which is worth knowing as an international: **[Work in Finland](https://www.workinfinland.com/)**, the government's site for international talent. It has an English job search and guidance on moving and working here.
+
+## **2. Public sector jobs**
+
+The public sector is a huge employer in Finland: the state, municipalities, wellbeing services counties, universities and the church.
+
+- **[Valtiolle.fi](https://www.valtiolle.fi/)**: Jobs in central government.
+- **[Kuntarekry](https://www.kuntarekry.fi/)**: Jobs in municipalities and wellbeing services counties. This is where a lot of healthcare, education and social work jobs are posted.
+- **[City of Helsinki](https://www.hel.fi/fi/avoimet-tyopaikat)**: Open positions with the city.
+- **[City of Vantaa](https://vantaa.rekrytointi.com/paikat/index.php?o=A_LOJ&list=1)**: Open positions with the city.
+- **[KirkkoRekry](https://kirkkorekry.fi/)**: Jobs in the Evangelical Lutheran Church of Finland.
+
+**A note on language:** most public sector jobs expect Finnish, and many government positions also require some Swedish. This is the area where Finnish opens the most doors. Two of my guests are proof: [Jojo](/episode/8) works as a nurse, and [Magdalene](/episode/7) became a deputy municipal director in healthcare. Both jobs require working in Finnish every day.
+
+## **3. University jobs, research and academia**
+
+Research is one of the most English-friendly sectors in Finland. Many research groups work in English, and job listings are often published in English.
+
+- **University job pages**: Every university lists its own open positions, including summer jobs. For example, the University of Helsinki has [open positions](https://www.helsinki.fi/fi/avoimet-tyopaikat) and [summer jobs](https://www.helsinki.fi/fi/tutustu-meihin/ura-ja-avoimet-tyopaikat/avoimet-tyopaikat/kesatyopaikat). Other universities (Aalto, Tampere, Turku, Oulu, Jyväskylä and so on) have their own pages.
+- **[Academic Positions](https://academicpositions.fi/)**: An academic career network for Northern and Central Europe.
+- **[EuroScienceJobs](https://www.eurosciencejobs.com/)**: Science jobs across Europe.
+- **[Terra.do](https://terra.do/climate-jobs/)**: Climate-related jobs, if that's your field.
+
+## **4. For students: your university's career services**
+
+If you're a student or recent graduate, start with your own university's career services. They're often the best source of internships, because employers post there specifically to reach students.
+
+For example, the University of Helsinki uses **[JobTeaser](https://helsinki.jobteaser.com/)**, where students and alumni can find jobs, internships, career events and career guidance. Other universities and universities of applied sciences have their own job portals and career services, so **check what yours offers** (search for your university's name plus "career services" or "urapalvelut").
+
+Student associations and trade unions also run job boards for their own fields. Some examples from Helsinki:
+
+- **[Paragraaffi](https://paragraaffi.fi/)**: Law students
+- **[Loimu](https://tyopaikat.loimu.fi/)**: Natural sciences (biosciences, environmental sciences, chemistry, geography, geosciences, mathematics, physics, forestry)
+- **[YKA](https://yka.fi/palvelumme/avoimet-tyopaikat/)**: Social sciences
+- **[Klinikalle](https://www.klinikalle.fi/)**: Medical students
+- **[Panakeia](https://panakeia.fi/tyonhakijalle/avoimet-tyopaikat/)**: Pharmacy students
+- **[TKO-äly](https://jobs.tko-aly.fi/)**: Computer science students
+
+If you study somewhere else, your own subject's student association very likely has something similar. Ask them.
+
+## **5. Jobs and internships abroad**
+
+If you want international experience, or you're open to working outside Finland:
+
+- **[EURES](https://europa.eu/eures/portal/jv-se/home)**: The EU's job mobility portal, with jobs across Europe.
+- **[Indeed worldwide](https://www.indeed.com/worldwide)**, **[CareerJet](https://www.careerjet.com/)** and **[Monster](https://www.monster.com/geo/siteselection)**: International job search engines.
+- **[Finnish National Agency for Education (OPH)](https://www.oph.fi/fi/kansainvalisyys/kansainvalistymispalvelut-yksiloille)**: Internship programmes for higher education students, including internships at international organisations.
+- **[ErasmusIntern](https://erasmusintern.org/)**: Internships across Europe. You can create a profile.
+- **[Training Experience](https://www.trainingexperience.org/)**: A collection of international internships.
+- **[UNjobnet](https://www.unjobnet.org/)**: UN jobs.
+
+## **6. EU careers and traineeships**
+
+EU institutions hire people from all member states, and they also run paid traineeship programmes.
+
+- **[EPSO / EU Careers](https://epso.europa.eu/en)**: The official recruitment office for EU institutions. It covers jobs, [traineeships](https://epso.europa.eu/en/job-opportunities/traineeships), how to apply and who is eligible.
+- **[Working in the EU (Finnish Government)](https://vnk.fi/eu/tyopaikat)**: Information and support from the Prime Minister's Office for people from Finland looking at EU careers.
+- **EU Careers Finland** on [Facebook](https://www.facebook.com/EUCareersFinland/) and [Instagram](https://www.instagram.com/eucareersfinland/): A network of EU career ambassadors who share upcoming traineeships and jobs and answer questions about applying.
+
+## **7. Social media and networking**
+
+A lot of hiring in Finland happens through people you know, and a lot of jobs are shared on social media before (or instead of) being posted on job boards.
+
+- **[LinkedIn](https://www.linkedin.com/)**: Use the job search, follow companies you're interested in, and keep your profile up to date so recruiters can find you. It's especially active for sales, marketing, communications, HR, technical and IT roles.
+- **Facebook groups**: There are many job groups, including groups for internationals in Finland. Not the main recruitment channel, but worth joining.
+- **Hashtags**: Search for **#rekry** (recruitment), **#duuni** (job, slang), **#työpaikat** (jobs), **#jobs** and **#career**.
+
+Learning even a few Finnish job words helps here: *rekry*, *työpaikka* (job), *harjoittelu* (internship), *kesätyö* (summer job), *osa-aikainen* (part-time) and *kokoaikainen* (full-time).
+
+## **So, how much Finnish do you need?**
+
+It depends on the field.
+
+**You can often get by with English** in tech and IT, research and academia, startups and many international companies, especially in the Helsinki region.
+
+**You'll usually need Finnish** in the public sector, healthcare, education, social work, customer service and most jobs outside the capital region.
+
+That said, "needs Finnish" doesn't always mean "needs fluent Finnish". I got a job as a cashier in a grocery store when I could barely string together a sentence I hadn't memorised beforehand. For a lot of entry-level jobs, basic Finnish and a willingness to use it are enough to get started, and the job itself becomes daily practice.
+
+But even in English-friendly fields, Finnish is what moves you up. That was my experience. I was working as a software developer and noticed that the people in senior positions all had one thing in common: **fluent Finnish**. So I spent a year [pretending not to speak English](/blog/how-to-learn-finnish-english-only-thursdays), and that September I got a consulting job that required Finnish.
+
+Finnish doesn't only open the jobs that require it. It also widens your network, and in Finland a lot of jobs are found through your network.
+
+If you want to see how other people reached working-level Finnish while holding down jobs, studies and families, browse the [interviews on the homepage](/). You can filter by life situation to find people whose circumstances match yours. A good place to start is [Deborah](/episode/5), who got into Finnish law school within 3 years of arriving.`,
+  },
+  {
     slug: "how-to-learn-finnish-english-only-thursdays",
     title: 'How to Learn Finnish: Told My Ex-GF "English Only on Thursdays"',
     author: 'Oheneba "Ohe" Poku-Marboah',
