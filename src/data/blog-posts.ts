@@ -13,7 +13,7 @@ export interface BlogPost {
 export const blogPosts: BlogPost[] = [
   {
     slug: "jobs-and-internships-in-finland",
-    title: "Jobs and Internships in Finland, and How Much Finnish You Need",
+    title: "Finding Jobs and Internships in Finland, and How Much Finnish You Need",
     author: 'Oheneba "Ohe" Poku-Marboah',
     authorUrl: "https://x.com/pokumars",
     publishDate: "2026-10-23",
