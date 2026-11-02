@@ -12,6 +12,7 @@ import { buildMetadata } from "@/lib/metadata";
 import { generateArticleSchema, generateBreadcrumbSchema } from "@/lib/schema";
 import { JsonLd } from "@/components/JsonLd";
 import ReadNext from "@/components/ReadNext";
+import SharePrompt from "@/components/SharePrompt";
 import { resolveReadNextList } from "@/lib/read-next";
 
 // Configure marked options for better HTML output
@@ -159,6 +160,15 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
               }}
             />
           </article>
+
+          <div className="mt-12">
+            <SharePrompt
+              path={`/blog/${post.slug}`}
+              heading="Know someone who'd find this useful? Send it to them."
+              text={post.title}
+              context="blog"
+            />
+          </div>
 
           {post.readNext && (
             <div className="mt-12 pt-10 border-t border-gray-100">

@@ -22,6 +22,7 @@ import { transcriptFileByEpisodeId } from "@/data/transcripts/manifest";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import RelatedEpisodes from "@/components/RelatedEpisodes";
 import VideoEmbed from "@/components/VideoEmbed";
+import SharePrompt from "@/components/SharePrompt";
 
 interface EpisodePageProps {
   params: Promise<{
@@ -411,6 +412,22 @@ export default async function EpisodePage({ params }: EpisodePageProps) {
               </div>
             </div>
           )}
+
+          {/* Share */}
+          <div className="mb-8">
+            <SharePrompt
+              path={`/episode/${episode.id}`}
+              heading={`Know someone learning Finnish? Send them ${
+                !episode.guest
+                  ? "this episode"
+                  : episode.guest.slug === "oheneba-poku-marboah"
+                    ? "my story"
+                    : `${episode.guest.name.split(" ")[0]}'s story`
+              }.`}
+              text={`${episode.title} | How I Learned Finnish`}
+              context="episode"
+            />
+          </div>
 
           {/* Transcript */}
           {transcriptEntries.length > 0 && (
