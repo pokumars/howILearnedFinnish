@@ -11,6 +11,7 @@ import { buildMetadata } from "@/lib/metadata";
 import { generatePersonSchema, generateBreadcrumbSchema } from "@/lib/schema";
 import { JsonLd } from "@/components/JsonLd";
 import { BASE_URL } from "@/lib/config";
+import SharePrompt from "@/components/SharePrompt";
 
 interface GuestPageProps {
   params: Promise<{ slug: string }>;
@@ -122,6 +123,19 @@ export default async function GuestPage({ params }: GuestPageProps) {
             Episode featuring {guest.name.split(" ")[0]}
           </h2>
           <EpisodeCard episode={episode} />
+
+          <div className="mt-8">
+            <SharePrompt
+              path={`/guests/${guest.slug}`}
+              heading={`Know someone learning Finnish? Send them ${
+                guest.slug === "oheneba-poku-marboah"
+                  ? "my story"
+                  : `${guest.name.split(" ")[0]}'s story`
+              }.`}
+              text={`${guest.name} | How I Learned Finnish`}
+              context="guest"
+            />
+          </div>
         </div>
       </section>
 
