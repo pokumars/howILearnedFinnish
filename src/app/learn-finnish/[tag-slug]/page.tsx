@@ -14,6 +14,7 @@ import {
 } from "@/lib/schema";
 import { JsonLd } from "@/components/JsonLd";
 import { BASE_URL } from "@/lib/config";
+import SharePrompt from "@/components/SharePrompt";
 
 interface TagHubPageProps {
   params: Promise<{ "tag-slug": string }>;
@@ -113,6 +114,15 @@ export default async function TagHubPage({ params }: TagHubPageProps) {
           ) : (
             <p className="text-gray-500">No episodes yet for this topic.</p>
           )}
+
+          <div className="mt-8">
+            <SharePrompt
+              path={`/learn-finnish/${tag.slug}`}
+              heading="Know someone in this situation? Send them these stories."
+              text={`${tag.heading} | How I Learned Finnish`}
+              context="situation"
+            />
+          </div>
         </div>
       </section>
 
