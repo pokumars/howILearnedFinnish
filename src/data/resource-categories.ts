@@ -7,6 +7,8 @@ export interface ResourceCategoryMeta {
   metaDescription: string;
   intro: string;
   introBody?: string[];
+  /** Blog paths shown alongside the most-mentioned episodes under "Read or listen next" */
+  relatedPosts?: string[];
 }
 
 export const resourceCategoryMeta: ResourceCategoryMeta[] = [
@@ -57,6 +59,7 @@ export const resourceCategoryMeta: ResourceCategoryMeta[] = [
   },
   {
     slug: "radio-and-podcasts",
+    relatedPosts: ["/blog/best-finnish-podcasts-for-learning-the-language"],
     category: "Radio & Podcasts",
     heading: "Finnish Podcasts & Radio for Language Learning",
     metaDescription:
@@ -126,6 +129,7 @@ export const resourceCategoryMeta: ResourceCategoryMeta[] = [
   },
   {
     slug: "exams-and-certifications",
+    relatedPosts: ["/blog/finnish-language-requirements-for-citizenship", "/blog/is-yki-easiest-path-finnish-citizenship"],
     category: "Exams & Certifications",
     heading: "Finnish Language Exams & Certifications",
     metaDescription:

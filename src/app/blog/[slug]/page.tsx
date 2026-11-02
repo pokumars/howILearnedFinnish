@@ -11,6 +11,8 @@ import { BASE_URL } from "@/lib/config";
 import { buildMetadata } from "@/lib/metadata";
 import { generateArticleSchema, generateBreadcrumbSchema } from "@/lib/schema";
 import { JsonLd } from "@/components/JsonLd";
+import ReadNext from "@/components/ReadNext";
+import { resolveReadNextList } from "@/lib/read-next";
 
 // Configure marked options for better HTML output
 marked.setOptions({
@@ -157,6 +159,15 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
               }}
             />
           </article>
+
+          {post.readNext && (
+            <div className="mt-12 pt-10 border-t border-gray-100">
+              <ReadNext
+                items={resolveReadNextList(post.readNext)}
+                source={`blog_${post.slug}`}
+              />
+            </div>
+          )}
         </div>
       </section>
 

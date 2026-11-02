@@ -8,6 +8,8 @@ export interface BlogPost {
   excerpt: string;
   featuredImage?: string;
   content: string;
+  /** Internal paths shown as "Read or listen next" cards after the article */
+  readNext?: string[];
 }
 
 export const blogPosts: BlogPost[] = [
@@ -491,6 +493,11 @@ If you _do_ need YKI, [plan well ahead](/blog/deborah-laajanen-finnish-learning-
   },
   {
     slug: "finnish-language-requirements-for-citizenship",
+    readNext: [
+      "/blog/is-yki-easiest-path-finnish-citizenship",
+      "/resources/exams-and-certifications",
+      "/blog/not-fluent-after-yki",
+    ],
     title:
       "Finnish Language Requirements for Citizenship - What You Actually Need to Know",
     author: 'Oheneba "Ohe" Poku-Marboah',
@@ -625,6 +632,11 @@ I made this so that you can hear how they learned Finnish as adults and you can 
 
   {
     slug: "deborah-laajanen-finnish-learning-journey",
+    readNext: [
+      "/episode/5",
+      "/guests/deborah-laajanen",
+      "/blog/is-yki-easiest-path-finnish-citizenship",
+    ],
     title: "Debi's Finnish Language Learning Journey: From A1 to C1-C2",
     author: 'Deborah "Debi" Laajanen',
     authorUrl: "https://www.linkedin.com/in/deborahlaajanen",
@@ -774,6 +786,11 @@ I am convinced that at the height of this journey lies freedom, not from discipl
   },
   {
     slug: "best-finnish-podcasts-for-learning-the-language",
+    readNext: [
+      "/episode/2",
+      "/blog/how-to-learn-finnish-english-only-thursdays",
+      "/resources/radio-and-podcasts",
+    ],
     title: "Best Finnish Podcasts for Learning the Language",
     author: `Oheneba "Ohe" Poku-Marboah`,
     authorUrl: "https://x.com/pokumars",

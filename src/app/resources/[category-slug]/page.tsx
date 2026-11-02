@@ -13,6 +13,8 @@ import {
 } from "@/lib/schema";
 import { JsonLd } from "@/components/JsonLd";
 import { BASE_URL } from "@/lib/config";
+import ReadNext from "@/components/ReadNext";
+import { resolveReadNextList } from "@/lib/read-next";
 
 interface CategoryPageProps {
   params: Promise<{ "category-slug": string }>;
@@ -46,6 +48,20 @@ export default async function ResourceCategoryPage({ params }: CategoryPageProps
   ).size;
 
   const otherCategories = resourceCategoryMeta.filter((c) => c.slug !== slug);
+
+  // The episodes where this category's resources come up most, newest first on ties
+  const mentionCounts = new Map<number, number>();
+  for (const mention of categoryResources.flatMap((r) => r.mentions)) {
+    mentionCounts.set(mention.episodeId, (mentionCounts.get(mention.episodeId) ?? 0) + 1);
+  }
+  const topEpisodePaths = [...mentionCounts.entries()]
+    .sort((a, b) => b[1] - a[1] || b[0] - a[0])
+    .map(([id]) => `/episode/${id}`);
+  const relatedPosts = cat.relatedPosts ?? [];
+  const readNextItems = resolveReadNextList([
+    ...topEpisodePaths.slice(0, Math.max(1, 3 - relatedPosts.length)),
+    ...relatedPosts,
+  ]).slice(0, 3);
 
   const itemListSchema = generateResourceItemListSchema({
     slug: cat.slug,
@@ -143,6 +159,19 @@ export default async function ResourceCategoryPage({ params }: CategoryPageProps
           </div>
         </div>
       </section>
+
+      {/* Read or listen next */}
+      {readNextItems.length > 0 && (
+        <section className="py-12 bg-white border-t border-gray-100">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <ReadNext
+              items={readNextItems}
+              source={`resources_${cat.slug}`}
+              heading="Hear how learners used these"
+            />
+          </div>
+        </section>
+      )}
 
       {/* Other categories */}
       <section className="py-12 bg-white border-t border-gray-100">
