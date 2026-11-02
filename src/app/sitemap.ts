@@ -41,6 +41,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.6,
     },
     {
+      url: `${baseUrl}/episode`,
+      lastModified: new Date("2026-11-02"),
+      changeFrequency: "weekly" as const,
+      priority: 0.8,
+    },
+    {
       url: `${baseUrl}/guests`,
       lastModified: new Date("2026-03-17"),
       changeFrequency: "monthly" as const,

@@ -142,6 +142,7 @@ export default async function EpisodePage({ params }: EpisodePageProps) {
 
   const breadcrumbSchema = generateBreadcrumbSchema([
     { name: "Home", url: BASE_URL },
+    { name: "Episodes", url: `${BASE_URL}/episode` },
     { name: episode.title, url: `${BASE_URL}/episode/${episode.id}` },
   ]);
 
@@ -156,7 +157,7 @@ export default async function EpisodePage({ params }: EpisodePageProps) {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <Breadcrumbs
             items={[
-              { label: "Episodes", href: "/" },
+              { label: "Episodes", href: "/episode" },
               { label: episode.title, href: `/episode/${episode.id}` },
             ]}
           />
