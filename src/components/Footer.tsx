@@ -35,7 +35,8 @@ export default function Footer() {
 
   return (
     <footer className="bg-gray-800 text-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      {/* Extra bottom padding lets the social links scroll clear of the floating feedback button */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-[calc(5.5rem+env(safe-area-inset-bottom))]">
         {/* Hub navigation */}
         <nav aria-label="Footer navigation" className="flex flex-wrap justify-center gap-x-6 gap-y-2 mb-6">
           {hubLinks.map((link) => (
