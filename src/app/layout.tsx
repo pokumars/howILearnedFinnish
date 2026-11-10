@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import Script from "next/script";
 import { Analytics } from "@vercel/analytics/react";
 import { BASE_URL } from "@/lib/config";
+import { FeedbackProvider } from "@/components/feedback/FeedbackWidget";
 import "./globals.css";
 
 const borna = localFont({
@@ -71,7 +72,7 @@ export default function RootLayout({
         <link rel="apple-touch-icon" href="/HILF_logo.png" />
       </head>
       <body className={borna.className}>
-        {children}
+        <FeedbackProvider>{children}</FeedbackProvider>
         {isProduction && (
           <Script
             defer

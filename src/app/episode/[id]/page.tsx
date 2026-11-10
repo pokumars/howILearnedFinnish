@@ -23,6 +23,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import RelatedEpisodes from "@/components/RelatedEpisodes";
 import VideoEmbed from "@/components/VideoEmbed";
 import SharePrompt from "@/components/SharePrompt";
+import ReportProblemButton from "@/components/feedback/ReportProblemButton";
 
 interface EpisodePageProps {
   params: Promise<{
@@ -427,6 +428,12 @@ export default async function EpisodePage({ params }: EpisodePageProps) {
               text={`${episode.title} | How I Learned Finnish`}
               context="episode"
             />
+            <div className="mt-3 text-right">
+              <ReportProblemButton
+                metadata={{ episode: episode.id, episodeTitle: episode.title }}
+                label="Report a problem with this episode"
+              />
+            </div>
           </div>
 
           {/* Transcript */}
