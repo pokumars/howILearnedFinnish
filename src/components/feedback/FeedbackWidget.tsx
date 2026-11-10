@@ -197,7 +197,7 @@ export function FeedbackProvider({ children }: { children: ReactNode }) {
             ref={buttonRef}
             type="button"
             onClick={() => (isOpen ? close() : open())}
-            aria-label="Send feedback"
+            aria-label="Ideas, feedback & complaints"
             aria-expanded={isOpen}
             aria-controls={panelId}
             aria-haspopup="dialog"
@@ -206,7 +206,7 @@ export function FeedbackProvider({ children }: { children: ReactNode }) {
             data-umami-event="feedback_open"
           >
             <MessageSquare className="w-5 h-5 sm:w-4 sm:h-4" aria-hidden />
-            <span className="hidden sm:inline">Feedback</span>
+            <span className="hidden sm:inline">Ideas, feedback &amp; complaints</span>
           </button>
 
           {isOpen && (
