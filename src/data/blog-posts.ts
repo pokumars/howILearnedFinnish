@@ -14,6 +14,882 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "finnish-citizenship-test",
+    readNext: [
+      "/blog/who-is-exempt-from-finnish-citizenship-test",
+      "/blog/finnish-citizenship-test-reading-test",
+      "/blog/finnish-citizenship-test-vocabulary",
+    ],
+    title:
+      "Finnish Citizenship Test (Kansalaisuuskoe) 2027: Test Dates, Fee, Locations and Format",
+    author: 'Oheneba "Ohe" Poku-Marboah',
+    authorUrl: "https://x.com/pokumars",
+    publishDate: "2026-11-12",
+    metaDescription:
+      "How Finland's citizenship test works: who has to take it, when it starts, test days and cities, the fee, the format, the learning material and what is still unknown.",
+    excerpt:
+      "From 1 March 2027, most adults applying for Finnish citizenship have to pass a citizenship test first. Here is everything known so far about the logistics: test days, cities, the fee, the format and the learning material.",
+    content: `*Last updated: 12 November 2026. Migri hasn't published every detail yet, so I'll update this page when the fee, the test dates and the learning material come out.*
+
+*Every fact below links to its source. In Chrome, Edge and Safari, the link also highlights the exact sentence on the page.*
+
+From **1 March 2027**, most adults who apply for Finnish citizenship have to pass a citizenship test before they apply. In Finnish it's called the **kansalaisuuskoe**. The law calls the underlying rule the requirement of knowledge of Finnish society (*yhteiskuntatietoa koskeva edellytys*).
+
+This page covers the practical side: who takes it, when, where, how much it costs and what it looks like. If you're wondering how much Finnish you need for it, I wrote a separate piece on [why the citizenship test is also a Finnish reading test](/blog/finnish-citizenship-test-reading-test).
+
+## The short version
+
+- The test applies to citizenship applications submitted on or after 1 March 2027. ([Migri](https://migri.fi/en/amendments-to-the-citizenship-act-2027#:~:text=will%20apply%20to%20applications%20submitted%20on%20or%20after%201%20March%202027))
+- It applies to people aged 18 to 64. If you're 65 or older, you don't take it. ([Migri](https://migri.fi/en/amendments-to-the-citizenship-act-2027#:~:text=persons%20between%20the%20ages%20of%2018%20and%2064), [Migri FAQ](https://migri.fi/en/faq-finnish-citizenship#:~:text=reached%20the%20age%20of%2065%2C%20the%20requirement%20does%20not%20apply))
+- You have to pass it before you submit your citizenship application. ([Migri](https://migri.fi/en/-/up-to-date-information-on-amendments-to-citizenship-act-learning-material-for-citizenship-test-to-be-published-at-turn-of-the-year#:~:text=You%20must%20pass%20the%20test%20before%20you%20submit%20a%20citizenship%20application))
+- It's taken on site, on a computer, under supervision. The questions are multiple choice. ([Migri](https://migri.fi/en/amendments-to-the-citizenship-act-2027#:~:text=The%20test%20will%20be%20taken%20in%20digital%20form%20on%20site), [Ministry of the Interior](https://intermin.fi/en/projects/reform-of-the-citizenship-act/faq))
+- The test is in Finnish or Swedish only. There is no English version. ([Migri](https://migri.fi/en/amendments-to-the-citizenship-act-2027#:~:text=the%20questions%20can%20be%20answered%20in%20Finnish%20or%20Swedish))
+- There are 6 to 10 test sessions a year, on national test days. ([Migri](https://migri.fi/en/-/up-to-date-information-on-amendments-to-citizenship-act-learning-material-for-citizenship-test-to-be-published-at-turn-of-the-year#:~:text=We%20will%20organise%206%20to%2010%20test%20sessions%20per%20year))
+- In 2027, the test is held in the Helsinki capital region, Tampere, Turku, Oulu, Kuopio, Vaasa and Rovaniemi. ([Migri](https://migri.fi/en/-/up-to-date-information-on-amendments-to-citizenship-act-learning-material-for-citizenship-test-to-be-published-at-turn-of-the-year#:~:text=in%20Tampere%2C%20Turku%2C%20Oulu%2C%20Kuopio%2C%20Vaasa%20and%20Rovaniemi))
+- There is a fee. The amount hasn't been published yet. ([Migri](https://migri.fi/en/-/up-to-date-information-on-amendments-to-citizenship-act-learning-material-for-citizenship-test-to-be-published-at-turn-of-the-year#:~:text=The%20test%20is%20subject%20to%20a%20fee))
+- Your result doesn't expire. If you pass in 2027 and apply in 2030, the pass still counts. ([Migri](https://migri.fi/en/-/up-to-date-information-on-amendments-to-citizenship-act-learning-material-for-citizenship-test-to-be-published-at-turn-of-the-year#:~:text=The%20test%20result%20does%20not%20expire))
+- It does not replace the language requirement. You still need YKI or another accepted proof of Finnish or Swedish. ([Ministry of the Interior](https://intermin.fi/en/projects/reform-of-the-citizenship-act/faq#:~:text=Language%20skills%20will%2C%20however%2C%20remain%20a%20separate%20requirement%20for%20acquiring%20citizenship))
+
+## When does it start?
+
+The amended Citizenship Act takes effect on **1 January 2027**. January and February 2027 are a transition period. ([Migri](https://migri.fi/en/amendments-to-the-citizenship-act-2027#:~:text=that%20will%20enter%20into%20force%20on%201%20January%202027), [Migri](https://migri.fi/en/amendments-to-the-citizenship-act-2027#:~:text=transitional%20period%20from%201%20January%20to%2028%20February%202027)) Applications submitted between 1 January and 28 February 2027 don't need the test.
+
+From **1 March 2027**, it's required. Migri expects the **first test in March 2027**. ([Migri](https://migri.fi/en/amendments-to-the-citizenship-act-2027#:~:text=The%20first%20test%20is%20expected%20to%20take%20place%20in%20March%202027))
+
+"Submitted" has a specific meaning here. If you apply online, it's the day you submit in Enter Finland. If you apply on paper, it's the day you visit a Migri service point. ([Migri](https://migri.fi/en/-/up-to-date-information-on-amendments-to-citizenship-act-learning-material-for-citizenship-test-to-be-published-at-turn-of-the-year)) If you're close to the deadline, I wrote a separate article on [applying before 1 March 2027](/blog/apply-for-finnish-citizenship-before-march-2027).
+
+## Who has to take it?
+
+Anyone aged **18 to 64** who applies for Finnish citizenship with a **citizenship application** (*kansalaisuushakemus*). ([Migri](https://migri.fi/en/amendments-to-the-citizenship-act-2027#:~:text=persons%20between%20the%20ages%20of%2018%20and%2064), [Migri FAQ](https://migri.fi/en/faq-finnish-citizenship#:~:text=those%20who%20can%20apply%20by%20declaration%20are%20not%20affected))
+
+You don't need the test if:
+
+- you're 65 or older ([Migri FAQ](https://migri.fi/en/faq-finnish-citizenship#:~:text=reached%20the%20age%20of%2065%2C%20the%20requirement%20does%20not%20apply))
+- you get citizenship through a **citizenship declaration** (*kansalaisuusilmoitus*), for example as a Nordic citizen or a young adult who grew up in Finland ([Migri FAQ](https://migri.fi/en/faq-finnish-citizenship#:~:text=those%20who%20can%20apply%20by%20declaration%20are%20not%20affected))
+- you've completed a **matriculation examination** in Finnish or Swedish ([Migri](https://migri.fi/en/amendments-to-the-citizenship-act-2027#:~:text=by%20completing%20a%20Finnish%2Dlanguage%20or%20Swedish%2Dlanguage%20matriculation%20examination%20in%20Finland))
+- you've completed a **Finnish- or Swedish-language higher education degree** in Finland ([Migri](https://migri.fi/en/amendments-to-the-citizenship-act-2027#:~:text=by%20completing%20a%20Finnish%2Dlanguage%20or%20Swedish%2Dlanguage%20higher%20education%20degree%20in%20Finland))
+- you have a long-term health reason, disability or other very serious reason that prevents you from taking it ([Migri](https://migri.fi/en/amendments-to-the-citizenship-act-2027#:~:text=due%20to%20state%20of%20health%2C%20disability%20or%20other%20very%20serious%20reason))
+
+Each of these has details that matter, so I put them in their own article: [who is exempt from the Finnish citizenship test](/blog/who-is-exempt-from-finnish-citizenship-test).
+
+## Test days and locations
+
+Migri says there will be **6 to 10 test sessions per year**, held on national test days. ([Migri](https://migri.fi/en/-/up-to-date-information-on-amendments-to-citizenship-act-learning-material-for-citizenship-test-to-be-published-at-turn-of-the-year#:~:text=We%20will%20organise%206%20to%2010%20test%20sessions%20per%20year)) Everyone taking the test that day sits it at the same time across the country.
+
+In 2027, the test locations are: ([Migri](https://migri.fi/en/-/up-to-date-information-on-amendments-to-citizenship-act-learning-material-for-citizenship-test-to-be-published-at-turn-of-the-year#:~:text=in%20Tampere%2C%20Turku%2C%20Oulu%2C%20Kuopio%2C%20Vaasa%20and%20Rovaniemi))
+
+- Helsinki capital region
+- Tampere
+- Turku
+- Oulu
+- Kuopio
+- Vaasa
+- Rovaniemi
+
+If you live in Joensuu, Lahti, Jyväskylä or somewhere smaller, plan for a trip. And with 6 to 10 sessions a year, you might wait a month or two for the next date, so don't leave it until the week before you planned to apply.
+
+The exact dates and the registration period weren't public when I wrote this. Migri said it would publish them around the turn of the year 2026/2027. You can't register yet. ([Migri](https://migri.fi/en/-/up-to-date-information-on-amendments-to-citizenship-act-learning-material-for-citizenship-test-to-be-published-at-turn-of-the-year#:~:text=We%20will%20publish%20the%20test%20dates%20and%20registration%20times), [Migri FAQ](https://migri.fi/en/faq-finnish-citizenship#:~:text=you%20cannot%20register%20for%20the%20test%20yet))
+
+## How much does it cost?
+
+There is a fee. Migri has confirmed that much. The amount hasn't been announced. ([Migri](https://migri.fi/en/-/up-to-date-information-on-amendments-to-citizenship-act-learning-material-for-citizenship-test-to-be-published-at-turn-of-the-year#:~:text=The%20test%20is%20subject%20to%20a%20fee))
+
+For context, the citizenship application itself costs **€550 online and €650 on paper** ([Migri's 2026 fees](https://migri.fi/en/processing-fees-and-payment-methods#:~:text=Fees%20of%20the%20Finnish%20Immigration%20Service%20%28EUR%29%20in%202026)), and a YKI test costs extra on top. Budget for all three if you're starting from scratch.
+
+## What does the test look like?
+
+What's confirmed:
+
+- Digital, on site. You take it on a computer at a test venue, supervised. You can't take it from home. ([Migri](https://migri.fi/en/amendments-to-the-citizenship-act-2027#:~:text=The%20test%20will%20be%20taken%20in%20digital%20form%20on%20site))
+- Multiple choice. ([Migri](https://migri.fi/en/amendments-to-the-citizenship-act-2027#:~:text=will%20comprise%20multiple%2Dchoice%20questions))
+- In Finnish or Swedish. You pick one. ([Migri](https://migri.fi/en/amendments-to-the-citizenship-act-2027#:~:text=the%20questions%20can%20be%20answered%20in%20Finnish%20or%20Swedish))
+- Pass mark: Migri only says that "most of the answers" must be correct. The exact number of points hasn't been published. ([Migri](https://migri.fi/en/amendments-to-the-citizenship-act-2027#:~:text=Most%20of%20the%20answers%20must%20be%20correct))
+
+What isn't known yet:
+
+- how many questions there are
+- how long you get
+- the exact pass mark
+- whether, how soon and how often you can retake it
+- the fee
+
+## What's on the test?
+
+The questions cover: ([Migri](https://migri.fi/en/amendments-to-the-citizenship-act-2027#:~:text=covering%20topics%20such%20as%20key%20legislation%20governing%20life%20in%20Finnish%20society))
+
+- key laws that govern life in Finnish society
+- fundamental rights and human rights
+- equality, including gender equality
+- Finnish history and culture
+
+The questions are based on **public learning material** prepared for the test. The **University of Helsinki** is writing both the material and the questions. ([Migri](https://migri.fi/en/-/up-to-date-information-on-amendments-to-citizenship-act-learning-material-for-citizenship-test-to-be-published-at-turn-of-the-year#:~:text=the%20University%20of%20Helsinki%2C%20will%20prepare%20the%20learning%20material%20and%20questions)) Migri runs the test itself. The material builds on the civic orientation material that already exists for integration. ([Finnish Government](https://valtioneuvosto.fi/en/-/1410869/citizenship-test-to-be-introduced-in-early-2027))
+
+Migri said it would publish the material on its website **around the turn of the year 2026/2027**, well before the first test. ([Migri](https://migri.fi/en/-/up-to-date-information-on-amendments-to-citizenship-act-learning-material-for-citizenship-test-to-be-published-at-turn-of-the-year#:~:text=Finnish%20Immigration%20Service%20at%20the%20turn%20of%20the%20year), [Migri](https://migri.fi/en/amendments-to-the-citizenship-act-2027#:~:text=We%20will%20publish%20the%20material%20on%20our%20website%20well%20in%20advance)) Once it's out, that material is the thing to study. Nothing else is guaranteed to match the questions.
+
+While you wait, start on the words. Most of the material will use the same legal and civic vocabulary, and I've collected it in [Finnish citizenship test vocabulary](/blog/finnish-citizenship-test-vocabulary).
+
+## Special arrangements
+
+You can ask for special arrangements in advance, for example because of an illness, a disability, or reading and writing difficulties. Migri's examples are: ([Migri](https://migri.fi/en/amendments-to-the-citizenship-act-2027#:~:text=Special%20arrangements%20may%20include%20additional%20time%20to%20complete%20the%20test))
+
+- extra time
+- an oral test instead of the on-screen one
+- using your own assistive device
+
+People who can't read or write can take the test orally. ([Migri](https://migri.fi/en/-/up-to-date-information-on-amendments-to-citizenship-act-learning-material-for-citizenship-test-to-be-published-at-turn-of-the-year#:~:text=you%20can%20take%20the%20citizenship%20test%20as%20an%20oral%20test))
+
+## How it fits with the rest of the application
+
+The test is one more box on top of the existing requirements. You still need:
+
+- enough years of residence in Finland ([Migri](https://migri.fi/en/period-of-residence#:~:text=you%20have%20been%20living%20in%20Finland%20for%20the%20past%208%20years))
+- a Finnish or Swedish language certificate (usually [YKI level 3](/blog/finnish-language-requirements-for-citizenship)) ([Migri](https://migri.fi/en/national-certificate-of-language-proficiency-yki-#:~:text=at%20least%20satisfactory%20skills%20in%20the%20Finnish%20or%20Swedish%20language))
+- to have supported yourself, without long stretches on unemployment benefit or social assistance ([Migri FAQ](https://migri.fi/en/faq-finnish-citizenship#:~:text=for%20longer%20than%203%20months%20in%20total%20during%20the%20past%202%20years))
+- a clean enough criminal record ([Ministry of the Interior](https://intermin.fi/en/projects/reform-of-the-citizenship-act/faq#:~:text=Waiting%20periods%20imposed%20because%20of%20offences%20were%20generally%20extended%20by%20one%20year))
+- an established identity ([Ministry of the Interior](https://intermin.fi/en/projects/reform-of-the-citizenship-act/faq#:~:text=does%20not%20actively%20help%20the%20authorities%20to%20establish%20their%20identity))
+
+I go through the whole thing in order in [how to get Finnish citizenship in 2027, step by step](/blog/how-to-get-finnish-citizenship-2027).
+
+## What I'll add when Migri publishes more
+
+This page will change. These are the gaps I'm waiting on:
+
+- the fee amount
+- the 2027 test dates and how to register
+- the number of questions, time limit and pass mark
+- the retake rules
+- a link to the learning material
+
+Official sources: [Migri: Amendments to the Citizenship Act 2027](https://migri.fi/en/amendments-to-the-citizenship-act-2027), [Migri customer bulletin on the learning material](https://migri.fi/en/-/up-to-date-information-on-amendments-to-citizenship-act-learning-material-for-citizenship-test-to-be-published-at-turn-of-the-year), [Ministry of the Interior FAQ](https://intermin.fi/en/projects/reform-of-the-citizenship-act/faq).`,
+  },
+  {
+    slug: "apply-for-finnish-citizenship-before-march-2027",
+    readNext: [
+      "/blog/finnish-citizenship-test",
+      "/blog/how-to-get-finnish-citizenship-2027",
+      "/blog/is-yki-easiest-path-finnish-citizenship",
+    ],
+    title:
+      "Applied for Finnish Citizenship Before 1 March 2027? When You Need the Citizenship Test",
+    author: 'Oheneba "Ohe" Poku-Marboah',
+    authorUrl: "https://x.com/pokumars",
+    publishDate: "2026-11-12",
+    metaDescription:
+      "Finnish citizenship applications submitted before 1 March 2027 don't need the new citizenship test. What counts as submitted, who should hurry, and who shouldn't.",
+    excerpt:
+      "If you submit your Finnish citizenship application before 1 March 2027, you don't need the new citizenship test. But a rushed application can cost you more than it saves. Here's how the cutoff works and how to decide.",
+    content: `*Last updated: 12 November 2026.*
+
+Finland's new [citizenship test](/blog/finnish-citizenship-test) only applies to applications **submitted on or after 1 March 2027**. Anything submitted before that date is handled without it. ([Migri](https://migri.fi/en/amendments-to-the-citizenship-act-2027#:~:text=will%20apply%20to%20applications%20submitted%20on%20or%20after%201%20March%202027))
+
+*Every fact below links to its source. In Chrome, Edge and Safari, the link also highlights the exact sentence on the page.*
+
+So if you're already close to eligible, there's a real question: should you apply now and skip the test?
+
+## Where the cutoff falls
+
+- Until 31 December 2026: current rules, no test.
+- 1 January to 28 February 2027: the amended law is in force, but this is a transition period. No test. ([Migri](https://migri.fi/en/amendments-to-the-citizenship-act-2027#:~:text=transitional%20period%20from%201%20January%20to%2028%20February%202027))
+- From 1 March 2027: applicants aged 18 to 64 must pass the test (or have an accepted alternative) before they submit. ([Migri](https://migri.fi/en/-/up-to-date-information-on-amendments-to-citizenship-act-learning-material-for-citizenship-test-to-be-published-at-turn-of-the-year#:~:text=You%20must%20pass%20the%20test%20before%20you%20submit%20a%20citizenship%20application))
+
+What matters is the date you **submit your citizenship application**, not the date you start filling it in or the date you get a decision:
+
+- if you apply online, it's the day you submit your citizenship application in **Enter Finland**
+- if you apply on paper, it's the day you **visit a Migri service point** to hand in your citizenship application ([Migri](https://migri.fi/en/-/up-to-date-information-on-amendments-to-citizenship-act-learning-material-for-citizenship-test-to-be-published-at-turn-of-the-year))
+
+Since booking a service point appointment can take time, if you have a deadline on how quickly you want to do things, you should probably apply online. You can avoid situations where you only get appointment times later than you anticipated.
+
+## You still need everything else on your citizenship application submission day
+
+If you apply before 1 March 2027, you don't need the citizenship test. But the other requirements for citizenship haven't gone away. You must already meet all of them on the day you submit your citizenship application:
+
+- **Residence:** how many years you must have lived in Finland depends on whether you have a language certificate.
+  - **With a language certificate: 5 years.** This is the rule for most people, because almost every applicant needs the certificate anyway ([Migri](https://migri.fi/en/period-of-residence#:~:text=you%20need%20to%20have%20lived%20in%20Finland%20for%20the%20past%205%20years)).
+  - **Without a language certificate: 8 years.** This only applies if Migri has made an exception to the language requirement for you, for example because of a permanent health condition. Migri says these exceptions are very rare ([Migri](https://migri.fi/en/period-of-residence#:~:text=you%20have%20been%20living%20in%20Finland%20for%20the%20past%208%20years), [Migri](https://migri.fi/en/exceptions-to-the-language-skills-requirement#:~:text=Exceptions%20to%20the%20language%20skills%20requirement%20are%20made%20very%20rarely.)).
+  - You must already have those years behind you on the day you submit your citizenship application. Migri counts your residence up to the day you submit your citizenship application online in Enter Finland, or the day you hand it in at a service point ([Migri](https://migri.fi/en/period-of-residence#:~:text=to%20the%20day%20when%20you%20submit%20your%20online%20application%20through%20Enter%20Finland), [Migri](https://migri.fi/en/period-of-residence#:~:text=you%20must%20also%20meet%20the%20other%20requirements%20for%20Finnish%20citizenship%20when%20you%20submit%20the%20application)).
+  - During those years, you can have spent up to 365 days abroad in total, but no more than 90 of them in the year before you apply ([Migri](https://migri.fi/en/period-of-residence#:~:text=may%20include%20a%20total%20of%20365%20days%20spent%20abroad), [Migri](https://migri.fi/en/period-of-residence#:~:text=Up%20to%2090%20of%20these%20days%20may%20be%20from%20a%20one%2Dyear%20period)).
+- **Language certificate in hand:** YKI level 3 in an [accepted combination](/blog/finnish-language-requirements-for-citizenship), or another accepted proof. Migri won't accept "I'm taking YKI next month." ([Migri](https://migri.fi/en/language-skills#:~:text=before%20you%20submit%20a%20citizenship%20application))
+- **Income:** for applications from 17 December 2025, you can't have received unemployment benefit or social assistance for more than 3 months in total in the past 2 years. ([Migri FAQ](https://migri.fi/en/faq-finnish-citizenship#:~:text=for%20longer%20than%203%20months%20in%20total%20during%20the%20past%202%20years))
+- **Clean record** and an **established identity**. ([Ministry of the Interior](https://intermin.fi/en/projects/reform-of-the-citizenship-act/faq#:~:text=Waiting%20periods%20imposed%20because%20of%20offences%20were%20generally%20extended%20by%20one%20year), [Ministry of the Interior](https://intermin.fi/en/projects/reform-of-the-citizenship-act/faq#:~:text=does%20not%20actively%20help%20the%20authorities%20to%20establish%20their%20identity))
+- **The fee:** €550 online, €650 on paper (2026 prices). ([Migri](https://migri.fi/en/processing-fees-and-payment-methods#:~:text=Fees%20of%20the%20Finnish%20Immigration%20Service%20%28EUR%29%20in%202026))
+
+If one of these is missing, an application submitted in February 2027 isn't a shortcut. You'll get a refusal after a long wait, and by then your next application falls under the new rules.
+
+## Who should apply before March 2027
+
+It makes sense to apply now if **all** of these are true:
+
+- you'll have lived in Finland long enough (5 years for most people) by the day you submit, and you can submit by 28 February 2027
+- you already have your YKI certificate (or other language proof)
+- your income history fits the 3-months-in-2-years rule
+- you have nothing on your record that triggers a waiting period
+
+Processing currently takes a long time. [Migri's processing times page](https://migri.fi/en/processing-times#:~:text=Citizenship%20application%20for%20an%20adult) says most adult citizenship applications are decided within 35 months, and a smaller share within 17 months. Migri also has a backlog of about 17,300 citizenship applications waiting for processing ([Migri](https://migri.fi/en/processing-of-citizenship-applications#:~:text=citizenship%20applications%20are%20waiting%20for%20processing)), and it doesn't process applications in the order they arrive ([Migri FAQ](https://migri.fi/en/faq-finnish-citizenship#:~:text=All%20applications%20are%20not%20processed%20in%20the%20order%20in%20which%20they%20arrive)). That's another reason not to wait if you're ready: the clock starts when you submit.
+
+## Who shouldn't rush
+
+- **You don't have your language certificate yet.** The next YKI dates and results might not arrive in time. Don't apply without it.
+- **You're a few weeks short on residence.** You need the full number of years on the day you submit. Migri says it's very important not to apply before you meet all the requirements ([Migri](https://migri.fi/en/processing-of-citizenship-applications#:~:text=do%20not%20submit%20your%20application%20before%20you%20meet%20all%20the%20requirements)).
+- **You've been on unemployment benefit recently.** Check the income rule carefully before paying €550.
+- **You'll take the test easily anyway.** If your Finnish is great and you're familiar with the concepts of Finnish society, then the only thing you risk is the fee and the morning you sacrifice for the exam. That might be annoying, but it's not worth a rushed application. 
+
+## What if my application was submitted before March 2027 and I get a refusal?
+
+Your next application is a new application. If you submit it on or after 1 March 2027 and you're between 18 and 64, you'll need the test or one of the [exemptions](/blog/who-is-exempt-from-finnish-citizenship-test). The test result doesn't expire, so you could take it while you wait for your first decision. ([Migri](https://migri.fi/en/-/up-to-date-information-on-amendments-to-citizenship-act-learning-material-for-citizenship-test-to-be-published-at-turn-of-the-year#:~:text=The%20test%20result%20does%20not%20expire)) Then a refusal wouldn't set you back as far.
+
+## If you're reading this after March 2027
+
+The window has closed. You need the test unless you're 65 or older, apply by declaration, or have a Finnish- or Swedish-language matriculation exam or higher education degree from Finland. Start with [the test logistics](/blog/finnish-citizenship-test), then [how to study for it](/blog/how-to-study-for-finnish-citizenship-test).
+
+*This is general information based on Migri's published guidance, not legal advice. If your situation is unusual, ask Migri or an immigration lawyer.*
+
+Sources: [Migri: Amendments to the Citizenship Act 2027](https://migri.fi/en/amendments-to-the-citizenship-act-2027), [Migri: Period of residence](https://migri.fi/en/period-of-residence), [Migri: Processing fees](https://migri.fi/en/processing-fees-and-payment-methods), [Migri FAQ on Finnish citizenship](https://migri.fi/en/faq-finnish-citizenship).`,
+  },
+  {
+    slug: "finnish-citizenship-test-reading-test",
+    readNext: [
+      "/blog/finnish-citizenship-test-vocabulary",
+      "/blog/how-to-study-for-finnish-citizenship-test",
+      "/blog/not-fluent-after-yki",
+    ],
+    title:
+      "The Finnish Citizenship Test Is Also a Finnish Reading Test: How Good Does Your Finnish Need to Be?",
+    author: 'Oheneba "Ohe" Poku-Marboah',
+    authorUrl: "https://x.com/pokumars",
+    publishDate: "2026-11-11",
+    metaDescription:
+      "Finland's citizenship test is only in Finnish or Swedish, so it tests your reading as much as your civics. What level of Finnish you need and how to prepare.",
+    excerpt:
+      "The Finnish citizenship test is officially about society, laws and history. But it's only available in Finnish or Swedish, which makes it a reading test as well. Here's what that means if your Finnish is around B1.",
+    content: `Finland's [citizenship test](/blog/finnish-citizenship-test) is officially a test of knowledge of Finnish society: laws, fundamental rights, equality, history and culture.
+
+But it's only offered in **Finnish or Swedish** ([Migri](https://migri.fi/en/amendments-to-the-citizenship-act-2027#:~:text=the%20questions%20can%20be%20answered%20in%20Finnish%20or%20Swedish)). You can't take it in English, Arabic, Russian or anything else (except as an oral test under special arrangements) ([Migri](https://migri.fi/en/amendments-to-the-citizenship-act-2027#:~:text=Special%20arrangements%20may%20include%20additional%20time%20to%20complete%20the%20test)). So whatever else it measures, it also measures whether you can read civic Finnish under time pressure.
+
+I think that's the part most people will underestimate.
+
+## The YKI loophole the test closes
+
+Here's something that surprised me when I looked at it closely. For citizenship, Migri accepts YKI level 3 in one of three combinations: ([Migri](https://migri.fi/en/national-certificate-of-language-proficiency-yki-#:~:text=The%20following%20combinations%20of%20subtests%20are%20accepted))
+
+- speaking + writing
+- listening + writing
+- reading + speaking
+
+Two of those three don't include **reading** at all. You can meet the language requirement for citizenship without ever proving you can read Finnish.
+
+The citizenship test changes that in practice. If you passed YKI with speaking and writing, and your reading is weak, this is where it shows.
+
+## What kind of Finnish will be on it?
+
+The learning material and questions aren't published yet (Migri expects to publish the material around the turn of the year 2026/2027 ([Migri](https://migri.fi/en/-/up-to-date-information-on-amendments-to-citizenship-act-learning-material-for-citizenship-test-to-be-published-at-turn-of-the-year#:~:text=Finnish%20Immigration%20Service%20at%20the%20turn%20of%20the%20year))). But we know the topics, and we know it builds on the existing civic orientation material ([Finnish Government](https://valtioneuvosto.fi/en/-/1410869/citizenship-test-to-be-introduced-in-early-2027)). So I'm fairly confident about what kind of language to expect:
+
+- **Long compound words.** *Perusoikeudet*, *yhdenvertaisuus*, *eduskuntavaalit*, *sananvapaus*. Most of them are two familiar words glued together, but you have to see the seam.
+- **The passive.** Official Finnish loves it. *Eduskuntavaalit järjestetään neljän vuoden välein* (parliamentary elections are held every four years). *Laissa säädetään...* (the law states...). If the passive still trips you up, fix that first.
+- **Nouns made from verbs.** *Äänestäminen* (voting), *syrjiminen* (discriminating), *kotoutuminen* (integration).
+- **Formal vocabulary you don't hear in your day-to-day.** You might speak decent everyday Finnish and never have said *tuomioistuin* (court) out loud.
+- **Multiple-choice traps.** Answer options that look almost the same, where one case ending or one *ei* changes the meaning. Migri hasn't said how many options each question has, or whether some are true-or-false.
+
+The test asks about things like rights and laws, so your everyday Finnish won't carry you on its own.
+
+## So what level do you need?
+
+No official level has been set for the test. The language requirement for citizenship is YKI 3, which is B1 ([Migri](https://migri.fi/en/national-certificate-of-language-proficiency-yki-#:~:text=Grade%203%20on%20the%20intermediate%20level%20corresponds%20to%20the%20level%20B1)), and the test is clearly meant to be passable by people at that level.
+
+My honest take: if your **reading** is around B1, you can pass, but only if you study the actual material in Finnish. Reading it once in English and hoping for the best won't work, because the questions won't be in English.
+
+If your reading is A2 or below, budget real time. Not for the facts, but for the language. The facts are the easy part.
+
+## Why I don't think this is a bad thing
+
+Some people see the language part as an unfair extra hurdle. I understand that, especially for people who work all day in English.
+
+But speaking for myself: the most useful Finnish I learned was the Finnish I needed for something real. When I studied for YKI in 2019, I passed with 4, 4, 4 and 3, and I still [couldn't hold a proper conversation](/blog/not-fluent-after-yki). The test made me good at the test. What made me good at Finnish was using it for things that mattered.
+
+Reading about your own rights in Finnish (what your employer can't do, how to vote in a municipal election, what to do if you're discriminated against) is about as real as it gets. You'll use those words again long after the test.
+
+## How to prepare your reading
+
+1. **Learn the vocabulary first.** I've put together a list of [Finnish citizenship test vocabulary](/blog/finnish-citizenship-test-vocabulary) grouped by topic.
+2. **Read civic Finnish now, before the material is out.** [InfoFinland](https://www.infofinland.fi/fi) has its pages in Finnish and English, so you can read in Finnish and check yourself against the English.
+3. **Practise splitting compound words.** When you see a long word, find the seam before you reach for a dictionary.
+4. **Get comfortable with the passive.** Read news in [Yle Selkouutiset](https://yle.fi/selkouutiset), which uses simpler Finnish but plenty of passives.
+5. **When the material comes out, read it in Finnish first.** Then check anything unclear in a translation, if one exists. More on this in [how to study for the Finnish citizenship test](/blog/how-to-study-for-finnish-citizenship-test).
+
+If you want to hear how other people built their Finnish reading for exams, [Matthias](/episode/11) took medical school entrance exams in Finnish 18 months after he arrived, and [Deborah](/episode/5) got into Finnish-language law school within three years.`,
+  },
+  {
+    slug: "finnish-citizenship-test-vocabulary",
+    readNext: [
+      "/blog/finnish-citizenship-test-reading-test",
+      "/blog/how-to-study-for-finnish-citizenship-test",
+      "/blog/finnish-citizenship-test",
+    ],
+    title:
+      "Finnish Citizenship Test Vocabulary: 100+ Finnish Words for the Kansalaisuuskoe",
+    author: 'Oheneba "Ohe" Poku-Marboah',
+    authorUrl: "https://x.com/pokumars",
+    publishDate: "2026-11-11",
+    metaDescription:
+      "Finnish words you need for the citizenship test: democracy, law, fundamental rights, equality, work, history and culture, with English translations.",
+    excerpt:
+      "The Finnish citizenship test covers laws, rights, equality, history and culture, all in Finnish. Here are 100+ words to learn before you open the official learning material, grouped by topic.",
+    content: `The Finnish [citizenship test](/blog/finnish-citizenship-test) is in Finnish or Swedish ([Migri](https://migri.fi/en/amendments-to-the-citizenship-act-2027#:~:text=the%20questions%20can%20be%20answered%20in%20Finnish%20or%20Swedish)), and it covers ([Migri](https://migri.fi/en/amendments-to-the-citizenship-act-2027#:~:text=covering%20topics%20such%20as%20key%20legislation%20governing%20life%20in%20Finnish%20society)):
+
+- key laws governing life in Finland
+- fundamental and human rights
+- equality, including gender equality
+- Finnish history and culture
+
+Below are the words I'd learn first, grouped by those topics. They're the words you'd meet in any Finnish text about these subjects, so they'll be useful whether you study the official learning material or just read the news.
+
+I'll add to this list once the official learning material is published, which Migri expects around the turn of the year 2026/2027 ([Migri](https://migri.fi/en/-/up-to-date-information-on-amendments-to-citizenship-act-learning-material-for-citizenship-test-to-be-published-at-turn-of-the-year#:~:text=Finnish%20Immigration%20Service%20at%20the%20turn%20of%20the%20year)).
+
+**How to use this list:** don't try to learn it in one sitting. Put one topic at a time into a flashcard app (I use Quizlet), and for each word, write one short sentence you'd actually say. That's the method I describe in [how I learned Finnish by banning English](/blog/how-to-learn-finnish-english-only-thursdays).
+
+## The test and the application
+
+- *kansalaisuuskoe*: citizenship test
+- *kansalaisuus*: citizenship
+- *kansalaisuushakemus*: citizenship application
+- *kansalaisuusilmoitus*: citizenship declaration
+- *yhteiskuntatieto*: knowledge of society, civics
+- *edellytys*: requirement, condition
+- *oppimateriaali*: learning material
+- *monivalintakysymys*: multiple-choice question
+- *oikea vastaus / väärä vastaus*: correct answer / wrong answer
+- *ilmoittautuminen*: registration
+- *koepäivä*: test day
+- *maksu*: fee
+- *todistus*: certificate
+- *erityisjärjestelyt*: special arrangements
+- *hyväksytty / hylätty*: passed / failed (also: approved / rejected)
+- *Maahanmuuttovirasto (Migri)*: the Finnish Immigration Service
+
+## The state and democracy
+
+- *valtio*: the state
+- *tasavalta*: republic
+- *demokratia*: democracy
+- *perustuslaki*: the constitution
+- *eduskunta*: parliament
+- *kansanedustaja*: member of parliament
+- *hallitus*: the government
+- *pääministeri*: prime minister
+- *tasavallan presidentti*: president of the republic
+- *ministeriö*: ministry
+- *puolue*: political party
+- *vaalit*: elections
+- *eduskuntavaalit*: parliamentary elections
+- *kuntavaalit*: municipal elections
+- *aluevaalit*: county elections
+- *presidentinvaali*: presidential election
+- *äänestää*: to vote
+- *äänioikeus*: the right to vote
+- *ehdokas*: candidate
+- *kunta*: municipality
+- *hyvinvointialue*: wellbeing services county
+- *viranomainen*: authority, public official
+- *Euroopan unioni (EU)*: the European Union
+
+A sentence you'll see in some form: *Valtiovalta Suomessa kuuluu kansalle.* (In Finland, the powers of the state belong to the people.) It's from [section 2 of the constitution](https://finlex.fi/fi/lainsaadanto/1999/731#:~:text=Valtiovalta%20Suomessa%20kuuluu%20kansalle).
+
+## Law and justice
+
+- *laki*: law
+- *lainsäädäntö*: legislation
+- *säätää*: to enact, to lay down (in law)
+- *oikeusvaltio*: a state governed by the rule of law
+- *tuomioistuin*: court
+- *käräjäoikeus*: district court
+- *hovioikeus*: court of appeal
+- *korkein oikeus*: Supreme Court
+- *tuomari*: judge
+- *poliisi*: police
+- *rikos*: crime
+- *rangaistus*: punishment, sentence
+- *sakko*: fine
+- *vankeus*: imprisonment
+- *eduskunnan oikeusasiamies*: Parliamentary Ombudsman
+- *valittaa*: to appeal, to complain
+
+## Fundamental and human rights
+
+- *perusoikeudet*: fundamental rights
+- *ihmisoikeudet*: human rights
+- *sananvapaus*: freedom of speech
+- *uskonnonvapaus*: freedom of religion
+- *kokoontumisvapaus*: freedom of assembly
+- *yhdistymisvapaus*: freedom of association
+- *liikkumisvapaus*: freedom of movement
+- *yksityisyyden suoja*: right to privacy
+- *henkilökohtainen koskemattomuus*: personal integrity, bodily integrity
+- *oikeus koulutukseen*: right to education
+- *lapsen oikeudet*: children's rights
+- *velvollisuus*: duty, obligation
+- *asevelvollisuus*: compulsory military service
+- *oppivelvollisuus*: compulsory education
+
+Notice the pattern: *-vapaus* means freedom, and *-velvollisuus* means duty. Learn those two endings and a dozen words become easy.
+
+## Equality and non-discrimination
+
+- *tasa-arvo*: equality (very often meaning gender equality)
+- *sukupuolten tasa-arvo*: gender equality
+- *yhdenvertaisuus*: equal treatment, equality between people regardless of background
+- *tasa-arvolaki*: the Equality Act (gender equality)
+- *yhdenvertaisuuslaki*: the Non-Discrimination Act
+- *syrjintä*: discrimination
+- *syrjiä*: to discriminate
+- *vähemmistö*: minority
+- *saamelaiset*: the Sámi
+- *alkuperäiskansa*: indigenous people
+- *seksuaalinen suuntautuminen*: sexual orientation
+- *vammainen*: disabled person
+- *väkivalta*: violence
+- *lähisuhdeväkivalta*: domestic violence, violence in close relationships
+
+*Tasa-arvo* and *yhdenvertaisuus* both translate as "equality", and that's exactly the kind of difference a multiple-choice question can test. *Tasa-arvo* is mostly used about women and men. *Yhdenvertaisuus* covers everyone: origin, religion, age, disability and so on.
+
+## Work, taxes and the welfare state
+
+- *hyvinvointivaltio*: welfare state
+- *vero*: tax
+- *verokortti*: tax card
+- *Kela*: the Social Insurance Institution
+- *sosiaaliturva*: social security
+- *terveydenhuolto*: healthcare
+- *työsopimus*: employment contract
+- *työehtosopimus*: collective agreement
+- *ammattiliitto*: trade union
+- *työnantaja / työntekijä*: employer / employee
+- *palkka*: salary, wage
+- *eläke*: pension
+
+## History
+
+The dates are from [InfoFinland's Finnish history page](https://infofinland.fi/fi/information-about-finland/finnish-history) (in Finnish).
+
+- *itsenäisyys*: independence
+- *itsenäisyyspäivä*: Independence Day (6 December; Finland became independent in 1917) ([InfoFinland](https://infofinland.fi/fi/information-about-finland/finnish-history#:~:text=Suomi%20julistautui%20itsen%C3%A4iseksi%206.12.1917))
+- *Ruotsin vallan aika*: the period of Swedish rule
+- *suuriruhtinaskunta*: grand duchy (Finland under Russia, 1809 to 1917) ([InfoFinland](https://infofinland.fi/fi/information-about-finland/finnish-history#:~:text=Suomi%20osana%20Ven%C3%A4j%C3%A4n%20keisarikuntaa))
+- *autonomia*: autonomy
+- *sisällissota*: civil war (1918)
+- *talvisota*: the Winter War (1939 to 1940) ([InfoFinland](https://infofinland.fi/fi/information-about-finland/finnish-history#:~:text=syttyy%20talvisota))
+- *jatkosota*: the Continuation War (1941 to 1944) ([InfoFinland](https://infofinland.fi/fi/information-about-finland/finnish-history#:~:text=v%C3%A4lisen%C3%A4%20jatkosotana))
+- *Lapin sota*: the Lapland War (1944 to 1945)
+- *naisten äänioikeus*: women's right to vote (Finland, 1906) ([InfoFinland](https://infofinland.fi/fi/information-about-finland/finnish-history#:~:text=Yleinen%20ja%20yht%C3%A4l%C3%A4inen%20%C3%A4%C3%A4nioikeus%2C%20my%C3%B6s%20naisille))
+- *jälleenrakennus*: reconstruction (after the wars)
+- *EU-jäsenyys*: EU membership (1995) ([InfoFinland](https://infofinland.fi/fi/information-about-finland/finnish-history#:~:text=Suomi%20liittyi%20EU%3An%20j%C3%A4seneksi%201995))
+- *Nato-jäsenyys*: NATO membership (2023) ([InfoFinland](https://infofinland.fi/fi/information-about-finland/finnish-history#:~:text=Suomi%20liittyy%20Natoon))
+
+## Culture and everyday life
+
+- *kulttuuri*: culture
+- *virallinen kieli*: official language
+- *kaksikielisyys*: bilingualism (Finland's official languages are Finnish and Swedish)
+- *kotimaiset kielet*: the national languages
+- *Kalevala*: the national epic
+- *kansalliseepos*: national epic
+- *evankelisluterilainen kirkko*: the Evangelical Lutheran Church
+- *ortodoksinen kirkko*: the Orthodox Church
+- *juhlapyhä*: public holiday
+- *juhannus*: Midsummer
+- *vappu*: May Day
+- *joulu*: Christmas
+- *jokamiehenoikeudet*: everyone's rights (the right to roam in nature)
+- *talkoot*: voluntary group work
+- *sauna*: sauna, of course
+
+## A few grammar patterns worth knowing
+
+You'll understand the material much faster if these don't slow you down:
+
+- **The passive:** *järjestetään* (is organised), *valitaan* (is chosen), *säädetään* (is laid down). Official texts use it constantly.
+- **-minen nouns:** *äänestäminen* (voting), *kotoutuminen* (integration), *syrjiminen* (discriminating).
+- **-ton/-tön:** *maksuton* (free of charge), *puolueeton* (neutral, non-partisan).
+- **Compounds:** read long words from the end. *Eduskuntavaalit* is *vaalit* (elections) for the *eduskunta* (parliament).
+
+If the reading side worries you more than the words, read [why the citizenship test is also a Finnish reading test](/blog/finnish-citizenship-test-reading-test).`,
+  },
+  {
+    slug: "how-to-get-finnish-citizenship-2027",
+    readNext: [
+      "/blog/finnish-citizenship-test",
+      "/blog/finnish-language-requirements-for-citizenship",
+      "/blog/apply-for-finnish-citizenship-before-march-2027",
+    ],
+    title:
+      "How to Get Finnish Citizenship in 2027: Requirements and Timeline, Step by Step",
+    author: 'Oheneba "Ohe" Poku-Marboah',
+    authorUrl: "https://x.com/pokumars",
+    publishDate: "2026-11-10",
+    metaDescription:
+      "Every requirement for Finnish citizenship in 2027 in the order to tackle them: residence, YKI, the new citizenship test, income, criminal record and the application.",
+    excerpt:
+      "Finnish citizenship in 2027 means residence, a language certificate, the new citizenship test, an income check and a long wait. Here's the order I'd do them in, and how long each step really takes.",
+    content: `*Last updated: 10 November 2026.*
+
+*Every fact below links to its source. In Chrome, Edge and Safari, the link also highlights the exact sentence on the page.*
+
+Getting Finnish citizenship has more steps than it used to. The residence rules changed in October 2024 ([Migri FAQ](https://migri.fi/en/faq-finnish-citizenship#:~:text=was%20extended%20from%205%20years%20to%208%20years)), the income rule tightened in December 2025 ([Migri FAQ](https://migri.fi/en/faq-finnish-citizenship#:~:text=The%20Citizenship%20Act%20was%20amended%20on%2017%20December%202025)), and from **1 March 2027** there's a [citizenship test](/blog/finnish-citizenship-test) as well.
+
+Here's the whole thing, in the order I'd do it. This is for the usual route: an adult (18 to 64) applying with a citizenship application. If you're a Nordic citizen or grew up in Finland, check the citizenship declaration route first, because it's simpler.
+
+## Step 1: Count your years of residence
+
+The required period depends on your situation:
+
+- 5 years if you have the required Finnish or Swedish language certificate ([Migri](https://migri.fi/en/period-of-residence#:~:text=you%20need%20to%20have%20lived%20in%20Finland%20for%20the%20past%205%20years))
+- 5 years if your spouse is a Finnish citizen (and you've lived together for at least 3 years) ([Migri](https://migri.fi/en/period-of-residence#:~:text=your%20spouse%20is%20a%20Finnish%20citizen%2C%20you%20need%20to%20have%20lived))
+- 5 years if you're stateless ([Migri](https://migri.fi/en/period-of-residence#:~:text=If%20you%20are%20stateless%20%28you%20do%20not%20have%20a%20citizenship%29))
+- 8 years if you don't have a language certificate because Migri has granted you an exception to the language requirement ([Migri](https://migri.fi/en/period-of-residence#:~:text=you%20have%20been%20living%20in%20Finland%20for%20the%20past%208%20years))
+- 2 years for Nordic citizens ([Migri](https://migri.fi/en/period-of-residence#:~:text=If%20you%20are%20a%20citizen%20of%20Denmark%2C%20Iceland%2C%20Norway%20or%20Sweden))
+
+Almost everyone needs a language certificate to get citizenship, so 5 years is the normal rule. The 8-year rule only applies to the rare people who get citizenship without one. Migri can make an exception to the language requirement, for example for a permanent health condition, or for someone who arrived in Finland as an adult and couldn't read or write, but it says these exceptions are made very rarely ([Migri](https://migri.fi/en/exceptions-to-the-language-skills-requirement#:~:text=Exceptions%20to%20the%20language%20skills%20requirement%20are%20made%20very%20rarely.)).
+
+How the years are counted:
+
+- With a continuous (A) permit, counting starts when you moved to Finland or when the A permit was granted, whichever is later. ([Migri](https://migri.fi/en/period-of-residence))
+- Time on a temporary (B) permit before you got an A permit counts at half value. ([Migri](https://migri.fi/en/period-of-residence#:~:text=half%20of%20the%20time%20you%20have%20lived%20in%20Finland))
+- You can have up to **365 days abroad** in total, with no more than **90** in the year before you apply. ([Migri](https://migri.fi/en/period-of-residence#:~:text=may%20include%20a%20total%20of%20365%20days%20spent%20abroad), [Migri](https://migri.fi/en/period-of-residence#:~:text=Up%20to%2090%20of%20these%20days%20may%20be%20from%20a%20one%2Dyear%20period))
+- Residence is counted up to the day you submit your citizenship application ([Migri](https://migri.fi/en/period-of-residence#:~:text=to%20the%20day%20when%20you%20submit%20your%20online%20application%20through%20Enter%20Finland)).
+
+Migri's [period of residence page](https://migri.fi/en/period-of-residence) has the details for your permit type. Read it, because this is where many applications fail.
+
+## Step 2: Get your language certificate
+
+You need at least satisfactory skills in Finnish or Swedish, and you need the certificate **before** you apply. ([Migri](https://migri.fi/en/national-certificate-of-language-proficiency-yki-#:~:text=at%20least%20satisfactory%20skills%20in%20the%20Finnish%20or%20Swedish%20language), [Migri](https://migri.fi/en/language-skills#:~:text=before%20you%20submit%20a%20citizenship%20application)) The most common proof is YKI level 3 in one of these combinations: ([Migri](https://migri.fi/en/national-certificate-of-language-proficiency-yki-#:~:text=The%20following%20combinations%20of%20subtests%20are%20accepted))
+
+- speaking + writing
+- listening + writing
+- reading + speaking
+
+There are other accepted proofs too, like Finnish-language schooling, a vocational qualification or a degree. I covered those in [Finnish language requirements for citizenship](/blog/finnish-language-requirements-for-citizenship) and [is YKI the easiest path?](/blog/is-yki-easiest-path-finnish-citizenship).
+
+**Timing:** YKI test dates are set months ahead, registration fills up, and results take weeks. Give yourself at least 6 months from starting to prepare to having a certificate in hand.
+
+## Step 3: Pass the citizenship test (or have an alternative)
+
+From 1 March 2027, you need to show knowledge of Finnish society before you apply. You can do it by:
+
+- passing the citizenship test, **or**
+- having completed a matriculation examination in Finnish or Swedish, **or** ([Migri](https://migri.fi/en/amendments-to-the-citizenship-act-2027#:~:text=by%20completing%20a%20Finnish%2Dlanguage%20or%20Swedish%2Dlanguage%20matriculation%20examination%20in%20Finland))
+- having completed a Finnish- or Swedish-language higher education degree in Finland ([Migri](https://migri.fi/en/amendments-to-the-citizenship-act-2027#:~:text=by%20completing%20a%20Finnish%2Dlanguage%20or%20Swedish%2Dlanguage%20higher%20education%20degree%20in%20Finland))
+
+The test is multiple choice, on a computer, in Finnish or Swedish ([Migri](https://migri.fi/en/amendments-to-the-citizenship-act-2027#:~:text=The%20test%20will%20be%20taken%20in%20digital%20form%20on%20site)). It's held 6 to 10 times a year ([Migri](https://migri.fi/en/-/up-to-date-information-on-amendments-to-citizenship-act-learning-material-for-citizenship-test-to-be-published-at-turn-of-the-year#:~:text=We%20will%20organise%206%20to%2010%20test%20sessions%20per%20year)), and the result doesn't expire ([Migri](https://migri.fi/en/-/up-to-date-information-on-amendments-to-citizenship-act-learning-material-for-citizenship-test-to-be-published-at-turn-of-the-year#:~:text=The%20test%20result%20does%20not%20expire)). All the logistics are in [the citizenship test guide](/blog/finnish-citizenship-test), and the exemptions are in [who is exempt from the Finnish citizenship test](/blog/who-is-exempt-from-finnish-citizenship-test).
+
+**Why I'd do this after YKI, not before:** the test is in Finnish. Studying for YKI builds the reading you'll need for the citizenship test material. If you do it the other way round, you're doing the hard language work twice. (More on this in [the citizenship test is also a reading test](/blog/finnish-citizenship-test-reading-test).)
+
+## Step 4: Check your income history
+
+For applications submitted from **17 December 2025**, you can't have received unemployment benefit or social assistance for more than **3 months in total during the past 2 years**. ([Migri FAQ](https://migri.fi/en/faq-finnish-citizenship#:~:text=for%20longer%20than%203%20months%20in%20total%20during%20the%20past%202%20years)) There's no euro income threshold. ([Migri FAQ](https://migri.fi/en/faq-finnish-citizenship#:~:text=There%20are%20no%20specific%20income%20thresholds%20for%20acquiring%20Finnish%20citizenship)) The question is whether you've supported yourself.
+
+If you've had a stretch on benefits, work out when the 2-year window clears before you pay the fee.
+
+## Step 5: Check your record and identity
+
+- **Criminal record:** offences trigger waiting periods, generally from 1 to 8 years depending on the sentence. The October 2024 reform extended most of them by a year. ([Ministry of the Interior](https://intermin.fi/en/projects/reform-of-the-citizenship-act/faq#:~:text=Waiting%20periods%20imposed%20because%20of%20offences%20were%20generally%20extended%20by%20one%20year)) A very serious offence rules out citizenship altogether. ([Ministry of the Interior](https://intermin.fi/en/projects/reform-of-the-citizenship-act/faq#:~:text=a%20person%20guilty%20of%20a%20very%20serious%20offence%20cannot%20acquire%20Finnish%20citizenship))
+- **Identity:** you have to be able to establish your identity, and you're expected to actively help with that. ([Ministry of the Interior](https://intermin.fi/en/projects/reform-of-the-citizenship-act/faq#:~:text=does%20not%20actively%20help%20the%20authorities%20to%20establish%20their%20identity))
+
+## Step 6: Apply
+
+- **Online in Enter Finland: €550.** On paper: €650 (2026 fees). ([Migri](https://migri.fi/en/processing-fees-and-payment-methods#:~:text=Fees%20of%20the%20Finnish%20Immigration%20Service%20%28EUR%29%20in%202026))
+- You pay when you submit.
+- Attach your language certificate, your citizenship test result or alternative, and the other documents the form asks for.
+
+## Step 7: Wait
+
+This is the step nobody enjoys. [Migri's processing times page](https://migri.fi/en/processing-times#:~:text=Citizenship%20application%20for%20an%20adult) says most adult citizenship applications are decided within 35 months, and a smaller share within 17 months. Migri has a backlog of about 17,300 citizenship applications ([Migri](https://migri.fi/en/processing-of-citizenship-applications#:~:text=citizenship%20applications%20are%20waiting%20for%20processing)), and it doesn't process them in the order they arrive ([Migri FAQ](https://migri.fi/en/faq-finnish-citizenship#:~:text=All%20applications%20are%20not%20processed%20in%20the%20order%20in%20which%20they%20arrive)). Migri updates these figures regularly, so check the page for the current numbers. Keep living in Finland and keep your permit valid while you wait.
+
+## A realistic timeline
+
+If you've just reached your residence years and you're starting from zero on the language:
+
+1. Months 0 to 6: prepare for and pass YKI.
+2. Months 6 to 9: study the citizenship test material and pass the test.
+3. Month 9: apply.
+4. Then wait for a decision. Migri says most adult applications are decided within 35 months.
+
+If you already have YKI, you can do it in a few months, depending on when the next test day is.
+
+*This is general information based on Migri's published guidance as of November 2026, not legal advice.*
+
+Sources: [Migri: Period of residence](https://migri.fi/en/period-of-residence), [Migri: YKI for citizenship](https://migri.fi/en/national-certificate-of-language-proficiency-yki-), [Migri: Amendments to the Citizenship Act 2027](https://migri.fi/en/amendments-to-the-citizenship-act-2027), [Migri FAQ on Finnish citizenship](https://migri.fi/en/faq-finnish-citizenship), [Ministry of the Interior FAQ](https://intermin.fi/en/projects/reform-of-the-citizenship-act/faq).`,
+  },
+  {
+    slug: "how-to-study-for-finnish-citizenship-test",
+    readNext: [
+      "/blog/finnish-citizenship-test-vocabulary",
+      "/blog/finnish-citizenship-test-reading-test",
+      "/episode/11",
+    ],
+    title:
+      "How to Study for the Finnish Citizenship Test When Finnish Isn't Your First Language",
+    author: 'Oheneba "Ohe" Poku-Marboah',
+    authorUrl: "https://x.com/pokumars",
+    publishDate: "2026-11-10",
+    metaDescription:
+      "A study plan for Finland's citizenship test, from someone who learned Finnish as an adult: what to read, how to learn the vocabulary, and how to practise in Finnish.",
+    excerpt:
+      "The Finnish citizenship test is in Finnish, so studying for it is half civics and half language learning. Here's how I'd prepare, using the methods that worked for me and the people I've interviewed.",
+    content: `*Last updated: 10 November 2026. Migri plans to publish the official learning material around the turn of the year 2026/2027. When it's out, I'll add a link and update this plan.*
+
+The [Finnish citizenship test](/blog/finnish-citizenship-test) asks about laws, rights, equality, history and culture. The questions come from public learning material written by the University of Helsinki. ([Migri](https://migri.fi/en/-/up-to-date-information-on-amendments-to-citizenship-act-learning-material-for-citizenship-test-to-be-published-at-turn-of-the-year#:~:text=the%20University%20of%20Helsinki%2C%20will%20prepare%20the%20learning%20material%20and%20questions)) 
+
+If you were born here, that's a civics test. If you learned Finnish as an adult, it's a civics test **and** a Finnish reading test. So the study plan has to cover both.
+
+## Step 1: Get the official material and make it your source of truth
+
+The questions are based on the official learning material, so everything you study should come back to it, not to what someone remembers from their integration course in 2019.
+
+Once it's published on Migri's website:
+
+- download it
+- check how long it is and count the chapters
+- give yourself a schedule, for example one chapter every few days
+
+Courses, apps and practice quizzes can save you a lot of time, as long as they're built on the official material. Before you pay for one, check that it says which version of the material it follows. If anything you study says something different from the official material, the official material wins.
+
+### What I'm building
+
+I'm working on an app where you can study for the citizenship test and take practice quizzes, so you know you're ready before you book a test date. When the official material comes out, I'll also turn it into a course. Both will be based on the official material, and I'll add the links here when they're ready.
+
+## Step 2: Learn the vocabulary before you read
+
+Reading a chapter where every fourth word is new is miserable and slow. You'll spend all your energy on the dictionary and remember none of the content.
+
+So do it the other way round: learn the words first, then read. I've put the core words in [Finnish citizenship test vocabulary](/blog/finnish-citizenship-test-vocabulary). Once the material is out, skim each chapter and pull out the words you don't know before you read it properly.
+
+What worked for me: I put new words in Quizlet with **one short example sentence each**, simple enough that I'd actually say it. Not the dictionary sentence. My sentence. I explain the routine in [how I learned Finnish by banning English](/blog/how-to-learn-finnish-english-only-thursdays).
+
+## Step 3: Read each chapter in Finnish first
+
+Read the chapter in Finnish. Mark what you didn't understand. Only then check a translation, if there is one.
+
+If you start with a translation, your brain will relax, and the test is in Finnish. You want to recognise *perusoikeudet* on the screen, not "fundamental rights".
+
+## Step 4: Explain it out loud
+
+After each chapter, explain it to someone in Finnish, in your own words. A partner, a friend, a colleague, your mirror. Two minutes is enough.
+
+- "Suomessa on eduskuntavaalit neljän vuoden välein."
+- "Työnantaja ei saa syrjiä ketään iän tai uskonnon takia."
+
+If you can't explain it, you haven't learned it yet. This also does double duty as speaking practice, which most people neglect.
+
+Erik paid for [more than 100 lunches with retired Finns](/episode/4) to get his speaking practice. You don't need to go that far. Just find someone who'll let you practise.
+
+## Step 5: Practise the format
+
+Multiple choice in a second language has its own tricks:
+
+- Read **every** option before choosing. Two may look nearly identical.
+- Watch for small words that flip the meaning: *ei* (not), *vain* (only), *aina* (always), *kaikki* (all), *myös* (also).
+- Watch the case endings. *Eduskunnassa* (in parliament) and *eduskunnalle* (to parliament) can make the difference between two answers.
+- Don't get stuck. If one question is eating your time, mark your best guess and move on.
+
+## Step 6: Connect it to your real life
+
+This is the part that turns the test into something useful. When you read about:
+
+- **work rights:** look at your own work contract (*työsopimus*) and find the collective agreement (*työehtosopimus*) for your field
+- **elections:** look up who's on your municipality's council
+- **equality:** read your workplace's equality plan, if it has one
+- **history:** next 6 December, watch the Independence Day coverage in Finnish
+
+The facts stick much better when they're about your life. And the Finnish sticks too.
+
+## How long should you study?
+
+It depends far more on your reading level than on the content. As a rough guide:
+
+- **Strong reader (B2 or above):** a few weeks with the material should be enough.
+- **Reading around B1:** plan for one to two months. Most of that time goes to the language.
+- **Reading at A2:** start with the [reading side](/blog/finnish-citizenship-test-reading-test) and the vocabulary now, months before your planned test date.
+
+Remember there are only 6 to 10 test days a year. ([Migri](https://migri.fi/en/-/up-to-date-information-on-amendments-to-citizenship-act-learning-material-for-citizenship-test-to-be-published-at-turn-of-the-year#:~:text=We%20will%20organise%206%20to%2010%20test%20sessions%20per%20year)) Pick a date, then plan backwards.
+
+## Don't stop when you pass
+
+I passed YKI in 2019 and [still couldn't hold a real conversation](/blog/not-fluent-after-yki). Passing a test is a milestone, not the finish line.
+
+If you want stories from people who kept going after their exams, start with [Matthias](/episode/11), who wrote the medical school entrance exams in Finnish, or [Jojo](/episode/8), who went from listening in hallways to working as a nurse.`,
+  },
+  {
+    slug: "who-is-exempt-from-finnish-citizenship-test",
+    readNext: [
+      "/blog/finnish-citizenship-test",
+      "/blog/is-yki-easiest-path-finnish-citizenship",
+      "/episode/5",
+    ],
+    title:
+      "Who Is Exempt From the Finnish Citizenship Test? Age, Degrees, Matriculation Exam and Health Reasons",
+    author: 'Oheneba "Ohe" Poku-Marboah',
+    authorUrl: "https://x.com/pokumars",
+    publishDate: "2026-11-09",
+    metaDescription:
+      "Who doesn't need Finland's citizenship test: people 65+, declaration applicants, Finnish matriculation exam or degree holders, health exemptions and pre-March 2027 applicants.",
+    excerpt:
+      "Not everyone applying for Finnish citizenship has to take the new citizenship test. Age, how you apply, a Finnish-language degree or matriculation exam, and serious health reasons can all exempt you. Here's who qualifies.",
+    content: `*Last updated: 9 November 2026.*
+
+*Every fact below links to its source. In Chrome, Edge and Safari, the link also highlights the exact sentence on the page.*
+
+From 1 March 2027, most adults applying for Finnish citizenship need to pass the [citizenship test](/blog/finnish-citizenship-test) first. "Most" is doing some work in that sentence. Several groups don't need it.
+
+## 1. People aged 65 or over
+
+The requirement applies to applicants **aged 18 to 64**. If you're 65 or older, you don't need it. ([Migri](https://migri.fi/en/amendments-to-the-citizenship-act-2027#:~:text=persons%20between%20the%20ages%20of%2018%20and%2064), [Migri FAQ](https://migri.fi/en/faq-finnish-citizenship#:~:text=reached%20the%20age%20of%2065%2C%20the%20requirement%20does%20not%20apply))
+
+## 2. Children under 18
+
+The test is for adult applicants. ([Migri](https://migri.fi/en/amendments-to-the-citizenship-act-2027#:~:text=persons%20between%20the%20ages%20of%2018%20and%2064)) Children who get citizenship as part of a parent's application, or through their own application, don't take it.
+
+## 3. People applying by citizenship declaration
+
+The test only applies to people who apply with a **citizenship application** (*kansalaisuushakemus*). A **citizenship declaration** (*kansalaisuusilmoitus*) is a separate, simpler route, and it isn't affected by the reform. ([Migri FAQ](https://migri.fi/en/faq-finnish-citizenship#:~:text=those%20who%20can%20apply%20by%20declaration%20are%20not%20affected)) Declarations are available to, for example:
+
+- Nordic citizens ([Migri](https://migri.fi/en/citizenship-declaration#:~:text=You%20can%20become%20a%20Finnish%20citizen%20by%20declaration%20if%20you%20are))
+- young adults aged 18 to 22 who grew up in Finland ([Migri](https://migri.fi/en/citizenship-declaration#:~:text=a%20young%20person%20between%2018%20and%2022%20years%20of%20age))
+- some children of Finnish citizens and adopted children ([Migri](https://migri.fi/en/citizenship-declaration#:~:text=an%20adopted%20child%20between%2012%20and%2017%20years%20of%20age))
+
+Check Migri's declaration pages to see if you qualify. If you do, it's usually the easier option.
+
+## 4. People with a matriculation examination in Finnish or Swedish
+
+If you've completed the Finnish matriculation examination (*ylioppilastutkinto*) in **Finnish or Swedish**, you already meet the civic knowledge requirement. ([Migri](https://migri.fi/en/amendments-to-the-citizenship-act-2027#:~:text=by%20completing%20a%20Finnish%2Dlanguage%20or%20Swedish%2Dlanguage%20matriculation%20examination%20in%20Finland))
+
+## 5. People with a Finnish- or Swedish-language higher education degree from Finland
+
+If you've completed a degree in Finland **in Finnish or Swedish**, you don't need the test. This covers: ([Migri](https://migri.fi/en/amendments-to-the-citizenship-act-2027#:~:text=by%20completing%20a%20Finnish%2Dlanguage%20or%20Swedish%2Dlanguage%20higher%20education%20degree%20in%20Finland))
+
+- a bachelor's or master's degree from a university
+- a bachelor's or master's degree from a university of applied sciences
+- a licentiate or doctorate ([Migri](https://migri.fi/en/amendments-to-the-citizenship-act-2027#:~:text=a%20licentiate%20or%20doctoral%20degree))
+
+**The language of the degree is what counts.** An English-language degree from a Finnish university doesn't exempt you, even though you studied in Finland.
+
+This is also why I keep saying the education route deserves more attention. A Finnish-language degree can cover both the [language requirement](/blog/is-yki-easiest-path-finnish-citizenship) and the civic knowledge requirement, with no YKI and no citizenship test. [Deborah](/episode/5) went from zero to Finnish-language law school in three years. [Matthias](/episode/11) wrote his bachelor's thesis in Finnish. For people like them, both tests are irrelevant.
+
+## 6. People with a serious health reason or disability
+
+Migri can waive the requirement "due to state of health, disability or other very serious reason". The reason has to prevent you from taking the test **in the long term**, for example a significant, long-lasting medical condition. ([Migri](https://migri.fi/en/amendments-to-the-citizenship-act-2027#:~:text=due%20to%20state%20of%20health%2C%20disability%20or%20other%20very%20serious%20reason)) You'll need documentation.
+
+If the problem is something special arrangements can fix, you'll probably be expected to take the test with arrangements instead. These can include: ([Migri](https://migri.fi/en/amendments-to-the-citizenship-act-2027#:~:text=Special%20arrangements%20may%20include%20additional%20time%20to%20complete%20the%20test))
+
+- extra time
+- an oral test
+- your own assistive device
+
+People who can't read or write can take the test orally. ([Migri](https://migri.fi/en/-/up-to-date-information-on-amendments-to-citizenship-act-learning-material-for-citizenship-test-to-be-published-at-turn-of-the-year#:~:text=you%20can%20take%20the%20citizenship%20test%20as%20an%20oral%20test))
+
+## 7. Anyone who applied before 1 March 2027
+
+Applications submitted before 1 March 2027 are handled without the test. That includes the transition period from 1 January to 28 February 2027. ([Migri](https://migri.fi/en/amendments-to-the-citizenship-act-2027#:~:text=transitional%20period%20from%201%20January%20to%2028%20February%202027)) The details are in [applying before 1 March 2027](/blog/apply-for-finnish-citizenship-before-march-2027).
+
+## Who is *not* exempt
+
+
+- **Having a YKI certificate doesn't exempt you.** YKI only covers the language requirement. You still need the test. ([Migri FAQ](https://migri.fi/en/faq-finnish-citizenship#:~:text=you%20can%20only%20meet%20the%20language%20skills%20requirement))
+- **An English-language degree from Finland doesn't exempt you.**
+- **Having lived in Finland for a long time doesn't exempt you.** Ten years or thirty, if you're 18 to 64 and apply with an application, you need it.
+- **Being married to a Finn doesn't exempt you.** It shortens the residence requirement, not the test.
+
+If none of the exemptions apply to you, start with [how to study for the Finnish citizenship test](/blog/how-to-study-for-finnish-citizenship-test).
+
+*This is general information based on Migri's published guidance, not legal advice.*
+
+Sources: [Migri: Amendments to the Citizenship Act 2027](https://migri.fi/en/amendments-to-the-citizenship-act-2027), [Migri FAQ on Finnish citizenship](https://migri.fi/en/faq-finnish-citizenship), [Migri customer bulletin](https://migri.fi/en/-/up-to-date-information-on-amendments-to-citizenship-act-learning-material-for-citizenship-test-to-be-published-at-turn-of-the-year).`,
+  },
+  {
+    slug: "nordic-citizenship-tests-compared",
+    readNext: [
+      "/blog/finnish-citizenship-test",
+      "/blog/finnish-citizenship-test-reading-test",
+      "/blog/how-to-get-finnish-citizenship-2027",
+    ],
+    title:
+      "Citizenship Tests in Finland, Sweden, Norway and Denmark Compared",
+    author: 'Oheneba "Ohe" Poku-Marboah',
+    authorUrl: "https://x.com/pokumars",
+    publishDate: "2026-11-09",
+    metaDescription:
+      "How Finland's new citizenship test compares with Denmark's indfødsretsprøve, Norway's statsborgerprøve and Sweden's medborgarskapsprov: questions, pass marks, fees and language.",
+    excerpt:
+      "With Finland's citizenship test arriving in 2027, all four big Nordic countries now test new citizens on their society. Here's how the Finnish test compares with Denmark's, Norway's and Sweden's.",
+    content: `*Last updated: 9 November 2026. Finland's and Sweden's tests are new, so some details are still missing. I'll fill them in as they're published.*
+
+*Every fact below links to its source. In Chrome, Edge and Safari, the link also highlights the exact sentence on the page.*
+
+With Finland's [citizenship test](/blog/finnish-citizenship-test) starting in 2027, Finland, Sweden, Norway and Denmark all test new citizens on knowledge of their society. Denmark and Norway have done it for years. Sweden held its first test in August 2026, and Finland's comes in March 2027.
+
+They're more different than you'd expect.
+
+## Finland: kansalaisuuskoe
+
+- **Starts:** applications from 1 March 2027. First test expected in March 2027. ([Migri](https://migri.fi/en/amendments-to-the-citizenship-act-2027#:~:text=will%20apply%20to%20applications%20submitted%20on%20or%20after%201%20March%202027), [Migri](https://migri.fi/en/amendments-to-the-citizenship-act-2027#:~:text=The%20first%20test%20is%20expected%20to%20take%20place%20in%20March%202027))
+- **Format:** multiple choice, on a computer, on site. ([Migri](https://migri.fi/en/amendments-to-the-citizenship-act-2027#:~:text=The%20test%20will%20be%20taken%20in%20digital%20form%20on%20site))
+- **Language:** Finnish or Swedish. ([Migri](https://migri.fi/en/amendments-to-the-citizenship-act-2027#:~:text=the%20questions%20can%20be%20answered%20in%20Finnish%20or%20Swedish))
+- **Questions and pass mark:** not published yet. Migri says "most of the answers" must be correct. ([Migri](https://migri.fi/en/amendments-to-the-citizenship-act-2027#:~:text=Most%20of%20the%20answers%20must%20be%20correct))
+- **Fee:** confirmed, amount not published. ([Migri](https://migri.fi/en/-/up-to-date-information-on-amendments-to-citizenship-act-learning-material-for-citizenship-test-to-be-published-at-turn-of-the-year#:~:text=The%20test%20is%20subject%20to%20a%20fee))
+- **How often:** 6 to 10 sessions a year, in seven cities in 2027. ([Migri](https://migri.fi/en/-/up-to-date-information-on-amendments-to-citizenship-act-learning-material-for-citizenship-test-to-be-published-at-turn-of-the-year#:~:text=We%20will%20organise%206%20to%2010%20test%20sessions%20per%20year))
+- **Study material:** free official learning material from the University of Helsinki, published by Migri around the turn of the year 2026/2027. ([Migri](https://migri.fi/en/-/up-to-date-information-on-amendments-to-citizenship-act-learning-material-for-citizenship-test-to-be-published-at-turn-of-the-year#:~:text=the%20University%20of%20Helsinki%2C%20will%20prepare%20the%20learning%20material%20and%20questions))
+- **Who takes it:** applicants aged 18 to 64. People 65 and over are exempt. ([Migri](https://migri.fi/en/amendments-to-the-citizenship-act-2027#:~:text=persons%20between%20the%20ages%20of%2018%20and%2064), [Migri FAQ](https://migri.fi/en/faq-finnish-citizenship#:~:text=reached%20the%20age%20of%2065%2C%20the%20requirement%20does%20not%20apply))
+- **Alternatives:** a Finnish- or Swedish-language matriculation exam or higher education degree from Finland. ([Migri](https://migri.fi/en/amendments-to-the-citizenship-act-2027#:~:text=by%20completing%20a%20Finnish%2Dlanguage%20or%20Swedish%2Dlanguage%20higher%20education%20degree%20in%20Finland))
+- **Language requirement:** separate. YKI level 3 (about B1) or equivalent. ([Migri](https://migri.fi/en/national-certificate-of-language-proficiency-yki-#:~:text=Grade%203%20on%20the%20intermediate%20level%20corresponds%20to%20the%20level%20B1))
+
+## Sweden: medborgarskapsprovet
+
+- **Started:** new citizenship rules from 6 June 2026. The first test, a trial run, was held in August 2026. ([UHR](https://www.uhr.se/medborgarskapsprovet/om-medborgarskapsprovet/#:~:text=Den%206%20juni%202026%20%C3%A4ndrades%20medborgarskapslagen), [UHR](https://www.uhr.se/medborgarskapsprovet/om-medborgarskapsprovet/#:~:text=Det%20f%C3%B6rsta%20provet%20i%20samh%C3%A4llskunskap%20genomf%C3%B6rdes%20i%20augusti%202026))
+- **Format:** on paper, multiple choice with four options. ([UHR](https://www.uhr.se/medborgarskapsprovet/om-medborgarskapsprovet/#:~:text=skrivs%20p%C3%A5%20papper%20och%20best%C3%A5r%20av%20flervalsfr%C3%A5gor), [UHR](https://www.uhr.se/medborgarskapsprovet/om-medborgarskapsprovet/#:~:text=Provet%20best%C3%A5r%20av%20flervalsfr%C3%A5gor%20med%20fyra%20svarsalternativ))
+- **Language:** Swedish. ([UHR](https://www.uhr.se/medborgarskapsprovet/om-medborgarskapsprovet/#:~:text=Provet%20%C3%A4r%20p%C3%A5%20svenska))
+- **Questions, time and pass mark:** not yet published for the next sitting. ([UHR](https://www.uhr.se/medborgarskapsprovet/om-medborgarskapsprovet/))
+- **Fee:** not yet published. ([UHR](https://www.uhr.se/medborgarskapsprovet/om-medborgarskapsprovet/#:~:text=Information%20om%20anm%C3%A4lningsavgift%20kommer))
+- **How often:** the next sitting is planned for April to May 2027. You can only register if Migrationsverket has invited you. ([UHR](https://www.uhr.se/medborgarskapsprovet/om-medborgarskapsprovet/#:~:text=under%20perioden%20april%2Dmaj%202027), [UHR](https://www.uhr.se/medborgarskapsprovet/om-medborgarskapsprovet/#:~:text=Det%20kommer%20bara%20g%C3%A5%20att%20anm%C3%A4la%20sig%20till%20provet))
+- **Study material:** *Sverige i fokus*, a free study book (PDF and audio) from UHR, the agency that runs the test. ([UHR](https://www.uhr.se/medborgarskapsprovet/utbildningsmaterial/#:~:text=Grundl%C3%A4ggande%20kunskaper%20om%20det%20svenska%20samh%C3%A4llet))
+- **Language requirement:** a Swedish language test is planned but hasn't been introduced yet. ([UHR](https://www.uhr.se/medborgarskapsprovet/om-medborgarskapsprovet/#:~:text=Prov%20i%20svenska%20kommer%20att%20inf%C3%B6ras%20vid%20senare%20tillf%C3%A4lle))
+
+## Norway: statsborgerprøven
+
+- **Format:** 36 multiple-choice questions with three options each. 32 count toward your score, and 4 are trial questions. ([HK-dir](https://prove.hkdir.no/en/norwegian-citizenship-test/read-about-the-test-citizenship-test#:~:text=The%20citizenship%20test%20consists%20of%2036%20questions), [HK-dir](https://prove.hkdir.no/en/norwegian-citizenship-test/read-about-the-test-citizenship-test#:~:text=Only%2032%20of%20the%20questions%20in%20the%20test%20are%20scored))
+- **Pass mark:** 24 correct answers. ([HK-dir](https://prove.hkdir.no/en/norwegian-citizenship-test/read-about-the-test-citizenship-test#:~:text=You%20must%20have%2024%20correct%20answers%20to%20pass%20the%20test))
+- **Time:** up to 60 minutes. ([HK-dir](https://prove.hkdir.no/en/norwegian-citizenship-test/read-about-the-test-citizenship-test#:~:text=The%20test%20lasts%20for%20a%20maximum%20of%20one%20hour))
+- **Language:** Norwegian (Bokmål or Nynorsk), written at A2 level. You can have the questions read aloud. ([HK-dir](https://prove.hkdir.no/en/norwegian-citizenship-test/read-about-the-test-citizenship-test#:~:text=You%20can%20choose%20whether%20to%20take%20the%20test%20in%20Nynorsk%20or%20Bokm%C3%A5l), [HK-dir](https://prove.hkdir.no/en/norwegian-citizenship-test/read-about-the-test-citizenship-test#:~:text=The%20test%20is%20at%20language%20level%20A2), [HK-dir](https://prove.hkdir.no/en/norwegian-citizenship-test/read-about-the-test-citizenship-test#:~:text=You%20can%20have%20the%20questions%20read%20aloud%20through%20audio%20files))
+- **Fee:** set by each municipality, between NOK 300 and 1,800. ([HK-dir](https://prove.hkdir.no/en/norwegian-citizenship-test/register-for-the-test-citizenship-test#:~:text=Your%20municipality%20decides%20the%20cost%20of%20the%20test))
+- **How often:** depends on the municipality and test centre. ([HK-dir](https://prove.hkdir.no/en/norwegian-citizenship-test/register-for-the-test-citizenship-test))
+- **Study material:** based on the social studies curriculum for adult immigrants. ([HK-dir](https://prove.hkdir.no/en/norwegian-citizenship-test/read-about-the-test-citizenship-test))
+- **Language requirement:** separate. An oral Norwegian test at B1 for most applicants. ([UDI](https://www.udi.no/en/important-messages/changes-in-requirements-for-norwegian-skills-to-obtain-norwegian-citizenship/#:~:text=raise%20requirements%20for%20proficiency%20in%20spoken%20Norwegian%20to%20the%20B1%20level), [UDI](https://www.udi.no/en/important-messages/changes-in-requirements-for-norwegian-skills-to-obtain-norwegian-citizenship/#:~:text=the%20citizenship%20test%20or%20the%20Norwegian%20social%20studies%20test))
+
+## Denmark: indfødsretsprøven
+
+- **Format:** 45 multiple-choice questions. 35 come from the official study book, 5 are about current affairs from the past six months, and 5 are about Danish values. ([Danskogprøver](https://danskogproever.dk/borger/indfoedsretsproeve-statsborgerskab/forberedelse-til-indfoedsretsproeven/#:~:text=Pr%C3%B8ven%20best%C3%A5r%20af%2045%20sp%C3%B8rgsm%C3%A5l), [Danskogprøver](https://danskogproever.dk/borger/indfoedsretsproeve-statsborgerskab/forberedelse-til-indfoedsretsproeven/#:~:text=handler%20om%20aktuelle%20forhold%20og%20begivenheder))
+- **Pass mark:** 36 correct, including at least 4 of the 5 values questions. ([Danskogprøver](https://danskogproever.dk/borger/indfoedsretsproeve-statsborgerskab/forberedelse-til-indfoedsretsproeven/#:~:text=Mindst%2036%20sp%C3%B8rgsm%C3%A5l%20skal%20v%C3%A6re%20besvaret%20korrekte%20for%20at%20best%C3%A5), [Danskogprøver](https://danskogproever.dk/borger/indfoedsretsproeve-statsborgerskab/forberedelse-til-indfoedsretsproeven/#:~:text=4%20ud%20af%20de%205%20sp%C3%B8rgsm%C3%A5l%20om%20danske%20v%C3%A6rdier))
+- **Time:** 45 minutes. ([Studieskolen](https://www.studieskolen.dk/en/tests/danish-tests/indfoedsretsproeven#:~:text=25%20November%202026%20at%2013%3A00%2D13%3A45))
+- **Language:** Danish.
+- **Fee:** DKK 946. ([Studieskolen](https://www.studieskolen.dk/en/tests/danish-tests/indfoedsretsproeven#:~:text=The%20test%20costs%20946%20DKK))
+- **How often:** twice a year, in early summer and November. ([Studieskolen](https://www.studieskolen.dk/en/tests/danish-tests/indfoedsretsproeven#:~:text=Indf%C3%B8dsretspr%C3%B8ven%20is%20held%20twice%20a%20year))
+- **Study material:** a free official study book (about 250 pages, PDF and audio). Past papers with answers are published. ([Danskogprøver](https://danskogproever.dk/borger/indfoedsretsproeve-statsborgerskab/forberedelse-til-indfoedsretsproeven/#:~:text=Der%20er%20gratis%20adgang%20til%20l%C3%A6rematerialet), [Danskogprøver](https://danskogproever.dk/borger/indfoedsretsproeve-statsborgerskab/forberedelse-til-indfoedsretsproeven/#:~:text=Her%20kan%20du%20finde%20tidligere%20udgaver%20af%20Indf%C3%B8dsretspr%C3%B8ven))
+
+## What stands out
+
+**Denmark's is the hardest.** You need 80% correct, and the current affairs questions mean you can't just memorise a book. At the November 2025 sitting, only 47.2% of the 2,903 people who took it passed ([Studieskolen, citing SIRI](https://www.studieskolen.dk/en/about-us/news/studieskolens-deltagere-bestaar-indfoedsret#:~:text=only%2047.2%25%20of%20the%202%2C903%20people%20taking%20the%20test%20passed)).
+
+**Norway's is the most predictable.** A fixed format, a clear pass mark and a test deliberately written in simple A2 Norwegian. ([HK-dir](https://prove.hkdir.no/en/norwegian-citizenship-test/read-about-the-test-citizenship-test#:~:text=The%20test%20is%20at%20language%20level%20A2)) The language bar is set by the separate B1 oral test instead.
+
+**Finland's is somewhere in the middle, but we don't know where yet.** The pass mark and the number of questions will tell us a lot. If "most of the answers" means just over half, it's a gentle test. If it means 80%, it's closer to Denmark.
+
+**Finland's age exemption is clear-cut.** If you're 65 or older, you don't take it. ([Migri](https://migri.fi/en/amendments-to-the-citizenship-act-2027#:~:text=persons%20between%20the%20ages%20of%2018%20and%2064), [Migri FAQ](https://migri.fi/en/faq-finnish-citizenship#:~:text=reached%20the%20age%20of%2065%2C%20the%20requirement%20does%20not%20apply)) Some unofficial guides mention age exemptions for Sweden too, but I couldn't confirm age rules on the official Danish, Norwegian or Swedish pages I read, so check them yourself if it matters to you.
+
+**Finland lets your education count instead.** A Finnish- or Swedish-language matriculation exam or degree replaces the test. Norway has a similar idea with exemptions for schooling and university credits in Norwegian. ([UDI](https://www.udi.no/en/important-messages/changes-in-requirements-for-norwegian-skills-to-obtain-norwegian-citizenship/))
+
+**All four are in the national language.** None of them can be taken in English. So in every Nordic country, the citizenship test is also partly a [reading test](/blog/finnish-citizenship-test-reading-test).
+
+My own view: a test you can prepare for from free, public material is a reasonable thing to ask. Denmark's current affairs section is the part I'd find hardest to defend, because you can't study for it. It rewards people who already follow Danish news. Finland's version, at least on paper, avoids that.
+
+Sources: [Migri: Amendments to the Citizenship Act 2027](https://migri.fi/en/amendments-to-the-citizenship-act-2027), [UHR: Om medborgarskapsprovet](https://www.uhr.se/medborgarskapsprovet/om-medborgarskapsprovet/), [UHR: Utbildningsmaterial](https://www.uhr.se/medborgarskapsprovet/utbildningsmaterial/), [HK-dir: Norwegian citizenship test](https://prove.hkdir.no/en/norwegian-citizenship-test/read-about-the-test-citizenship-test), [HK-dir: Register for the test](https://prove.hkdir.no/en/norwegian-citizenship-test/register-for-the-test-citizenship-test), [UDI: Norwegian language requirement for citizenship](https://www.udi.no/en/important-messages/changes-in-requirements-for-norwegian-skills-to-obtain-norwegian-citizenship/), [Danskogprøver: Indfødsretsprøven](https://danskogproever.dk/borger/indfoedsretsproeve-statsborgerskab/forberedelse-til-indfoedsretsproeven/), [Studieskolen: Indfødsretsprøven](https://www.studieskolen.dk/en/tests/danish-tests/indfoedsretsproeven).`,
+  },
+  {
     slug: "jobs-and-internships-in-finland",
     title: "Finding Jobs and Internships in Finland, and How Much Finnish You Need",
     author: 'Oheneba "Ohe" Poku-Marboah',
