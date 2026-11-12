@@ -14,6 +14,93 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "nordic-citizenship-tests-compared",
+    readNext: [
+      "/blog/finnish-citizenship-test",
+      "/blog/finnish-citizenship-test-reading-test",
+      "/blog/how-to-get-finnish-citizenship-2027",
+    ],
+    title:
+      "Citizenship Tests in Finland, Sweden, Norway and Denmark Compared",
+    author: 'Oheneba "Ohe" Poku-Marboah',
+    authorUrl: "https://x.com/pokumars",
+    publishDate: "2026-11-09",
+    metaDescription:
+      "How Finland's new citizenship test compares with Denmark's indfødsretsprøve, Norway's statsborgerprøve and Sweden's medborgarskapsprov: questions, pass marks, fees and language.",
+    excerpt:
+      "With Finland's citizenship test arriving in 2027, all four big Nordic countries now test new citizens on their society. Here's how the Finnish test compares with Denmark's, Norway's and Sweden's.",
+    content: `*Last updated: 9 November 2026. Finland's and Sweden's tests are new, so some details are still missing. I'll fill them in as they're published.*
+
+*Every fact below links to its source. In Chrome, Edge and Safari, the link also highlights the exact sentence on the page.*
+
+With Finland's [citizenship test](/blog/finnish-citizenship-test) starting in 2027, Finland, Sweden, Norway and Denmark all test new citizens on knowledge of their society. Denmark and Norway have done it for years. Sweden held its first test in August 2026, and Finland's comes in March 2027.
+
+They're more different than you'd expect.
+
+## Finland: kansalaisuuskoe
+
+- **Starts:** applications from 1 March 2027. First test expected in March 2027. ([Migri](https://migri.fi/en/amendments-to-the-citizenship-act-2027#:~:text=will%20apply%20to%20applications%20submitted%20on%20or%20after%201%20March%202027), [Migri](https://migri.fi/en/amendments-to-the-citizenship-act-2027#:~:text=The%20first%20test%20is%20expected%20to%20take%20place%20in%20March%202027))
+- **Format:** multiple choice, on a computer, on site. ([Migri](https://migri.fi/en/amendments-to-the-citizenship-act-2027#:~:text=The%20test%20will%20be%20taken%20in%20digital%20form%20on%20site))
+- **Language:** Finnish or Swedish. ([Migri](https://migri.fi/en/amendments-to-the-citizenship-act-2027#:~:text=the%20questions%20can%20be%20answered%20in%20Finnish%20or%20Swedish))
+- **Questions and pass mark:** not published yet. Migri says "most of the answers" must be correct. ([Migri](https://migri.fi/en/amendments-to-the-citizenship-act-2027#:~:text=Most%20of%20the%20answers%20must%20be%20correct))
+- **Fee:** confirmed, amount not published. ([Migri](https://migri.fi/en/-/up-to-date-information-on-amendments-to-citizenship-act-learning-material-for-citizenship-test-to-be-published-at-turn-of-the-year#:~:text=The%20test%20is%20subject%20to%20a%20fee))
+- **How often:** 6 to 10 sessions a year, in seven cities in 2027. ([Migri](https://migri.fi/en/-/up-to-date-information-on-amendments-to-citizenship-act-learning-material-for-citizenship-test-to-be-published-at-turn-of-the-year#:~:text=We%20will%20organise%206%20to%2010%20test%20sessions%20per%20year))
+- **Study material:** free official learning material from the University of Helsinki, published by Migri around the turn of the year 2026/2027. ([Migri](https://migri.fi/en/-/up-to-date-information-on-amendments-to-citizenship-act-learning-material-for-citizenship-test-to-be-published-at-turn-of-the-year#:~:text=the%20University%20of%20Helsinki%2C%20will%20prepare%20the%20learning%20material%20and%20questions))
+- **Who takes it:** applicants aged 18 to 64. People 65 and over are exempt. ([Migri](https://migri.fi/en/amendments-to-the-citizenship-act-2027#:~:text=persons%20between%20the%20ages%20of%2018%20and%2064), [Migri FAQ](https://migri.fi/en/faq-finnish-citizenship#:~:text=reached%20the%20age%20of%2065%2C%20the%20requirement%20does%20not%20apply))
+- **Alternatives:** a Finnish- or Swedish-language matriculation exam or higher education degree from Finland. ([Migri](https://migri.fi/en/amendments-to-the-citizenship-act-2027#:~:text=by%20completing%20a%20Finnish%2Dlanguage%20or%20Swedish%2Dlanguage%20higher%20education%20degree%20in%20Finland))
+- **Language requirement:** separate. YKI level 3 (about B1) or equivalent. ([Migri](https://migri.fi/en/national-certificate-of-language-proficiency-yki-#:~:text=Grade%203%20on%20the%20intermediate%20level%20corresponds%20to%20the%20level%20B1))
+
+## Sweden: medborgarskapsprovet
+
+- **Started:** new citizenship rules from 6 June 2026. The first test, a trial run, was held in August 2026. ([UHR](https://www.uhr.se/medborgarskapsprovet/om-medborgarskapsprovet/#:~:text=Den%206%20juni%202026%20%C3%A4ndrades%20medborgarskapslagen), [UHR](https://www.uhr.se/medborgarskapsprovet/om-medborgarskapsprovet/#:~:text=Det%20f%C3%B6rsta%20provet%20i%20samh%C3%A4llskunskap%20genomf%C3%B6rdes%20i%20augusti%202026))
+- **Format:** on paper, multiple choice with four options. ([UHR](https://www.uhr.se/medborgarskapsprovet/om-medborgarskapsprovet/#:~:text=skrivs%20p%C3%A5%20papper%20och%20best%C3%A5r%20av%20flervalsfr%C3%A5gor), [UHR](https://www.uhr.se/medborgarskapsprovet/om-medborgarskapsprovet/#:~:text=Provet%20best%C3%A5r%20av%20flervalsfr%C3%A5gor%20med%20fyra%20svarsalternativ))
+- **Language:** Swedish. ([UHR](https://www.uhr.se/medborgarskapsprovet/om-medborgarskapsprovet/#:~:text=Provet%20%C3%A4r%20p%C3%A5%20svenska))
+- **Questions, time and pass mark:** not yet published for the next sitting. ([UHR](https://www.uhr.se/medborgarskapsprovet/om-medborgarskapsprovet/))
+- **Fee:** not yet published. ([UHR](https://www.uhr.se/medborgarskapsprovet/om-medborgarskapsprovet/#:~:text=Information%20om%20anm%C3%A4lningsavgift%20kommer))
+- **How often:** the next sitting is planned for April to May 2027. You can only register if Migrationsverket has invited you. ([UHR](https://www.uhr.se/medborgarskapsprovet/om-medborgarskapsprovet/#:~:text=under%20perioden%20april%2Dmaj%202027), [UHR](https://www.uhr.se/medborgarskapsprovet/om-medborgarskapsprovet/#:~:text=Det%20kommer%20bara%20g%C3%A5%20att%20anm%C3%A4la%20sig%20till%20provet))
+- **Study material:** *Sverige i fokus*, a free study book (PDF and audio) from UHR, the agency that runs the test. ([UHR](https://www.uhr.se/medborgarskapsprovet/utbildningsmaterial/#:~:text=Grundl%C3%A4ggande%20kunskaper%20om%20det%20svenska%20samh%C3%A4llet))
+- **Language requirement:** a Swedish language test is planned but hasn't been introduced yet. ([UHR](https://www.uhr.se/medborgarskapsprovet/om-medborgarskapsprovet/#:~:text=Prov%20i%20svenska%20kommer%20att%20inf%C3%B6ras%20vid%20senare%20tillf%C3%A4lle))
+
+## Norway: statsborgerprøven
+
+- **Format:** 36 multiple-choice questions with three options each. 32 count toward your score, and 4 are trial questions. ([HK-dir](https://prove.hkdir.no/en/norwegian-citizenship-test/read-about-the-test-citizenship-test#:~:text=The%20citizenship%20test%20consists%20of%2036%20questions), [HK-dir](https://prove.hkdir.no/en/norwegian-citizenship-test/read-about-the-test-citizenship-test#:~:text=Only%2032%20of%20the%20questions%20in%20the%20test%20are%20scored))
+- **Pass mark:** 24 correct answers. ([HK-dir](https://prove.hkdir.no/en/norwegian-citizenship-test/read-about-the-test-citizenship-test#:~:text=You%20must%20have%2024%20correct%20answers%20to%20pass%20the%20test))
+- **Time:** up to 60 minutes. ([HK-dir](https://prove.hkdir.no/en/norwegian-citizenship-test/read-about-the-test-citizenship-test#:~:text=The%20test%20lasts%20for%20a%20maximum%20of%20one%20hour))
+- **Language:** Norwegian (Bokmål or Nynorsk), written at A2 level. You can have the questions read aloud. ([HK-dir](https://prove.hkdir.no/en/norwegian-citizenship-test/read-about-the-test-citizenship-test#:~:text=You%20can%20choose%20whether%20to%20take%20the%20test%20in%20Nynorsk%20or%20Bokm%C3%A5l), [HK-dir](https://prove.hkdir.no/en/norwegian-citizenship-test/read-about-the-test-citizenship-test#:~:text=The%20test%20is%20at%20language%20level%20A2), [HK-dir](https://prove.hkdir.no/en/norwegian-citizenship-test/read-about-the-test-citizenship-test#:~:text=You%20can%20have%20the%20questions%20read%20aloud%20through%20audio%20files))
+- **Fee:** set by each municipality, between NOK 300 and 1,800. ([HK-dir](https://prove.hkdir.no/en/norwegian-citizenship-test/register-for-the-test-citizenship-test#:~:text=Your%20municipality%20decides%20the%20cost%20of%20the%20test))
+- **How often:** depends on the municipality and test centre. ([HK-dir](https://prove.hkdir.no/en/norwegian-citizenship-test/register-for-the-test-citizenship-test))
+- **Study material:** based on the social studies curriculum for adult immigrants. ([HK-dir](https://prove.hkdir.no/en/norwegian-citizenship-test/read-about-the-test-citizenship-test))
+- **Language requirement:** separate. An oral Norwegian test at B1 for most applicants. ([UDI](https://www.udi.no/en/important-messages/changes-in-requirements-for-norwegian-skills-to-obtain-norwegian-citizenship/#:~:text=raise%20requirements%20for%20proficiency%20in%20spoken%20Norwegian%20to%20the%20B1%20level), [UDI](https://www.udi.no/en/important-messages/changes-in-requirements-for-norwegian-skills-to-obtain-norwegian-citizenship/#:~:text=the%20citizenship%20test%20or%20the%20Norwegian%20social%20studies%20test))
+
+## Denmark: indfødsretsprøven
+
+- **Format:** 45 multiple-choice questions. 35 come from the official study book, 5 are about current affairs from the past six months, and 5 are about Danish values. ([Danskogprøver](https://danskogproever.dk/borger/indfoedsretsproeve-statsborgerskab/forberedelse-til-indfoedsretsproeven/#:~:text=Pr%C3%B8ven%20best%C3%A5r%20af%2045%20sp%C3%B8rgsm%C3%A5l), [Danskogprøver](https://danskogproever.dk/borger/indfoedsretsproeve-statsborgerskab/forberedelse-til-indfoedsretsproeven/#:~:text=handler%20om%20aktuelle%20forhold%20og%20begivenheder))
+- **Pass mark:** 36 correct, including at least 4 of the 5 values questions. ([Danskogprøver](https://danskogproever.dk/borger/indfoedsretsproeve-statsborgerskab/forberedelse-til-indfoedsretsproeven/#:~:text=Mindst%2036%20sp%C3%B8rgsm%C3%A5l%20skal%20v%C3%A6re%20besvaret%20korrekte%20for%20at%20best%C3%A5), [Danskogprøver](https://danskogproever.dk/borger/indfoedsretsproeve-statsborgerskab/forberedelse-til-indfoedsretsproeven/#:~:text=4%20ud%20af%20de%205%20sp%C3%B8rgsm%C3%A5l%20om%20danske%20v%C3%A6rdier))
+- **Time:** 45 minutes. ([Studieskolen](https://www.studieskolen.dk/en/tests/danish-tests/indfoedsretsproeven#:~:text=25%20November%202026%20at%2013%3A00%2D13%3A45))
+- **Language:** Danish.
+- **Fee:** DKK 946. ([Studieskolen](https://www.studieskolen.dk/en/tests/danish-tests/indfoedsretsproeven#:~:text=The%20test%20costs%20946%20DKK))
+- **How often:** twice a year, in early summer and November. ([Studieskolen](https://www.studieskolen.dk/en/tests/danish-tests/indfoedsretsproeven#:~:text=Indf%C3%B8dsretspr%C3%B8ven%20is%20held%20twice%20a%20year))
+- **Study material:** a free official study book (about 250 pages, PDF and audio). Past papers with answers are published. ([Danskogprøver](https://danskogproever.dk/borger/indfoedsretsproeve-statsborgerskab/forberedelse-til-indfoedsretsproeven/#:~:text=Der%20er%20gratis%20adgang%20til%20l%C3%A6rematerialet), [Danskogprøver](https://danskogproever.dk/borger/indfoedsretsproeve-statsborgerskab/forberedelse-til-indfoedsretsproeven/#:~:text=Her%20kan%20du%20finde%20tidligere%20udgaver%20af%20Indf%C3%B8dsretspr%C3%B8ven))
+
+## What stands out
+
+**Denmark's is the hardest.** You need 80% correct, and the current affairs questions mean you can't just memorise a book. At the November 2025 sitting, only 47.2% of the 2,903 people who took it passed ([Studieskolen, citing SIRI](https://www.studieskolen.dk/en/about-us/news/studieskolens-deltagere-bestaar-indfoedsret#:~:text=only%2047.2%25%20of%20the%202%2C903%20people%20taking%20the%20test%20passed)).
+
+**Norway's is the most predictable.** A fixed format, a clear pass mark and a test deliberately written in simple A2 Norwegian. ([HK-dir](https://prove.hkdir.no/en/norwegian-citizenship-test/read-about-the-test-citizenship-test#:~:text=The%20test%20is%20at%20language%20level%20A2)) The language bar is set by the separate B1 oral test instead.
+
+**Finland's is somewhere in the middle, but we don't know where yet.** The pass mark and the number of questions will tell us a lot. If "most of the answers" means just over half, it's a gentle test. If it means 80%, it's closer to Denmark.
+
+**Finland's age exemption is clear-cut.** If you're 65 or older, you don't take it. ([Migri](https://migri.fi/en/amendments-to-the-citizenship-act-2027#:~:text=persons%20between%20the%20ages%20of%2018%20and%2064), [Migri FAQ](https://migri.fi/en/faq-finnish-citizenship#:~:text=reached%20the%20age%20of%2065%2C%20the%20requirement%20does%20not%20apply)) Some unofficial guides mention age exemptions for Sweden too, but I couldn't confirm age rules on the official Danish, Norwegian or Swedish pages I read, so check them yourself if it matters to you.
+
+**Finland lets your education count instead.** A Finnish- or Swedish-language matriculation exam or degree replaces the test. Norway has a similar idea with exemptions for schooling and university credits in Norwegian. ([UDI](https://www.udi.no/en/important-messages/changes-in-requirements-for-norwegian-skills-to-obtain-norwegian-citizenship/))
+
+**All four are in the national language.** None of them can be taken in English. So in every Nordic country, the citizenship test is also partly a [reading test](/blog/finnish-citizenship-test-reading-test).
+
+My own view: a test you can prepare for from free, public material is a reasonable thing to ask. Denmark's current affairs section is the part I'd find hardest to defend, because you can't study for it. It rewards people who already follow Danish news. Finland's version, at least on paper, avoids that.
+
+Sources: [Migri: Amendments to the Citizenship Act 2027](https://migri.fi/en/amendments-to-the-citizenship-act-2027), [UHR: Om medborgarskapsprovet](https://www.uhr.se/medborgarskapsprovet/om-medborgarskapsprovet/), [UHR: Utbildningsmaterial](https://www.uhr.se/medborgarskapsprovet/utbildningsmaterial/), [HK-dir: Norwegian citizenship test](https://prove.hkdir.no/en/norwegian-citizenship-test/read-about-the-test-citizenship-test), [HK-dir: Register for the test](https://prove.hkdir.no/en/norwegian-citizenship-test/register-for-the-test-citizenship-test), [UDI: Norwegian language requirement for citizenship](https://www.udi.no/en/important-messages/changes-in-requirements-for-norwegian-skills-to-obtain-norwegian-citizenship/), [Danskogprøver: Indfødsretsprøven](https://danskogproever.dk/borger/indfoedsretsproeve-statsborgerskab/forberedelse-til-indfoedsretsproeven/), [Studieskolen: Indfødsretsprøven](https://www.studieskolen.dk/en/tests/danish-tests/indfoedsretsproeven).`,
+  },
+  {
     slug: "jobs-and-internships-in-finland",
     title: "Finding Jobs and Internships in Finland, and How Much Finnish You Need",
     author: 'Oheneba "Ohe" Poku-Marboah',
