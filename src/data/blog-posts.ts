@@ -14,6 +14,105 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "how-to-study-for-finnish-citizenship-test",
+    readNext: [
+      "/blog/finnish-citizenship-test-vocabulary",
+      "/blog/finnish-citizenship-test-reading-test",
+      "/episode/11",
+    ],
+    title:
+      "How to Study for the Finnish Citizenship Test When Finnish Isn't Your First Language",
+    author: 'Oheneba "Ohe" Poku-Marboah',
+    authorUrl: "https://x.com/pokumars",
+    publishDate: "2026-11-10",
+    metaDescription:
+      "A study plan for Finland's citizenship test, from someone who learned Finnish as an adult: what to read, how to learn the vocabulary, and how to practise in Finnish.",
+    excerpt:
+      "The Finnish citizenship test is in Finnish, so studying for it is half civics and half language learning. Here's how I'd prepare, using the methods that worked for me and the people I've interviewed.",
+    content: `*Last updated: 10 November 2026. Migri plans to publish the official learning material around the turn of the year 2026/2027. When it's out, I'll add a link and update this plan.*
+
+The [Finnish citizenship test](/blog/finnish-citizenship-test) asks about laws, rights, equality, history and culture. The questions come from public learning material written by the University of Helsinki. ([Migri](https://migri.fi/en/-/up-to-date-information-on-amendments-to-citizenship-act-learning-material-for-citizenship-test-to-be-published-at-turn-of-the-year#:~:text=the%20University%20of%20Helsinki%2C%20will%20prepare%20the%20learning%20material%20and%20questions)) 
+
+If you were born here, that's a civics test. If you learned Finnish as an adult, it's a civics test **and** a Finnish reading test. So the study plan has to cover both.
+
+## Step 1: Get the official material and make it your source of truth
+
+The questions are based on the official learning material, so everything you study should come back to it, not to what someone remembers from their integration course in 2019.
+
+Once it's published on Migri's website:
+
+- download it
+- check how long it is and count the chapters
+- give yourself a schedule, for example one chapter every few days
+
+Courses, apps and practice quizzes can save you a lot of time, as long as they're built on the official material. Before you pay for one, check that it says which version of the material it follows. If anything you study says something different from the official material, the official material wins.
+
+### What I'm building
+
+I'm working on an app where you can study for the citizenship test and take practice quizzes, so you know you're ready before you book a test date. When the official material comes out, I'll also turn it into a course. Both will be based on the official material, and I'll add the links here when they're ready.
+
+## Step 2: Learn the vocabulary before you read
+
+Reading a chapter where every fourth word is new is miserable and slow. You'll spend all your energy on the dictionary and remember none of the content.
+
+So do it the other way round: learn the words first, then read. I've put the core words in [Finnish citizenship test vocabulary](/blog/finnish-citizenship-test-vocabulary). Once the material is out, skim each chapter and pull out the words you don't know before you read it properly.
+
+What worked for me: I put new words in Quizlet with **one short example sentence each**, simple enough that I'd actually say it. Not the dictionary sentence. My sentence. I explain the routine in [how I learned Finnish by banning English](/blog/how-to-learn-finnish-english-only-thursdays).
+
+## Step 3: Read each chapter in Finnish first
+
+Read the chapter in Finnish. Mark what you didn't understand. Only then check a translation, if there is one.
+
+If you start with a translation, your brain will relax, and the test is in Finnish. You want to recognise *perusoikeudet* on the screen, not "fundamental rights".
+
+## Step 4: Explain it out loud
+
+After each chapter, explain it to someone in Finnish, in your own words. A partner, a friend, a colleague, your mirror. Two minutes is enough.
+
+- "Suomessa on eduskuntavaalit neljän vuoden välein."
+- "Työnantaja ei saa syrjiä ketään iän tai uskonnon takia."
+
+If you can't explain it, you haven't learned it yet. This also does double duty as speaking practice, which most people neglect.
+
+Erik paid for [more than 100 lunches with retired Finns](/episode/4) to get his speaking practice. You don't need to go that far. Just find someone who'll let you practise.
+
+## Step 5: Practise the format
+
+Multiple choice in a second language has its own tricks:
+
+- Read **every** option before choosing. Two may look nearly identical.
+- Watch for small words that flip the meaning: *ei* (not), *vain* (only), *aina* (always), *kaikki* (all), *myös* (also).
+- Watch the case endings. *Eduskunnassa* (in parliament) and *eduskunnalle* (to parliament) can make the difference between two answers.
+- Don't get stuck. If one question is eating your time, mark your best guess and move on.
+
+## Step 6: Connect it to your real life
+
+This is the part that turns the test into something useful. When you read about:
+
+- **work rights:** look at your own work contract (*työsopimus*) and find the collective agreement (*työehtosopimus*) for your field
+- **elections:** look up who's on your municipality's council
+- **equality:** read your workplace's equality plan, if it has one
+- **history:** next 6 December, watch the Independence Day coverage in Finnish
+
+The facts stick much better when they're about your life. And the Finnish sticks too.
+
+## How long should you study?
+
+It depends far more on your reading level than on the content. As a rough guide:
+
+- **Strong reader (B2 or above):** a few weeks with the material should be enough.
+- **Reading around B1:** plan for one to two months. Most of that time goes to the language.
+- **Reading at A2:** start with the [reading side](/blog/finnish-citizenship-test-reading-test) and the vocabulary now, months before your planned test date.
+
+Remember there are only 6 to 10 test days a year. ([Migri](https://migri.fi/en/-/up-to-date-information-on-amendments-to-citizenship-act-learning-material-for-citizenship-test-to-be-published-at-turn-of-the-year#:~:text=We%20will%20organise%206%20to%2010%20test%20sessions%20per%20year)) Pick a date, then plan backwards.
+
+## Don't stop when you pass
+
+I passed YKI in 2019 and [still couldn't hold a real conversation](/blog/not-fluent-after-yki). Passing a test is a milestone, not the finish line.
+
+If you want stories from people who kept going after their exams, start with [Matthias](/episode/11), who wrote the medical school entrance exams in Finnish, or [Jojo](/episode/8), who went from listening in hallways to working as a nurse.`,
+  },
+  {
     slug: "who-is-exempt-from-finnish-citizenship-test",
     readNext: [
       "/blog/finnish-citizenship-test",
