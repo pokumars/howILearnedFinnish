@@ -14,6 +14,201 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "finnish-citizenship-test-vocabulary",
+    readNext: [
+      "/blog/finnish-citizenship-test-reading-test",
+      "/blog/how-to-study-for-finnish-citizenship-test",
+      "/blog/finnish-citizenship-test",
+    ],
+    title:
+      "Finnish Citizenship Test Vocabulary: 100+ Finnish Words for the Kansalaisuuskoe",
+    author: 'Oheneba "Ohe" Poku-Marboah',
+    authorUrl: "https://x.com/pokumars",
+    publishDate: "2026-11-11",
+    metaDescription:
+      "Finnish words you need for the citizenship test: democracy, law, fundamental rights, equality, work, history and culture, with English translations.",
+    excerpt:
+      "The Finnish citizenship test covers laws, rights, equality, history and culture, all in Finnish. Here are 100+ words to learn before you open the official learning material, grouped by topic.",
+    content: `The Finnish [citizenship test](/blog/finnish-citizenship-test) is in Finnish or Swedish ([Migri](https://migri.fi/en/amendments-to-the-citizenship-act-2027#:~:text=the%20questions%20can%20be%20answered%20in%20Finnish%20or%20Swedish)), and it covers ([Migri](https://migri.fi/en/amendments-to-the-citizenship-act-2027#:~:text=covering%20topics%20such%20as%20key%20legislation%20governing%20life%20in%20Finnish%20society)):
+
+- key laws governing life in Finland
+- fundamental and human rights
+- equality, including gender equality
+- Finnish history and culture
+
+Below are the words I'd learn first, grouped by those topics. They're the words you'd meet in any Finnish text about these subjects, so they'll be useful whether you study the official learning material or just read the news.
+
+I'll add to this list once the official learning material is published, which Migri expects around the turn of the year 2026/2027 ([Migri](https://migri.fi/en/-/up-to-date-information-on-amendments-to-citizenship-act-learning-material-for-citizenship-test-to-be-published-at-turn-of-the-year#:~:text=Finnish%20Immigration%20Service%20at%20the%20turn%20of%20the%20year)).
+
+**How to use this list:** don't try to learn it in one sitting. Put one topic at a time into a flashcard app (I use Quizlet), and for each word, write one short sentence you'd actually say. That's the method I describe in [how I learned Finnish by banning English](/blog/how-to-learn-finnish-english-only-thursdays).
+
+## The test and the application
+
+- *kansalaisuuskoe*: citizenship test
+- *kansalaisuus*: citizenship
+- *kansalaisuushakemus*: citizenship application
+- *kansalaisuusilmoitus*: citizenship declaration
+- *yhteiskuntatieto*: knowledge of society, civics
+- *edellytys*: requirement, condition
+- *oppimateriaali*: learning material
+- *monivalintakysymys*: multiple-choice question
+- *oikea vastaus / väärä vastaus*: correct answer / wrong answer
+- *ilmoittautuminen*: registration
+- *koepäivä*: test day
+- *maksu*: fee
+- *todistus*: certificate
+- *erityisjärjestelyt*: special arrangements
+- *hyväksytty / hylätty*: passed / failed (also: approved / rejected)
+- *Maahanmuuttovirasto (Migri)*: the Finnish Immigration Service
+
+## The state and democracy
+
+- *valtio*: the state
+- *tasavalta*: republic
+- *demokratia*: democracy
+- *perustuslaki*: the constitution
+- *eduskunta*: parliament
+- *kansanedustaja*: member of parliament
+- *hallitus*: the government
+- *pääministeri*: prime minister
+- *tasavallan presidentti*: president of the republic
+- *ministeriö*: ministry
+- *puolue*: political party
+- *vaalit*: elections
+- *eduskuntavaalit*: parliamentary elections
+- *kuntavaalit*: municipal elections
+- *aluevaalit*: county elections
+- *presidentinvaali*: presidential election
+- *äänestää*: to vote
+- *äänioikeus*: the right to vote
+- *ehdokas*: candidate
+- *kunta*: municipality
+- *hyvinvointialue*: wellbeing services county
+- *viranomainen*: authority, public official
+- *Euroopan unioni (EU)*: the European Union
+
+A sentence you'll see in some form: *Valtiovalta Suomessa kuuluu kansalle.* (In Finland, the powers of the state belong to the people.) It's from [section 2 of the constitution](https://finlex.fi/fi/lainsaadanto/1999/731#:~:text=Valtiovalta%20Suomessa%20kuuluu%20kansalle).
+
+## Law and justice
+
+- *laki*: law
+- *lainsäädäntö*: legislation
+- *säätää*: to enact, to lay down (in law)
+- *oikeusvaltio*: a state governed by the rule of law
+- *tuomioistuin*: court
+- *käräjäoikeus*: district court
+- *hovioikeus*: court of appeal
+- *korkein oikeus*: Supreme Court
+- *tuomari*: judge
+- *poliisi*: police
+- *rikos*: crime
+- *rangaistus*: punishment, sentence
+- *sakko*: fine
+- *vankeus*: imprisonment
+- *eduskunnan oikeusasiamies*: Parliamentary Ombudsman
+- *valittaa*: to appeal, to complain
+
+## Fundamental and human rights
+
+- *perusoikeudet*: fundamental rights
+- *ihmisoikeudet*: human rights
+- *sananvapaus*: freedom of speech
+- *uskonnonvapaus*: freedom of religion
+- *kokoontumisvapaus*: freedom of assembly
+- *yhdistymisvapaus*: freedom of association
+- *liikkumisvapaus*: freedom of movement
+- *yksityisyyden suoja*: right to privacy
+- *henkilökohtainen koskemattomuus*: personal integrity, bodily integrity
+- *oikeus koulutukseen*: right to education
+- *lapsen oikeudet*: children's rights
+- *velvollisuus*: duty, obligation
+- *asevelvollisuus*: compulsory military service
+- *oppivelvollisuus*: compulsory education
+
+Notice the pattern: *-vapaus* means freedom, and *-velvollisuus* means duty. Learn those two endings and a dozen words become easy.
+
+## Equality and non-discrimination
+
+- *tasa-arvo*: equality (very often meaning gender equality)
+- *sukupuolten tasa-arvo*: gender equality
+- *yhdenvertaisuus*: equal treatment, equality between people regardless of background
+- *tasa-arvolaki*: the Equality Act (gender equality)
+- *yhdenvertaisuuslaki*: the Non-Discrimination Act
+- *syrjintä*: discrimination
+- *syrjiä*: to discriminate
+- *vähemmistö*: minority
+- *saamelaiset*: the Sámi
+- *alkuperäiskansa*: indigenous people
+- *seksuaalinen suuntautuminen*: sexual orientation
+- *vammainen*: disabled person
+- *väkivalta*: violence
+- *lähisuhdeväkivalta*: domestic violence, violence in close relationships
+
+*Tasa-arvo* and *yhdenvertaisuus* both translate as "equality", and that's exactly the kind of difference a multiple-choice question can test. *Tasa-arvo* is mostly used about women and men. *Yhdenvertaisuus* covers everyone: origin, religion, age, disability and so on.
+
+## Work, taxes and the welfare state
+
+- *hyvinvointivaltio*: welfare state
+- *vero*: tax
+- *verokortti*: tax card
+- *Kela*: the Social Insurance Institution
+- *sosiaaliturva*: social security
+- *terveydenhuolto*: healthcare
+- *työsopimus*: employment contract
+- *työehtosopimus*: collective agreement
+- *ammattiliitto*: trade union
+- *työnantaja / työntekijä*: employer / employee
+- *palkka*: salary, wage
+- *eläke*: pension
+
+## History
+
+The dates are from [InfoFinland's Finnish history page](https://infofinland.fi/fi/information-about-finland/finnish-history) (in Finnish).
+
+- *itsenäisyys*: independence
+- *itsenäisyyspäivä*: Independence Day (6 December; Finland became independent in 1917) ([InfoFinland](https://infofinland.fi/fi/information-about-finland/finnish-history#:~:text=Suomi%20julistautui%20itsen%C3%A4iseksi%206.12.1917))
+- *Ruotsin vallan aika*: the period of Swedish rule
+- *suuriruhtinaskunta*: grand duchy (Finland under Russia, 1809 to 1917) ([InfoFinland](https://infofinland.fi/fi/information-about-finland/finnish-history#:~:text=Suomi%20osana%20Ven%C3%A4j%C3%A4n%20keisarikuntaa))
+- *autonomia*: autonomy
+- *sisällissota*: civil war (1918)
+- *talvisota*: the Winter War (1939 to 1940) ([InfoFinland](https://infofinland.fi/fi/information-about-finland/finnish-history#:~:text=syttyy%20talvisota))
+- *jatkosota*: the Continuation War (1941 to 1944) ([InfoFinland](https://infofinland.fi/fi/information-about-finland/finnish-history#:~:text=v%C3%A4lisen%C3%A4%20jatkosotana))
+- *Lapin sota*: the Lapland War (1944 to 1945)
+- *naisten äänioikeus*: women's right to vote (Finland, 1906) ([InfoFinland](https://infofinland.fi/fi/information-about-finland/finnish-history#:~:text=Yleinen%20ja%20yht%C3%A4l%C3%A4inen%20%C3%A4%C3%A4nioikeus%2C%20my%C3%B6s%20naisille))
+- *jälleenrakennus*: reconstruction (after the wars)
+- *EU-jäsenyys*: EU membership (1995) ([InfoFinland](https://infofinland.fi/fi/information-about-finland/finnish-history#:~:text=Suomi%20liittyi%20EU%3An%20j%C3%A4seneksi%201995))
+- *Nato-jäsenyys*: NATO membership (2023) ([InfoFinland](https://infofinland.fi/fi/information-about-finland/finnish-history#:~:text=Suomi%20liittyy%20Natoon))
+
+## Culture and everyday life
+
+- *kulttuuri*: culture
+- *virallinen kieli*: official language
+- *kaksikielisyys*: bilingualism (Finland's official languages are Finnish and Swedish)
+- *kotimaiset kielet*: the national languages
+- *Kalevala*: the national epic
+- *kansalliseepos*: national epic
+- *evankelisluterilainen kirkko*: the Evangelical Lutheran Church
+- *ortodoksinen kirkko*: the Orthodox Church
+- *juhlapyhä*: public holiday
+- *juhannus*: Midsummer
+- *vappu*: May Day
+- *joulu*: Christmas
+- *jokamiehenoikeudet*: everyone's rights (the right to roam in nature)
+- *talkoot*: voluntary group work
+- *sauna*: sauna, of course
+
+## A few grammar patterns worth knowing
+
+You'll understand the material much faster if these don't slow you down:
+
+- **The passive:** *järjestetään* (is organised), *valitaan* (is chosen), *säädetään* (is laid down). Official texts use it constantly.
+- **-minen nouns:** *äänestäminen* (voting), *kotoutuminen* (integration), *syrjiminen* (discriminating).
+- **-ton/-tön:** *maksuton* (free of charge), *puolueeton* (neutral, non-partisan).
+- **Compounds:** read long words from the end. *Eduskuntavaalit* is *vaalit* (elections) for the *eduskunta* (parliament).
+
+If the reading side worries you more than the words, read [why the citizenship test is also a Finnish reading test](/blog/finnish-citizenship-test-reading-test).`,
+  },
+  {
     slug: "how-to-get-finnish-citizenship-2027",
     readNext: [
       "/blog/finnish-citizenship-test",
