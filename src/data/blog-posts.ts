@@ -14,6 +14,155 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "finnish-citizenship-test",
+    readNext: [
+      "/blog/who-is-exempt-from-finnish-citizenship-test",
+      "/blog/finnish-citizenship-test-reading-test",
+      "/blog/finnish-citizenship-test-vocabulary",
+    ],
+    title:
+      "Finnish Citizenship Test (Kansalaisuuskoe) 2027: Test Dates, Fee, Locations and Format",
+    author: 'Oheneba "Ohe" Poku-Marboah',
+    authorUrl: "https://x.com/pokumars",
+    publishDate: "2026-11-12",
+    metaDescription:
+      "How Finland's citizenship test works: who has to take it, when it starts, test days and cities, the fee, the format, the learning material and what is still unknown.",
+    excerpt:
+      "From 1 March 2027, most adults applying for Finnish citizenship have to pass a citizenship test first. Here is everything known so far about the logistics: test days, cities, the fee, the format and the learning material.",
+    content: `*Last updated: 12 November 2026. Migri hasn't published every detail yet, so I'll update this page when the fee, the test dates and the learning material come out.*
+
+*Every fact below links to its source. In Chrome, Edge and Safari, the link also highlights the exact sentence on the page.*
+
+From **1 March 2027**, most adults who apply for Finnish citizenship have to pass a citizenship test before they apply. In Finnish it's called the **kansalaisuuskoe**. The law calls the underlying rule the requirement of knowledge of Finnish society (*yhteiskuntatietoa koskeva edellytys*).
+
+This page covers the practical side: who takes it, when, where, how much it costs and what it looks like. If you're wondering how much Finnish you need for it, I wrote a separate piece on [why the citizenship test is also a Finnish reading test](/blog/finnish-citizenship-test-reading-test).
+
+## The short version
+
+- The test applies to citizenship applications submitted on or after 1 March 2027. ([Migri](https://migri.fi/en/amendments-to-the-citizenship-act-2027#:~:text=will%20apply%20to%20applications%20submitted%20on%20or%20after%201%20March%202027))
+- It applies to people aged 18 to 64. If you're 65 or older, you don't take it. ([Migri](https://migri.fi/en/amendments-to-the-citizenship-act-2027#:~:text=persons%20between%20the%20ages%20of%2018%20and%2064), [Migri FAQ](https://migri.fi/en/faq-finnish-citizenship#:~:text=reached%20the%20age%20of%2065%2C%20the%20requirement%20does%20not%20apply))
+- You have to pass it before you submit your citizenship application. ([Migri](https://migri.fi/en/-/up-to-date-information-on-amendments-to-citizenship-act-learning-material-for-citizenship-test-to-be-published-at-turn-of-the-year#:~:text=You%20must%20pass%20the%20test%20before%20you%20submit%20a%20citizenship%20application))
+- It's taken on site, on a computer, under supervision. The questions are multiple choice. ([Migri](https://migri.fi/en/amendments-to-the-citizenship-act-2027#:~:text=The%20test%20will%20be%20taken%20in%20digital%20form%20on%20site), [Ministry of the Interior](https://intermin.fi/en/projects/reform-of-the-citizenship-act/faq))
+- The test is in Finnish or Swedish only. There is no English version. ([Migri](https://migri.fi/en/amendments-to-the-citizenship-act-2027#:~:text=the%20questions%20can%20be%20answered%20in%20Finnish%20or%20Swedish))
+- There are 6 to 10 test sessions a year, on national test days. ([Migri](https://migri.fi/en/-/up-to-date-information-on-amendments-to-citizenship-act-learning-material-for-citizenship-test-to-be-published-at-turn-of-the-year#:~:text=We%20will%20organise%206%20to%2010%20test%20sessions%20per%20year))
+- In 2027, the test is held in the Helsinki capital region, Tampere, Turku, Oulu, Kuopio, Vaasa and Rovaniemi. ([Migri](https://migri.fi/en/-/up-to-date-information-on-amendments-to-citizenship-act-learning-material-for-citizenship-test-to-be-published-at-turn-of-the-year#:~:text=in%20Tampere%2C%20Turku%2C%20Oulu%2C%20Kuopio%2C%20Vaasa%20and%20Rovaniemi))
+- There is a fee. The amount hasn't been published yet. ([Migri](https://migri.fi/en/-/up-to-date-information-on-amendments-to-citizenship-act-learning-material-for-citizenship-test-to-be-published-at-turn-of-the-year#:~:text=The%20test%20is%20subject%20to%20a%20fee))
+- Your result doesn't expire. If you pass in 2027 and apply in 2030, the pass still counts. ([Migri](https://migri.fi/en/-/up-to-date-information-on-amendments-to-citizenship-act-learning-material-for-citizenship-test-to-be-published-at-turn-of-the-year#:~:text=The%20test%20result%20does%20not%20expire))
+- It does not replace the language requirement. You still need YKI or another accepted proof of Finnish or Swedish. ([Ministry of the Interior](https://intermin.fi/en/projects/reform-of-the-citizenship-act/faq#:~:text=Language%20skills%20will%2C%20however%2C%20remain%20a%20separate%20requirement%20for%20acquiring%20citizenship))
+
+## When does it start?
+
+The amended Citizenship Act takes effect on **1 January 2027**. January and February 2027 are a transition period. ([Migri](https://migri.fi/en/amendments-to-the-citizenship-act-2027#:~:text=that%20will%20enter%20into%20force%20on%201%20January%202027), [Migri](https://migri.fi/en/amendments-to-the-citizenship-act-2027#:~:text=transitional%20period%20from%201%20January%20to%2028%20February%202027)) Applications submitted between 1 January and 28 February 2027 don't need the test.
+
+From **1 March 2027**, it's required. Migri expects the **first test in March 2027**. ([Migri](https://migri.fi/en/amendments-to-the-citizenship-act-2027#:~:text=The%20first%20test%20is%20expected%20to%20take%20place%20in%20March%202027))
+
+"Submitted" has a specific meaning here. If you apply online, it's the day you submit in Enter Finland. If you apply on paper, it's the day you visit a Migri service point. ([Migri](https://migri.fi/en/-/up-to-date-information-on-amendments-to-citizenship-act-learning-material-for-citizenship-test-to-be-published-at-turn-of-the-year)) If you're close to the deadline, I wrote a separate article on [applying before 1 March 2027](/blog/apply-for-finnish-citizenship-before-march-2027).
+
+## Who has to take it?
+
+Anyone aged **18 to 64** who applies for Finnish citizenship with a **citizenship application** (*kansalaisuushakemus*). ([Migri](https://migri.fi/en/amendments-to-the-citizenship-act-2027#:~:text=persons%20between%20the%20ages%20of%2018%20and%2064), [Migri FAQ](https://migri.fi/en/faq-finnish-citizenship#:~:text=those%20who%20can%20apply%20by%20declaration%20are%20not%20affected))
+
+You don't need the test if:
+
+- you're 65 or older ([Migri FAQ](https://migri.fi/en/faq-finnish-citizenship#:~:text=reached%20the%20age%20of%2065%2C%20the%20requirement%20does%20not%20apply))
+- you get citizenship through a **citizenship declaration** (*kansalaisuusilmoitus*), for example as a Nordic citizen or a young adult who grew up in Finland ([Migri FAQ](https://migri.fi/en/faq-finnish-citizenship#:~:text=those%20who%20can%20apply%20by%20declaration%20are%20not%20affected))
+- you've completed a **matriculation examination** in Finnish or Swedish ([Migri](https://migri.fi/en/amendments-to-the-citizenship-act-2027#:~:text=by%20completing%20a%20Finnish%2Dlanguage%20or%20Swedish%2Dlanguage%20matriculation%20examination%20in%20Finland))
+- you've completed a **Finnish- or Swedish-language higher education degree** in Finland ([Migri](https://migri.fi/en/amendments-to-the-citizenship-act-2027#:~:text=by%20completing%20a%20Finnish%2Dlanguage%20or%20Swedish%2Dlanguage%20higher%20education%20degree%20in%20Finland))
+- you have a long-term health reason, disability or other very serious reason that prevents you from taking it ([Migri](https://migri.fi/en/amendments-to-the-citizenship-act-2027#:~:text=due%20to%20state%20of%20health%2C%20disability%20or%20other%20very%20serious%20reason))
+
+Each of these has details that matter, so I put them in their own article: [who is exempt from the Finnish citizenship test](/blog/who-is-exempt-from-finnish-citizenship-test).
+
+## Test days and locations
+
+Migri says there will be **6 to 10 test sessions per year**, held on national test days. ([Migri](https://migri.fi/en/-/up-to-date-information-on-amendments-to-citizenship-act-learning-material-for-citizenship-test-to-be-published-at-turn-of-the-year#:~:text=We%20will%20organise%206%20to%2010%20test%20sessions%20per%20year)) Everyone taking the test that day sits it at the same time across the country.
+
+In 2027, the test locations are: ([Migri](https://migri.fi/en/-/up-to-date-information-on-amendments-to-citizenship-act-learning-material-for-citizenship-test-to-be-published-at-turn-of-the-year#:~:text=in%20Tampere%2C%20Turku%2C%20Oulu%2C%20Kuopio%2C%20Vaasa%20and%20Rovaniemi))
+
+- Helsinki capital region
+- Tampere
+- Turku
+- Oulu
+- Kuopio
+- Vaasa
+- Rovaniemi
+
+If you live in Joensuu, Lahti, Jyväskylä or somewhere smaller, plan for a trip. And with 6 to 10 sessions a year, you might wait a month or two for the next date, so don't leave it until the week before you planned to apply.
+
+The exact dates and the registration period weren't public when I wrote this. Migri said it would publish them around the turn of the year 2026/2027. You can't register yet. ([Migri](https://migri.fi/en/-/up-to-date-information-on-amendments-to-citizenship-act-learning-material-for-citizenship-test-to-be-published-at-turn-of-the-year#:~:text=We%20will%20publish%20the%20test%20dates%20and%20registration%20times), [Migri FAQ](https://migri.fi/en/faq-finnish-citizenship#:~:text=you%20cannot%20register%20for%20the%20test%20yet))
+
+## How much does it cost?
+
+There is a fee. Migri has confirmed that much. The amount hasn't been announced. ([Migri](https://migri.fi/en/-/up-to-date-information-on-amendments-to-citizenship-act-learning-material-for-citizenship-test-to-be-published-at-turn-of-the-year#:~:text=The%20test%20is%20subject%20to%20a%20fee))
+
+For context, the citizenship application itself costs **€550 online and €650 on paper** ([Migri's 2026 fees](https://migri.fi/en/processing-fees-and-payment-methods#:~:text=Fees%20of%20the%20Finnish%20Immigration%20Service%20%28EUR%29%20in%202026)), and a YKI test costs extra on top. Budget for all three if you're starting from scratch.
+
+## What does the test look like?
+
+What's confirmed:
+
+- Digital, on site. You take it on a computer at a test venue, supervised. You can't take it from home. ([Migri](https://migri.fi/en/amendments-to-the-citizenship-act-2027#:~:text=The%20test%20will%20be%20taken%20in%20digital%20form%20on%20site))
+- Multiple choice. ([Migri](https://migri.fi/en/amendments-to-the-citizenship-act-2027#:~:text=will%20comprise%20multiple%2Dchoice%20questions))
+- In Finnish or Swedish. You pick one. ([Migri](https://migri.fi/en/amendments-to-the-citizenship-act-2027#:~:text=the%20questions%20can%20be%20answered%20in%20Finnish%20or%20Swedish))
+- Pass mark: Migri only says that "most of the answers" must be correct. The exact number of points hasn't been published. ([Migri](https://migri.fi/en/amendments-to-the-citizenship-act-2027#:~:text=Most%20of%20the%20answers%20must%20be%20correct))
+
+What isn't known yet:
+
+- how many questions there are
+- how long you get
+- the exact pass mark
+- whether, how soon and how often you can retake it
+- the fee
+
+## What's on the test?
+
+The questions cover: ([Migri](https://migri.fi/en/amendments-to-the-citizenship-act-2027#:~:text=covering%20topics%20such%20as%20key%20legislation%20governing%20life%20in%20Finnish%20society))
+
+- key laws that govern life in Finnish society
+- fundamental rights and human rights
+- equality, including gender equality
+- Finnish history and culture
+
+The questions are based on **public learning material** prepared for the test. The **University of Helsinki** is writing both the material and the questions. ([Migri](https://migri.fi/en/-/up-to-date-information-on-amendments-to-citizenship-act-learning-material-for-citizenship-test-to-be-published-at-turn-of-the-year#:~:text=the%20University%20of%20Helsinki%2C%20will%20prepare%20the%20learning%20material%20and%20questions)) Migri runs the test itself. The material builds on the civic orientation material that already exists for integration. ([Finnish Government](https://valtioneuvosto.fi/en/-/1410869/citizenship-test-to-be-introduced-in-early-2027))
+
+Migri said it would publish the material on its website **around the turn of the year 2026/2027**, well before the first test. ([Migri](https://migri.fi/en/-/up-to-date-information-on-amendments-to-citizenship-act-learning-material-for-citizenship-test-to-be-published-at-turn-of-the-year#:~:text=Finnish%20Immigration%20Service%20at%20the%20turn%20of%20the%20year), [Migri](https://migri.fi/en/amendments-to-the-citizenship-act-2027#:~:text=We%20will%20publish%20the%20material%20on%20our%20website%20well%20in%20advance)) Once it's out, that material is the thing to study. Nothing else is guaranteed to match the questions.
+
+While you wait, start on the words. Most of the material will use the same legal and civic vocabulary, and I've collected it in [Finnish citizenship test vocabulary](/blog/finnish-citizenship-test-vocabulary).
+
+## Special arrangements
+
+You can ask for special arrangements in advance, for example because of an illness, a disability, or reading and writing difficulties. Migri's examples are: ([Migri](https://migri.fi/en/amendments-to-the-citizenship-act-2027#:~:text=Special%20arrangements%20may%20include%20additional%20time%20to%20complete%20the%20test))
+
+- extra time
+- an oral test instead of the on-screen one
+- using your own assistive device
+
+People who can't read or write can take the test orally. ([Migri](https://migri.fi/en/-/up-to-date-information-on-amendments-to-citizenship-act-learning-material-for-citizenship-test-to-be-published-at-turn-of-the-year#:~:text=you%20can%20take%20the%20citizenship%20test%20as%20an%20oral%20test))
+
+## How it fits with the rest of the application
+
+The test is one more box on top of the existing requirements. You still need:
+
+- enough years of residence in Finland ([Migri](https://migri.fi/en/period-of-residence#:~:text=you%20have%20been%20living%20in%20Finland%20for%20the%20past%208%20years))
+- a Finnish or Swedish language certificate (usually [YKI level 3](/blog/finnish-language-requirements-for-citizenship)) ([Migri](https://migri.fi/en/national-certificate-of-language-proficiency-yki-#:~:text=at%20least%20satisfactory%20skills%20in%20the%20Finnish%20or%20Swedish%20language))
+- to have supported yourself, without long stretches on unemployment benefit or social assistance ([Migri FAQ](https://migri.fi/en/faq-finnish-citizenship#:~:text=for%20longer%20than%203%20months%20in%20total%20during%20the%20past%202%20years))
+- a clean enough criminal record ([Ministry of the Interior](https://intermin.fi/en/projects/reform-of-the-citizenship-act/faq#:~:text=Waiting%20periods%20imposed%20because%20of%20offences%20were%20generally%20extended%20by%20one%20year))
+- an established identity ([Ministry of the Interior](https://intermin.fi/en/projects/reform-of-the-citizenship-act/faq#:~:text=does%20not%20actively%20help%20the%20authorities%20to%20establish%20their%20identity))
+
+I go through the whole thing in order in [how to get Finnish citizenship in 2027, step by step](/blog/how-to-get-finnish-citizenship-2027).
+
+## What I'll add when Migri publishes more
+
+This page will change. These are the gaps I'm waiting on:
+
+- the fee amount
+- the 2027 test dates and how to register
+- the number of questions, time limit and pass mark
+- the retake rules
+- a link to the learning material
+
+Official sources: [Migri: Amendments to the Citizenship Act 2027](https://migri.fi/en/amendments-to-the-citizenship-act-2027), [Migri customer bulletin on the learning material](https://migri.fi/en/-/up-to-date-information-on-amendments-to-citizenship-act-learning-material-for-citizenship-test-to-be-published-at-turn-of-the-year), [Ministry of the Interior FAQ](https://intermin.fi/en/projects/reform-of-the-citizenship-act/faq).`,
+  },
+  {
     slug: "apply-for-finnish-citizenship-before-march-2027",
     readNext: [
       "/blog/finnish-citizenship-test",
