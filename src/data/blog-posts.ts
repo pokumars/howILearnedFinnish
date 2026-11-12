@@ -14,6 +14,111 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "how-to-get-finnish-citizenship-2027",
+    readNext: [
+      "/blog/finnish-citizenship-test",
+      "/blog/finnish-language-requirements-for-citizenship",
+      "/blog/apply-for-finnish-citizenship-before-march-2027",
+    ],
+    title:
+      "How to Get Finnish Citizenship in 2027: Requirements and Timeline, Step by Step",
+    author: 'Oheneba "Ohe" Poku-Marboah',
+    authorUrl: "https://x.com/pokumars",
+    publishDate: "2026-11-10",
+    metaDescription:
+      "Every requirement for Finnish citizenship in 2027 in the order to tackle them: residence, YKI, the new citizenship test, income, criminal record and the application.",
+    excerpt:
+      "Finnish citizenship in 2027 means residence, a language certificate, the new citizenship test, an income check and a long wait. Here's the order I'd do them in, and how long each step really takes.",
+    content: `*Last updated: 10 November 2026.*
+
+*Every fact below links to its source. In Chrome, Edge and Safari, the link also highlights the exact sentence on the page.*
+
+Getting Finnish citizenship has more steps than it used to. The residence rules changed in October 2024 ([Migri FAQ](https://migri.fi/en/faq-finnish-citizenship#:~:text=was%20extended%20from%205%20years%20to%208%20years)), the income rule tightened in December 2025 ([Migri FAQ](https://migri.fi/en/faq-finnish-citizenship#:~:text=The%20Citizenship%20Act%20was%20amended%20on%2017%20December%202025)), and from **1 March 2027** there's a [citizenship test](/blog/finnish-citizenship-test) as well.
+
+Here's the whole thing, in the order I'd do it. This is for the usual route: an adult (18 to 64) applying with a citizenship application. If you're a Nordic citizen or grew up in Finland, check the citizenship declaration route first, because it's simpler.
+
+## Step 1: Count your years of residence
+
+The required period depends on your situation:
+
+- 5 years if you have the required Finnish or Swedish language certificate ([Migri](https://migri.fi/en/period-of-residence#:~:text=you%20need%20to%20have%20lived%20in%20Finland%20for%20the%20past%205%20years))
+- 5 years if your spouse is a Finnish citizen (and you've lived together for at least 3 years) ([Migri](https://migri.fi/en/period-of-residence#:~:text=your%20spouse%20is%20a%20Finnish%20citizen%2C%20you%20need%20to%20have%20lived))
+- 5 years if you're stateless ([Migri](https://migri.fi/en/period-of-residence#:~:text=If%20you%20are%20stateless%20%28you%20do%20not%20have%20a%20citizenship%29))
+- 8 years if you don't have a language certificate because Migri has granted you an exception to the language requirement ([Migri](https://migri.fi/en/period-of-residence#:~:text=you%20have%20been%20living%20in%20Finland%20for%20the%20past%208%20years))
+- 2 years for Nordic citizens ([Migri](https://migri.fi/en/period-of-residence#:~:text=If%20you%20are%20a%20citizen%20of%20Denmark%2C%20Iceland%2C%20Norway%20or%20Sweden))
+
+Almost everyone needs a language certificate to get citizenship, so 5 years is the normal rule. The 8-year rule only applies to the rare people who get citizenship without one. Migri can make an exception to the language requirement, for example for a permanent health condition, or for someone who arrived in Finland as an adult and couldn't read or write, but it says these exceptions are made very rarely ([Migri](https://migri.fi/en/exceptions-to-the-language-skills-requirement#:~:text=Exceptions%20to%20the%20language%20skills%20requirement%20are%20made%20very%20rarely.)).
+
+How the years are counted:
+
+- With a continuous (A) permit, counting starts when you moved to Finland or when the A permit was granted, whichever is later. ([Migri](https://migri.fi/en/period-of-residence))
+- Time on a temporary (B) permit before you got an A permit counts at half value. ([Migri](https://migri.fi/en/period-of-residence#:~:text=half%20of%20the%20time%20you%20have%20lived%20in%20Finland))
+- You can have up to **365 days abroad** in total, with no more than **90** in the year before you apply. ([Migri](https://migri.fi/en/period-of-residence#:~:text=may%20include%20a%20total%20of%20365%20days%20spent%20abroad), [Migri](https://migri.fi/en/period-of-residence#:~:text=Up%20to%2090%20of%20these%20days%20may%20be%20from%20a%20one%2Dyear%20period))
+- Residence is counted up to the day you submit your citizenship application ([Migri](https://migri.fi/en/period-of-residence#:~:text=to%20the%20day%20when%20you%20submit%20your%20online%20application%20through%20Enter%20Finland)).
+
+Migri's [period of residence page](https://migri.fi/en/period-of-residence) has the details for your permit type. Read it, because this is where many applications fail.
+
+## Step 2: Get your language certificate
+
+You need at least satisfactory skills in Finnish or Swedish, and you need the certificate **before** you apply. ([Migri](https://migri.fi/en/national-certificate-of-language-proficiency-yki-#:~:text=at%20least%20satisfactory%20skills%20in%20the%20Finnish%20or%20Swedish%20language), [Migri](https://migri.fi/en/language-skills#:~:text=before%20you%20submit%20a%20citizenship%20application)) The most common proof is YKI level 3 in one of these combinations: ([Migri](https://migri.fi/en/national-certificate-of-language-proficiency-yki-#:~:text=The%20following%20combinations%20of%20subtests%20are%20accepted))
+
+- speaking + writing
+- listening + writing
+- reading + speaking
+
+There are other accepted proofs too, like Finnish-language schooling, a vocational qualification or a degree. I covered those in [Finnish language requirements for citizenship](/blog/finnish-language-requirements-for-citizenship) and [is YKI the easiest path?](/blog/is-yki-easiest-path-finnish-citizenship).
+
+**Timing:** YKI test dates are set months ahead, registration fills up, and results take weeks. Give yourself at least 6 months from starting to prepare to having a certificate in hand.
+
+## Step 3: Pass the citizenship test (or have an alternative)
+
+From 1 March 2027, you need to show knowledge of Finnish society before you apply. You can do it by:
+
+- passing the citizenship test, **or**
+- having completed a matriculation examination in Finnish or Swedish, **or** ([Migri](https://migri.fi/en/amendments-to-the-citizenship-act-2027#:~:text=by%20completing%20a%20Finnish%2Dlanguage%20or%20Swedish%2Dlanguage%20matriculation%20examination%20in%20Finland))
+- having completed a Finnish- or Swedish-language higher education degree in Finland ([Migri](https://migri.fi/en/amendments-to-the-citizenship-act-2027#:~:text=by%20completing%20a%20Finnish%2Dlanguage%20or%20Swedish%2Dlanguage%20higher%20education%20degree%20in%20Finland))
+
+The test is multiple choice, on a computer, in Finnish or Swedish ([Migri](https://migri.fi/en/amendments-to-the-citizenship-act-2027#:~:text=The%20test%20will%20be%20taken%20in%20digital%20form%20on%20site)). It's held 6 to 10 times a year ([Migri](https://migri.fi/en/-/up-to-date-information-on-amendments-to-citizenship-act-learning-material-for-citizenship-test-to-be-published-at-turn-of-the-year#:~:text=We%20will%20organise%206%20to%2010%20test%20sessions%20per%20year)), and the result doesn't expire ([Migri](https://migri.fi/en/-/up-to-date-information-on-amendments-to-citizenship-act-learning-material-for-citizenship-test-to-be-published-at-turn-of-the-year#:~:text=The%20test%20result%20does%20not%20expire)). All the logistics are in [the citizenship test guide](/blog/finnish-citizenship-test), and the exemptions are in [who is exempt from the Finnish citizenship test](/blog/who-is-exempt-from-finnish-citizenship-test).
+
+**Why I'd do this after YKI, not before:** the test is in Finnish. Studying for YKI builds the reading you'll need for the citizenship test material. If you do it the other way round, you're doing the hard language work twice. (More on this in [the citizenship test is also a reading test](/blog/finnish-citizenship-test-reading-test).)
+
+## Step 4: Check your income history
+
+For applications submitted from **17 December 2025**, you can't have received unemployment benefit or social assistance for more than **3 months in total during the past 2 years**. ([Migri FAQ](https://migri.fi/en/faq-finnish-citizenship#:~:text=for%20longer%20than%203%20months%20in%20total%20during%20the%20past%202%20years)) There's no euro income threshold. ([Migri FAQ](https://migri.fi/en/faq-finnish-citizenship#:~:text=There%20are%20no%20specific%20income%20thresholds%20for%20acquiring%20Finnish%20citizenship)) The question is whether you've supported yourself.
+
+If you've had a stretch on benefits, work out when the 2-year window clears before you pay the fee.
+
+## Step 5: Check your record and identity
+
+- **Criminal record:** offences trigger waiting periods, generally from 1 to 8 years depending on the sentence. The October 2024 reform extended most of them by a year. ([Ministry of the Interior](https://intermin.fi/en/projects/reform-of-the-citizenship-act/faq#:~:text=Waiting%20periods%20imposed%20because%20of%20offences%20were%20generally%20extended%20by%20one%20year)) A very serious offence rules out citizenship altogether. ([Ministry of the Interior](https://intermin.fi/en/projects/reform-of-the-citizenship-act/faq#:~:text=a%20person%20guilty%20of%20a%20very%20serious%20offence%20cannot%20acquire%20Finnish%20citizenship))
+- **Identity:** you have to be able to establish your identity, and you're expected to actively help with that. ([Ministry of the Interior](https://intermin.fi/en/projects/reform-of-the-citizenship-act/faq#:~:text=does%20not%20actively%20help%20the%20authorities%20to%20establish%20their%20identity))
+
+## Step 6: Apply
+
+- **Online in Enter Finland: €550.** On paper: €650 (2026 fees). ([Migri](https://migri.fi/en/processing-fees-and-payment-methods#:~:text=Fees%20of%20the%20Finnish%20Immigration%20Service%20%28EUR%29%20in%202026))
+- You pay when you submit.
+- Attach your language certificate, your citizenship test result or alternative, and the other documents the form asks for.
+
+## Step 7: Wait
+
+This is the step nobody enjoys. [Migri's processing times page](https://migri.fi/en/processing-times#:~:text=Citizenship%20application%20for%20an%20adult) says most adult citizenship applications are decided within 35 months, and a smaller share within 17 months. Migri has a backlog of about 17,300 citizenship applications ([Migri](https://migri.fi/en/processing-of-citizenship-applications#:~:text=citizenship%20applications%20are%20waiting%20for%20processing)), and it doesn't process them in the order they arrive ([Migri FAQ](https://migri.fi/en/faq-finnish-citizenship#:~:text=All%20applications%20are%20not%20processed%20in%20the%20order%20in%20which%20they%20arrive)). Migri updates these figures regularly, so check the page for the current numbers. Keep living in Finland and keep your permit valid while you wait.
+
+## A realistic timeline
+
+If you've just reached your residence years and you're starting from zero on the language:
+
+1. Months 0 to 6: prepare for and pass YKI.
+2. Months 6 to 9: study the citizenship test material and pass the test.
+3. Month 9: apply.
+4. Then wait for a decision. Migri says most adult applications are decided within 35 months.
+
+If you already have YKI, you can do it in a few months, depending on when the next test day is.
+
+*This is general information based on Migri's published guidance as of November 2026, not legal advice.*
+
+Sources: [Migri: Period of residence](https://migri.fi/en/period-of-residence), [Migri: YKI for citizenship](https://migri.fi/en/national-certificate-of-language-proficiency-yki-), [Migri: Amendments to the Citizenship Act 2027](https://migri.fi/en/amendments-to-the-citizenship-act-2027), [Migri FAQ on Finnish citizenship](https://migri.fi/en/faq-finnish-citizenship), [Ministry of the Interior FAQ](https://intermin.fi/en/projects/reform-of-the-citizenship-act/faq).`,
+  },
+  {
     slug: "how-to-study-for-finnish-citizenship-test",
     readNext: [
       "/blog/finnish-citizenship-test-vocabulary",
