@@ -14,6 +14,89 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "apply-for-finnish-citizenship-before-march-2027",
+    readNext: [
+      "/blog/finnish-citizenship-test",
+      "/blog/how-to-get-finnish-citizenship-2027",
+      "/blog/is-yki-easiest-path-finnish-citizenship",
+    ],
+    title:
+      "Applied for Finnish Citizenship Before 1 March 2027? When You Need the Citizenship Test",
+    author: 'Oheneba "Ohe" Poku-Marboah',
+    authorUrl: "https://x.com/pokumars",
+    publishDate: "2026-11-12",
+    metaDescription:
+      "Finnish citizenship applications submitted before 1 March 2027 don't need the new citizenship test. What counts as submitted, who should hurry, and who shouldn't.",
+    excerpt:
+      "If you submit your Finnish citizenship application before 1 March 2027, you don't need the new citizenship test. But a rushed application can cost you more than it saves. Here's how the cutoff works and how to decide.",
+    content: `*Last updated: 12 November 2026.*
+
+Finland's new [citizenship test](/blog/finnish-citizenship-test) only applies to applications **submitted on or after 1 March 2027**. Anything submitted before that date is handled without it. ([Migri](https://migri.fi/en/amendments-to-the-citizenship-act-2027#:~:text=will%20apply%20to%20applications%20submitted%20on%20or%20after%201%20March%202027))
+
+*Every fact below links to its source. In Chrome, Edge and Safari, the link also highlights the exact sentence on the page.*
+
+So if you're already close to eligible, there's a real question: should you apply now and skip the test?
+
+## Where the cutoff falls
+
+- Until 31 December 2026: current rules, no test.
+- 1 January to 28 February 2027: the amended law is in force, but this is a transition period. No test. ([Migri](https://migri.fi/en/amendments-to-the-citizenship-act-2027#:~:text=transitional%20period%20from%201%20January%20to%2028%20February%202027))
+- From 1 March 2027: applicants aged 18 to 64 must pass the test (or have an accepted alternative) before they submit. ([Migri](https://migri.fi/en/-/up-to-date-information-on-amendments-to-citizenship-act-learning-material-for-citizenship-test-to-be-published-at-turn-of-the-year#:~:text=You%20must%20pass%20the%20test%20before%20you%20submit%20a%20citizenship%20application))
+
+What matters is the date you **submit your citizenship application**, not the date you start filling it in or the date you get a decision:
+
+- if you apply online, it's the day you submit your citizenship application in **Enter Finland**
+- if you apply on paper, it's the day you **visit a Migri service point** to hand in your citizenship application ([Migri](https://migri.fi/en/-/up-to-date-information-on-amendments-to-citizenship-act-learning-material-for-citizenship-test-to-be-published-at-turn-of-the-year))
+
+Since booking a service point appointment can take time, if you have a deadline on how quickly you want to do things, you should probably apply online. You can avoid situations where you only get appointment times later than you anticipated.
+
+## You still need everything else on your citizenship application submission day
+
+If you apply before 1 March 2027, you don't need the citizenship test. But the other requirements for citizenship haven't gone away. You must already meet all of them on the day you submit your citizenship application:
+
+- **Residence:** how many years you must have lived in Finland depends on whether you have a language certificate.
+  - **With a language certificate: 5 years.** This is the rule for most people, because almost every applicant needs the certificate anyway ([Migri](https://migri.fi/en/period-of-residence#:~:text=you%20need%20to%20have%20lived%20in%20Finland%20for%20the%20past%205%20years)).
+  - **Without a language certificate: 8 years.** This only applies if Migri has made an exception to the language requirement for you, for example because of a permanent health condition. Migri says these exceptions are very rare ([Migri](https://migri.fi/en/period-of-residence#:~:text=you%20have%20been%20living%20in%20Finland%20for%20the%20past%208%20years), [Migri](https://migri.fi/en/exceptions-to-the-language-skills-requirement#:~:text=Exceptions%20to%20the%20language%20skills%20requirement%20are%20made%20very%20rarely.)).
+  - You must already have those years behind you on the day you submit your citizenship application. Migri counts your residence up to the day you submit your citizenship application online in Enter Finland, or the day you hand it in at a service point ([Migri](https://migri.fi/en/period-of-residence#:~:text=to%20the%20day%20when%20you%20submit%20your%20online%20application%20through%20Enter%20Finland), [Migri](https://migri.fi/en/period-of-residence#:~:text=you%20must%20also%20meet%20the%20other%20requirements%20for%20Finnish%20citizenship%20when%20you%20submit%20the%20application)).
+  - During those years, you can have spent up to 365 days abroad in total, but no more than 90 of them in the year before you apply ([Migri](https://migri.fi/en/period-of-residence#:~:text=may%20include%20a%20total%20of%20365%20days%20spent%20abroad), [Migri](https://migri.fi/en/period-of-residence#:~:text=Up%20to%2090%20of%20these%20days%20may%20be%20from%20a%20one%2Dyear%20period)).
+- **Language certificate in hand:** YKI level 3 in an [accepted combination](/blog/finnish-language-requirements-for-citizenship), or another accepted proof. Migri won't accept "I'm taking YKI next month." ([Migri](https://migri.fi/en/language-skills#:~:text=before%20you%20submit%20a%20citizenship%20application))
+- **Income:** for applications from 17 December 2025, you can't have received unemployment benefit or social assistance for more than 3 months in total in the past 2 years. ([Migri FAQ](https://migri.fi/en/faq-finnish-citizenship#:~:text=for%20longer%20than%203%20months%20in%20total%20during%20the%20past%202%20years))
+- **Clean record** and an **established identity**. ([Ministry of the Interior](https://intermin.fi/en/projects/reform-of-the-citizenship-act/faq#:~:text=Waiting%20periods%20imposed%20because%20of%20offences%20were%20generally%20extended%20by%20one%20year), [Ministry of the Interior](https://intermin.fi/en/projects/reform-of-the-citizenship-act/faq#:~:text=does%20not%20actively%20help%20the%20authorities%20to%20establish%20their%20identity))
+- **The fee:** €550 online, €650 on paper (2026 prices). ([Migri](https://migri.fi/en/processing-fees-and-payment-methods#:~:text=Fees%20of%20the%20Finnish%20Immigration%20Service%20%28EUR%29%20in%202026))
+
+If one of these is missing, an application submitted in February 2027 isn't a shortcut. You'll get a refusal after a long wait, and by then your next application falls under the new rules.
+
+## Who should apply before March 2027
+
+It makes sense to apply now if **all** of these are true:
+
+- you'll have lived in Finland long enough (5 years for most people) by the day you submit, and you can submit by 28 February 2027
+- you already have your YKI certificate (or other language proof)
+- your income history fits the 3-months-in-2-years rule
+- you have nothing on your record that triggers a waiting period
+
+Processing currently takes a long time. [Migri's processing times page](https://migri.fi/en/processing-times#:~:text=Citizenship%20application%20for%20an%20adult) says most adult citizenship applications are decided within 35 months, and a smaller share within 17 months. Migri also has a backlog of about 17,300 citizenship applications waiting for processing ([Migri](https://migri.fi/en/processing-of-citizenship-applications#:~:text=citizenship%20applications%20are%20waiting%20for%20processing)), and it doesn't process applications in the order they arrive ([Migri FAQ](https://migri.fi/en/faq-finnish-citizenship#:~:text=All%20applications%20are%20not%20processed%20in%20the%20order%20in%20which%20they%20arrive)). That's another reason not to wait if you're ready: the clock starts when you submit.
+
+## Who shouldn't rush
+
+- **You don't have your language certificate yet.** The next YKI dates and results might not arrive in time. Don't apply without it.
+- **You're a few weeks short on residence.** You need the full number of years on the day you submit. Migri says it's very important not to apply before you meet all the requirements ([Migri](https://migri.fi/en/processing-of-citizenship-applications#:~:text=do%20not%20submit%20your%20application%20before%20you%20meet%20all%20the%20requirements)).
+- **You've been on unemployment benefit recently.** Check the income rule carefully before paying €550.
+- **You'll take the test easily anyway.** If your Finnish is great and you're familiar with the concepts of Finnish society, then the only thing you risk is the fee and the morning you sacrifice for the exam. That might be annoying, but it's not worth a rushed application. 
+
+## What if my application was submitted before March 2027 and I get a refusal?
+
+Your next application is a new application. If you submit it on or after 1 March 2027 and you're between 18 and 64, you'll need the test or one of the [exemptions](/blog/who-is-exempt-from-finnish-citizenship-test). The test result doesn't expire, so you could take it while you wait for your first decision. ([Migri](https://migri.fi/en/-/up-to-date-information-on-amendments-to-citizenship-act-learning-material-for-citizenship-test-to-be-published-at-turn-of-the-year#:~:text=The%20test%20result%20does%20not%20expire)) Then a refusal wouldn't set you back as far.
+
+## If you're reading this after March 2027
+
+The window has closed. You need the test unless you're 65 or older, apply by declaration, or have a Finnish- or Swedish-language matriculation exam or higher education degree from Finland. Start with [the test logistics](/blog/finnish-citizenship-test), then [how to study for it](/blog/how-to-study-for-finnish-citizenship-test).
+
+*This is general information based on Migri's published guidance, not legal advice. If your situation is unusual, ask Migri or an immigration lawyer.*
+
+Sources: [Migri: Amendments to the Citizenship Act 2027](https://migri.fi/en/amendments-to-the-citizenship-act-2027), [Migri: Period of residence](https://migri.fi/en/period-of-residence), [Migri: Processing fees](https://migri.fi/en/processing-fees-and-payment-methods), [Migri FAQ on Finnish citizenship](https://migri.fi/en/faq-finnish-citizenship).`,
+  },
+  {
     slug: "finnish-citizenship-test-reading-test",
     readNext: [
       "/blog/finnish-citizenship-test-vocabulary",
