@@ -14,6 +14,92 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "who-is-exempt-from-finnish-citizenship-test",
+    readNext: [
+      "/blog/finnish-citizenship-test",
+      "/blog/is-yki-easiest-path-finnish-citizenship",
+      "/episode/5",
+    ],
+    title:
+      "Who Is Exempt From the Finnish Citizenship Test? Age, Degrees, Matriculation Exam and Health Reasons",
+    author: 'Oheneba "Ohe" Poku-Marboah',
+    authorUrl: "https://x.com/pokumars",
+    publishDate: "2026-11-09",
+    metaDescription:
+      "Who doesn't need Finland's citizenship test: people 65+, declaration applicants, Finnish matriculation exam or degree holders, health exemptions and pre-March 2027 applicants.",
+    excerpt:
+      "Not everyone applying for Finnish citizenship has to take the new citizenship test. Age, how you apply, a Finnish-language degree or matriculation exam, and serious health reasons can all exempt you. Here's who qualifies.",
+    content: `*Last updated: 9 November 2026.*
+
+*Every fact below links to its source. In Chrome, Edge and Safari, the link also highlights the exact sentence on the page.*
+
+From 1 March 2027, most adults applying for Finnish citizenship need to pass the [citizenship test](/blog/finnish-citizenship-test) first. "Most" is doing some work in that sentence. Several groups don't need it.
+
+## 1. People aged 65 or over
+
+The requirement applies to applicants **aged 18 to 64**. If you're 65 or older, you don't need it. ([Migri](https://migri.fi/en/amendments-to-the-citizenship-act-2027#:~:text=persons%20between%20the%20ages%20of%2018%20and%2064), [Migri FAQ](https://migri.fi/en/faq-finnish-citizenship#:~:text=reached%20the%20age%20of%2065%2C%20the%20requirement%20does%20not%20apply))
+
+## 2. Children under 18
+
+The test is for adult applicants. ([Migri](https://migri.fi/en/amendments-to-the-citizenship-act-2027#:~:text=persons%20between%20the%20ages%20of%2018%20and%2064)) Children who get citizenship as part of a parent's application, or through their own application, don't take it.
+
+## 3. People applying by citizenship declaration
+
+The test only applies to people who apply with a **citizenship application** (*kansalaisuushakemus*). A **citizenship declaration** (*kansalaisuusilmoitus*) is a separate, simpler route, and it isn't affected by the reform. ([Migri FAQ](https://migri.fi/en/faq-finnish-citizenship#:~:text=those%20who%20can%20apply%20by%20declaration%20are%20not%20affected)) Declarations are available to, for example:
+
+- Nordic citizens ([Migri](https://migri.fi/en/citizenship-declaration#:~:text=You%20can%20become%20a%20Finnish%20citizen%20by%20declaration%20if%20you%20are))
+- young adults aged 18 to 22 who grew up in Finland ([Migri](https://migri.fi/en/citizenship-declaration#:~:text=a%20young%20person%20between%2018%20and%2022%20years%20of%20age))
+- some children of Finnish citizens and adopted children ([Migri](https://migri.fi/en/citizenship-declaration#:~:text=an%20adopted%20child%20between%2012%20and%2017%20years%20of%20age))
+
+Check Migri's declaration pages to see if you qualify. If you do, it's usually the easier option.
+
+## 4. People with a matriculation examination in Finnish or Swedish
+
+If you've completed the Finnish matriculation examination (*ylioppilastutkinto*) in **Finnish or Swedish**, you already meet the civic knowledge requirement. ([Migri](https://migri.fi/en/amendments-to-the-citizenship-act-2027#:~:text=by%20completing%20a%20Finnish%2Dlanguage%20or%20Swedish%2Dlanguage%20matriculation%20examination%20in%20Finland))
+
+## 5. People with a Finnish- or Swedish-language higher education degree from Finland
+
+If you've completed a degree in Finland **in Finnish or Swedish**, you don't need the test. This covers: ([Migri](https://migri.fi/en/amendments-to-the-citizenship-act-2027#:~:text=by%20completing%20a%20Finnish%2Dlanguage%20or%20Swedish%2Dlanguage%20higher%20education%20degree%20in%20Finland))
+
+- a bachelor's or master's degree from a university
+- a bachelor's or master's degree from a university of applied sciences
+- a licentiate or doctorate ([Migri](https://migri.fi/en/amendments-to-the-citizenship-act-2027#:~:text=a%20licentiate%20or%20doctoral%20degree))
+
+**The language of the degree is what counts.** An English-language degree from a Finnish university doesn't exempt you, even though you studied in Finland.
+
+This is also why I keep saying the education route deserves more attention. A Finnish-language degree can cover both the [language requirement](/blog/is-yki-easiest-path-finnish-citizenship) and the civic knowledge requirement, with no YKI and no citizenship test. [Deborah](/episode/5) went from zero to Finnish-language law school in three years. [Matthias](/episode/11) wrote his bachelor's thesis in Finnish. For people like them, both tests are irrelevant.
+
+## 6. People with a serious health reason or disability
+
+Migri can waive the requirement "due to state of health, disability or other very serious reason". The reason has to prevent you from taking the test **in the long term**, for example a significant, long-lasting medical condition. ([Migri](https://migri.fi/en/amendments-to-the-citizenship-act-2027#:~:text=due%20to%20state%20of%20health%2C%20disability%20or%20other%20very%20serious%20reason)) You'll need documentation.
+
+If the problem is something special arrangements can fix, you'll probably be expected to take the test with arrangements instead. These can include: ([Migri](https://migri.fi/en/amendments-to-the-citizenship-act-2027#:~:text=Special%20arrangements%20may%20include%20additional%20time%20to%20complete%20the%20test))
+
+- extra time
+- an oral test
+- your own assistive device
+
+People who can't read or write can take the test orally. ([Migri](https://migri.fi/en/-/up-to-date-information-on-amendments-to-citizenship-act-learning-material-for-citizenship-test-to-be-published-at-turn-of-the-year#:~:text=you%20can%20take%20the%20citizenship%20test%20as%20an%20oral%20test))
+
+## 7. Anyone who applied before 1 March 2027
+
+Applications submitted before 1 March 2027 are handled without the test. That includes the transition period from 1 January to 28 February 2027. ([Migri](https://migri.fi/en/amendments-to-the-citizenship-act-2027#:~:text=transitional%20period%20from%201%20January%20to%2028%20February%202027)) The details are in [applying before 1 March 2027](/blog/apply-for-finnish-citizenship-before-march-2027).
+
+## Who is *not* exempt
+
+
+- **Having a YKI certificate doesn't exempt you.** YKI only covers the language requirement. You still need the test. ([Migri FAQ](https://migri.fi/en/faq-finnish-citizenship#:~:text=you%20can%20only%20meet%20the%20language%20skills%20requirement))
+- **An English-language degree from Finland doesn't exempt you.**
+- **Having lived in Finland for a long time doesn't exempt you.** Ten years or thirty, if you're 18 to 64 and apply with an application, you need it.
+- **Being married to a Finn doesn't exempt you.** It shortens the residence requirement, not the test.
+
+If none of the exemptions apply to you, start with [how to study for the Finnish citizenship test](/blog/how-to-study-for-finnish-citizenship-test).
+
+*This is general information based on Migri's published guidance, not legal advice.*
+
+Sources: [Migri: Amendments to the Citizenship Act 2027](https://migri.fi/en/amendments-to-the-citizenship-act-2027), [Migri FAQ on Finnish citizenship](https://migri.fi/en/faq-finnish-citizenship), [Migri customer bulletin](https://migri.fi/en/-/up-to-date-information-on-amendments-to-citizenship-act-learning-material-for-citizenship-test-to-be-published-at-turn-of-the-year).`,
+  },
+  {
     slug: "nordic-citizenship-tests-compared",
     readNext: [
       "/blog/finnish-citizenship-test",
