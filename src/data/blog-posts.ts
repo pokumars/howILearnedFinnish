@@ -14,6 +14,78 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "finnish-citizenship-test-reading-test",
+    readNext: [
+      "/blog/finnish-citizenship-test-vocabulary",
+      "/blog/how-to-study-for-finnish-citizenship-test",
+      "/blog/not-fluent-after-yki",
+    ],
+    title:
+      "The Finnish Citizenship Test Is Also a Finnish Reading Test: How Good Does Your Finnish Need to Be?",
+    author: 'Oheneba "Ohe" Poku-Marboah',
+    authorUrl: "https://x.com/pokumars",
+    publishDate: "2026-11-11",
+    metaDescription:
+      "Finland's citizenship test is only in Finnish or Swedish, so it tests your reading as much as your civics. What level of Finnish you need and how to prepare.",
+    excerpt:
+      "The Finnish citizenship test is officially about society, laws and history. But it's only available in Finnish or Swedish, which makes it a reading test as well. Here's what that means if your Finnish is around B1.",
+    content: `Finland's [citizenship test](/blog/finnish-citizenship-test) is officially a test of knowledge of Finnish society: laws, fundamental rights, equality, history and culture.
+
+But it's only offered in **Finnish or Swedish** ([Migri](https://migri.fi/en/amendments-to-the-citizenship-act-2027#:~:text=the%20questions%20can%20be%20answered%20in%20Finnish%20or%20Swedish)). You can't take it in English, Arabic, Russian or anything else (except as an oral test under special arrangements) ([Migri](https://migri.fi/en/amendments-to-the-citizenship-act-2027#:~:text=Special%20arrangements%20may%20include%20additional%20time%20to%20complete%20the%20test)). So whatever else it measures, it also measures whether you can read civic Finnish under time pressure.
+
+I think that's the part most people will underestimate.
+
+## The YKI loophole the test closes
+
+Here's something that surprised me when I looked at it closely. For citizenship, Migri accepts YKI level 3 in one of three combinations: ([Migri](https://migri.fi/en/national-certificate-of-language-proficiency-yki-#:~:text=The%20following%20combinations%20of%20subtests%20are%20accepted))
+
+- speaking + writing
+- listening + writing
+- reading + speaking
+
+Two of those three don't include **reading** at all. You can meet the language requirement for citizenship without ever proving you can read Finnish.
+
+The citizenship test changes that in practice. If you passed YKI with speaking and writing, and your reading is weak, this is where it shows.
+
+## What kind of Finnish will be on it?
+
+The learning material and questions aren't published yet (Migri expects to publish the material around the turn of the year 2026/2027 ([Migri](https://migri.fi/en/-/up-to-date-information-on-amendments-to-citizenship-act-learning-material-for-citizenship-test-to-be-published-at-turn-of-the-year#:~:text=Finnish%20Immigration%20Service%20at%20the%20turn%20of%20the%20year))). But we know the topics, and we know it builds on the existing civic orientation material ([Finnish Government](https://valtioneuvosto.fi/en/-/1410869/citizenship-test-to-be-introduced-in-early-2027)). So I'm fairly confident about what kind of language to expect:
+
+- **Long compound words.** *Perusoikeudet*, *yhdenvertaisuus*, *eduskuntavaalit*, *sananvapaus*. Most of them are two familiar words glued together, but you have to see the seam.
+- **The passive.** Official Finnish loves it. *Eduskuntavaalit järjestetään neljän vuoden välein* (parliamentary elections are held every four years). *Laissa säädetään...* (the law states...). If the passive still trips you up, fix that first.
+- **Nouns made from verbs.** *Äänestäminen* (voting), *syrjiminen* (discriminating), *kotoutuminen* (integration).
+- **Formal vocabulary you don't hear in your day-to-day.** You might speak decent everyday Finnish and never have said *tuomioistuin* (court) out loud.
+- **Multiple-choice traps.** Answer options that look almost the same, where one case ending or one *ei* changes the meaning. Migri hasn't said how many options each question has, or whether some are true-or-false.
+
+The test asks about things like rights and laws, so your everyday Finnish won't carry you on its own.
+
+## So what level do you need?
+
+No official level has been set for the test. The language requirement for citizenship is YKI 3, which is B1 ([Migri](https://migri.fi/en/national-certificate-of-language-proficiency-yki-#:~:text=Grade%203%20on%20the%20intermediate%20level%20corresponds%20to%20the%20level%20B1)), and the test is clearly meant to be passable by people at that level.
+
+My honest take: if your **reading** is around B1, you can pass, but only if you study the actual material in Finnish. Reading it once in English and hoping for the best won't work, because the questions won't be in English.
+
+If your reading is A2 or below, budget real time. Not for the facts, but for the language. The facts are the easy part.
+
+## Why I don't think this is a bad thing
+
+Some people see the language part as an unfair extra hurdle. I understand that, especially for people who work all day in English.
+
+But speaking for myself: the most useful Finnish I learned was the Finnish I needed for something real. When I studied for YKI in 2019, I passed with 4, 4, 4 and 3, and I still [couldn't hold a proper conversation](/blog/not-fluent-after-yki). The test made me good at the test. What made me good at Finnish was using it for things that mattered.
+
+Reading about your own rights in Finnish (what your employer can't do, how to vote in a municipal election, what to do if you're discriminated against) is about as real as it gets. You'll use those words again long after the test.
+
+## How to prepare your reading
+
+1. **Learn the vocabulary first.** I've put together a list of [Finnish citizenship test vocabulary](/blog/finnish-citizenship-test-vocabulary) grouped by topic.
+2. **Read civic Finnish now, before the material is out.** [InfoFinland](https://www.infofinland.fi/fi) has its pages in Finnish and English, so you can read in Finnish and check yourself against the English.
+3. **Practise splitting compound words.** When you see a long word, find the seam before you reach for a dictionary.
+4. **Get comfortable with the passive.** Read news in [Yle Selkouutiset](https://yle.fi/selkouutiset), which uses simpler Finnish but plenty of passives.
+5. **When the material comes out, read it in Finnish first.** Then check anything unclear in a translation, if one exists. More on this in [how to study for the Finnish citizenship test](/blog/how-to-study-for-finnish-citizenship-test).
+
+If you want to hear how other people built their Finnish reading for exams, [Matthias](/episode/11) took medical school entrance exams in Finnish 18 months after he arrived, and [Deborah](/episode/5) got into Finnish-language law school within three years.`,
+  },
+  {
     slug: "finnish-citizenship-test-vocabulary",
     readNext: [
       "/blog/finnish-citizenship-test-reading-test",
