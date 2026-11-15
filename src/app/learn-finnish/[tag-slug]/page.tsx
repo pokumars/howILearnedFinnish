@@ -15,6 +15,7 @@ import {
 import { JsonLd } from "@/components/JsonLd";
 import { BASE_URL } from "@/lib/config";
 import SharePrompt from "@/components/SharePrompt";
+import SupportBar from "@/components/SupportBar";
 
 interface TagHubPageProps {
   params: Promise<{ "tag-slug": string }>;
@@ -99,6 +100,7 @@ export default async function TagHubPage({ params }: TagHubPageProps) {
           <p className="mt-6 text-sm text-gray-400">
             {tagEpisodes.length} episode{tagEpisodes.length !== 1 ? "s" : ""}
           </p>
+          <SupportBar source={`learn-finnish_${tag.slug}_top`} />
         </div>
       </section>
 
@@ -123,6 +125,8 @@ export default async function TagHubPage({ params }: TagHubPageProps) {
               context="situation"
             />
           </div>
+
+          <SupportBar source={`learn-finnish_${tag.slug}_bottom`} />
         </div>
       </section>
 

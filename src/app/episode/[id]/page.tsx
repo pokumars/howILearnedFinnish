@@ -24,6 +24,7 @@ import RelatedEpisodes from "@/components/RelatedEpisodes";
 import VideoEmbed from "@/components/VideoEmbed";
 import SharePrompt from "@/components/SharePrompt";
 import ReportProblemButton from "@/components/feedback/ReportProblemButton";
+import SupportBar from "@/components/SupportBar";
 
 interface EpisodePageProps {
   params: Promise<{
@@ -250,6 +251,8 @@ export default async function EpisodePage({ params }: EpisodePageProps) {
             </div>
           </header>
 
+          <SupportBar source={`episode_${episode.id}_top`} />
+
           {/* Video/Audio Player Section */}
           <div className="mb-8">
             <div className="bg-gray-50 rounded-lg p-6">
@@ -435,6 +438,8 @@ export default async function EpisodePage({ params }: EpisodePageProps) {
               />
             </div>
           </div>
+
+          <SupportBar source={`episode_${episode.id}_mid`} />
 
           {/* Transcript */}
           {transcriptEntries.length > 0 && (

@@ -12,6 +12,7 @@ import { generatePersonSchema, generateBreadcrumbSchema } from "@/lib/schema";
 import { JsonLd } from "@/components/JsonLd";
 import { BASE_URL } from "@/lib/config";
 import SharePrompt from "@/components/SharePrompt";
+import SupportBar from "@/components/SupportBar";
 
 interface GuestPageProps {
   params: Promise<{ slug: string }>;
@@ -113,6 +114,7 @@ export default async function GuestPage({ params }: GuestPageProps) {
             </a>
           )}
 
+          <SupportBar source={`guest_${guest.slug}`} />
         </div>
       </section>
 

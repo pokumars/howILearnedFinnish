@@ -15,6 +15,7 @@ import { JsonLd } from "@/components/JsonLd";
 import { BASE_URL } from "@/lib/config";
 import ReadNext from "@/components/ReadNext";
 import { resolveReadNextList } from "@/lib/read-next";
+import SupportBar from "@/components/SupportBar";
 
 interface CategoryPageProps {
   params: Promise<{ "category-slug": string }>;
@@ -117,6 +118,7 @@ export default async function ResourceCategoryPage({ params }: CategoryPageProps
             {totalMentions} mention{totalMentions !== 1 ? "s" : ""} · {uniqueGuests} guest
             {uniqueGuests !== 1 ? "s" : ""}
           </p>
+          <SupportBar source={`resources_${cat.slug}_top`} />
         </div>
       </section>
 
@@ -176,6 +178,7 @@ export default async function ResourceCategoryPage({ params }: CategoryPageProps
       {/* Other categories */}
       <section className="py-12 bg-white border-t border-gray-100">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <SupportBar source={`resources_${cat.slug}_bottom`} />
           <h2 className="text-xl font-bold text-gray-800 mb-6">Browse other resource types</h2>
           <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
             {otherCategories.map((other) => {
