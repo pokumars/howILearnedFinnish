@@ -7,6 +7,7 @@ import Link from "next/link";
 import { buildMetadata } from "@/lib/metadata";
 import { BASE_URL } from "@/lib/config";
 import { JsonLd } from "@/components/JsonLd";
+import SupportBar from "@/components/SupportBar";
 
 export const metadata: Metadata = buildMetadata({
   title: "Learn Finnish | How I Learned Finnish",
@@ -48,6 +49,7 @@ export default function LearnFinnishPage() {
 
       <section className="py-12">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <SupportBar source="learn-finnish-hub" />
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {tagData.map((tag) => {
               const count = episodes.filter((e) => e.tags.includes(tag.filterTag)).length;

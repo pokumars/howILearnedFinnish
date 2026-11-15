@@ -8,6 +8,7 @@ import { episodes } from "@/constants/episodes";
 import { blogPosts } from "@/data/blog-posts";
 import { tagData } from "@/data/tags";
 import { getArchivePicks } from "@/lib/archive-picks";
+import SupportBar from "@/components/SupportBar";
 
 // Rebuild at most once a day so the archive picks rotate
 export const revalidate = 86400;
@@ -136,6 +137,12 @@ export default function Home() {
               </Link>
             ))}
           </div>
+        </div>
+      </section>
+
+      <section className="py-4 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <SupportBar source="home" />
         </div>
       </section>
 

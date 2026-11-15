@@ -6,6 +6,7 @@ import { buildMetadata } from "@/lib/metadata";
 import { BASE_URL } from "@/lib/config";
 import { blogPosts } from "@/data/blog-posts";
 import { JsonLd } from "@/components/JsonLd";
+import SupportBar from "@/components/SupportBar";
 
 export const metadata: Metadata = buildMetadata({
   title: "Blog & Articles | How I Learned Finnish",
@@ -46,6 +47,12 @@ export default function BlogPage() {
           <p className="mt-4 text-purple-200 text-sm">
             {blogPosts.length} article{blogPosts.length !== 1 ? "s" : ""}
           </p>
+        </div>
+      </section>
+
+      <section className="py-4 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <SupportBar source="blog-hub" />
         </div>
       </section>
 

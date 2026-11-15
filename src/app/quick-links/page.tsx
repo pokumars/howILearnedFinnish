@@ -4,6 +4,7 @@ import { ArrowRight, FileText, BookOpen } from "lucide-react";
 import Image from "next/image";
 import { buildMetadata } from "@/lib/metadata";
 import type { Metadata } from "next";
+import SupportBar from "@/components/SupportBar";
 
 export const metadata: Metadata = buildMetadata({
   title: "Quick Links | How I Learned Finnish",
@@ -209,6 +210,12 @@ export default function QuickLinks() {
               </a>
             ))}
           </div>
+        </div>
+      </section>
+
+      <section className="py-4 bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <SupportBar source="quick-links" />
         </div>
       </section>
       {/* About Ohe Section */}

@@ -7,6 +7,7 @@ import Flag from "@/components/Flag";
 import { buildMetadata } from "@/lib/metadata";
 import { BASE_URL } from "@/lib/config";
 import { JsonLd } from "@/components/JsonLd";
+import SupportBar from "@/components/SupportBar";
 
 export const metadata: Metadata = buildMetadata({
   title: "Guests | How I Learned Finnish",
@@ -54,6 +55,7 @@ export default function GuestsPage() {
           <p className="mt-3 text-sm text-gray-400">
             {guests.length} guest{guests.length !== 1 ? "s" : ""}
           </p>
+          <SupportBar source="guests-hub" />
         </div>
       </section>
 

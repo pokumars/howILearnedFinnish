@@ -8,6 +8,7 @@ import ResourcesClient from "@/components/ResourcesClient";
 import { buildMetadata } from "@/lib/metadata";
 import { BASE_URL } from "@/lib/config";
 import { JsonLd } from "@/components/JsonLd";
+import SupportBar from "@/components/SupportBar";
 
 export const metadata: Metadata = buildMetadata({
   title: "Finnish Learning Resources | How I Learned Finnish",
@@ -78,6 +79,7 @@ export default function ResourcesPage() {
               );
             })}
           </div>
+          <SupportBar source="resources-hub" />
         </div>
       </section>
 

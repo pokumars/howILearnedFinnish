@@ -8,6 +8,7 @@ import { buildMetadata } from "@/lib/metadata";
 import { BASE_URL } from "@/lib/config";
 import { generateBreadcrumbSchema } from "@/lib/schema";
 import { JsonLd } from "@/components/JsonLd";
+import SupportBar from "@/components/SupportBar";
 
 export const metadata: Metadata = buildMetadata({
   title: "All Episodes",
@@ -64,6 +65,7 @@ export default function EpisodesPage() {
           <p className="mt-3 text-sm text-gray-400">
             {sortedEpisodes.length} episode{sortedEpisodes.length !== 1 ? "s" : ""}
           </p>
+          <SupportBar source="episode-list" />
         </div>
       </section>
 
