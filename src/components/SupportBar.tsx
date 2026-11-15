@@ -33,8 +33,7 @@ export default function SupportBar({ source }: SupportBarProps) {
         </div>
         <div>
           <p className="text-sm text-gray-800">
-            I also built <span className="font-semibold">PassiPRO</span> —
-            prep for the{" "}
+            Prep for the{" "}
             <a href={ALCOHOL_URL} {...linkProps("alcohol")}>
               alcohol pass
             </a>{" "}
@@ -42,7 +41,8 @@ export default function SupportBar({ source }: SupportBarProps) {
             <a href={HYGIENE_URL} {...linkProps("hygiene")}>
               hygiene pass
             </a>{" "}
-            online.
+            online — both built by me (
+            <span className="font-semibold">PassiPRO</span>).
           </p>
           <p className="text-xs text-gray-600 mt-0.5">
             Support my ability to keep &quot;How I Learned Finnish&quot; free.
