@@ -13,7 +13,22 @@ import { generateArticleSchema, generateBreadcrumbSchema } from "@/lib/schema";
 import { JsonLd } from "@/components/JsonLd";
 import ReadNext from "@/components/ReadNext";
 import SharePrompt from "@/components/SharePrompt";
+import SupportBar from "@/components/SupportBar";
 import { resolveReadNextList } from "@/lib/read-next";
+
+// Splits rendered article HTML roughly in half at a paragraph boundary, so a
+// SupportBar can be dropped into the middle of the content.
+function splitContentAtMidpoint(html: string): [string, string] {
+  const closingTag = "</p>";
+  const parts = html.split(closingTag);
+  if (parts.length < 4) {
+    return [html, ""];
+  }
+  const mid = Math.ceil(parts.length / 2);
+  const firstHalf = parts.slice(0, mid).join(closingTag) + closingTag;
+  const secondHalf = parts.slice(mid).join(closingTag);
+  return [firstHalf, secondHalf];
+}
 
 // Configure marked options for better HTML output
 marked.setOptions({
@@ -72,7 +87,8 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
   };
 
   // Process markdown content with proper HTML output
-  const processedContent = marked(post.content);
+  const processedContent = marked(post.content) as string;
+  const [contentTop, contentBottom] = splitContentAtMidpoint(processedContent);
 
   const articleSchema = generateArticleSchema({
     slug: post.slug,
@@ -151,12 +167,25 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
             )}
           </header>
 
+          <SupportBar source={`blog_${post.slug}_top`} />
+
           {/* Article Content */}
           <article className="prose prose-lg max-w-none">
             <div
               className="markdown-content text-gray-700 leading-relaxed"
               dangerouslySetInnerHTML={{
-                __html: processedContent,
+                __html: contentTop,
+              }}
+            />
+          </article>
+
+          <SupportBar source={`blog_${post.slug}_mid`} />
+
+          <article className="prose prose-lg max-w-none">
+            <div
+              className="markdown-content text-gray-700 leading-relaxed"
+              dangerouslySetInnerHTML={{
+                __html: contentBottom,
               }}
             />
           </article>
