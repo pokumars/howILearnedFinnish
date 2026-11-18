@@ -16,6 +16,7 @@ import { JsonLd } from "@/components/JsonLd";
 import { BASE_URL } from "@/lib/config";
 import SharePrompt from "@/components/SharePrompt";
 import SupportBar from "@/components/SupportBar";
+import { linkifyGuestNames } from "@/components/GuestLinkedText";
 
 interface TagHubPageProps {
   params: Promise<{ "tag-slug": string }>;
@@ -86,13 +87,13 @@ export default async function TagHubPage({ params }: TagHubPageProps) {
             {tag.heading}
           </h1>
           <p className="text-lg text-gray-600 max-w-3xl leading-relaxed">
-            {tag.intro}
+            {linkifyGuestNames(tag.intro)}
           </p>
           {tag.body && (
             <div className="mt-6 max-w-3xl space-y-4">
               {tag.body.map((paragraph, i) => (
                 <p key={i} className="text-gray-700 leading-relaxed">
-                  {paragraph}
+                  {linkifyGuestNames(paragraph)}
                 </p>
               ))}
             </div>
