@@ -202,10 +202,11 @@ export function FeedbackProvider({ children }: { children: ReactNode }) {
             aria-controls={panelId}
             aria-haspopup="dialog"
             style={{ bottom }}
-            className="fixed right-4 z-40 inline-flex items-center justify-center gap-2 h-12 w-12 sm:h-11 sm:w-auto sm:px-4 rounded-full bg-purple-600 text-white font-medium shadow-lg hover:bg-purple-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-600 transition-colors duration-200"
+            className="fixed right-4 z-40 inline-flex items-center justify-center gap-2 h-12 px-4 sm:h-11 rounded-full bg-purple-600 text-white font-medium shadow-lg hover:bg-purple-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-600 transition-colors duration-200"
             data-umami-event="feedback_open"
           >
             <MessageSquare className="w-5 h-5 sm:w-4 sm:h-4" aria-hidden />
+            <span className="sm:hidden">Feedback</span>
             <span className="hidden sm:inline">Ideas, feedback &amp; complaints</span>
           </button>
 
